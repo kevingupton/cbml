@@ -1,0 +1,345 @@
+<rdf:RDF
+    xmlns:c2lg="http://cbml.googlecode.com/svn/trunk/c2lgOnt.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="#"/>
+  <owl:Class rdf:about="assemble%28persons%29">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">assemble(persons)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="move">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">move</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="contain">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">contain</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="secure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">secure</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="cover">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">cover</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ambush">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">ambush</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="defend">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">defend</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Event">
+    <rdfs:label xml:lang="en">Event</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="pursue">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">pursue</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="concentrate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">concentrate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="patrol">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">patrol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="defeat">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">defeat</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="deny">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">deny</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="conduct">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">conduct</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="isolate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">isolate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="observe">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">observe</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="disengage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">disengage</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="support">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">support</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="distribute">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">distribute</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="breach">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">breach</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="withdraw">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">withdraw</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="screen">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">screen</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="infiltrate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">infiltrate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="deflect">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Action"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">deflect</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Action">
+    <rdfs:subClassOf rdf:resource="Event"/>
+    <rdfs:label xml:lang="en">Action</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="assist">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">assist</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="capture">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">capture</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="reliefInPlace">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">reliefInPlace</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="reinforce">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">reinforce</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="escort">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">escort</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="clearObstacle">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">clearObstacle</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="mopUp">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">mopUp</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="attack">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">attack</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="identify">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">identify</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="assignedTo">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">assignedTo</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="seize">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">seize</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="guard">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">guard</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="counterAttack">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">counterAttack</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="arrest%28legal%29">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">arrest(legal)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="confiscate">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">confiscate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="rest">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">rest</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="harass">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">harass</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="arrest%2Fobstruct">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">arrest/obstruct</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="cancel">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">cancel</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="holdDefensive">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">holdDefensive</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="constitute">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">constitute</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="reconnaissance">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">reconnaissance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="avoid">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">avoid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="fix">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">fix</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="clearLand">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">clearLand</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="exploit">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">exploit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="advance">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">advance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="plan">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">plan</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="hide">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">hide</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="deploy">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">deploy</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="relieve">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">relieve</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="buildUp">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">buildUp</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="assemble%28materiel%29">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">assemble(materiel)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="illuminate">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">illuminate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="occupy">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">occupy</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="recover">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">recover</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="consolidate">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">consolidate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="disrupt">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">disrupt</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="setUp">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">setUp</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="penetrate">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">penetrate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="block">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">block</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="attachedTo">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">attachedTo</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="march">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">march</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="evacuate">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">evacuate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="holdOffensive">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">holdOffensive</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="destroy">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">destroy</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="demolish">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">demolish</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="canalize">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:label xml:lang="en">canalize</rdfs:label>
+  </owl:Class>
+</rdf:RDF>
