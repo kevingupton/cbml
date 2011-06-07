@@ -7,7 +7,6 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#" >
-    <!ENTITY basicCommOnt "http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#" >
 ]>
 
 
@@ -15,7 +14,6 @@
      xml:base="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl"
      xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:basicCommOnt="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -60,7 +58,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#hasSubject -->
 
-    <owl:ObjectProperty rdf:about="&basicCommOnt;hasSubject"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#hasSubject"/>
     
 
 
@@ -77,7 +75,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Acknowledgement -->
 
-    <owl:Class rdf:about="&basicCommOnt;Acknowledgement">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Acknowledgement">
         <rdfs:subClassOf rdf:resource="&upperC2Ont;CommunicationAct"/>
         <rdfs:isDefinedBy>&#39;The action or an act of acknowledging, confessing, admitting, or owning something; admission, confession; an instance of this.&#39;
 &lt;http://www.oed.com/viewdictionaryentry/Entry/1614&gt;</rdfs:isDefinedBy>
@@ -85,19 +83,9 @@
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Agent -->
-
-    <owl:Class rdf:about="&basicCommOnt;Agent">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
-        <rdfs:isDefinedBy>&#39;One who (or that which) acts or exerts power, as distinguished from the patient, and also from the instrument.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/3859&gt;</rdfs:isDefinedBy>
-    </owl:Class>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Assertive -->
 
-    <owl:Class rdf:about="&basicCommOnt;Assertive">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Assertive">
         <rdfs:subClassOf rdf:resource="&upperC2Ont;CommunicationAct"/>
         <rdfs:isDefinedBy>&#39;Communication acts that express the sender’s attitude of committing to
 the receiver to the veracity of the propositional content&#39;
@@ -108,7 +96,7 @@ the receiver to the veracity of the propositional content&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Commissive -->
 
-    <owl:Class rdf:about="&basicCommOnt;Commissive">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Commissive">
         <rdfs:subClassOf rdf:resource="&upperC2Ont;CommunicationAct"/>
         <rdfs:isDefinedBy>&#39;Communication acts that expresses the sender’s attitude of obligating
 himself to do something, perhaps under certain conditions&#39;
@@ -117,17 +105,9 @@ himself to do something, perhaps under certain conditions&#39;
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#ContentDevelopment -->
-
-    <owl:Class rdf:about="&basicCommOnt;ContentDevelopment">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;IntentionalProcess"/>
-    </owl:Class>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Declarative -->
 
-    <owl:Class rdf:about="&basicCommOnt;Declarative">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Declarative">
         <rdfs:subClassOf rdf:resource="&upperC2Ont;CommunicationAct"/>
         <rdfs:isDefinedBy>&#39;Communication acts which brings about the correspondence of the
 world to the words declared. In other words, the proposition declared in the communication act becomes true in the world just because of the delivering of the communication act&#39;
@@ -138,7 +118,7 @@ world to the words declared. In other words, the proposition declared in the com
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Directive -->
 
-    <owl:Class rdf:about="&basicCommOnt;Directive">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Directive">
         <rdfs:subClassOf rdf:resource="&upperC2Ont;CommunicationAct"/>
         <rdfs:isDefinedBy>&#39;Communication acts that express the sender’s attitude towards
 getting the receiver to commit to something&#39;
@@ -149,28 +129,18 @@ getting the receiver to commit to something&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#EventReport -->
 
-    <owl:Class rdf:about="&basicCommOnt;EventReport">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Report"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#EventReport">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Report"/>
         <rdfs:isDefinedBy>&#39;Reports concerning non-military occurrences such as floods, earthquakes, traffic accidents, political demonstration and similar occurrences&#39;
 &lt;Schade, Hieb, Frey, Rein. 2010. Command and Control Lexical Grammar Specification. Fraunhofer Institute, Wachtberg, Germany&gt;</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#HumanAgent -->
-
-    <owl:Class rdf:about="&basicCommOnt;HumanAgent">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Agent"/>
-        <rdfs:isDefinedBy>&#39;One who does the actual work of anything, as distinguished from the instigator or employer&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/3859&gt;</rdfs:isDefinedBy>
-    </owl:Class>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Inquiry -->
 
-    <owl:Class rdf:about="&basicCommOnt;Inquiry">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Directive"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Inquiry">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Directive"/>
         <rdfs:isDefinedBy>&#39;Directive communication acts asking for information&#39;
 &lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
     </owl:Class>
@@ -179,15 +149,7 @@ getting the receiver to commit to something&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#IntentionalProcess -->
 
-    <owl:Class rdf:about="&basicCommOnt;IntentionalProcess">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Action"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#InternalChange -->
-
-    <owl:Class rdf:about="&basicCommOnt;InternalChange">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#IntentionalProcess">
         <rdfs:subClassOf rdf:resource="&upperC2Ont;Action"/>
     </owl:Class>
     
@@ -195,8 +157,8 @@ getting the receiver to commit to something&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Order -->
 
-    <owl:Class rdf:about="&basicCommOnt;Order">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Directive"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Order">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Directive"/>
         <rdfs:isDefinedBy>&#39;Directive that changes the physical state of the world and in which the sender is superior to the addressee and can expect rightfully that the addressee will execute the tasks that are assigned to him by the sender&#39;
 &lt;Schade, Hieb, Frey, Rein. 2010. Command and Control Lexical Grammar Specification. Fraunhofer Institute, Wachtberg, Germany&gt; 
 &lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
@@ -206,7 +168,7 @@ getting the receiver to commit to something&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Proposition -->
 
-    <owl:Class rdf:about="&basicCommOnt;Proposition">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Proposition">
         <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
         <rdfs:isDefinedBy>&#39;The subject of the illocutionary force of a communication act&#39;
 &lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
@@ -214,41 +176,20 @@ getting the receiver to commit to something&#39;
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RefExpression -->
-
-    <owl:Class rdf:about="&basicCommOnt;RefExpression">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
-        <rdfs:isDefinedBy>&#39;Referential expressions describing values from some domain which
-satisfy certain constraints (for example, a query)&#39;
-&lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
-    </owl:Class>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Report -->
 
-    <owl:Class rdf:about="&basicCommOnt;Report">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Assertive"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Report">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Assertive"/>
         <rdfs:isDefinedBy>&#39;Communication act meant to inform the addressee that something is so&#39;
 &lt;Schade, Hieb, Frey, Rein. 2010. Command and Control Lexical Grammar Specification. Fraunhofer Institute, Wachtberg, Germany&gt;</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#ReportAct -->
-
-    <owl:Class rdf:about="&basicCommOnt;ReportAct">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Action"/>
-        <rdfs:isDefinedBy>&#39;Action inquired in an Inquiry&#39;
-&lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
-    </owl:Class>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Request -->
 
-    <owl:Class rdf:about="&basicCommOnt;Request">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Directive"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Request">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Directive"/>
         <rdfs:isDefinedBy>&#39;Directive that changes the physical state of the world and in which the sender is not superior to the addressee and thus cannot expect that requested tasks are executed&#39;
 &lt;Schade, Hieb, Frey, Rein. 2010. Command and Control Lexical Grammar Specification. Fraunhofer Institute, Wachtberg, Germany&gt; 
 &lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
@@ -258,16 +199,16 @@ satisfy certain constraints (for example, a query)&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#SocialInteraction -->
 
-    <owl:Class rdf:about="&basicCommOnt;SocialInteraction">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;IntentionalProcess"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#SocialInteraction">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#IntentionalProcess"/>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#SoftwareAgent -->
 
-    <owl:Class rdf:about="&basicCommOnt;SoftwareAgent">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Agent"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#SoftwareAgent">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
         <rdfs:isDefinedBy>&#39;A program that performs a task such as information retrieval or processing on behalf of a client or user&#39;
 &lt;http://www.oed.com/viewdictionaryentry/Entry/3859&gt;</rdfs:isDefinedBy>
     </owl:Class>
@@ -276,8 +217,8 @@ satisfy certain constraints (for example, a query)&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#StatusReport -->
 
-    <owl:Class rdf:about="&basicCommOnt;StatusReport">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Report"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#StatusReport">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Report"/>
         <rdfs:isDefinedBy>&#39;Reports concerning the status of an Entity&#39;
 &lt;Schade, Hieb, Frey, Rein. 2010. Command and Control Lexical Grammar Specification. Fraunhofer Institute, Wachtberg, Germany&gt;</rdfs:isDefinedBy>
     </owl:Class>
@@ -286,8 +227,8 @@ satisfy certain constraints (for example, a query)&#39;
 
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#TaskReport -->
 
-    <owl:Class rdf:about="&basicCommOnt;TaskReport">
-        <rdfs:subClassOf rdf:resource="&basicCommOnt;Report"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#TaskReport">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Report"/>
         <rdfs:isDefinedBy>&#39;Reports concerning military tasks&#39;
 &lt;Schade, Hieb, Frey, Rein. 2010. Command and Control Lexical Grammar Specification. Fraunhofer Institute, Wachtberg, Germany&gt;</rdfs:isDefinedBy>
     </owl:Class>
