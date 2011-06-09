@@ -137,16 +137,6 @@ getting the receiver to commit to something&#39;
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Inquiry -->
-
-    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Inquiry">
-        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Directive"/>
-        <rdfs:isDefinedBy>&#39;Directive communication acts asking for information&#39;
-&lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
-    </owl:Class>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#IntentionalProcess -->
 
     <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#IntentionalProcess">
@@ -190,9 +180,26 @@ getting the receiver to commit to something&#39;
 
     <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Request">
         <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Directive"/>
-        <rdfs:isDefinedBy>&#39;Directive that changes the physical state of the world and in which the sender is not superior to the addressee and thus cannot expect that requested tasks are executed&#39;
-&lt;Schade, Hieb, Frey, Rein. 2010. Command and Control Lexical Grammar Specification. Fraunhofer Institute, Wachtberg, Germany&gt; 
-&lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>&#39;An instance of asking for something&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/163240&gt;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestAction -->
+
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestAction">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Request"/>
+        <rdfs:isDefinedBy>&#39;A request for an action&#39;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestInformation -->
+
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestInformation">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Request"/>
+        <rdfs:isDefinedBy>&#39;A request for information&#39;</rdfs:isDefinedBy>
     </owl:Class>
     
 
