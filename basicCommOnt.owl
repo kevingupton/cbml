@@ -73,6 +73,14 @@
     
 
 
+    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#AcceptRequest -->
+
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#AcceptRequest">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestReply"/>
+    </owl:Class>
+    
+
+
     <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Acknowledgement -->
 
     <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Acknowledgement">
@@ -112,6 +120,14 @@ himself to do something, perhaps under certain conditions&#39;
         <rdfs:isDefinedBy>&#39;Communication acts which brings about the correspondence of the
 world to the words declared. In other words, the proposition declared in the communication act becomes true in the world just because of the delivering of the communication act&#39;
 &lt;Jesús Bermúdez, Alfredo Goñi, Arantza Illarramendi, and Simone Santini. 2007. Is an OWL ontology adequate for foreign software agents communication?. Applied Ontology 2, 3-4 (August 2007)&gt;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#DeclineRequest -->
+
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#DeclineRequest">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestReply"/>
     </owl:Class>
     
 
@@ -200,6 +216,14 @@ getting the receiver to commit to something&#39;
     <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestInformation">
         <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Request"/>
         <rdfs:isDefinedBy>&#39;A request for information&#39;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestReply -->
+
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#RequestReply">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Commissive"/>
     </owl:Class>
     
 
