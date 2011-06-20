@@ -1,0 +1,59 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_OBJECT-TYPE.owl#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_OBJECT-TYPE.owl#" > 
+  <rdf:Description rdf:about="#object-type-decoy-indicator-code">
+    <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE">
+    <rdfs:comment xml:lang="en">An individually identified class of objects that has military or civilian significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">object type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents equipment, apparatus or supplies of military interest without distinction to its application for administrative or combat purposes.</rdfs:comment>
+    <rdfs:label xml:lang="en">materiel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents administrative or functional structures.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#object-type-category-code">
+    <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">feature type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#physical_model_only">
+    <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents human beings about whom information is to be held.</rdfs:comment>
+    <rdfs:label xml:lang="en">person type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that is intended to be built, installed or established to serve some particular purpose and is identified by the service it is intended to provide rather than by its content.</rdfs:comment>
+    <rdfs:label xml:lang="en">facility type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#object-type-name-text">
+    <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>
