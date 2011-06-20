@@ -1,0 +1,1599 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmBase.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmBase.owl#" > 
+  <rdf:Description rdf:about="#ACTION-CONTEXT-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived state of a specific ACTION-CONTEXT as determined by the establishing organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">action context status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RELATIVE-COORDINATE-SYSTEM">
+    <rdfs:comment xml:lang="en">A rectangular frame of reference defined by an origin, x and y axes in the horizontal plane, and a z-axis. The vertical z-axis is normal to the xy-plane with positive direction determined from the right-hand rule when the x-axis is rotated toward the y-axis.</rdfs:comment>
+    <rdfs:label xml:lang="en">relative coordinate system</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">feature</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE-REFERENCE-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship between a specific OBJECT-TYPE and a specific REFERENCE.</rdfs:comment>
+    <rdfs:label xml:lang="en">object type reference association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-IDENTIFICATION-DOCUMENT">
+    <rdfs:comment xml:lang="en">A document used to identify a specific PERSON.</rdfs:comment>
+    <rdfs:label xml:lang="en">person identification document</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-TEMPORAL-ASSOCIATION">
+    <rdfs:comment xml:lang="en">The relationship of an ACTION as a subject to another ACTION as an object in order to specify time dependence.</rdfs:comment>
+    <rdfs:label xml:lang="en">action temporal association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE">
+    <rdfs:subClassOf rdf:resource="#FEATURE"/>
+    <rdfs:comment xml:lang="en">A FEATURE that describes reported or forecast weather and light conditions.</rdfs:comment>
+    <rdfs:label xml:lang="en">meteorologic feature</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CBRN-EVENT">
+    <rdfs:subClassOf rdf:resource="#ACTION-EVENT"/>
+    <rdfs:comment xml:lang="en">An ACTION-EVENT that involves chemical, biological, radiological or nuclear materiel individually or in combination.</rdfs:comment>
+    <rdfs:label xml:lang="en">cbrn event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BRIDGE">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a structure (including overpass and viaduct), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">bridge</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#UNIT">
+    <rdfs:subClassOf rdf:resource="#ORGANISATION"/>
+    <rdfs:comment xml:lang="en">A military ORGANISATION whose structure is prescribed by competent authority.</rdfs:comment>
+    <rdfs:label xml:lang="en">unit</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived condition of a specific OBJECT-ITEM as determined by the reporting organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIQUID-SURFACE-STATUS">
+    <rdfs:subClassOf rdf:resource="#GEOGRAPHIC-FEATURE-STATUS"/>
+    <rdfs:comment xml:lang="en">A GEOGRAPHIC-FEATURE-STATUS that is a record of condition of a specific liquid surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">liquid surface status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FIRE-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs, or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs and PERSON-TYPEs that are deemed as having the ability to discharge or launch a projectile or missile.</rdfs:comment>
+    <rdfs:label xml:lang="en">fire capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-ASSOCIATION-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived condition of a specific OBJECT-ITEM-ASSOCIATION as determined by the reporting organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item association status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-CONTEXT">
+    <rdfs:comment xml:lang="en">A relationship between a specific ACTION and a specific CONTEXT.</rdfs:comment>
+    <rdfs:label xml:lang="en">action context</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PHYSICAL-ADDRESS">
+    <rdfs:subClassOf rdf:resource="#ADDRESS"/>
+    <rdfs:comment xml:lang="en">An ADDRESS that represents a physical location that is reachable by use of transportation, to include the use of postal services.</rdfs:comment>
+    <rdfs:label xml:lang="en">physical address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MEDICAL-FACILITY-STATUS-PENDING-SURGERY">
+    <rdfs:comment xml:lang="en">The count of pending surgeries according to specified triage grouping for a specific MEDICAL-FACILITY-STATUS.</rdfs:comment>
+    <rdfs:label xml:lang="en">medical facility status pending surgery</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-TASK-RULE-OF-ENGAGEMENT">
+    <rdfs:comment xml:lang="en">The imposition of a specific RULE-OF-ENGAGEMENT on a specific ACTION-TASK.</rdfs:comment>
+    <rdfs:label xml:lang="en">action task rule of engagement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CATEGORY-RELATIONSHIP">
+    <rdfs:comment xml:lang="en">Representation of the information required to define a subtype for a specific ENTITY.</rdfs:comment>
+    <rdfs:label xml:lang="en">category relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-REFERENCE-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship between a specific ACTION and a specific REFERENCE.</rdfs:comment>
+    <rdfs:label xml:lang="en">action reference association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-MATERIEL-TYPE-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of an ORGANISATION as a subject with a MATERIEL-TYPE as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation materiel type association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-RESOURCE">
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM or an OBJECT-TYPE that is required, requested, allocated or otherwise used or planned to be used in conducting a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action resource</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DRY-DOCK">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that provides an enclosure for maintenance, building or repairing ships, from which water can be pumped out.</rdfs:comment>
+    <rdfs:label xml:lang="en">dry dock</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-OBJECT-ITEM-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a CONTEXT as a subject with an OBJECT-ITEM as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">context object item association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ELECTRONIC-ADDRESS">
+    <rdfs:subClassOf rdf:resource="#ADDRESS"/>
+    <rdfs:comment xml:lang="en">An ADDRESS that is reached by using the specified NETWORK-SERVICE.</rdfs:comment>
+    <rdfs:label xml:lang="en">electronic address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#UXO-STATUS">
+    <rdfs:subClassOf rdf:resource="#MATERIEL-STATUS"/>
+    <rdfs:comment xml:lang="en">A MATERIEL-STATUS that is a record of the condition of an explosive ordnance that has been primed, fused, armed, or otherwise prepared for action, and which has been fired, dropped, launched, placed in such a manner, as to constitute a hazard to operation, and remains unexploded either by malfunction or for any other cause.</rdfs:comment>
+    <rdfs:label xml:lang="en">uxo status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-STRUCTURE-DETAIL">
+    <rdfs:comment xml:lang="en">The identification of a specific OBJECT-ITEM-ASSOCIATION as an element in a specific ORGANISATION-STRUCTURE.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation structure detail</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK-SERVICE">
+    <rdfs:comment xml:lang="en">An identification of the specific type of communications service provided by a specific NETWORK.</rdfs:comment>
+    <rdfs:label xml:lang="en">network service</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AIRFIELD-STATUS">
+    <rdfs:subClassOf rdf:resource="#FACILITY-STATUS"/>
+    <rdfs:comment xml:lang="en">A FACILITY-STATUS that is a record of conditions of a specific AIRFIELD.</rdfs:comment>
+    <rdfs:label xml:lang="en">airfield status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-OBJECTIVE">
+    <rdfs:comment xml:lang="en">The focus, in terms of an OBJECT-ITEM, OBJECT-TYPE, or ACTION-TASK, in conducting a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action objective</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GROUP-CHARACTERISTIC">
+    <rdfs:comment xml:lang="en">A reference to a set of characteristics that may be used for identifying a distinct collection of objects.</rdfs:comment>
+    <rdfs:label xml:lang="en">group characteristic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-AFFILIATION">
+    <rdfs:comment xml:lang="en">A relationship between a specific OBJECT-ITEM and a specific AFFILIATION. Note:  This entity is intended to record exceptions to affiliations identified in OBJECT-TYPE. Consequently, the native, normal or expected affiliation is identified by associating the item with an appropriate type.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item affiliation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REPORTING-DATA-RELATIVE-TIMING">
+    <rdfs:subClassOf rdf:resource="#REPORTING-DATA"/>
+    <rdfs:comment xml:lang="en">A REPORTING-DATA that specifies effective timing that is referenced to a specific ACTION-TASK.</rdfs:comment>
+    <rdfs:label xml:lang="en">reporting data relative timing</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SUBSURFACE-VESSEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#VESSEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A vessel principally designed to operate under the water surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">subsurface vessel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#APPROACH-DIRECTION">
+    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE"/>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE that specifies approach directional details for takeoff and landing.</rdfs:comment>
+    <rdfs:label xml:lang="en">approach direction</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REQUEST">
+    <rdfs:subClassOf rdf:resource="#ACTION-TASK"/>
+    <rdfs:comment xml:lang="en">An ACTION-TASK that states a requirement.</rdfs:comment>
+    <rdfs:label xml:lang="en">request</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-COMMENT">
+    <rdfs:comment xml:lang="en">A remark that adds information about a specific OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item comment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#COMPONENT-HEADER-CONTENT">
+    <rdfs:comment xml:lang="en">Introductory subject matter intended to identify an element of a plan or order.</rdfs:comment>
+    <rdfs:label xml:lang="en">component header content</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-REFERENCE-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship between a specific ORGANISATION and a specific REFERENCE.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation reference association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MEDICAL-FACILITY-STATUS-PENDING-CASUALTY-EVACUATION">
+    <rdfs:comment xml:lang="en">The count of pending evacuees in each group according to the intended destination for a specific MEDICAL-FACILITY-STATUS.</rdfs:comment>
+    <rdfs:label xml:lang="en">medical facility status pending casualty evacuation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ADDRESS">
+    <rdfs:comment xml:lang="en">Precise information on the basis of which a physical or electronic destination may be accessed.</rdfs:comment>
+    <rdfs:label xml:lang="en">address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORDER">
+    <rdfs:subClassOf rdf:resource="#PLAN-ORDER"/>
+    <rdfs:comment xml:lang="en">A communication that conveys instructions from a superior to a subordinate.</rdfs:comment>
+    <rdfs:label xml:lang="en">order</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-STATUS">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM-STATUS"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM-STATUS that is a record of condition of a specific PERSON.</rdfs:comment>
+    <rdfs:label xml:lang="en">person status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AFFILIATION-FUNCTIONAL-GROUP">
+    <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
+    <rdfs:comment xml:lang="en">A specification of a functional group characterised by its primary purpose to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:label xml:lang="en">affiliation functional group</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-CAPABILITY">
+    <rdfs:comment xml:lang="en">A perceived value of a specific CAPABILITY of an OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents administrative or functional structures.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MILITARY-POST-TYPE">
+    <rdfs:subClassOf rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">A MILITARY-ORGANISATION-TYPE with a set of duties that can be fulfilled by one person.</rdfs:comment>
+    <rdfs:label xml:lang="en">military post type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY">
+    <rdfs:comment xml:lang="en">The count of bed occupancy according to specified source grouping for a specific MEDICAL-FACILITY-STATUS.</rdfs:comment>
+    <rdfs:label xml:lang="en">medical facility status casualty bed occupancy</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#UNIT-TYPE">
+    <rdfs:subClassOf rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">A MILITARY-ORGANISATION-TYPE whose structure is prescribed by competent authority.</rdfs:comment>
+    <rdfs:label xml:lang="en">unit type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MILITARY-OBSTACLE">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY designed to stop, impede, or divert movement of amphibious or ground forces.</rdfs:comment>
+    <rdfs:label xml:lang="en">military obstacle</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOMETRIC-VOLUME">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A specific LOCATION that is a three-dimensional bounded space.</rdfs:comment>
+    <rdfs:label xml:lang="en">geometric volume</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTROL-FEATURE-STATUS">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM-STATUS"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM-STATUS that is a record of condition of a specific CONTROL-FEATURE.</rdfs:comment>
+    <rdfs:label xml:lang="en">control feature status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORDER-STATUS">
+    <rdfs:comment xml:lang="en">A record of the condition of a specific ORDER.</rdfs:comment>
+    <rdfs:label xml:lang="en">order status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-LANGUAGE-SKILL">
+    <rdfs:comment xml:lang="en">A proficiency or ability of a specific PERSON with regard to a specific language.</rdfs:comment>
+    <rdfs:label xml:lang="en">person language skill</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MARITIME-EQUIPMENT-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to be used in a maritime environment.</rdfs:comment>
+    <rdfs:label xml:lang="en">maritime equipment type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINEFIELD">
+    <rdfs:subClassOf rdf:resource="#MILITARY-OBSTACLE"/>
+    <rdfs:comment xml:lang="en">A MILITARY-OBSTACLE that is an area or volume containing mines.</rdfs:comment>
+    <rdfs:label xml:lang="en">minefield</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-COMPONENT-CONTENT-REFERENCE">
+    <rdfs:comment xml:lang="en">The identification of a specific REFERENCE that applies to the given PLAN-ORDER-COMPONENT-CONTENT.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order component content reference</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOGRAPHIC-FEATURE">
+    <rdfs:subClassOf rdf:resource="#FEATURE"/>
+    <rdfs:comment xml:lang="en">A FEATURE describing terrain characteristics to which military significance is attached.</rdfs:comment>
+    <rdfs:label xml:lang="en">geographic feature</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-OBJECTIVE-TYPE">
+    <rdfs:subClassOf rdf:resource="#ACTION-OBJECTIVE"/>
+    <rdfs:comment xml:lang="en">A class of battlespace object (FACILITY-TYPE, FEATURE-TYPE, MATERIEL-TYPE, ORGANISATION-TYPE or PERSON-TYPE) which is the focus of a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action objective type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REQUEST-ANSWER">
+    <rdfs:comment xml:lang="en">An indication of the nature of a response to a specific REQUEST for information.</rdfs:comment>
+    <rdfs:label xml:lang="en">request answer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AIR-ROUTE-SEGMENT">
+    <rdfs:subClassOf rdf:resource="#ROUTE-SEGMENT"/>
+    <rdfs:comment xml:lang="en">A portion of a route to be flown usually without an intermediate stop, as defined by two consecutive significant points.</rdfs:comment>
+    <rdfs:label xml:lang="en">air route segment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE-CAPABILITY-NORM">
+    <rdfs:comment xml:lang="en">The standard value of a specific CAPABILITY of an OBJECT-TYPE.</rdfs:comment>
+    <rdfs:label xml:lang="en">object type capability norm</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-RECONNAISSANCE-EMPLOYMENT">
+    <rdfs:subClassOf rdf:resource="#ACTION-RESOURCE-EMPLOYMENT"/>
+    <rdfs:comment xml:lang="en">The parameters that guide the use of an ACTION-RESOURCE that is employed in a reconnaissance role.</rdfs:comment>
+    <rdfs:label xml:lang="en">action reconnaissance employment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SURVEILLANCE-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs and PERSON-TYPEs that are deemed as having the nominal ability to observe aerospace, surface or subsurface areas, places, persons, or things, by visual, aural, electronic, photographic or other means.</rdfs:comment>
+    <rdfs:label xml:lang="en">surveillance capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NUCLEAR-EVENT">
+    <rdfs:subClassOf rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdfs:comment xml:lang="en">A RADIOACTIVE-EVENT involving nuclear materiel and/or nuclear detonation.</rdfs:comment>
+    <rdfs:label xml:lang="en">nuclear event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-GROUP-ACCOUNT">
+    <rdfs:comment xml:lang="en">A reference to accounting for a set of groups that are associated with the specific OBJECT-ITEM at the time specified by REPORTING-DATA. The accounting may result from or be affected by a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item group account</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-PLAN-ORDER-ASSOCIATION-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived state of a specific ORGANISATION-PLAN-ORDER-ASSOCIATION as determined by the establishing organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation plan order association status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-DETAIL-TYPE">
+    <rdfs:subClassOf rdf:resource="#CANDIDATE-TARGET-DETAIL"/>
+    <rdfs:comment xml:lang="en">An instance of CANDIDATE-TARGET-DETAIL that is an OBJECT-TYPE.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target detail type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AIRFIELD">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is an area prepared for the accommodation (including any buildings, installations, or equipment) of landing and take off of aircraft.</rdfs:comment>
+    <rdfs:label xml:lang="en">airfield</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CBRN-EQUIPMENT-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed for specialised roles in detecting, decontaminating or reconnoitring CBRN agents.</rdfs:comment>
+    <rdfs:label xml:lang="en">cbrn equipment type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN">
+    <rdfs:subClassOf rdf:resource="#PLAN-ORDER"/>
+    <rdfs:comment xml:lang="en">A proposal for putting into effect a command decision or project; it represents the preparation for future or anticipated operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION">
+    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the type of particulate matter in the Earth's atmosphere and the rate of its descent onto the Earth's surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">precipitation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-MARITIME-EMPLOYMENT">
+    <rdfs:subClassOf rdf:resource="#ACTION-RESOURCE-EMPLOYMENT"/>
+    <rdfs:comment xml:lang="en">The procedure that guides the use of an ACTION-RESOURCE in a maritime environment.</rdfs:comment>
+    <rdfs:label xml:lang="en">action maritime employment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK-CAPACITY">
+    <rdfs:comment xml:lang="en">An identification of the specific capacities of a NETWORK.</rdfs:comment>
+    <rdfs:label xml:lang="en">network capacity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CORRIDOR-AREA">
+    <rdfs:subClassOf rdf:resource="#SURFACE"/>
+    <rdfs:comment xml:lang="en">A SURFACE that is defined by its width and a sequence of points.</rdfs:comment>
+    <rdfs:label xml:lang="en">corridor area</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION">
+    <rdfs:comment xml:lang="en">An activity, or the occurrence of an activity, that may utilise resources and may be focused against an objective.</rdfs:comment>
+    <rdfs:label xml:lang="en">action</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATTRIBUTE">
+    <rdfs:comment xml:lang="en">A record that specifies the metadata characteristics of an attribute for an entity that is described in a specific ENTITY.</rdfs:comment>
+    <rdfs:label xml:lang="en">attribute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GOVERNMENT-ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE that controls and administers public policy either under a national or international mandate.</rdfs:comment>
+    <rdfs:label xml:lang="en">government organisation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINEFIELD-MARITIME-CASUALTY-ESTIMATE">
+    <rdfs:comment xml:lang="en">An estimate of the average number of casualties for a given number of vessel transits through a specific MINEFIELD-MARITIME.</rdfs:comment>
+    <rdfs:label xml:lang="en">minefield maritime casualty estimate</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RAILCAR-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to operate on rail tracks.</rdfs:comment>
+    <rdfs:label xml:lang="en">railcar type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONE-VOLUME">
+    <rdfs:subClassOf rdf:resource="#GEOMETRIC-VOLUME"/>
+    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME whose boundary is swept by a line that has a fixed point and another that moves along the path defined by the border of a specific SURFACE.</rdfs:comment>
+    <rdfs:label xml:lang="en">cone volume</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ELLIPSE">
+    <rdfs:subClassOf rdf:resource="#SURFACE"/>
+    <rdfs:comment xml:lang="en">A planar SURFACE in the form of an ellipse.</rdfs:comment>
+    <rdfs:label xml:lang="en">ellipse</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER">
+    <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EQUIPMENT-TYPE">
+    <rdfs:subClassOf rdf:resource="#MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A MATERIEL-TYPE that is not intended for consumption.</rdfs:comment>
+    <rdfs:label xml:lang="en">equipment type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TRANSMISSION-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those MATERIELs or MATERIEL-TYPEs that are deemed as having the ability to generate, receive or affect signals in the electromagnetic spectrum.</rdfs:comment>
+    <rdfs:label xml:lang="en">transmission capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ANCHORAGE">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a place where vessels anchor.</rdfs:comment>
+    <rdfs:label xml:lang="en">anchorage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONVOY">
+    <rdfs:subClassOf rdf:resource="#ORGANISATION"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION that is a group of vehicles or vessels organised for the purpose of control and orderly movement with or without escort protection.</rdfs:comment>
+    <rdfs:label xml:lang="en">convoy</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-COMPONENT-STRUCTURE">
+    <rdfs:comment xml:lang="en">A relationship of a PLAN-ORDER-COMPONENT as a subject and a PLAN-ORDER-COMPONENT as an object to allow multilayer relationships among elements of the same or different instances of a PLAN-ORDER.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order component structure</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RADIOLOGICAL-EVENT">
+    <rdfs:subClassOf rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdfs:comment xml:lang="en">A RADIOACTIVE-EVENT involving radioactive materiel(s) but not involving nuclear materiel(s) and/or nuclear detonation.</rdfs:comment>
+    <rdfs:label xml:lang="en">radiological event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HOLDING">
+    <rdfs:comment xml:lang="en">The quantity of each specific OBJECT-TYPE that is held by, installed in, or included with a specific OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">holding</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-PLAN-ORDER-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of an ORGANISATION to a PLAN-ORDER specifying the role of the ORGANISATION with respect to the PLAN-ORDER.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation plan order association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-EVENT-DETAIL">
+    <rdfs:comment xml:lang="en">Supplemental information about the ACTION-EVENT.</rdfs:comment>
+    <rdfs:label xml:lang="en">action event detail</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-ACTION-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship indicating the role of a specific ORGANISATION with respect to a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation action association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-ELEMENT">
+    <rdfs:comment xml:lang="en">A reference to a specific REPORTING-DATA that is a constituent part of a specific CONTEXT.</rdfs:comment>
+    <rdfs:label xml:lang="en">context element</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REPORTING-DATA">
+    <rdfs:comment xml:lang="en">The specification of source, quality and timing that applies to reported data.</rdfs:comment>
+    <rdfs:label xml:lang="en">reporting data</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINEFIELD-MARITIME-STATUS">
+    <rdfs:subClassOf rdf:resource="#FACILITY-STATUS"/>
+    <rdfs:comment xml:lang="en">A FACILITY-STATUS that is a record of condition of a specific MINEFIELD-MARITIME.</rdfs:comment>
+    <rdfs:label xml:lang="en">minefield maritime status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-RESOURCE-EMPLOYMENT">
+    <rdfs:comment xml:lang="en">The procedure for using a specific ACTION-RESOURCE with or without dependence upon a specific ACTION-OBJECTIVE.</rdfs:comment>
+    <rdfs:label xml:lang="en">action resource employment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MILITARY-OBSTACLE-TYPE">
+    <rdfs:subClassOf rdf:resource="#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a class of man-made devices or passive defence works that are designed to stop, impede, or divert movement of amphibious or ground forces.</rdfs:comment>
+    <rdfs:label xml:lang="en">military obstacle type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#POLYARC-AREA">
+    <rdfs:subClassOf rdf:resource="#SURFACE"/>
+    <rdfs:comment xml:lang="en">A SURFACE that consists of a circular arc and a polygonal segment defined by a specific LINE whose beginning coincides with the initial point of the arc and whose end coincides with the last point of the arc.</rdfs:comment>
+    <rdfs:label xml:lang="en">polyarc area</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RAILWAY">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a track or set of tracks made of steel rails along which trains run.</rdfs:comment>
+    <rdfs:label xml:lang="en">railway</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SUBTYPE-RELATIONSHIP">
+    <rdfs:subClassOf rdf:resource="#RELATIONSHIP"/>
+    <rdfs:comment xml:lang="en">A RELATIONSHIP that identifies a child ENTITY whose primary key is identical to the primary key of the parent ENTITY and which inherits all of the properties of the parent ENTITY.</rdfs:comment>
+    <rdfs:label xml:lang="en">subtype relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EXECUTIVE-MILITARY-ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">A MILITARY-ORGANISATION-TYPE whose function is to manage and direct the military establishment.</rdfs:comment>
+    <rdfs:label xml:lang="en">executive military organisation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ENGINEERING-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those ORGANISATIONs and PERSONs or ORGANISATION-TYPEs and PERSON-TYPEs that are deemed as having the ability to perform construction or destruction activities.</rdfs:comment>
+    <rdfs:label xml:lang="en">engineering capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-OBJECT-TYPE-ESTABLISHMENT">
+    <rdfs:comment xml:lang="en">A specification of an OBJECT-TYPE-ESTABLISHMENT that is authorised for a specific OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item object type establishment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROUTE-TYPE">
+    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE-TYPE that is the prescribed course to be travelled from a point of origin to a destination.</rdfs:comment>
+    <rdfs:label xml:lang="en">route type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REFERENCE-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a REFERENCE as a subject with another REFERENCE as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">reference association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FAN-AREA">
+    <rdfs:subClassOf rdf:resource="#SURFACE"/>
+    <rdfs:comment xml:lang="en">A SURFACE that is in the form of a truncated ring sector, lying between and being bounded by the rays emanating from the centre-point of the ring and having a specified central angle.</rdfs:comment>
+    <rdfs:label xml:lang="en">fan area</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VESSEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to operate on or under the water surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">vessel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#POINT-REFERENCE">
+    <rdfs:subClassOf rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
+    <rdfs:comment xml:lang="en">A RELATIVE-COORDINATE-SYSTEM that uses three specific POINTs to establish its frame of reference.</rdfs:comment>
+    <rdfs:label xml:lang="en">point reference</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-COMPONENT">
+    <rdfs:comment xml:lang="en">A structural element of a specific PLAN-ORDER.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order component</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#STORAGE-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs and MATERIELs or EQUIPMENT-TYPEs and FACILITY-TYPEs that are deemed as having the ability to hold a specific OBJECT-TYPE.</rdfs:comment>
+    <rdfs:label xml:lang="en">storage capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-TASK-STATUS">
+    <rdfs:comment xml:lang="en">The perceived appraisal of the planning and execution progress of a particular ACTION-TASK as determined by the reporting organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">action task status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-ASSESSMENT">
+    <rdfs:comment xml:lang="en">A record of appraisal by a specific ORGANISATION regarding the information that is referenced by a specific instance of CONTEXT.</rdfs:comment>
+    <rdfs:label xml:lang="en">context assessment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TARGET">
+    <rdfs:subClassOf rdf:resource="#ACTION-OBJECTIVE-ITEM"/>
+    <rdfs:comment xml:lang="en">An ACTION-OBJECTIVE-ITEM that is subject to capture, destruction or intelligence operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">target</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is built, installed or established to serve some particular purpose and is identified by the service it provides rather than by its content.</rdfs:comment>
+    <rdfs:label xml:lang="en">facility</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HANDLING-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs and MATERIELs, or FACILITY-TYPEs and EQUIPMENT-TYPEs that are deemed as having the ability to move materiels (raw materials, scrap, semi-finished, and finished) to, through, and from productive processes; in warehouses and storage; and in receiving and shipping areas.</rdfs:comment>
+    <rdfs:label xml:lang="en">handling capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY">
+    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the distance at which an object illuminated by light in the visual spectrum can be detected.</rdfs:comment>
+    <rdfs:label xml:lang="en">visibility</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM">
+    <rdfs:comment xml:lang="en">An individually identified object that has military or civilian significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-LOCATION">
+    <rdfs:comment xml:lang="en">An association of an OBJECT-ITEM with a LOCATION that enables the geographic position of the OBJECT-ITEM to be specified. The operational meaning of geometry may also be specified.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-HEADER-CONTENT">
+    <rdfs:comment xml:lang="en">Introductory subject matter that applies to the entirety of a specific PLAN-ORDER.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order header content</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-OBJECTIVE-ITEM">
+    <rdfs:subClassOf rdf:resource="#ACTION-OBJECTIVE"/>
+    <rdfs:comment xml:lang="en">A battlespace object (FACILITY, FEATURE, MATERIEL, ORGANISATION or PERSON) which is the focus of a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action objective item</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FOREIGN-KEY-ATTRIBUTE">
+    <rdfs:subClassOf rdf:resource="#ATTRIBUTE"/>
+    <rdfs:comment xml:lang="en">An ATTRIBUTE that has been migrated under a RELATIONSHIP from the primary key of the "Parent" ENTITY of that RELATIONSHIP.</rdfs:comment>
+    <rdfs:label xml:lang="en">foreign key attribute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRIVATE-SECTOR-ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE that is a non-government organisation and is constituted for business, commerce, manufacturing, trade, relief or philanthropy.</rdfs:comment>
+    <rdfs:label xml:lang="en">private sector organisation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MEDICAL-FACILITY-STATUS">
+    <rdfs:subClassOf rdf:resource="#FACILITY-STATUS"/>
+    <rdfs:comment xml:lang="en">A FACILITY-STATUS that is a record of condition of a specific medical facility.</rdfs:comment>
+    <rdfs:label xml:lang="en">medical facility status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a specific OPERATIONAL-INFORMATION-GROUP with a specific ORGANISATION for specifying the role of the ORGANISATION with respect to the OPERATIONAL-INFORMATION-GROUP.</rdfs:comment>
+    <rdfs:label xml:lang="en">operational information group organisation association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-REFERENCE-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship between a specific OBJECT-ITEM and a specific REFERENCE.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item reference association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AIRSPACE-CONTROL-MEANS">
+    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE"/>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE that reserves airspace for specific airspace users, restricts the action of airspace users, controls the actions of specific airspace users, and/or requires airspace users to accomplish specific actions.</rdfs:comment>
+    <rdfs:label xml:lang="en">airspace control means</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-GROUP-ACCOUNT-DETAIL">
+    <rdfs:comment xml:lang="en">The total count and condition of a specific group included in a specific OBJECT-ITEM-GROUP-ACCOUNT. The group is defined as a specific PERSON-TYPE that may also be categorised by a specific GROUP-CHARACTERISTIC.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item group account detail</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of an OBJECT-ITEM as a subject with another OBJECT-ITEM as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE">
+    <rdfs:comment xml:lang="en">An individually identified class of objects that has military or civilian significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">object type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINE-STATUS">
+    <rdfs:subClassOf rdf:resource="#MATERIEL-STATUS"/>
+    <rdfs:comment xml:lang="en">A MATERIEL-STATUS that is a record of condition of a specific mine.</rdfs:comment>
+    <rdfs:label xml:lang="en">mine status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONSUMABLE-MATERIEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A MATERIEL-TYPE that is an expendable class of supply.</rdfs:comment>
+    <rdfs:label xml:lang="en">consumable materiel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ALTERNATE-KEY">
+    <rdfs:comment xml:lang="en">A record that points to one or more attributes that collectively serve as a unique identification for an entity that is cited in a specific ENTITY and may be used instead of the PRIMARY-KEY for the same instance of ENTITY.</rdfs:comment>
+    <rdfs:label xml:lang="en">alternate key</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-GROUP">
+    <rdfs:comment xml:lang="en">A MEDICAL-FACILITY-STATUS that specifies the count of deaths and completed surgeries for each of specified groups during the period defined by the effective beginning and ending datetimes stipulated through REPORTING-DATA.</rdfs:comment>
+    <rdfs:label xml:lang="en">medical facility status interval casualty group</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">feature type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WEAPON-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE of any kind used in warfare or combat to attack and overcome an enemy.</rdfs:comment>
+    <rdfs:label xml:lang="en">weapon type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RADIOACTIVE-MATERIEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A CONSUMABLE-MATERIEL-TYPE that is a substance which spontaneously emits radiation, and which may kill, seriously injure, or incapacitate personnel through its physiological effects or causes the deterioration of materiel.</rdfs:comment>
+    <rdfs:label xml:lang="en">radioactive materiel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RUNWAY">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a specifically prepared surface along which aircraft take off and land.</rdfs:comment>
+    <rdfs:label xml:lang="en">runway</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-DETAIL-ITEM">
+    <rdfs:subClassOf rdf:resource="#CANDIDATE-TARGET-DETAIL"/>
+    <rdfs:comment xml:lang="en">An instance of CANDIDATE-TARGET-DETAIL that is an OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target detail item</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-DETAIL-AUTHORISATION">
+    <rdfs:comment xml:lang="en">The designation by competent authority of an instance of CANDIDATE-TARGET-DETAIL as an approved objective in planning battlespace activities.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target detail authorisation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ELECTRONIC-EQUIPMENT-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to use electronic processing to realise its primary function.</rdfs:comment>
+    <rdfs:label xml:lang="en">electronic equipment type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-COMMENT">
+    <rdfs:comment xml:lang="en">A remark that adds information about a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action comment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RELATIVE-POINT">
+    <rdfs:subClassOf rdf:resource="#POINT"/>
+    <rdfs:comment xml:lang="en">A POINT whose position is specified with respect to a specific RELATIVE-COORDINATE-SYSTEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">relative point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL-STATUS">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM-STATUS"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM-STATUS that is a record of condition of a specific MATERIEL.</rdfs:comment>
+    <rdfs:label xml:lang="en">materiel status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ENGINEERING-EQUIPMENT-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to accomplish engineering functions.</rdfs:comment>
+    <rdfs:label xml:lang="en">engineering equipment type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIQUID-BODY-STATUS">
+    <rdfs:subClassOf rdf:resource="#GEOGRAPHIC-FEATURE-STATUS"/>
+    <rdfs:comment xml:lang="en">A GEOGRAPHIC-FEATURE-STATUS that is a record of condition of a specific liquid body.</rdfs:comment>
+    <rdfs:label xml:lang="en">liquid body status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TASK-FORMATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">A MILITARY-ORGANISATION-TYPE that is constituted on a temporary or semi-permanent basis for the purpose of carrying out a specific operation, mission or task.</rdfs:comment>
+    <rdfs:label xml:lang="en">task formation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-DISTRIBUTION">
+    <rdfs:comment xml:lang="en">A record that an ORGANISATION is the intended recipient of a specific PLAN-ORDER.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order distribution</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-OBJECT-ITEM-ASSOCIATION-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived state of a specific CONTEXT-OBJECT-ITEM-ASSOCIATION as determined by the establishing organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">context object item association status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOGRAPHIC-POINT">
+    <rdfs:subClassOf rdf:resource="#ABSOLUTE-POINT"/>
+    <rdfs:comment xml:lang="en">An ABSOLUTE-POINT that has its position specified with respect to the surface of the World Geodetic System 1984 (WGS 84) ellipsoid.</rdfs:comment>
+    <rdfs:label xml:lang="en">geographic point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-STRUCTURE">
+    <rdfs:comment xml:lang="en">The hierarchical configuration of a specific root ORGANISATION where the configuration is specified by reference to a set of associations between instances of OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation structure</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BASE-ATTRIBUTE">
+    <rdfs:subClassOf rdf:resource="#ATTRIBUTE"/>
+    <rdfs:comment xml:lang="en">An ATTRIBUTE that is native to the entity referenced by the specific ENTITY.</rdfs:comment>
+    <rdfs:label xml:lang="en">base attribute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-TASK">
+    <rdfs:subClassOf rdf:resource="#ACTION"/>
+    <rdfs:comment xml:lang="en">An ACTION that is being or has been planned and for which the planning details are known.</rdfs:comment>
+    <rdfs:label xml:lang="en">action task</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK-FREQUENCY">
+    <rdfs:comment xml:lang="en">The specification of a discrete frequency that is used on a specific NETWORK.</rdfs:comment>
+    <rdfs:label xml:lang="en">network frequency</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HOLDING-TRANSFER">
+    <rdfs:comment xml:lang="en">The specification of the OBJECT-TYPE quantity expected to be added to or subtracted from a specific HOLDING.</rdfs:comment>
+    <rdfs:label xml:lang="en">holding transfer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SURFACE">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A two-dimensional LOCATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">surface</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#APRON">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is an area intended for parking, loading, unloading and/or servicing.</rdfs:comment>
+    <rdfs:label xml:lang="en">apron</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AFFILIATION">
+    <rdfs:comment xml:lang="en">A specification of a country, nationality, ethnic group, functional group, exercise group, or religion to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:label xml:lang="en">affiliation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HARBOUR-TYPE">
+    <rdfs:subClassOf rdf:resource="#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a restricted body of water, an anchorage, or other limited coastal water area and its water approaches from which and in which shipping operations are projected or supported.</rdfs:comment>
+    <rdfs:label xml:lang="en">harbour type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a CONTEXT as a subject with another CONTEXT as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">context association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-TYPE">
+    <rdfs:comment xml:lang="en">A record of the perceived classification of a specific OBJECT-ITEM as a specific OBJECT-TYPE.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-REPORTING-DATA-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a CONTEXT as a subject and a REPORTING-DATA as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">context reporting data association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIGHT">
+    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the availability of natural illumination by type and time.</rdfs:comment>
+    <rdfs:label xml:lang="en">light</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-ADDRESS">
+    <rdfs:comment xml:lang="en">An association between an OBJECT-ITEM and an ADDRESS to specify the means by which a FACILITY, ORGANISATION or PERSON can be accessed.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LINE">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A LOCATION that is defined by two or more POINTs connected by one-dimensional line segments in an ordered sequence.</rdfs:comment>
+    <rdfs:label xml:lang="en">line</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BERTH">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a space or length in the water at a harbour allocated to or reserved for a vessel to dock and moor for loading or unloading.</rdfs:comment>
+    <rdfs:label xml:lang="en">berth</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CHEMICAL-MATERIEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A CONSUMABLE-MATERIEL-TYPE that is a substance that is not produced by a living organism, and does not emit radiation but may kill, seriously injure, or incapacitate personnel through its physiological effects or cause the deterioration of materiel.</rdfs:comment>
+    <rdfs:label xml:lang="en">chemical materiel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-HOSTILITY-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived hostility classification of a specific OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item hostility status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-EFFECT-TYPE">
+    <rdfs:subClassOf rdf:resource="#ACTION-EFFECT"/>
+    <rdfs:comment xml:lang="en">An ACTION-EFFECT of a specific ACTION in accomplishing its aim in relation to a specific OBJECT-TYPE.</rdfs:comment>
+    <rdfs:label xml:lang="en">action effect type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOGRAPHIC-FEATURE-TYPE">
+    <rdfs:subClassOf rdf:resource="#FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">A FEATURE-TYPE that describes terrain characteristics to which military significance is attached.</rdfs:comment>
+    <rdfs:label xml:lang="en">geographic feature type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AMMUNITION-TYPE">
+    <rdfs:subClassOf rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A CONSUMABLE-MATERIEL-TYPE that is a complete device charged with explosives, propellants, pyrotechnics, initiating composition, or nuclear, biological, or chemical material for use in military operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">ammunition type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CHEMICAL-BIOLOGICAL-EVENT">
+    <rdfs:subClassOf rdf:resource="#CBRN-EVENT"/>
+    <rdfs:comment xml:lang="en">A CBRN-EVENT involving chemical and/or biological materiel.</rdfs:comment>
+    <rdfs:label xml:lang="en">chemical biological event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CARDINALITY-RELATIONSHIP">
+    <rdfs:subClassOf rdf:resource="#RELATIONSHIP"/>
+    <rdfs:comment xml:lang="en">A one-way RELATIONSHIP that identifies a specific “parent” ENTITY with a specific “child” ENTITY where the child is a dependent ENTITY whose set of key attributes may differ from the set of key attributes of the parent.</rdfs:comment>
+    <rdfs:label xml:lang="en">cardinality relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE-AFFILIATION">
+    <rdfs:comment xml:lang="en">A relationship between a specific OBJECT-TYPE and a specific AFFILIATION that identifies an inherent allegiance.</rdfs:comment>
+    <rdfs:label xml:lang="en">object type affiliation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GROUP-ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE that is non-formal in nature and classes together its members due to mutual or common circumstances.</rdfs:comment>
+    <rdfs:label xml:lang="en">group organisation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-OBJECTIVE-TASK">
+    <rdfs:subClassOf rdf:resource="#ACTION-OBJECTIVE"/>
+    <rdfs:comment xml:lang="en">The objective of the specific ACTION is the operation identified as the specific ACTION-TASK.</rdfs:comment>
+    <rdfs:label xml:lang="en">action objective task</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOGRAPHIC-FEATURE-STATUS">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM-STATUS"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM-STATUS that is a record of condition of a specific GEOGRAPHIC-FEATURE.</rdfs:comment>
+    <rdfs:label xml:lang="en">geographic feature status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK-SERVICE-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived condition of a specific NETWORK-SERVICE as determined by the reporting organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">network service status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CAPABILITY-REFERENCE-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship between a specific CAPABILITY and a specific REFERENCE.</rdfs:comment>
+    <rdfs:label xml:lang="en">capability reference association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-DETAIL">
+    <rdfs:comment xml:lang="en">An element of CANDIDATE-TARGET-LIST.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target detail</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HARBOUR">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a restricted body of water, an anchorage, or other limited coastal water area and its water approaches from which and in which shipping operations are projected or supported.</rdfs:comment>
+    <rdfs:label xml:lang="en">harbour</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a PLAN-ORDER as a subject with another PLAN-ORDER as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRIMARY-KEY-ATTRIBUTE">
+    <rdfs:subClassOf rdf:resource="#ATTRIBUTE"/>
+    <rdfs:comment xml:lang="en">An ATTRIBUTE used to provide the unique identifier(s) of an instance of the ENTITY to which the attributes belong.</rdfs:comment>
+    <rdfs:label xml:lang="en">primary key attribute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BASIN">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is an open area of water, usually artificial and enclosed by dock gates lined with wharves, warehouses and berths to enable vessels to load and unload.</rdfs:comment>
+    <rdfs:label xml:lang="en">basin</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SURFACE-VOLUME">
+    <rdfs:subClassOf rdf:resource="#GEOMETRIC-VOLUME"/>
+    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME that has its horizontal boundaries defined by a specific SURFACE.</rdfs:comment>
+    <rdfs:label xml:lang="en">surface volume</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CREATOR-UPDATE-IDENTIFICATION">
+    <rdfs:comment xml:lang="en">A relationship of an ENTITY and an ATTRIBUTE to identify the physical attributes for JC3IEDM Management.</rdfs:comment>
+    <rdfs:label xml:lang="en">creator update identification</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REPORTING-DATA-ABSOLUTE-TIMING">
+    <rdfs:subClassOf rdf:resource="#REPORTING-DATA"/>
+    <rdfs:comment xml:lang="en">A REPORTING-DATA that specifies effective datetime that is referenced to Universal Time.</rdfs:comment>
+    <rdfs:label xml:lang="en">reporting data absolute timing</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#QUAY">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a solidly constructed platform, usually parallel to the shoreline of navigable water, alongside which a vessel can be docked or berthed and, on which, the vessel can be accessed and cargo can be loaded or unloaded on one side of the vessel only.</rdfs:comment>
+    <rdfs:label xml:lang="en">quay</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LINE-POINT">
+    <rdfs:comment xml:lang="en">A specification of one of an ordered sequence of POINTs used to define the specific LINE.</rdfs:comment>
+    <rdfs:label xml:lang="en">line point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-LOCATION">
+    <rdfs:comment xml:lang="en">An association of an ACTION with a LOCATION that enables the geographic position of the ACTION to be specified.</rdfs:comment>
+    <rdfs:label xml:lang="en">action location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROUTE">
+    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE"/>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE that is the prescribed course to be travelled from a specific point of origin to a specific destination.</rdfs:comment>
+    <rdfs:label xml:lang="en">route</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-OBJECTIVE-ITEM-MARKING">
+    <rdfs:comment xml:lang="en">The technique of indicating the position of an ACTION-OBJECTIVE-ITEM at a given time for the benefit of a using ORGANISATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action objective item marking</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE">
+    <rdfs:subClassOf rdf:resource="#FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">A non-tangible FEATURE-TYPE of military interest that may be represented as a geometric figure and is associated with the conduct of military operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">control feature type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE-ESTABLISHMENT">
+    <rdfs:comment xml:lang="en">The authorisation or other form of specification that associates with the established OBJECT-TYPE numbers of specific OBJECT-TYPEs under specified conditions.</rdfs:comment>
+    <rdfs:label xml:lang="en">object type establishment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MAINTENANCE-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs, and PERSON-TYPEs that are deemed as having the ability to provide a range of activities required to restore or maintain operational usage.</rdfs:comment>
+    <rdfs:label xml:lang="en">maintenance capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT">
+    <rdfs:comment xml:lang="en">A collection of information that provides in its entirety the circumstances, conditions, environment, or perspective for a situation.</rdfs:comment>
+    <rdfs:label xml:lang="en">context</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is an administrative or functional structure.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BIOLOGICAL-MATERIEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A CONSUMABLE-MATERIEL-TYPE that is either a microorganism that causes disease in man, plants, or animals or causes the deterioration of materiel; or a toxin, produced by an animal, plant, or microorganism, which may kill, seriously injure, or incapacitate personnel through its physiological effects.</rdfs:comment>
+    <rdfs:label xml:lang="en">biological materiel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-EVENT">
+    <rdfs:subClassOf rdf:resource="#ACTION"/>
+    <rdfs:comment xml:lang="en">An ACTION that is an incident, phenomenon, or occasion of military significance which has occurred or is occurring but for which planning is not known.</rdfs:comment>
+    <rdfs:label xml:lang="en">action event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SLIPWAY">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that provides a sloping surface or inclined structure leading down to the water.</rdfs:comment>
+    <rdfs:label xml:lang="en">slipway</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-COMPONENT-CONTENT">
+    <rdfs:comment xml:lang="en">The aggregation of substantive subject matter for a specific PLAN-ORDER-COMPONENT.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order component content</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#POINT">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A zero dimensional LOCATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VEHICLE-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to operate on land routes (other than rail) with a primary role of transporting personnel, equipment or supplies.</rdfs:comment>
+    <rdfs:label xml:lang="en">vehicle type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is a human being to whom military or civilian significance is attached.</rdfs:comment>
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RADIOACTIVE-EVENT">
+    <rdfs:subClassOf rdf:resource="#CBRN-EVENT"/>
+    <rdfs:comment xml:lang="en">A CBRN-EVENT involving radioactive materiel(s).</rdfs:comment>
+    <rdfs:label xml:lang="en">radioactive event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents equipment, apparatus or supplies of military interest without distinction to its application for administrative or combat purposes.</rdfs:comment>
+    <rdfs:label xml:lang="en">materiel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-ORDER-DISTRIBUTION-ACKNOWLEDGEMENT">
+    <rdfs:comment xml:lang="en">A record that the organisation identified in a specific PLAN-ORDER-DISTRIBUTION has acknowledged the receipt of a specific PLAN-ORDER.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order distribution acknowledgement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SPHERE-VOLUME">
+    <rdfs:subClassOf rdf:resource="#GEOMETRIC-VOLUME"/>
+    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME that has its horizontal boundaries defined by the spherical surface determined by the radius and the specified POINT.</rdfs:comment>
+    <rdfs:label xml:lang="en">sphere volume</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ALTERNATE-KEY-ATTRIBUTE">
+    <rdfs:comment xml:lang="en">The association of a specific ALTERNATE-KEY with a specific ATTRIBUTE that identifies the participation of the ATTRIBUTE as part of ALTERNATE-KEY.</rdfs:comment>
+    <rdfs:label xml:lang="en">alternate key attribute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MISCELLANEOUS-EQUIPMENT-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE whose designed function does not fit in any other defined category.</rdfs:comment>
+    <rdfs:label xml:lang="en">miscellaneous equipment type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-ACTION-TASK-RULE-OF-ENGAGEMENT-STATUS">
+    <rdfs:comment xml:lang="en">The status of the relationship between a specific ORGANISATION and a specific ACTION-TASK-RULE-OF-ENGAGEMENT with respect to a request for application, a request for cancellation, or an authorisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation action task rule of engagement status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TARGET-PERSONNEL-PROTECTION">
+    <rdfs:comment xml:lang="en">An assessment of the general protective posture of personnel with respect to first and second volleys for the specific TARGET.</rdfs:comment>
+    <rdfs:label xml:lang="en">target personnel protection</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-STATUS">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM-STATUS"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM-STATUS that is a record of condition of a specific FACILITY.</rdfs:comment>
+    <rdfs:label xml:lang="en">facility status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-STATUS">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM-STATUS"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM-STATUS that is a record of condition of a specific ORGANISATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">organisation status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AIRFIELD-TYPE">
+    <rdfs:subClassOf rdf:resource="#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a class of an area prepared for the accommodation (including any buildings, installations, or equipment) of landing and take off of aircraft.</rdfs:comment>
+    <rdfs:label xml:lang="en">airfield type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORBIT-AREA">
+    <rdfs:subClassOf rdf:resource="#SURFACE"/>
+    <rdfs:comment xml:lang="en">A SURFACE that is (a) an open rectangular section defined by its width and the distance between the two specific POINTs, (b) is closed by two half-circles with radii equal to half the width, and is positioned left, centred, or right with respect to the line formed by the defining points.</rdfs:comment>
+    <rdfs:label xml:lang="en">orbit area</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-DETAIL-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a CANDIDATE-TARGET-DETAIL as a subject with another CANDIDATE-TARGET-DETAIL as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target detail association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-AIRCRAFT-EMPLOYMENT">
+    <rdfs:subClassOf rdf:resource="#ACTION-RESOURCE-EMPLOYMENT"/>
+    <rdfs:comment xml:lang="en">The procedure that guides the use of an ACTION-RESOURCE that is capable of atmospheric flight.</rdfs:comment>
+    <rdfs:label xml:lang="en">action aircraft employment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OPERATIONAL-INFORMATION-GROUP-PLAN-ORDER-CONTENT">
+    <rdfs:comment xml:lang="en">The identification of a specific PLAN-ORDER that is included as content in a specific OPERATIONAL-INFORMATION-GROUP.</rdfs:comment>
+    <rdfs:label xml:lang="en">operational information group plan order content</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE">
+    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies humidity, pressure, and temperature characteristics of Earth's atmosphere.</rdfs:comment>
+    <rdfs:label xml:lang="en">atmosphere</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PLAN-STATUS">
+    <rdfs:comment xml:lang="en">A record of the condition of a specific PLAN.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-EVENT-STATUS">
+    <rdfs:comment xml:lang="en">The perceived appraisal of the actual progress of a specific ACTION-EVENT as determined by the reporting organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">action event status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#JETTY">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a platform that may be fixed or floating extending from a shore, normally attached to a wharf or the shore, and which allows access to a vessel lying alongside, used to secure, protect and provide landing and docking for vessels.</rdfs:comment>
+    <rdfs:label xml:lang="en">jetty</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those objects and types of objects that are deemed as having the ability, the training and the equipment to perform an operation.</rdfs:comment>
+    <rdfs:label xml:lang="en">operational capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NUCLEAR-WEAPON-EVENT">
+    <rdfs:subClassOf rdf:resource="#NUCLEAR-EVENT"/>
+    <rdfs:comment xml:lang="en">A NUCLEAR-EVENT that involves the detonation of a nuclear device.</rdfs:comment>
+    <rdfs:label xml:lang="en">nuclear weapon event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-OBJECTIVE-TYPE-IMAGERY-PRODUCT">
+    <rdfs:subClassOf rdf:resource="#ACTION-OBJECTIVE-TYPE"/>
+    <rdfs:comment xml:lang="en">The intended characteristics of a specific ACTION-OBJECTIVE-TYPE-IMAGERY-PRODUCT that is an instance of MATERIEL-TYPE.</rdfs:comment>
+    <rdfs:label xml:lang="en">action objective type imagery product</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that provides bearer services for communication and information services and is composed of one or more links and nodes.</rdfs:comment>
+    <rdfs:label xml:lang="en">network</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AFFILIATION-RELIGION">
+    <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
+    <rdfs:comment xml:lang="en">A specification of a religion to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:label xml:lang="en">affiliation religion</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ICING">
+    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the accumulation of frozen water on stationary or moving surfaces.</rdfs:comment>
+    <rdfs:label xml:lang="en">icing</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-REQUIRED-CAPABILITY">
+    <rdfs:comment xml:lang="en">The specific military quality, specified as a CAPABILITY, required to meet an agreed operational need, specified as an ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action required capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#INSTRUMENT-LANDING-SYSTEM">
+    <rdfs:subClassOf rdf:resource="#MATERIEL"/>
+    <rdfs:comment xml:lang="en">A MATERIEL that provides aircraft with horizontal and vertical guidance just before landing and during landing, and at certain fixed points, indicates the distance to the reference point of landing.</rdfs:comment>
+    <rdfs:label xml:lang="en">instrument landing system</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#COMPONENT-TEXT-CONTENT">
+    <rdfs:comment xml:lang="en">A textual statement of substantive subject matter.</rdfs:comment>
+    <rdfs:label xml:lang="en">component text content</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-REFERENCE">
+    <rdfs:subClassOf rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
+    <rdfs:comment xml:lang="en">A RELATIVE-COORDINATE-SYSTEM that has its frame of reference defined by using the position and orientation of a specific OBJECT-ITEM at a given point in time.</rdfs:comment>
+    <rdfs:label xml:lang="en">object reference</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REFERENCE">
+    <rdfs:comment xml:lang="en">Identification of a record of information.</rdfs:comment>
+    <rdfs:label xml:lang="en">reference</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SUPPORT-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs and ORGANISATIONs or FACILITY-TYPEs, EQUIPMENT-TYPEs and ORGANISATION-TYPEs that are deemed as having the ability to provide supplies or services.</rdfs:comment>
+    <rdfs:label xml:lang="en">support capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-LIST">
+    <rdfs:comment xml:lang="en">A list of selected battlespace objects or types that have potential value for destruction or exploitation, nominated by competent authority for consideration in planning battlespace activities.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target list</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROUTE-SEGMENT">
+    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE"/>
+    <rdfs:comment xml:lang="en">A portion of a route usually without an intermediate stop, as defined by two consecutive significant points.</rdfs:comment>
+    <rdfs:label xml:lang="en">route segment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINEFIELD-MARITIME">
+    <rdfs:subClassOf rdf:resource="#MINEFIELD"/>
+    <rdfs:comment xml:lang="en">A MINEFIELD that is an area or volume of water containing mines.</rdfs:comment>
+    <rdfs:label xml:lang="en">minefield maritime</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RUNWAY-APPROACH-DIRECTION-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a subject RUNWAY with an object APPROACH-DIRECTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">runway approach direction association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MOBILITY-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs, and PERSON-TYPEs that are deemed as having the nominal ability to move in space, air, on water, under water, or over a specific type of terrain.</rdfs:comment>
+    <rdfs:label xml:lang="en">mobility capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents human beings about whom information is to be held.</rdfs:comment>
+    <rdfs:label xml:lang="en">person type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NON-KEY-ATTRIBUTE">
+    <rdfs:subClassOf rdf:resource="#ATTRIBUTE"/>
+    <rdfs:comment xml:lang="en">An ATTRIBUTE used to provide a descriptive data element of instances of the ENTITY to which the ATTRIBUTE belongs and that is not a member of the primary key of that ENTITY.</rdfs:comment>
+    <rdfs:label xml:lang="en">non key attribute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND">
+    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the velocity and directional characteristics of atmospheric movement.</rdfs:comment>
+    <rdfs:label xml:lang="en">wind</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD">
+    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a path or way with a specially prepared surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">road</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-LIST-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of a CANDIDATE-TARGET-LIST as a subject with another CANDIDATE-TARGET-LIST as an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target list association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CANDIDATE-TARGET-LIST-AUTHORISATION">
+    <rdfs:comment xml:lang="en">The designation by competent authority of a CANDIDATE-TARGET-LIST as an approved source of objectives in planning battlespace activities.</rdfs:comment>
+    <rdfs:label xml:lang="en">candidate target list authorisation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM-ALIAS">
+    <rdfs:comment xml:lang="en">An additional name for an OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">object item alias</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT">
+    <rdfs:subClassOf rdf:resource="#ACTION-RESOURCE-EMPLOYMENT"/>
+    <rdfs:comment xml:lang="en">The technique used by an ACTION-RESOURCE for Electronic Warfare by electronic or mechanical means.</rdfs:comment>
+    <rdfs:label xml:lang="en">action electronic warfare employment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-EFFECT-ITEM">
+    <rdfs:subClassOf rdf:resource="#ACTION-EFFECT"/>
+    <rdfs:comment xml:lang="en">An ACTION-EFFECT of a specific ACTION in accomplishing its aim in relation to a specific OBJECT-ITEM.</rdfs:comment>
+    <rdfs:label xml:lang="en">action effect item</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-RESOURCE-ITEM">
+    <rdfs:subClassOf rdf:resource="#ACTION-RESOURCE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM (FACILITY, FEATURE, MATERIEL, ORGANISATION, or PERSON) to be used, excluded from use, being used, or having been used, in conducting a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action resource item</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL">
+    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM"/>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is equipment, apparatus or supplies of military interest without distinction as to its application for administrative or combat purposes.</rdfs:comment>
+    <rdfs:label xml:lang="en">materiel</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MILITARY-ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#GOVERNMENT-ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">A GOVERNMENT-ORGANISATION-TYPE that is officially sanctioned and is trained and equipped to exert force.</rdfs:comment>
+    <rdfs:label xml:lang="en">military organisation type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-ASSOCIATION-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived state of a specific CONTEXT-ASSOCIATION as determined by the establishing organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">context association status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AIRCRAFT-TYPE">
+    <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to fly.</rdfs:comment>
+    <rdfs:label xml:lang="en">aircraft type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SECURITY-CLASSIFICATION">
+    <rdfs:comment xml:lang="en">The security classification applicable to an information resource within the domain of classified security information.</rdfs:comment>
+    <rdfs:label xml:lang="en">security classification</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RULE-OF-ENGAGEMENT">
+    <rdfs:comment xml:lang="en">A specification of mandatory guidance for the way a given activity is to be executed.</rdfs:comment>
+    <rdfs:label xml:lang="en">rule of engagement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SOLID-SURFACE-STATUS">
+    <rdfs:subClassOf rdf:resource="#GEOGRAPHIC-FEATURE-STATUS"/>
+    <rdfs:comment xml:lang="en">A GEOGRAPHIC-FEATURE-STATUS that is a record of condition of a specific solid surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">solid surface status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-TYPE">
+    <rdfs:comment xml:lang="en">A MEDICAL-FACILITY-STATUS that specifies the count of casualty arrivals and admissions in each of specified groups according to specified medical classification during the period defined by the effective beginning and ending datetimes stipulated through REPORTING-DATA.</rdfs:comment>
+    <rdfs:label xml:lang="en">medical facility status interval casualty type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-FUNCTIONAL-ASSOCIATION">
+    <rdfs:comment xml:lang="en">A relationship of an ACTION as a subject with another ACTION as an object in order to specify functional dependence.</rdfs:comment>
+    <rdfs:label xml:lang="en">action functional association</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-EFFECT">
+    <rdfs:comment xml:lang="en">A perceived effectiveness of a specific ACTION against a specific battlespace object or its class.</rdfs:comment>
+    <rdfs:label xml:lang="en">action effect</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TRACK-AREA">
+    <rdfs:subClassOf rdf:resource="#SURFACE"/>
+    <rdfs:comment xml:lang="en">A SURFACE that is a rectangular section with its length defined by the two specific POINTs and its width by the sum of the widths to the left and right of the connecting line between the two points.</rdfs:comment>
+    <rdfs:label xml:lang="en">track area</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CARTESIAN-POINT">
+    <rdfs:subClassOf rdf:resource="#ABSOLUTE-POINT"/>
+    <rdfs:comment xml:lang="en">An ABSOLUTE-POINT that has its position specified in a three-dimensional Earth-centred Cartesian system.</rdfs:comment>
+    <rdfs:label xml:lang="en">cartesian point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that is intended to be built, installed or established to serve some particular purpose and is identified by the service it is intended to provide rather than by its content.</rdfs:comment>
+    <rdfs:label xml:lang="en">facility type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CAPABILITY">
+    <rdfs:comment xml:lang="en">The potential ability to do work, perform a function or mission, achieve an objective, or provide a service.</rdfs:comment>
+    <rdfs:label xml:lang="en">capability</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE-ESTABLISHMENT-OBJECT-TYPE-DETAIL">
+    <rdfs:comment xml:lang="en">The number of a specific OBJECT-TYPE that is authorised by a specific OBJECT-TYPE-ESTABLISHMENT.</rdfs:comment>
+    <rdfs:label xml:lang="en">object type establishment object type detail</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CLOUD-COVER">
+    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the characteristics of clouds above Earth's surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">cloud cover</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTEXT-ELEMENT-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived state of a specific CONTEXT-ELEMENT as determined by the establishing organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">context element status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#VESSEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A vessel principally designed to operate on the water surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">surface vessel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AFFILIATION-ETHNIC-GROUP">
+    <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
+    <rdfs:comment xml:lang="en">A specification of an ethnic group to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:label xml:lang="en">affiliation ethnic group</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ABSOLUTE-POINT">
+    <rdfs:subClassOf rdf:resource="#POINT"/>
+    <rdfs:comment xml:lang="en">A POINT in a geodetic system.</rdfs:comment>
+    <rdfs:label xml:lang="en">absolute point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OPERATIONAL-INFORMATION-GROUP">
+    <rdfs:subClassOf rdf:resource="#CONTEXT"/>
+    <rdfs:comment xml:lang="en">A CONTEXT that encompasses a set of pre-defined operational information.</rdfs:comment>
+    <rdfs:label xml:lang="en">operational information group</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINEFIELD-MARITIME-SUSTAINED-THREAT-MEASURE-OF-EFFECTIVENESS">
+    <rdfs:comment xml:lang="en">A measure of effectiveness for a specific MINEFIELD-MARITIME in terms of probability of mine function against a transit vessel over a given period of time.</rdfs:comment>
+    <rdfs:label xml:lang="en">minefield maritime sustained threat measure of effectiveness</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BRIDGE-TYPE">
+    <rdfs:subClassOf rdf:resource="#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a class of structures (including overpasses and viaducts), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
+    <rdfs:label xml:lang="en">bridge type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REQUEST-ANSWER-ELEMENT">
+    <rdfs:comment xml:lang="en">A relationship between a specific REQUEST-ANSWER and a specific REPORTING-DATA that provides linkage to amplifying information for a REQUEST-ANSWER.</rdfs:comment>
+    <rdfs:label xml:lang="en">request answer element</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTROL-FEATURE">
+    <rdfs:subClassOf rdf:resource="#FEATURE"/>
+    <rdfs:comment xml:lang="en">A non-tangible FEATURE of military interest that is administratively specified, may be represented by a geometric figure, and is associated with the conduct of military operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">control feature</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#POLYGON-AREA">
+    <rdfs:subClassOf rdf:resource="#SURFACE"/>
+    <rdfs:comment xml:lang="en">A SURFACE that has its boundaries defined by a specific LINE.</rdfs:comment>
+    <rdfs:label xml:lang="en">polygon area</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AFFILIATION-GEOPOLITICAL">
+    <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
+    <rdfs:comment xml:lang="en">A specification of a country or political entity to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:label xml:lang="en">affiliation geopolitical</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RELATIONSHIP">
+    <rdfs:comment xml:lang="en">The association of one instance of ENTITY (the "Parent" ENTITY) with another (the "Child" ENTITY) that describes the degree and nature of the association.</rdfs:comment>
+    <rdfs:label xml:lang="en">relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VERTICAL-DISTANCE">
+    <rdfs:comment xml:lang="en">A specification of the altitude or height of a point or a level as measured with respect to a specified reference datum in the direction normal to the plane that is tangent to the WGS84 ellipsoid of revolution.</rdfs:comment>
+    <rdfs:label xml:lang="en">vertical distance</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION-STATUS">
+    <rdfs:comment xml:lang="en">A record of the perceived state of a specific OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION-STATUS as determined by the establishing organisation.</rdfs:comment>
+    <rdfs:label xml:lang="en">operational information group organisation association status</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINEFIELD-LAND">
+    <rdfs:subClassOf rdf:resource="#MINEFIELD"/>
+    <rdfs:comment xml:lang="en">A MINEFIELD that is an area of land containing mines.</rdfs:comment>
+    <rdfs:label xml:lang="en">minefield land</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LOCATION">
+    <rdfs:comment xml:lang="en">A specification of position and geometry with respect to a specified horizontal frame of reference and a vertical distance measured from a specified datum.</rdfs:comment>
+    <rdfs:label xml:lang="en">location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-RESOURCE-TYPE">
+    <rdfs:subClassOf rdf:resource="#ACTION-RESOURCE"/>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE (FACILITY-TYPE, FEATURE-TYPE, MATERIEL-TYPE, ORGANISATION-TYPE, or PERSON-TYPE) to be used, excluded from use, being used, or having been used, in conducting a specific ACTION.</rdfs:comment>
+    <rdfs:label xml:lang="en">action resource type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MEDICAL-FACILITY-STATUS-INTERVAL-EVACUATION">
+    <rdfs:comment xml:lang="en">A MEDICAL-FACILITY-STATUS that specifies the count of casualties evacuated in each of specified groups according to the intended destination during the period defined by the effective beginning and ending datetimes stipulated through REPORTING-DATA.</rdfs:comment>
+    <rdfs:label xml:lang="en">medical facility status interval evacuation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CIVILIAN-POST-TYPE">
+    <rdfs:subClassOf rdf:resource="#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE with a set of duties that are intended to be fulfilled by one person in private sector and non-military government organisations.</rdfs:comment>
+    <rdfs:label xml:lang="en">civilian post type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
