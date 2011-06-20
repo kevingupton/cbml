@@ -1,0 +1,45 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_LOCATION.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_LOCATION.owl#" > 
+  <rdf:Description rdf:about="#SURFACE">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A two-dimensional LOCATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">surface</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LOCATION">
+    <rdfs:comment xml:lang="en">A specification of position and geometry with respect to a specified horizontal frame of reference and a vertical distance measured from a specified datum.</rdfs:comment>
+    <rdfs:label xml:lang="en">location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#POINT">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A zero dimensional LOCATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">point</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#location-category-code">
+    <rdfs:domain rdf:resource="#LOCATION"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LINE">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A LOCATION that is defined by two or more POINTs connected by one-dimensional line segments in an ordered sequence.</rdfs:comment>
+    <rdfs:label xml:lang="en">line</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOMETRIC-VOLUME">
+    <rdfs:subClassOf rdf:resource="#LOCATION"/>
+    <rdfs:comment xml:lang="en">A specific LOCATION that is a three-dimensional bounded space.</rdfs:comment>
+    <rdfs:label xml:lang="en">geometric volume</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#physical_model_only">
+    <rdfs:domain rdf:resource="#LOCATION"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

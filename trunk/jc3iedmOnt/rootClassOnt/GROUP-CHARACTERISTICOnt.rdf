@@ -1,0 +1,41 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_GROUP-CHARACTERISTIC.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_GROUP-CHARACTERISTIC.owl#" > 
+  <rdf:Description rdf:about="#group-characteristic-malady-code">
+    <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#group-characteristic-language-code">
+    <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#physical_model_only">
+    <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GROUP-CHARACTERISTIC">
+    <rdfs:comment xml:lang="en">A reference to a set of characteristics that may be used for identifying a distinct collection of objects.</rdfs:comment>
+    <rdfs:label xml:lang="en">group characteristic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#group-characteristic-age-group-code">
+    <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#group-characteristic-gender-code">
+    <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#group-characteristic-malady-transmissibility-indicator-code">
+    <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#group-characteristic-triage-code">
+    <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>
