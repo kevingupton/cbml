@@ -241,7 +241,7 @@
   <rdf:Description rdf:about="#FIRE-CAPABILITY-Air_to_ground">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FIRE-CAPABILITY"/>
     <rdfs:label xml:lang="en">air to ground</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from aircraft at targets on the ground.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to perform air to ground operations.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT-Deceive,_false_activity">
@@ -475,7 +475,7 @@
   <rdf:Description rdf:about="#ORGANISATION-TYPE-Headquarters">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ORGANISATION-TYPE"/>
     <rdfs:label xml:lang="en">headquarters</rdfs:label>
-    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE is a headquarters.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An EXECUTIVE-MILITARY-ORGANISATION-TYPE that performs the management functions of an international, national, strategic or service headquarters.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-FUNCTIONAL-ASSOCIATION-Is_a_modification_of">
@@ -516,12 +516,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#UNIT-TYPE"/>
     <rdfs:label xml:lang="en">supply</rdfs:label>
     <rdfs:comment xml:lang="en">An EXECUTIVE-MILITARY-ORGANISATION-TYPE that provides management of supply services.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#CBRN-EVENT-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CBRN-EVENT"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Electronic_installation,_radar_dome">
@@ -789,12 +783,6 @@
     <rdfs:comment xml:lang="en">Craft 45 metres or less employed as a target in support of gunnery or missile firing training.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#VISIBILITY-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#VISIBILITY"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#HARBOUR-TYPE">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">harbour type</rdfs:label>
@@ -900,12 +888,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#GROUP-CHARACTERISTIC"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#NUCLEAR-EVENT-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#NUCLEAR-EVENT"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#NETWORK-SERVICE-STATUS">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1108,12 +1090,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">supply point</rdfs:label>
     <rdfs:comment xml:lang="en">A facility where supply services are provided.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#AIRCRAFT-TYPE-No">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AIRCRAFT-TYPE"/>
-    <rdfs:label xml:lang="en">no</rdfs:label>
-    <rdfs:comment xml:lang="en">An answer in the negative.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MILITARY-OBSTACLE-TYPE-Anti-tank_ditch">
@@ -1352,12 +1328,6 @@
     <rdfs:comment xml:lang="en">Fishing vessel equipped to engage in whale hunting.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ELECTRONIC-EQUIPMENT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ELECTRONIC-EQUIPMENT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#APPROACH-DIRECTION-True">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#APPROACH-DIRECTION"/>
     <rdfs:label xml:lang="en">true</rdfs:label>
@@ -1517,7 +1487,7 @@
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Maintenance">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">maintenance</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability to provide supply and repair services to keep a force in condition to carry out its mission.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A vehicle which, as its primary function, is designed to provide equipment support facilities in or out of the battlespace.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Training_craft,_sail">
@@ -1714,7 +1684,7 @@
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Amphibious">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">amphibious</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability of a device to operate both on land and in water.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to conduct an operation launched from the sea by military forces against a hostile or potentially hostile shore.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Refuel_on_the_move_point">
@@ -1884,16 +1854,16 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#CONTEXT-REPORTING-DATA-ASSOCIATION"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#OBJECT-ITEM-OBJECT-TYPE-ESTABLISHMENT">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">object item object type establishment</rdfs:label>
-    <rdfs:comment xml:lang="en">A specification of an OBJECT-TYPE-ESTABLISHMENT that is authorised for a specific OBJECT-ITEM.</rdfs:comment>
-  </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Release_other_than_attack_(ROTA)_isolation_and_hazard_area">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
     <rdfs:label xml:lang="en">release other than attack (rota) isolation and hazard area</rdfs:label>
     <rdfs:comment xml:lang="en">The predicted or confirmed contour of the toxic industrial material isolation and hazard area.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#OBJECT-ITEM-OBJECT-TYPE-ESTABLISHMENT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">object item object type establishment</rdfs:label>
+    <rdfs:comment xml:lang="en">A specification of an OBJECT-TYPE-ESTABLISHMENT that is authorised for a specific OBJECT-ITEM.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Disengaging">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
@@ -2056,7 +2026,7 @@
   <rdf:Description rdf:about="#MOBILITY-CAPABILITY-Amphibious">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MOBILITY-CAPABILITY"/>
     <rdfs:label xml:lang="en">amphibious</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability of a device to operate both on land and in water.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to conduct an operation launched from the sea by military forces against a hostile or potentially hostile shore.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Combat_air_patrol_area">
@@ -2649,12 +2619,6 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#AIRCRAFT-TYPE"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#RADIOACTIVE-MATERIEL-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#RADIOACTIVE-MATERIEL-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Corvette,_coast_guard">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
     <rdfs:label xml:lang="en">corvette, coast guard</rdfs:label>
@@ -2664,7 +2628,7 @@
   <rdf:Description rdf:about="#CONTEXT-ASSOCIATION-Supplements">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTEXT-ASSOCIATION"/>
     <rdfs:label xml:lang="en">supplements</rdfs:label>
-    <rdfs:comment xml:lang="en">The artefact in the subject REFERENCE supplements the artefact in the object REFERENCE.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The subject CONTEXT provides amplifying information with respect to the object CONTEXT.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Merchant_ship,_bulk_carrier">
@@ -2906,25 +2870,19 @@
     <rdfs:comment xml:lang="en">The artefact cited in the specific REFERENCE records historical information.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#chemical-biological-event-atmospheric-particle-concentration-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedmBase.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
+  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#mobility-capability-category-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#MOBILITY-CAPABILITY"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#chemical-biological-event-atmospheric-particle-concentration-quantity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedmBase.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#materiel-serial-number-identification-text">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#MATERIEL"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PERSON-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#PERSON-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#TARGET-PERSONNEL-PROTECTION-Prone">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#TARGET-PERSONNEL-PROTECTION"/>
@@ -3060,16 +3018,16 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#BASIN"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY-TYPE-Logistics_release_point">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
-    <rdfs:label xml:lang="en">logistics release point</rdfs:label>
-    <rdfs:comment xml:lang="en">The facility along the supply route where the supported unit meets the supporting unit to transfer supplies.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#TASK-FORMATION-TYPE-Land_formation">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#TASK-FORMATION-TYPE"/>
     <rdfs:label xml:lang="en">land formation</rdfs:label>
     <rdfs:comment xml:lang="en">An ordered arrangement of troops and/or vehicles for a specific purpose.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE-Logistics_release_point">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
+    <rdfs:label xml:lang="en">logistics release point</rdfs:label>
+    <rdfs:comment xml:lang="en">The facility along the supply route where the supported unit meets the supporting unit to transfer supplies.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#relative-point-x-precision-code">
@@ -3210,22 +3168,16 @@
     <rdfs:comment xml:lang="en">The subject OBJECT-ITEM encompasses the whole of object OBJECT-ITEM.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#PLAN-ORDER">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">plan order</rdfs:label>
-    <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
-  </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Personnel_barrier">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">personnel barrier</rdfs:label>
     <rdfs:comment xml:lang="en">A coordinated series of obstacles designed or employed to detect, channel, direct, restrict, delay or stop the movement of personnel.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#CHEMICAL-MATERIEL-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CHEMICAL-MATERIEL-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+  <rdf:Description rdf:about="jc3iedmBase.owl#PLAN-ORDER">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">plan order</rdfs:label>
+    <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#operational-information-group-plan-order-content-category-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -3834,16 +3786,16 @@
     <rdfs:comment xml:lang="en">Moving onto an objective, key terrain, or other manmade or natural terrain area without opposition and controlling that entire area.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#air-route-segment-description-text">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedmBase.owl#AIR-ROUTE-SEGMENT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Cruiser,_gun">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
     <rdfs:label xml:lang="en">cruiser, gun</rdfs:label>
     <rdfs:comment xml:lang="en">Cruiser with guns 15 cm (6 inch) or larger as its main armament and with no missile systems.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#air-route-segment-description-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedmBase.owl#AIR-ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Assault_craft,_missile_equipped">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
@@ -3860,7 +3812,7 @@
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Scout">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">scout</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability to move out ahead of the main force in order to reconnoitre the position or movements of the enemy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A MILITARY-POST-TYPE that is identified as one sent out ahead of the main force in order to reconnoitre the position and movement of the enemy.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ENGINEERING-EQUIPMENT-TYPE-Power_shovel">
@@ -3899,7 +3851,7 @@
   <rdf:Description rdf:about="#ACTION-TASK-Plan">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-TASK"/>
     <rdfs:label xml:lang="en">plan</rdfs:label>
-    <rdfs:comment xml:lang="en">An ACTION-TASK that represents a course of action that is foreseen or anticipated.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An ACTION-TASK-STATUS indicating that the ACTION-TASK is a plan.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Cut">
@@ -4278,12 +4230,6 @@
     <rdfs:comment xml:lang="en">A MILITARY-POST-TYPE that is identified as a physician specialising in Anaesthetics.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#GEOGRAPHIC-FEATURE-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#GEOGRAPHIC-FEATURE-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#atmosphere-inversion-layer-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#ATMOSPHERE"/>
@@ -4648,12 +4594,6 @@
     <rdfs:comment xml:lang="en">The release of a biological agent or toxin into the environment intentionally or accidentally but not for the intended purpose of conducting an attack.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#OBJECT-ITEM-ASSOCIATION-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OBJECT-ITEM-ASSOCIATION"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#MISCELLANEOUS-EQUIPMENT-TYPE-Beacon,_light">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MISCELLANEOUS-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">beacon, light</rdfs:label>
@@ -4709,7 +4649,7 @@
   <rdf:Description rdf:about="#ACTION-EVENT-Electronic_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
     <rdfs:label xml:lang="en">electronic warfare</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability involving the use of electromagnetic energy to determine, exploit, reduce, or prevent hostile use of the electromagnetic spectrum and action to retain its effective use by friendly forces.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An equipment used for military action involving the use of electromagnetic energy to determine, exploit, reduce, or prevent hostile use of the electromagnetic spectrum and action to retain its effective use by friendly forces.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Reform_point">
@@ -4786,16 +4726,16 @@
     <rdfs:comment xml:lang="en">The subject OBJECT-ITEM depends on the object OBJECT-ITEM for its logistics or other assistance in the course of its functioning.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#action-resource-employment-category-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedmBase.owl#ACTION-RESOURCE-EMPLOYMENT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#MISCELLANEOUS-EQUIPMENT-TYPE-Machinery">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MISCELLANEOUS-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">machinery</rdfs:label>
     <rdfs:comment xml:lang="en">Machines or machine parts in general.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#action-resource-employment-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedmBase.owl#ACTION-RESOURCE-EMPLOYMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="#PERSON-TYPE-Paramilitary">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#PERSON-TYPE"/>
@@ -5011,16 +4951,16 @@
     <rdfs:comment xml:lang="en">Seizing and detaining of a person under authority of the law.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#GROUP-ORGANISATION-TYPE-Journalist">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#GROUP-ORGANISATION-TYPE"/>
-    <rdfs:label xml:lang="en">journalist</rdfs:label>
-    <rdfs:comment xml:lang="en">A GROUP-ORGANISATION-TYPE that comprises persons that earn their living by editing or writing for a public journal.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Auxiliary,_miscellaneous">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
     <rdfs:label xml:lang="en">auxiliary, miscellaneous</rdfs:label>
     <rdfs:comment xml:lang="en">Ship 40 metres or more employed in general or multi-purpose functions of support, training, R&amp;D, or a testing nature.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GROUP-ORGANISATION-TYPE-Journalist">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#GROUP-ORGANISATION-TYPE"/>
+    <rdfs:label xml:lang="en">journalist</rdfs:label>
+    <rdfs:comment xml:lang="en">A GROUP-ORGANISATION-TYPE that comprises persons that earn their living by editing or writing for a public journal.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Seaplane">
@@ -5072,7 +5012,7 @@
   <rdf:Description rdf:about="#ACTION-EVENT-Breaching">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
     <rdfs:label xml:lang="en">breaching</rdfs:label>
-    <rdfs:comment xml:lang="en">Breaking through or securing a passage through an enemy defence, obstacle, minefield, or fortification.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The action or process of making a gap in a wall or barrier.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Training_craft">
@@ -5122,16 +5062,10 @@
     <rdfs:comment xml:lang="en">Establishing a network of communications and non-communications emitters to simulate a unit or organisation. The creation of fictitious friendly units with actual or specially designed equipment.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#AIRFIELD-STATUS-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AIRFIELD-STATUS"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Railway">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">railway</rdfs:label>
-    <rdfs:comment xml:lang="en">A rail or set of parallel rails on which a train or tram runs.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to provide rail services.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Burned_out_object">
@@ -5381,7 +5315,7 @@
   <rdf:Description rdf:about="#FACILITY-TYPE-Railway">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">railway</rdfs:label>
-    <rdfs:comment xml:lang="en">A rail or set of parallel rails on which a train or tram runs.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to provide rail services.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MILITARY-OBSTACLE-TYPE-Barrier,_vehicle">
@@ -5511,16 +5445,16 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#ACTION-AIRCRAFT-EMPLOYMENT"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Hovercraft,_ferry">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
-    <rdfs:label xml:lang="en">hovercraft, ferry</rdfs:label>
-    <rdfs:comment xml:lang="en">Hovercraft fitted to carry passengers and/or vehicles.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Installation">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">installation</rdfs:label>
     <rdfs:comment xml:lang="en">A grouping of facilities, located in the same vicinity, which support particular functions. Installations may be elements of a base.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Hovercraft,_ferry">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
+    <rdfs:label xml:lang="en">hovercraft, ferry</rdfs:label>
+    <rdfs:comment xml:lang="en">Hovercraft fitted to carry passengers and/or vehicles.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#WEAPON-TYPE-Anti-submarine">
@@ -5691,12 +5625,6 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#CIVILIAN-POST-TYPE"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#REQUEST-ANSWER-Yes">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#REQUEST-ANSWER"/>
-    <rdfs:label xml:lang="en">yes</rdfs:label>
-    <rdfs:comment xml:lang="en">An answer in the affirmative.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Restricted_fire_line">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
     <rdfs:label xml:lang="en">restricted fire line</rdfs:label>
@@ -5707,12 +5635,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#RUNWAY"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ORGANISATION-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ORGANISATION-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#materiel-status-imo-compliant-indicator-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -5784,22 +5706,10 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#ROUTE-SEGMENT"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#AIRCRAFT-TYPE-Yes">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AIRCRAFT-TYPE"/>
-    <rdfs:label xml:lang="en">yes</rdfs:label>
-    <rdfs:comment xml:lang="en">An answer in the affirmative.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#ACTION-CONTEXT-Minimum_required">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-CONTEXT"/>
     <rdfs:label xml:lang="en">minimum required</rdfs:label>
     <rdfs:comment xml:lang="en">The minimum value referred to by a specific CONTEXT that is necessary for the evolution of a specific ACTION.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#AIRCRAFT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AIRCRAFT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Class-G_airspace">
@@ -5828,12 +5738,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT"/>
     <rdfs:label xml:lang="en">scan rate modulation</rdfs:label>
     <rdfs:comment xml:lang="en">This technique causes the enemy radar antenna to loose lock on target.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Release_point">
@@ -5899,17 +5803,17 @@
     <rdfs:comment xml:lang="en">Airfields having permanent type surface runways with less than the minimum facilities required for civil, joint or military airports.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#MINEFIELD-MARITIME-STATUS">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">minefield maritime status</rdfs:label>
-    <rdfs:comment xml:lang="en">A FACILITY-STATUS that is a record of condition of a specific MINEFIELD-MARITIME.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-STATUS"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Way_point">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
     <rdfs:label xml:lang="en">way point</rdfs:label>
     <rdfs:comment xml:lang="en">1. In air operations, a point or a series of points in space to which an aircraft, ship, or cruise missile may be vectored. 2. A designated point or series of points loaded and stored in a global positioning system or other electronic navigational aid system to facilitate movement.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#MINEFIELD-MARITIME-STATUS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">minefield maritime status</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY-STATUS that is a record of condition of a specific MINEFIELD-MARITIME.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-STATUS"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Hijacking,_land_vehicle">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
@@ -5932,7 +5836,7 @@
   <rdf:Description rdf:about="#ROAD-Railway">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ROAD"/>
     <rdfs:label xml:lang="en">railway</rdfs:label>
-    <rdfs:comment xml:lang="en">A rail or set of parallel rails on which a train or tram runs.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to provide rail services.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Coordinating_point">
@@ -6234,7 +6138,7 @@
   <rdf:Description rdf:about="#ELECTRONIC-EQUIPMENT-TYPE-Communication">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ELECTRONIC-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">communication</rdfs:label>
-    <rdfs:comment xml:lang="en">A group of interrelated communications equipment utilising the electromagnetic spectrum for the transmission and/or receiving of speech and data information.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ability to gain information by exploiting communications systems.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Auxiliary_floating_drydock,_medium">
@@ -6793,7 +6697,7 @@
   <rdf:Description rdf:about="#SUPPORT-CAPABILITY-Electrical">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SUPPORT-CAPABILITY"/>
     <rdfs:label xml:lang="en">electrical</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide electrical repair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to provide electrical power.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Cropland">
@@ -7052,12 +6956,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-FUNCTIONAL-ASSOCIATION"/>
     <rdfs:label xml:lang="en">in response to</rdfs:label>
     <rdfs:comment xml:lang="en">The value that links two ACTIONs such that the subject ACTION is planned to be or may be expected to be carried out in reaction to the object ACTION.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#SUBSURFACE-VESSEL-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SUBSURFACE-VESSEL-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Landing_craft,_personnel,_large">
@@ -7554,7 +7452,7 @@
   <rdf:Description rdf:about="#CONTEXT-ASSOCIATION-Supersedes">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTEXT-ASSOCIATION"/>
     <rdfs:label xml:lang="en">supersedes</rdfs:label>
-    <rdfs:comment xml:lang="en">The subject CONTEXT negates the object CONTEXT by replacing it.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The artefact in the subject REFERENCE supersedes the artefact in the object REFERENCE.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#network-service-cryptographic-indicator-code">
@@ -7690,7 +7588,7 @@
   <rdf:Description rdf:about="#MISCELLANEOUS-EQUIPMENT-TYPE-Cable">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MISCELLANEOUS-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">cable</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide cable repair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A strong thick rope of hemp or wire.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Release_line">
@@ -7794,7 +7692,7 @@
   <rdf:Description rdf:about="#PLAN-ORDER-COMPONENT-CONTENT-REFERENCE-Is_dissociated_from">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#PLAN-ORDER-COMPONENT-CONTENT-REFERENCE"/>
     <rdfs:label xml:lang="en">is dissociated from</rdfs:label>
-    <rdfs:comment xml:lang="en">The relationship of the specific PLAN-ORDER-CONTENT with the specific REFERENCE is deleted.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The relationship of the subject PLAN-ORDER with the object PLAN-ORDER is deleted.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Obstacle_restricted_area">
@@ -7812,7 +7710,7 @@
   <rdf:Description rdf:about="#MARITIME-EQUIPMENT-TYPE-Cutter">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MARITIME-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">cutter</rdfs:label>
-    <rdfs:comment xml:lang="en">In naval mine warfare a device fitted to a sweep wire to cut or part the mooring of mines or obstructors. It may also be fitted in, or to, the mooring of a mine or obstructors to part a sweep wire.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Sailing vessel of cutter design.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Signal,_radio_teletype">
@@ -7950,13 +7848,13 @@
   <rdf:Description rdf:about="#GROUP-ORGANISATION-TYPE-Police_chief">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#GROUP-ORGANISATION-TYPE"/>
     <rdfs:label xml:lang="en">police chief</rdfs:label>
-    <rdfs:comment xml:lang="en">A CIVILIAN-POST-TYPE whose job is the chief officer of a civil force to which is entrusted the duty of maintaining public order, enforcing regulations and detecting crime.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A GROUP-ORGANISATION-TYPE that comprises persons that have the responsibility for the regulation, discipline, and control of a community for the enforcement of law and public order.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURVEILLANCE-CAPABILITY-Communication">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURVEILLANCE-CAPABILITY"/>
     <rdfs:label xml:lang="en">communication</rdfs:label>
-    <rdfs:comment xml:lang="en">A group of interrelated communications equipment utilising the electromagnetic spectrum for the transmission and/or receiving of speech and data information.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The ability to gain information by exploiting communications systems.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Bank">
@@ -8122,7 +8020,7 @@
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Cutter">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
     <rdfs:label xml:lang="en">cutter</rdfs:label>
-    <rdfs:comment xml:lang="en">In naval mine warfare a device fitted to a sweep wire to cut or part the mooring of mines or obstructors. It may also be fitted in, or to, the mooring of a mine or obstructors to part a sweep wire.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Sailing vessel of cutter design.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Aircraft_carrier,_helicopter/VSTOL,_nuclear_powered">
@@ -8165,12 +8063,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
     <rdfs:label xml:lang="en">impact point</rdfs:label>
     <rdfs:comment xml:lang="en">1. The point on the drop zone where the first parachutist or air dropped cargo item lands or is expected to land. See FM 90-26. 2. The point at which a projectile, bomb, or re-entry vehicle impacts or is expected to impact.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#RAILCAR-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#RAILCAR-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#MEDICAL-FACILITY-STATUS-PENDING-CASUALTY-EVACUATION">
@@ -8419,12 +8311,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">site, air defence radar</rdfs:label>
     <rdfs:comment xml:lang="en">A facility containing radar employed for air-defence purposes.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#nuclear-weapon-event-crater-presence-code">
@@ -8754,12 +8640,6 @@
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the availability of natural illumination by type and time.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#METEOROLOGIC-FEATURE"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#WEAPON-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#WEAPON-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#MILITARY-OBSTACLE-TYPE-Minefield,_anti-tank">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MILITARY-OBSTACLE-TYPE"/>
     <rdfs:label xml:lang="en">minefield, anti tank</rdfs:label>
@@ -8990,7 +8870,7 @@
   <rdf:Description rdf:about="#CANDIDATE-TARGET-DETAIL-ASSOCIATION-Has_as_a_component">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CANDIDATE-TARGET-DETAIL-ASSOCIATION"/>
     <rdfs:label xml:lang="en">has as a component</rdfs:label>
-    <rdfs:comment xml:lang="en">The subject CANDIDATE-TARGET-LIST incorporates the object CANDIDATE-TARGET-LIST in its entirety.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The subject CANDIDATE-TARGET-DETAIL includes the object CANDIDATE-TARGET-DETAIL as a functional component.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Monument">
@@ -9084,7 +8964,7 @@
   <rdf:Description rdf:about="#CANDIDATE-TARGET-LIST-ASSOCIATION-Has_as_a_component">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CANDIDATE-TARGET-LIST-ASSOCIATION"/>
     <rdfs:label xml:lang="en">has as a component</rdfs:label>
-    <rdfs:comment xml:lang="en">The subject CANDIDATE-TARGET-LIST incorporates the object CANDIDATE-TARGET-LIST in its entirety.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The subject CANDIDATE-TARGET-DETAIL includes the object CANDIDATE-TARGET-DETAIL as a functional component.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Vandalism/Rape/Loot/Ransack/Plunder/Sack">
@@ -9121,12 +9001,6 @@
     <owl:imports rdf:resource="jc3iedmBase.owl#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#AMMUNITION-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AMMUNITION-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#aircraft-type-manning-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#AIRCRAFT-TYPE"/>
@@ -9159,7 +9033,7 @@
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Air_to_ground">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">air to ground</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from aircraft at targets on the ground.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to perform air to ground operations.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CHEMICAL-MATERIEL-TYPE-G-agent">
@@ -9678,7 +9552,7 @@
   <rdf:Description rdf:about="#ACTION-EVENT-Medical_evacuation">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
     <rdfs:label xml:lang="en">medical evacuation</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability for timely and efficient movement of patients while providing en route medical care to and between medical treatment facilities.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The process of moving any person who is wounded, injured or ill to/between medical treatment FACILITYs.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Providing_repair_services">
@@ -9781,7 +9655,7 @@
   <rdf:Description rdf:about="#MILITARY-POST-TYPE-Scout">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MILITARY-POST-TYPE"/>
     <rdfs:label xml:lang="en">scout</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability to move out ahead of the main force in order to reconnoitre the position or movements of the enemy.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A MILITARY-POST-TYPE that is identified as one sent out ahead of the main force in order to reconnoitre the position and movement of the enemy.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Cargo_ship_(naval)">
@@ -9822,16 +9696,16 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#AIRFIELD"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#action-aircraft-employment-inflight-report-requirement-indicator-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedmBase.owl#ACTION-AIRCRAFT-EMPLOYMENT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#POLYARC-AREA">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">polyarc area</rdfs:label>
     <rdfs:comment xml:lang="en">A SURFACE that consists of a circular arc and a polygonal segment defined by a specific LINE whose beginning coincides with the initial point of the arc and whose end coincides with the last point of the arc.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#action-aircraft-employment-inflight-report-requirement-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedmBase.owl#ACTION-AIRCRAFT-EMPLOYMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SUPPORT-CAPABILITY-Deck">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SUPPORT-CAPABILITY"/>
@@ -9842,12 +9716,6 @@
   <rdf:Description rdf:about="jc3iedmBase.owl#vertical-distance-dimension">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#VERTICAL-DISTANCE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#VEHICLE-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#VEHICLE-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-End_of_route_point">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
@@ -9893,7 +9761,7 @@
   <rdf:Description rdf:about="#AIRCRAFT-TYPE-Medium">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AIRCRAFT-TYPE"/>
     <rdfs:label xml:lang="en">medium</rdfs:label>
-    <rdfs:comment xml:lang="en">An aircraft is capable of lifting medium weight loads.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value between 201 to 400 pci (pavement condition index) for rigid pavements, and by (California Bearing Ratio) CBR of 9 to 13% for flexible pavements.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ELECTRONIC-EQUIPMENT-TYPE-C3I">
@@ -10026,7 +9894,7 @@
   <rdf:Description rdf:about="#PLAN-ORDER-ASSOCIATION-Is_dissociated_from">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#PLAN-ORDER-ASSOCIATION"/>
     <rdfs:label xml:lang="en">is dissociated from</rdfs:label>
-    <rdfs:comment xml:lang="en">The relationship of the specific PLAN-ORDER-CONTENT with the specific REFERENCE is deleted.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The relationship of the subject PLAN-ORDER with the object PLAN-ORDER is deleted.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT-Planned_message_intrusion">
@@ -10234,7 +10102,7 @@
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Electronic_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">electronic warfare</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability involving the use of electromagnetic energy to determine, exploit, reduce, or prevent hostile use of the electromagnetic spectrum and action to retain its effective use by friendly forces.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An equipment used for military action involving the use of electromagnetic energy to determine, exploit, reduce, or prevent hostile use of the electromagnetic spectrum and action to retain its effective use by friendly forces.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONSUMABLE-MATERIEL-TYPE-Drug">
@@ -10516,7 +10384,7 @@
   <rdf:Description rdf:about="#REFERENCE-ASSOCIATION-Supersedes">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#REFERENCE-ASSOCIATION"/>
     <rdfs:label xml:lang="en">supersedes</rdfs:label>
-    <rdfs:comment xml:lang="en">The subject CONTEXT negates the object CONTEXT by replacing it.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The artefact in the subject REFERENCE supersedes the artefact in the object REFERENCE.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Orbit_point">
@@ -10629,7 +10497,7 @@
   <rdf:Description rdf:about="#PERSON-TYPE-Military">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#PERSON-TYPE"/>
     <rdfs:label xml:lang="en">military</rdfs:label>
-    <rdfs:comment xml:lang="en">A PERSON-TYPE who is a uniformed member of a regular armed force.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Military airports controlled and operated by military authorities primarily used by military aircrafts although civil aircrafts may have landing privileges and/or contract rights.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Stores_ship_issue,_small_(naval)">
@@ -10694,7 +10562,7 @@
   <rdf:Description rdf:about="#REFERENCE-ASSOCIATION-Includes">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#REFERENCE-ASSOCIATION"/>
     <rdfs:label xml:lang="en">includes</rdfs:label>
-    <rdfs:comment xml:lang="en">The artefact in the subject REFERENCE includes the artefact in the object REFERENCE.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specific CONTEXT includes the OBJECT-ITEM as part of the information encompassed by the CONTEXT.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MOBILITY-CAPABILITY-Land,_self-propelled">
@@ -10706,7 +10574,7 @@
   <rdf:Description rdf:about="#ENGINEERING-EQUIPMENT-TYPE-Mine-laying">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ENGINEERING-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">mine laying</rdfs:label>
-    <rdfs:comment xml:lang="en">Emplacement or deployment of one or more mines.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An equipment whose purpose is to lay mines.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#UNIT-TYPE-Combat">
@@ -10769,7 +10637,7 @@
   <rdf:Description rdf:about="#PLAN-ORDER-COMPONENT-STRUCTURE-Is_dissociated_from">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#PLAN-ORDER-COMPONENT-STRUCTURE"/>
     <rdfs:label xml:lang="en">is dissociated from</rdfs:label>
-    <rdfs:comment xml:lang="en">The relationship of the specific PLAN-ORDER-CONTENT with the specific REFERENCE is deleted.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The relationship of the subject PLAN-ORDER with the object PLAN-ORDER is deleted.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Beachhead">
@@ -11432,16 +11300,16 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#MEDICAL-FACILITY-STATUS-PENDING-SURGERY"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY-TYPE-School">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
-    <rdfs:label xml:lang="en">school</rdfs:label>
-    <rdfs:comment xml:lang="en">A facility whose essential function is instruction and education.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Infiltration">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
     <rdfs:label xml:lang="en">infiltration</rdfs:label>
     <rdfs:comment xml:lang="en">Moving a force, broken down as individuals or small groups, over, through or around enemy positions with the aim of avoiding detection.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE-School">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
+    <rdfs:label xml:lang="en">school</rdfs:label>
+    <rdfs:comment xml:lang="en">A facility whose essential function is instruction and education.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#VEHICLE-TYPE-Heavy_equipment_transport">
@@ -11572,12 +11440,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#RUNWAY"/>
     <rdfs:label xml:lang="en">ultra low</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value less than 100 pci (pavement condition index) for rigid pavements, and by a (California Bearing Ratio) CBR value less than 5% for flexible pavements.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#REQUEST-ANSWER-No">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#REQUEST-ANSWER"/>
-    <rdfs:label xml:lang="en">no</rdfs:label>
-    <rdfs:comment xml:lang="en">An answer in the negative.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT-Reflector,_gull">
@@ -11739,7 +11601,7 @@
   <rdf:Description rdf:about="#MAINTENANCE-CAPABILITY-Cable">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:label xml:lang="en">cable</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide cable repair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A strong thick rope of hemp or wire.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#light-down-datetime">
@@ -11847,7 +11709,7 @@
   <rdf:Description rdf:about="#ACTION-EVENT-Mine-laying">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
     <rdfs:label xml:lang="en">mine laying</rdfs:label>
-    <rdfs:comment xml:lang="en">Emplacement or deployment of one or more mines.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An equipment whose purpose is to lay mines.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#harbour-tug-availability-indicator-code">
@@ -11986,7 +11848,7 @@
   <rdf:Description rdf:about="#CONSUMABLE-MATERIEL-TYPE-Water">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONSUMABLE-MATERIEL-TYPE"/>
     <rdfs:label xml:lang="en">water</rdfs:label>
-    <rdfs:comment xml:lang="en">A clear, colourless, nearly odourless and tasteless liquid.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to provide potable water.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Area_of_responsibility">
@@ -12028,7 +11890,7 @@
   <rdf:Description rdf:about="#ACTION-TASK-STATUS-Plan">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-TASK-STATUS"/>
     <rdfs:label xml:lang="en">plan</rdfs:label>
-    <rdfs:comment xml:lang="en">An ACTION-TASK that represents a course of action that is foreseen or anticipated.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An ACTION-TASK-STATUS indicating that the ACTION-TASK is a plan.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#person-type-subcategory-code">
@@ -12301,12 +12163,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#MATERIEL-STATUS"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ENGINEERING-EQUIPMENT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ENGINEERING-EQUIPMENT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Service,_research,_utility_facility">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
@@ -12583,12 +12439,6 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#MILITARY-OBSTACLE-TYPE"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#CHEMICAL-BIOLOGICAL-EVENT-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#REFERENCE-Order">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#REFERENCE"/>
     <rdfs:label xml:lang="en">order</rdfs:label>
@@ -12656,7 +12506,7 @@
   <rdf:Description rdf:about="#CIVILIAN-POST-TYPE-Police_chief">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CIVILIAN-POST-TYPE"/>
     <rdfs:label xml:lang="en">police chief</rdfs:label>
-    <rdfs:comment xml:lang="en">A CIVILIAN-POST-TYPE whose job is the chief officer of a civil force to which is entrusted the duty of maintaining public order, enforcing regulations and detecting crime.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A GROUP-ORGANISATION-TYPE that comprises persons that have the responsibility for the regulation, discipline, and control of a community for the enforcement of law and public order.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Conducting_rearward_passage_of_lines">
@@ -12872,7 +12722,7 @@
   <rdf:Description rdf:about="#ACTION-REFERENCE-ASSOCIATION-Is_referenced_by">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-REFERENCE-ASSOCIATION"/>
     <rdfs:label xml:lang="en">is referenced by</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific OBJECT-ITEM is alluded to in the artefact cited in the specific REFERENCE.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specific ACTION is alluded to in the artefact cited in the specific REFERENCE.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#plan-order-header-content-serial-number-text">
@@ -12880,16 +12730,16 @@
     <rdfs:domain rdf:resource="jc3iedmBase.owl#PLAN-ORDER-HEADER-CONTENT"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#NUCLEAR-EVENT-Nuclear_release_other_than_attack_(ROTA)">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#NUCLEAR-EVENT"/>
+    <rdfs:label xml:lang="en">nuclear release other than attack (rota)</rdfs:label>
+    <rdfs:comment xml:lang="en">An intended or non-intended release of nuclear radiation from a non-militarily significant source or weapon.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Mortuary/graves_registry">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">mortuary/graves registry</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide care and disposition of deceased personnel.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#NUCLEAR-EVENT-Nuclear_release_other_than_attack_(ROTA)">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#NUCLEAR-EVENT"/>
-    <rdfs:label xml:lang="en">nuclear release other than attack (rota)</rdfs:label>
-    <rdfs:comment xml:lang="en">The release of nuclear material into the environment intentionally or accidentally but not for the intended purpose of conducting an attack.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#PRECIPITATION-Snow">
@@ -13074,7 +12924,7 @@
   <rdf:Description rdf:about="#AIRFIELD-TYPE-Military">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AIRFIELD-TYPE"/>
     <rdfs:label xml:lang="en">military</rdfs:label>
-    <rdfs:comment xml:lang="en">A PERSON-TYPE who is a uniformed member of a regular armed force.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Military airports controlled and operated by military authorities primarily used by military aircrafts although civil aircrafts may have landing privileges and/or contract rights.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#CANDIDATE-TARGET-DETAIL-ASSOCIATION">
@@ -13127,12 +12977,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">signal, radio tactical satellite</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a tactical satellite terminal.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#BIOLOGICAL-MATERIEL-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#BIOLOGICAL-MATERIEL-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#CANDIDATE-TARGET-LIST">
@@ -13233,12 +13077,6 @@
     <rdfs:comment xml:lang="en">A point on a boundary.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#SURVEILLANCE-CAPABILITY-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURVEILLANCE-CAPABILITY"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Electronic_installation,_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">electronic installation, warfare</rdfs:label>
@@ -13263,12 +13101,6 @@
     <rdfs:comment xml:lang="en">An ABSOLUTE-POINT that has its position specified in a three-dimensional Earth-centred Cartesian system.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ABSOLUTE-POINT"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#WIND-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#WIND"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#MISCELLANEOUS-EQUIPMENT-TYPE-Electronic_media,_detached_physical_storage">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MISCELLANEOUS-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">electronic media, detached physical storage</rdfs:label>
@@ -13289,7 +13121,7 @@
   <rdf:Description rdf:about="#WEAPON-TYPE-Field_artillery">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#WEAPON-TYPE"/>
     <rdfs:label xml:lang="en">field artillery</rdfs:label>
-    <rdfs:comment xml:lang="en">A UNIT-TYPE whose principal designation is the employment of tube artillery in support of manoeuvre units.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Artillery that is self-propelled or towed for use in the field in support of manoeuvre forces.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT-Simulation,_amphibious_warfare">
@@ -13576,7 +13408,7 @@
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Medical_evacuation">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">medical evacuation</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability for timely and efficient movement of patients while providing en route medical care to and between medical treatment facilities.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The process of moving any person who is wounded, injured or ill to/between medical treatment FACILITYs.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#OBJECT-ITEM-ASSOCIATION-Is_mother_of">
@@ -13668,7 +13500,7 @@
   <rdf:Description rdf:about="#REFERENCE-ASSOCIATION-Supplements">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#REFERENCE-ASSOCIATION"/>
     <rdfs:label xml:lang="en">supplements</rdfs:label>
-    <rdfs:comment xml:lang="en">The artefact in the subject REFERENCE supplements the artefact in the object REFERENCE.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The subject CONTEXT provides amplifying information with respect to the object CONTEXT.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Support_ship,_missile_range">
@@ -13755,16 +13587,16 @@
     <rdfs:comment xml:lang="en">The operational status of the specific OBJECT-ITEM is made active by provisions in the artefact cited in the specific REFERENCE.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#medical-facility-status-interval-casualty-type-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedmBase.owl#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-TYPE"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Human_rights_violation">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
     <rdfs:label xml:lang="en">human rights violation</rdfs:label>
     <rdfs:comment xml:lang="en">The commitment of an act against human rights.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#medical-facility-status-interval-casualty-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedmBase.owl#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-TYPE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#CONE-VOLUME">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -13949,12 +13781,6 @@
     <rdfs:comment xml:lang="en">The subject OBJECT-ITEM keeps the object MATERIEL in good repair or efficiency on a routine basis.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#OBJECT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OBJECT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#NETWORK-FREQUENCY">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">network frequency</rdfs:label>
@@ -14046,16 +13872,16 @@
     <rdfs:comment xml:lang="en">The concentration of large quantities of military equipment and personnel.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#OBJECT-ITEM-HOSTILITY-STATUS">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">object item hostility status</rdfs:label>
-    <rdfs:comment xml:lang="en">A record of the perceived hostility classification of a specific OBJECT-ITEM.</rdfs:comment>
-  </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Contact_point,_air">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
     <rdfs:label xml:lang="en">contact point, air</rdfs:label>
     <rdfs:comment xml:lang="en">A CONTROL-FEATURE-TYPE that identifies the position at which a mission leader makes radio contact with an air control agency. Note: A point used for control purposes in air-to-air refuelling and close air support missions.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#OBJECT-ITEM-HOSTILITY-STATUS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">object item hostility status</rdfs:label>
+    <rdfs:comment xml:lang="en">A record of the perceived hostility classification of a specific OBJECT-ITEM.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT-Nuisance_intrusion">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT"/>
@@ -14310,7 +14136,7 @@
   <rdf:Description rdf:about="#UNIT-TYPE-Field_artillery">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#UNIT-TYPE"/>
     <rdfs:label xml:lang="en">field artillery</rdfs:label>
-    <rdfs:comment xml:lang="en">A UNIT-TYPE whose principal designation is the employment of tube artillery in support of manoeuvre units.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Artillery that is self-propelled or towed for use in the field in support of manoeuvre forces.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#OPERATIONAL-CAPABILITY">
@@ -14524,12 +14350,6 @@
     <rdfs:comment xml:lang="en">A facility used as for armament production.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#MARITIME-EQUIPMENT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MARITIME-EQUIPMENT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#instrument-landing-system-magnetic-variation-angle">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#INSTRUMENT-LANDING-SYSTEM"/>
@@ -14542,7 +14362,7 @@
   <rdf:Description rdf:about="#UNIT-TYPE-Maintenance">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#UNIT-TYPE"/>
     <rdfs:label xml:lang="en">maintenance</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability to provide supply and repair services to keep a force in condition to carry out its mission.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A vehicle which, as its primary function, is designed to provide equipment support facilities in or out of the battlespace.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Hunting">
@@ -14729,7 +14549,7 @@
   <rdf:Description rdf:about="#ACTION-EVENT-Air_assault">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
     <rdfs:label xml:lang="en">air assault</rdfs:label>
-    <rdfs:comment xml:lang="en">Mounting an assault utilising a mixture of aviation and ground transport, the principal feature of which is the insertion of combat power.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to perform a mission involving total integration of helicopter assets in their ground or air roles.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#NETWORK-SERVICE">
@@ -14826,7 +14646,7 @@
   <rdf:Description rdf:about="#RADIOACTIVE-MATERIEL-TYPE-Nuclear_release_other_than_attack_(ROTA)">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#RADIOACTIVE-MATERIEL-TYPE"/>
     <rdfs:label xml:lang="en">nuclear release other than attack (rota)</rdfs:label>
-    <rdfs:comment xml:lang="en">The release of nuclear material into the environment intentionally or accidentally but not for the intended purpose of conducting an attack.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An intended or non-intended release of nuclear radiation from a non-militarily significant source or weapon.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#ORGANISATION-REFERENCE-ASSOCIATION">
@@ -14906,12 +14726,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SUBSURFACE-VESSEL-TYPE"/>
     <rdfs:label xml:lang="en">submarine, coastal</rdfs:label>
     <rdfs:comment xml:lang="en">Submarine designed primarily for operations in coastal and shallow waters.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#CBRN-EQUIPMENT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CBRN-EQUIPMENT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#VEHICLE-TYPE-Firefighting">
@@ -15285,12 +15099,6 @@
     <rdfs:comment xml:lang="en">A specific direction or route that the main attack or the centre of mass of the unit main body of the force will follow.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#NETWORK-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#NETWORK"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#solid-surface-status-surface-condition-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#SOLID-SURFACE-STATUS"/>
@@ -15305,12 +15113,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">supply (class iv)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide construction materials (supplies for which initial issue allowances are not prescribed by approved issue tables).</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#CONSUMABLE-MATERIEL-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONSUMABLE-MATERIEL-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#NUCLEAR-EVENT-Nuclear_war_alert">
@@ -15610,15 +15412,15 @@
     <rdfs:comment xml:lang="en">An infiltration lane is a control measure that fixes fire planning responsibilities and coordinates forward and lateral movement of infiltrating units.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#reporting-data-relative-timing-offset-duration">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedmBase.owl#REPORTING-DATA-RELATIVE-TIMING"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#PRECIPITATION-Rain_shower">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#PRECIPITATION"/>
     <rdfs:label xml:lang="en">rain shower</rdfs:label>
     <rdfs:comment xml:lang="en">The rain changes intensity or starts and stops abruptly. These showers fall exclusively from cumuliform clouds.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#reporting-data-relative-timing-offset-duration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedmBase.owl#REPORTING-DATA-RELATIVE-TIMING"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#facility-status-usage-status-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -15884,7 +15686,7 @@
   <rdf:Description rdf:about="#VEHICLE-TYPE-Maintenance">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#VEHICLE-TYPE"/>
     <rdfs:label xml:lang="en">maintenance</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability to provide supply and repair services to keep a force in condition to carry out its mission.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A vehicle which, as its primary function, is designed to provide equipment support facilities in or out of the battlespace.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#cloud-cover-average-coverage-code">
@@ -16029,7 +15831,7 @@
   <rdf:Description rdf:about="#MAINTENANCE-CAPABILITY-Electrical">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:label xml:lang="en">electrical</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide electrical repair.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to provide electrical power.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#runway-pavement-subgrade-category-code">
@@ -16404,7 +16206,7 @@
   <rdf:Description rdf:about="#ELECTRONIC-EQUIPMENT-TYPE-Electronic_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ELECTRONIC-EQUIPMENT-TYPE"/>
     <rdfs:label xml:lang="en">electronic warfare</rdfs:label>
-    <rdfs:comment xml:lang="en">The capability involving the use of electromagnetic energy to determine, exploit, reduce, or prevent hostile use of the electromagnetic spectrum and action to retain its effective use by friendly forces.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An equipment used for military action involving the use of electromagnetic energy to determine, exploit, reduce, or prevent hostile use of the electromagnetic spectrum and action to retain its effective use by friendly forces.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Engineer,_construction">
@@ -16478,7 +16280,7 @@
   <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY-Air_assault">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:label xml:lang="en">air assault</rdfs:label>
-    <rdfs:comment xml:lang="en">Mounting an assault utilising a mixture of aviation and ground transport, the principal feature of which is the insertion of combat power.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to perform a mission involving total integration of helicopter assets in their ground or air roles.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ORGANISATION-TYPE-Squadron_operations_centre">
@@ -16520,16 +16322,16 @@
     <rdfs:comment xml:lang="en">The subject OBJECT-ITEM operates in accordance with procedures implied by the object CONTROL-FEATURE.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Distilling_ship_(naval)">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
-    <rdfs:label xml:lang="en">distilling ship (naval)</rdfs:label>
-    <rdfs:comment xml:lang="en">Ship capable of distilling and transporting potable water.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#AMMUNITION-TYPE-Mine,_not_otherwise_specified">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AMMUNITION-TYPE"/>
     <rdfs:label xml:lang="en">mine, not otherwise specified</rdfs:label>
     <rdfs:comment xml:lang="en">A mine whose appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Distilling_ship_(naval)">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
+    <rdfs:label xml:lang="en">distilling ship (naval)</rdfs:label>
+    <rdfs:comment xml:lang="en">Ship capable of distilling and transporting potable water.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MAINTENANCE-CAPABILITY-Shotblast">
@@ -16564,7 +16366,7 @@
   <rdf:Description rdf:about="#RUNWAY-Medium">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#RUNWAY"/>
     <rdfs:label xml:lang="en">medium</rdfs:label>
-    <rdfs:comment xml:lang="en">An aircraft is capable of lifting medium weight loads.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value between 201 to 400 pci (pavement condition index) for rigid pavements, and by (California Bearing Ratio) CBR of 9 to 13% for flexible pavements.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#reporting-data-timing-category-code">
@@ -16662,16 +16464,16 @@
     <rdfs:comment xml:lang="en">The capability to provide infrastructure support.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#OBJECT-ITEM-STATUS-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OBJECT-ITEM-STATUS"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#MILITARY-OBSTACLE-TYPE-Wire_obstacle,_not_otherwise_specified">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MILITARY-OBSTACLE-TYPE"/>
     <rdfs:label xml:lang="en">wire obstacle, not otherwise specified</rdfs:label>
     <rdfs:comment xml:lang="en">No definition provided in APP-6A.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION-EVENT-Shooting">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
+    <rdfs:label xml:lang="en">shooting</rdfs:label>
+    <rdfs:comment xml:lang="en">The act of firing of a weapon, usually at a person.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#AIRSPACE-CONTROL-MEANS">
@@ -16679,12 +16481,6 @@
     <rdfs:label xml:lang="en">airspace control means</rdfs:label>
     <rdfs:comment xml:lang="en">A CONTROL-FEATURE that reserves airspace for specific airspace users, restricts the action of airspace users, controls the actions of specific airspace users, and/or requires airspace users to accomplish specific actions.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ACTION-EVENT-Shooting">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ACTION-EVENT"/>
-    <rdfs:label xml:lang="en">shooting</rdfs:label>
-    <rdfs:comment xml:lang="en">The act of firing of a weapon, usually at a person.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#TASK-FORMATION-TYPE-Group_(navy)">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#TASK-FORMATION-TYPE"/>
@@ -16718,16 +16514,16 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#ACTION-EVENT-STATUS"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#ALTERNATE-KEY">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">alternate key</rdfs:label>
-    <rdfs:comment xml:lang="en">A record that points to one or more attributes that collectively serve as a unique identification for an entity that is cited in a specific ENTITY and may be used instead of the PRIMARY-KEY for the same instance of ENTITY.</rdfs:comment>
-  </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Shoran_station">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">shoran station</rdfs:label>
     <rdfs:comment xml:lang="en">A facility used in short range navigation.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#ALTERNATE-KEY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">alternate key</rdfs:label>
+    <rdfs:comment xml:lang="en">A record that points to one or more attributes that collectively serve as a unique identification for an entity that is cited in a specific ENTITY and may be used instead of the PRIMARY-KEY for the same instance of ENTITY.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Class-E_airspace">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
@@ -17141,7 +16937,7 @@
   <rdf:Description rdf:about="#EXECUTIVE-MILITARY-ORGANISATION-TYPE-Headquarters">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#EXECUTIVE-MILITARY-ORGANISATION-TYPE"/>
     <rdfs:label xml:lang="en">headquarters</rdfs:label>
-    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE is a headquarters.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An EXECUTIVE-MILITARY-ORGANISATION-TYPE that performs the management functions of an international, national, strategic or service headquarters.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ROUTE-TYPE-Low_level_transit_route">
@@ -17574,12 +17370,6 @@
     <rdfs:comment xml:lang="en">Conducting an attack wherein a force attacks, or threatens to attack, a target other than the main target for the purpose of drawing enemy defences away from the main effort.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#VESSEL-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#VESSEL-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#group-characteristic-triage-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#GROUP-CHARACTERISTIC"/>
@@ -17903,7 +17693,7 @@
   <rdf:Description rdf:about="#OBJECT-ITEM-REFERENCE-ASSOCIATION-Is_referenced_by">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OBJECT-ITEM-REFERENCE-ASSOCIATION"/>
     <rdfs:label xml:lang="en">is referenced by</rdfs:label>
-    <rdfs:comment xml:lang="en">The specific OBJECT-ITEM is alluded to in the artefact cited in the specific REFERENCE.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specific ACTION is alluded to in the artefact cited in the specific REFERENCE.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT-Supporting">
@@ -18227,7 +18017,7 @@
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Forward_arming_and_refuelling_point">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
     <rdfs:label xml:lang="en">forward arming and refuelling point</rdfs:label>
-    <rdfs:comment xml:lang="en">A point designated by a deployed aviation commander that permits combat aircraft to rapidly refuel and rearm simultaneously.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A temporary facility that is organised, equipped, and deployed by an aviation commander and normally located in the main battle area closer to the area of operations than the aviation unit's combat service support (CSS) area. It provides fuel and ammunition necessary for the employment of aviation manoeuvre units in combat. It permits combat aircraft to rapidly refuel and rearm simultaneously.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#materiel-hull-number-text">
@@ -18490,12 +18280,6 @@
     <rdfs:label xml:lang="en">runway approach direction association</rdfs:label>
     <rdfs:comment xml:lang="en">A relationship of a subject RUNWAY with an object APPROACH-DIRECTION.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="#OBJECT-ITEM-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OBJECT-ITEM"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#CHEMICAL-MATERIEL-TYPE-Irritant">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CHEMICAL-MATERIEL-TYPE"/>
     <rdfs:label xml:lang="en">irritant</rdfs:label>
@@ -18701,12 +18485,6 @@
     <rdfs:comment xml:lang="en">The specific ROAD is a local road or street.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#UNIT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#UNIT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Lighter,_ammunition">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
     <rdfs:label xml:lang="en">lighter, ammunition</rdfs:label>
@@ -18890,17 +18668,17 @@
     <rdfs:comment xml:lang="en">Determining a position using electro-optical data.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#AFFILIATION-FUNCTIONAL-GROUP">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">affiliation functional group</rdfs:label>
-    <rdfs:comment xml:lang="en">A specification of a functional group characterised by its primary purpose to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AFFILIATION"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#GROUP-ORGANISATION-TYPE-Refugee">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#GROUP-ORGANISATION-TYPE"/>
     <rdfs:label xml:lang="en">refugee</rdfs:label>
     <rdfs:comment xml:lang="en">A GROUP-ORGANISATION-TYPE that comprises persons who, owing to religious persecution or political troubles, seek refuge.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#AFFILIATION-FUNCTIONAL-GROUP">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">affiliation functional group</rdfs:label>
+    <rdfs:comment xml:lang="en">A specification of a functional group characterised by its primary purpose to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#AFFILIATION"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MILITARY-POST-TYPE-Rifleman">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MILITARY-POST-TYPE"/>
@@ -18987,16 +18765,16 @@
     <rdfs:comment xml:lang="en">A vehicle designed to recover medium weight battle tanks.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedmBase.owl#vertical-distance-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedmBase.owl#VERTICAL-DISTANCE"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE-Minehunter,_auxiliary">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
     <rdfs:label xml:lang="en">minehunter, auxiliary</rdfs:label>
     <rdfs:comment xml:lang="en">Any seagoing ship not designed as a mine hunter but converted to such use.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedmBase.owl#vertical-distance-precision-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedmBase.owl#VERTICAL-DISTANCE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#ORGANISATION-PLAN-ORDER-ASSOCIATION-STATUS">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -19359,7 +19137,7 @@
   <rdf:Description rdf:about="#SUPPORT-CAPABILITY-Water">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SUPPORT-CAPABILITY"/>
     <rdfs:label xml:lang="en">water</rdfs:label>
-    <rdfs:comment xml:lang="en">A clear, colourless, nearly odourless and tasteless liquid.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The capability to provide potable water.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Key_terrain">
@@ -19668,7 +19446,7 @@
   <rdf:Description rdf:about="#FACILITY-TYPE-Forward_arming_and_refuelling_point">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#FACILITY-TYPE"/>
     <rdfs:label xml:lang="en">forward arming and refuelling point</rdfs:label>
-    <rdfs:comment xml:lang="en">A point designated by a deployed aviation commander that permits combat aircraft to rapidly refuel and rearm simultaneously.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A temporary facility that is organised, equipped, and deployed by an aviation commander and normally located in the main battle area closer to the area of operations than the aviation unit's combat service support (CSS) area. It provides fuel and ammunition necessary for the employment of aviation manoeuvre units in combat. It permits combat aircraft to rapidly refuel and rearm simultaneously.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Air-to-air_refuelling_area">
@@ -19860,12 +19638,6 @@
     <rdfs:comment xml:lang="en">The specific OBJECT-ITEM is given a formal account in the artefact cited in the specific REFERENCE.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#MISCELLANEOUS-EQUIPMENT-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#MISCELLANEOUS-EQUIPMENT-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#SUPPORT-CAPABILITY">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">support capability</rdfs:label>
@@ -19892,7 +19664,7 @@
   <rdf:Description rdf:about="#ENGINEERING-CAPABILITY-Breaching">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ENGINEERING-CAPABILITY"/>
     <rdfs:label xml:lang="en">breaching</rdfs:label>
-    <rdfs:comment xml:lang="en">Breaking through or securing a passage through an enemy defence, obstacle, minefield, or fortification.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The action or process of making a gap in a wall or barrier.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#AIRCRAFT-TYPE-Fixed_wing">
@@ -20190,16 +19962,16 @@
     <rdfs:comment xml:lang="en">A CHEMICAL-MATERIEL-TYPE that is designed to penetrate the individual and collective equipment, therefore enabling an associated lethal agent to act.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Rocket/missile_area">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
-    <rdfs:label xml:lang="en">rocket/missile area</rdfs:label>
-    <rdfs:comment xml:lang="en">A CONTROL-FEATURE-TYPE with an area location assigned to rocket/missile units for terrain management purposes on which they manoeuvre.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#VEHICLE-TYPE-Combat_support_vehicle">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#VEHICLE-TYPE"/>
     <rdfs:label xml:lang="en">combat support vehicle</rdfs:label>
     <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1650/6.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE-Rocket/missile_area">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTROL-FEATURE-TYPE"/>
+    <rdfs:label xml:lang="en">rocket/missile area</rdfs:label>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE-TYPE with an area location assigned to rocket/missile units for terrain management purposes on which they manoeuvre.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE-Electrical_supply">
@@ -20284,12 +20056,6 @@
   <rdf:Description rdf:about="jc3iedmBase.owl#runway-approach-direction-association-takeoff-distance-dimension">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="jc3iedmBase.owl#RUNWAY-APPROACH-DIRECTION-ASSOCIATION"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ROUTE-TYPE-Not_known">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ROUTE-TYPE"/>
-    <rdfs:label xml:lang="en">not known</rdfs:label>
-    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ORGANISATION-TYPE-Air_operations_centre">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#ORGANISATION-TYPE"/>
@@ -21194,7 +20960,7 @@
   <rdf:Description rdf:about="#CONTEXT-OBJECT-ITEM-ASSOCIATION-Includes">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#CONTEXT-OBJECT-ITEM-ASSOCIATION"/>
     <rdfs:label xml:lang="en">includes</rdfs:label>
-    <rdfs:comment xml:lang="en">The artefact in the subject REFERENCE includes the artefact in the object REFERENCE.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The specific CONTEXT includes the OBJECT-ITEM as part of the information encompassed by the CONTEXT.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedmBase.owl#unit-type-category-code">

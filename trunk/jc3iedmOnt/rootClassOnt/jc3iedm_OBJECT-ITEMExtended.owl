@@ -1,0 +1,223 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#" > 
+  <rdf:Description rdf:about="#FACILITY_RUNWAY">
+    <rdfs:label xml:lang="en">runway</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a specifically prepared surface along which aircraft take off and land.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION_UNIT">
+    <rdfs:label xml:lang="en">unit</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
+    <rdfs:comment xml:lang="en">A military ORGANISATION whose structure is prescribed by competent authority.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_ROAD">
+    <rdfs:label xml:lang="en">road</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a path or way with a specially prepared surface.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_SLIPWAY">
+    <rdfs:label xml:lang="en">slipway</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that provides a sloping surface or inclined structure leading down to the water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_RAILWAY">
+    <rdfs:label xml:lang="en">railway</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a track or set of tracks made of steel rails along which trains run.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#MATERIEL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">materiel</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is equipment, apparatus or supplies of military interest without distinction as to its application for administrative or combat purposes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_BERTH">
+    <rdfs:label xml:lang="en">berth</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a space or length in the water at a harbour allocated to or reserved for a vessel to dock and moor for loading or unloading.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_BASIN">
+    <rdfs:label xml:lang="en">basin</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is an open area of water, usually artificial and enclosed by dock gates lined with wharves, warehouses and berths to enable vessels to load and unload.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_MILITARY-OBSTACLE">
+    <rdfs:label xml:lang="en">military obstacle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY designed to stop, impede, or divert movement of amphibious or ground forces.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE_METEOROLOGIC-FEATURE">
+    <rdfs:label xml:lang="en">meteorologic feature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+    <rdfs:comment xml:lang="en">A FEATURE that describes reported or forecast weather and light conditions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#FEATURE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">feature</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#PERSON">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is a human being to whom military or civilian significance is attached.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">facility</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is built, installed or established to serve some particular purpose and is identified by the service it provides rather than by its content.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_QUAY">
+    <rdfs:label xml:lang="en">quay</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a solidly constructed platform, usually parallel to the shoreline of navigable water, alongside which a vessel can be docked or berthed and, on which, the vessel can be accessed and cargo can be loaded or unloaded on one side of the vessel only.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#physical_model_only">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_DRY-DOCK">
+    <rdfs:label xml:lang="en">dry dock</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that provides an enclosure for maintenance, building or repairing ships, from which water can be pumped out.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_HARBOUR">
+    <rdfs:label xml:lang="en">harbour</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a restricted body of water, an anchorage, or other limited coastal water area and its water approaches from which and in which shipping operations are projected or supported.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">object item</rdfs:label>
+    <rdfs:comment xml:lang="en">An individually identified object that has military or civilian significance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION_CONVOY">
+    <rdfs:label xml:lang="en">convoy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION that is a group of vehicles or vessels organised for the purpose of control and orderly movement with or without escort protection.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL_INSTRUMENT-LANDING-SYSTEM">
+    <rdfs:label xml:lang="en">instrument landing system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:comment xml:lang="en">A MATERIEL that provides aircraft with horizontal and vertical guidance just before landing and during landing, and at certain fixed points, indicates the distance to the reference point of landing.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">organisation</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is an administrative or functional structure.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE_GEOGRAPHIC-FEATURE">
+    <rdfs:label xml:lang="en">geographic feature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+    <rdfs:comment xml:lang="en">A FEATURE describing terrain characteristics to which military significance is attached.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_NETWORK">
+    <rdfs:label xml:lang="en">network</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that provides bearer services for communication and information services and is composed of one or more links and nodes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_APRON">
+    <rdfs:label xml:lang="en">apron</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is an area intended for parking, loading, unloading and/or servicing.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_AIRFIELD">
+    <rdfs:label xml:lang="en">airfield</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is an area prepared for the accommodation (including any buildings, installations, or equipment) landing and take off of aircraft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_ANCHORAGE">
+    <rdfs:label xml:lang="en">anchorage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a place where vessels anchor.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-name-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_JETTY">
+    <rdfs:label xml:lang="en">jetty</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a platform that may be fixed or floating extending from a shore, normally attached to a wharf or the shore, and which allows access to a vessel lying alongside, used to secure, protect and provide landing and docking for vessels.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#">
+    <owl:imports rdf:resource="jc3iedm_OBJECT-ITEM.owl#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-ITEM_Not_known">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE_CONTROL-FEATURE">
+    <rdfs:label xml:lang="en">control feature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+    <rdfs:comment xml:lang="en">A non-tangible FEATURE of military interest that is administratively specified, may be represented by a geometric figure, and is associated with the conduct of military operations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_BRIDGE">
+    <rdfs:label xml:lang="en">bridge</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:comment xml:lang="en">A FACILITY that is a structure (including overpass and viaduct), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

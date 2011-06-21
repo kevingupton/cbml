@@ -1,0 +1,1866 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#" > 
+  <rdf:Description rdf:about="#FACILITY-TYPE_Washing_facility">
+    <rdfs:label xml:lang="en">washing facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility for washing personnel and/or equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Crossing/level_crossing">
+    <rdfs:label xml:lang="en">crossing/level crossing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is a point where two or more line features intersect or cross at the same level.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_biological">
+    <rdfs:label xml:lang="en">depot, biological</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of biological agents.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Check_point,_police">
+    <rdfs:label xml:lang="en">check point, police</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where police check vehicular or pedestrian traffic in order to enforce circulation control measures and other laws, orders, and regulations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Dressing_station">
+    <rdfs:label xml:lang="en">dressing station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A movable facility for the initial treatment of casualties.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ammunition_transfer_point">
+    <rdfs:label xml:lang="en">ammunition transfer point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility for physical transfer of ammunition from one means of transport to another or to the final receiving unit.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Built-up_area">
+    <rdfs:label xml:lang="en">built up area</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing a concentration of buildings and other structures.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Service,_research,_utility_facility">
+    <rdfs:label xml:lang="en">service, research, utility facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility generally used to support service, research or utility functions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Control_and_reporting_post">
+    <rdfs:label xml:lang="en">control and reporting post</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_navigation_radar">
+    <rdfs:label xml:lang="en">site, navigation radar</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing radar employed for navigation purposes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Production_complex,_general_motor_vehicle">
+    <rdfs:label xml:lang="en">production complex, general motor vehicle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for non-military motor vehicle production and assembly.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Shelter,_surface">
+    <rdfs:label xml:lang="en">shelter, surface</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A fortified structure built on the surface, used to house personnel and/or equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-TYPE_Paramilitary">
+    <rdfs:label xml:lang="en">paramilitary</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#PERSON-TYPE"/>
+    <rdfs:comment xml:lang="en">A PERSON-TYPE who is a member of an irregular armed force.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Tactical_operations_centre">
+    <rdfs:label xml:lang="en">tactical operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">A physical grouping of those elements of general and special staff concerned with the current tactical operations and the tactical support thereof.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Waste_pile">
+    <rdfs:label xml:lang="en">waste pile</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">Unusable or unwanted material, which may include hazardous materiel.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Bath">
+    <rdfs:label xml:lang="en">bath</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for personal cleanliness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Operations_centre">
+    <rdfs:label xml:lang="en">operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE is an operations centre.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Supply_dump,_ammunition">
+    <rdfs:label xml:lang="en">supply dump, ammunition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A temporary storage area, usually in the open, for ammunition.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">facility type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that is intended to be built, installed or established to serve some particular purpose and is identified by the service it is intended to provide rather than by its content.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Town_hall">
+    <rdfs:label xml:lang="en">town hall</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A building for the administration of local government, having public meeting rooms, etc.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Gas_processing_facility">
+    <rdfs:label xml:lang="en">gas processing facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">Installations for processing and purification of natural gas or separating natural gas from crude oil.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_engineer">
+    <rdfs:label xml:lang="en">depot, engineer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of engineer equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Surface-to-air_missile-operations_centre">
+    <rdfs:label xml:lang="en">surface to air missile operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_House">
+    <rdfs:label xml:lang="en">house</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A detached household used as a dwelling for one or more persons.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Vehicle_storage/parking_area">
+    <rdfs:label xml:lang="en">vehicle storage/parking area</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An open land area used for storing or parking vehicles or vessels. (Including Recreational Vehicles).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_High-technology_complex">
+    <rdfs:label xml:lang="en">high technology complex</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A building or set of integrated buildings that use state-of-the-art-technology designed for a specific purpose such as manufacturing, research and development or other related activity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Loading_platform,_military">
+    <rdfs:label xml:lang="en">loading platform, military</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility constructed for loading military goods/equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_engineering_equipment_production,_bridge">
+    <rdfs:label xml:lang="en">military materiel facility, engineering equipment production, bridge</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for engineering equipment production, bridge.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Command_post">
+    <rdfs:label xml:lang="en">command post</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE is a command post.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Squadron_operations_centre">
+    <rdfs:label xml:lang="en">squadron operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Field_storage_module-ammunition">
+    <rdfs:label xml:lang="en">field storage module ammunition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is a site containing approximately 10 tonnes gross weight of ammunition and explosives.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-name-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Medical_facility,_unit_medical_station">
+    <rdfs:label xml:lang="en">medical facility, unit medical station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as a first level care medical facility for a unit.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Basin">
+    <rdfs:label xml:lang="en">basin</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is an open area of water, usually artificial and enclosed by dock gates lined with wharves, warehouses and berths to enable vessels to load and unload.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Tacan_station">
+    <rdfs:label xml:lang="en">tacan station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used in a global tactical air navigation system.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Water_supply">
+    <rdfs:label xml:lang="en">water supply</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing the equipment used for the storage and/or distribution of water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Fire-fighters_barracks">
+    <rdfs:label xml:lang="en">fire fighters barracks</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A building housing fire-fighters and their equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Sensor_fusion_post">
+    <rdfs:label xml:lang="en">sensor fusion post</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Railhead">
+    <rdfs:label xml:lang="en">railhead</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">The point on a railway from which branch-line or road transport of supplies begins.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Production_complex,_guided_missile">
+    <rdfs:label xml:lang="en">production complex, guided missile</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for production of guided missiles.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Demolition_debris">
+    <rdfs:label xml:lang="en">demolition debris</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">The debris left over from the demolition of an object.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_nuclear_storage">
+    <rdfs:label xml:lang="en">depot, nuclear storage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of nuclear weapons.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Radar_head">
+    <rdfs:label xml:lang="en">radar head</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Anchorage">
+    <rdfs:label xml:lang="en">anchorage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a place where vessels anchor.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Office">
+    <rdfs:label xml:lang="en">office</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A place in which business, professional or clerical activities are conducted.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Dry-dock">
+    <rdfs:label xml:lang="en">dry dock</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that provides an enclosure for maintenance, building or repairing ships, from which water can be pumped out.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Support_area">
+    <rdfs:label xml:lang="en">support area</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility in which combat services support (CSS) elements and some staff elements locate to support a unit.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Electronic_installation">
+    <rdfs:label xml:lang="en">electronic installation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility whose essential function is based on the use of electronic equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Forward_observer_position">
+    <rdfs:label xml:lang="en">forward observer position</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility from which military observations are made or fires directed and adjusted by the occupants and which possesses appropriate communications; it may be airborne.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ford,_concrete_lined_bed">
+    <rdfs:label xml:lang="en">ford, concrete lined bed</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A shallow place in a river or other water marked with a concrete-lined bed that can be crossed without bridging, boats, or rafts.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Shipyard">
+    <rdfs:label xml:lang="en">shipyard</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A large enclosure, adjoining the sea or a river, in which ships are built, repaired or maintained.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Field_storage_area-ammunition">
+    <rdfs:label xml:lang="en">field storage area ammunition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility with a group of field storage sites containing a max of 5000 tonnes gross weight of ammunition and explosives.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Village">
+    <rdfs:label xml:lang="en">village</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A group of houses and associated buildings, larger than a hamlet and smaller than a town, especially in a rural area.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Air_operations_centre">
+    <rdfs:label xml:lang="en">air operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE from which aircraft and air warning functions of combat air operations are directed, controlled, and executed. It is the senior agency of the air force component commander from which command and control of air operations are coordinated with other components and services.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Worship_place">
+    <rdfs:label xml:lang="en">worship place</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A building or open space where people assemble for religious purpose.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Supply_dump">
+    <rdfs:label xml:lang="en">supply dump</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A temporary storage area, usually in the open, for bombs, ammunition, equipment, or supplies.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE-TYPE_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_GROUP-ORGANISATION-TYPE">
+    <rdfs:label xml:lang="en">group organisation type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE that is non-formal in nature and classes together its members due to mutual or common circumstances.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Medical_facility">
+    <rdfs:label xml:lang="en">medical facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as a medical facility.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Observation_post">
+    <rdfs:label xml:lang="en">observation post</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility from which military observations are made or fires directed and adjusted and which possesses appropriate communications; it may be airborne.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Bunker">
+    <rdfs:label xml:lang="en">bunker</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A fortified chamber, mostly below ground, often built with reinforced concrete and provided with embrasures.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Intelligence_centre,_tactical">
+    <rdfs:label xml:lang="en">intelligence centre, tactical</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility, at the tactical level, used by intelligence personnel for intelligence operations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Radar_post">
+    <rdfs:label xml:lang="en">radar post</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#FEATURE-TYPE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">feature type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Railway">
+    <rdfs:label xml:lang="en">railway</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A rail or set of parallel rails on which a train or tram runs.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Industrial_installation">
+    <rdfs:label xml:lang="en">industrial installation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing factories and/or productive installations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Combat_outpost">
+    <rdfs:label xml:lang="en">combat outpost</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A reinforced observation post capable of conducting limited combat operations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_base/facility,_submarine">
+    <rdfs:label xml:lang="en">military base/facility, submarine</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is used as a naval base and where submarines may receive or discharge their cargoes or receive maintenance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Munitions_complex">
+    <rdfs:label xml:lang="en">munitions complex</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that could be used for munitions and explosives production or storage.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE-TYPE_Meteorologic_feature_type">
+    <rdfs:label xml:lang="en">meteorologic feature type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">A FEATURE-TYPE that describes reported or forecast weather and light conditions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Transport_facility">
+    <rdfs:label xml:lang="en">transport facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is used to support transport functions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Naval_air_station">
+    <rdfs:label xml:lang="en">naval air station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A Naval facility that is used by and provides services for naval or other aviation units or organisations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_GOVERNMENT-ORGANISATION-TYPE">
+    <rdfs:label xml:lang="en">government organisation type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE that controls and administers public policy either under a national or international mandate.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_chemical_and_biological_warfare_production">
+    <rdfs:label xml:lang="en">military materiel facility, chemical and biological warfare production</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for chemical and biological warfare production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Logistics_release_point">
+    <rdfs:label xml:lang="en">logistics release point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">The facility along the supply route where the supported unit meets the supporting unit to transfer supplies.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Medical_facility,_hospital,_not_otherwise_specified">
+    <rdfs:label xml:lang="en">medical facility, hospital, not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility established for the purpose of furnishing medical and/or dental care to eligible individuals.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Service,_research,_utility_facility,_public_water_service">
+    <rdfs:label xml:lang="en">service, research, utility facility, public water service</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility generally used to support service, research or utility functions in support of public water services.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Refuel_on_the_move_point">
+    <rdfs:label xml:lang="en">refuel on the move point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where vehicles receive a prescribed (timed) amount of fuel and then continue their movement.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Fuel_handling_point">
+    <rdfs:label xml:lang="en">fuel handling point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility for refuelling of POL products.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Combined_air_operations_centre">
+    <rdfs:label xml:lang="en">combined air operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is staffed by members of more than one nation, established for planning, directing, and executing combined air operations in support of the combined force commander's operation or campaign objectives.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Road,_junction">
+    <rdfs:label xml:lang="en">road, junction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A site where two or more roads join or form a connection.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_School">
+    <rdfs:label xml:lang="en">school</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility whose essential function is instruction and education.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Not_known">
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Mine">
+    <rdfs:label xml:lang="en">mine</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where materials are extracted from the ground.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ditch">
+    <rdfs:label xml:lang="en">ditch</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A channel constructed for the purpose of irrigation or drainage.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Control_tower">
+    <rdfs:label xml:lang="en">control tower</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A tower-like structure that houses the persons and equipment used to control the flow of air, rail, or marine traffic.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Prisoner_of_war_holding_area">
+    <rdfs:label xml:lang="en">prisoner of war holding area</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where Prisoners of war are provided custodial care pending further disposition.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Rail_facility,_repair">
+    <rdfs:label xml:lang="en">rail facility, repair</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An installation on a railway where railway equipment may be repaired.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Personnel_barrier">
+    <rdfs:label xml:lang="en">personnel barrier</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A coordinated series of obstacles designed or employed to detect, channel, direct, restrict, delay or stop the movement of personnel.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Emplacement">
+    <rdfs:label xml:lang="en">emplacement</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A prepared position for one or more weapons or pieces of equipment for protection against hostile fire or bombardment, and from which they can execute their tasks.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Transloading_facility">
+    <rdfs:label xml:lang="en">transloading facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">Enables transfer of materiel from one mode of transportation to another or between the same modes of transportation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Direct_air_support_centre">
+    <rdfs:label xml:lang="en">direct air support centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is the principal air control agency of the U.S. Marine air command and control system responsible for the direction and control of air operations directly supporting the ground combat element. It processes and coordinates requests for immediate air support and coordinates air missions requiring integration with ground forces and other supporting arms.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Interchange/complex_junction">
+    <rdfs:label xml:lang="en">interchange/complex junction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A connection designed to provide traffic access from one road to another.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ammunition_supply_point">
+    <rdfs:label xml:lang="en">ammunition supply point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility at which ammunition, obtained from supporting supply points by a division or other unit, are broken down for distribution to other units.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Decontamination_facility">
+    <rdfs:label xml:lang="en">decontamination facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where personnel and/or materiel (incl. vehicles) can be cleaned after (potential) contamination of radioactive, biological, or chemical material.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Freight_terminal">
+    <rdfs:label xml:lang="en">freight terminal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility processing 'goods' in transit or being transferred from one transportation means to another.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL-TYPE_CONSUMABLE-MATERIEL-TYPE">
+    <rdfs:label xml:lang="en">consumable materiel type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A MATERIEL-TYPE that is an expendable class of supply.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Rail_facilities">
+    <rdfs:label xml:lang="en">rail facilities</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An installation on a railway where loads may be transferred between trains and other means of transport.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Refugee_holding_area">
+    <rdfs:label xml:lang="en">refugee holding area</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where refugees are assembled for classification, sorting or further movement to other facilities or installations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Cut">
+    <rdfs:label xml:lang="en">cut</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An excavation of the earth's surface to provide passage for a road, railway, canal, etc.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Water_treatment_facility">
+    <rdfs:label xml:lang="en">water treatment facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for the handling and treatment of water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ferry_installation">
+    <rdfs:label xml:lang="en">ferry installation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility (including the terminals and the water craft) to enable moving equipment and personnel across a body of water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Lighthouse">
+    <rdfs:label xml:lang="en">lighthouse</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A tower or other structure, with a powerful light or lights at the top, erected at some important or dangerous point on or near the seacoast for the guidance of mariners.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Monument">
+    <rdfs:label xml:lang="en">monument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A structure generally created for commemorative purposes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Maintenance_facility">
+    <rdfs:label xml:lang="en">maintenance facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing the resources and infrastructure to enable it to be used for the repair and servicing of equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Shelter,_underground">
+    <rdfs:label xml:lang="en">shelter, underground</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A fortified structure built underground, used to house personnel and/or equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Steeple/spire">
+    <rdfs:label xml:lang="en">steeple/spire</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">In architecture, a steeply pointed pyramidal or conical structure usually attached to an ecclesiastical or public building.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Electronic_installation,_warfare">
+    <rdfs:label xml:lang="en">electronic installation, warfare</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility whose essential function is to exploit the electromagnetic spectrum encompassing: the search for, interception and identification of electromagnetic emissions, the employment of electromagnetic energy, including directed energy, to reduce or prevent hostile use of the electromagnetic spectrum, and actions to ensure its effective use by friendly forces.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Barracks">
+    <rdfs:label xml:lang="en">barracks</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A building or group of buildings used to house soldiers.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Row_house">
+    <rdfs:label xml:lang="en">row house</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">Facilities of a type that represent individual houses sharing at least one wall.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Crossing,_railway/river">
+    <rdfs:label xml:lang="en">crossing, railway/river</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where railway track crosses a highway or street, or where a river can be crossed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Power_plant,_fossil_fuel">
+    <rdfs:label xml:lang="en">power plant, fossil fuel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that provides power produced from fossil fuels.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#PERSON-TYPE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">person type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents human beings about whom information is to be held.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Helicopter_landing_pad">
+    <rdfs:label xml:lang="en">helicopter landing pad</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An improved area used for takeoff, and landing, by helicopters and other vertical takeoff and landing aircraft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_electronic_warfare">
+    <rdfs:label xml:lang="en">site, electronic warfare</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that carries out Electronic Warfare.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Command_post_facility">
+    <rdfs:label xml:lang="en">command post facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility from which a commander directs operations or controls forces.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Bivouac">
+    <rdfs:label xml:lang="en">bivouac</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A temporary encampment, under canvas, of troops in the field.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Missile_site">
+    <rdfs:label xml:lang="en">missile site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area with related facilities for storing and launching missiles.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Reservoir">
+    <rdfs:label xml:lang="en">reservoir</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A man-made open enclosure or area formed for the storage of water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Airborne_warning_and_control_system">
+    <rdfs:label xml:lang="en">airborne warning and control system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is an Airborne Warning and Control System (AWACS) aircraft that provides all-weather surveillance, command, control and communications needed by commanders of air defence forces.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Passenger_terminal">
+    <rdfs:label xml:lang="en">passenger terminal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that provides transportation services for passengers.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Electrical_supply">
+    <rdfs:label xml:lang="en">electrical supply</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing the equipment used for the production and/or distribution of electricity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Maintenance_facility,_aircraft">
+    <rdfs:label xml:lang="en">maintenance facility, aircraft</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing the resources and infrastructure to enable it to be used for the repair and servicing of aircraft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Observation_tower">
+    <rdfs:label xml:lang="en">observation tower</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A position from which military observations are made, or fire directed and adjusted, and which possesses appropriate communications.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Medical_facility,_hospital_field">
+    <rdfs:label xml:lang="en">medical facility, hospital field</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A movable medical treatment facility capable of providing inpatient care.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Installation">
+    <rdfs:label xml:lang="en">installation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A grouping of facilities, located in the same vicinity, which support particular functions. Installations may be elements of a base.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_engineering_equipment_production">
+    <rdfs:label xml:lang="en">military materiel facility, engineering equipment production</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for engineering equipment production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Classification_facility">
+    <rdfs:label xml:lang="en">classification facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1650/6.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Forward_air_control_party">
+    <rdfs:label xml:lang="en">forward air control party</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1395/5.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Chimney/smokestack">
+    <rdfs:label xml:lang="en">chimney/smokestack</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A vertical structure containing a passage or flue for discharging smoke and gases of combustion.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Gate">
+    <rdfs:label xml:lang="en">gate</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A barrier that controls passage to a road, railway, tunnel or bridge.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-TYPE_Military">
+    <rdfs:label xml:lang="en">military</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#PERSON-TYPE"/>
+    <rdfs:comment xml:lang="en">A PERSON-TYPE who is a uniformed member of a regular armed force.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Sensor_outpost/listening_post">
+    <rdfs:label xml:lang="en">sensor outpost/listening post</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility from which military observations are made or fires directed and adjusted and which possesses appropriate communications; it may be airborne. This is an unmanned Observation Post with electronic or other devices to detect activity within the sensors’ range.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Air_control_centre">
+    <rdfs:label xml:lang="en">air control centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Pipeline">
+    <rdfs:label xml:lang="en">pipeline</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A system of pipes above or under ground including their supports, which transports liquids or gas over distance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ford,_stone_lined_bed">
+    <rdfs:label xml:lang="en">ford, stone lined bed</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A shallow place in a river or other water marked with a stone-lined bed that can be crossed without bridging, boats, or rafts.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Fort">
+    <rdfs:label xml:lang="en">fort</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A fortified place garrisoned with troops.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Improved_bed,_type_unknown">
+    <rdfs:label xml:lang="en">improved bed, type unknown</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1650/6.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Marine_tactical_air_direction_centre">
+    <rdfs:label xml:lang="en">marine tactical air direction centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is under the overall control of the tactical air control centre (afloat) or tactical air command centre, from which aircraft and air warning service functions of tactical air operations in an area of concern are directed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Fortification">
+    <rdfs:label xml:lang="en">fortification</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An emplacement or shelter of a temporary or permanent nature constructed for defence by forces for protection of forces.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Shoran_station">
+    <rdfs:label xml:lang="en">shoran station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used in short range navigation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Recognised_air_picture_production_centre">
+    <rdfs:label xml:lang="en">recognised air picture production centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Trench">
+    <rdfs:label xml:lang="en">trench</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A linear excavation dug for defensive purposes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_logistic">
+    <rdfs:label xml:lang="en">site, logistic</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility for the storage, maintenance, research, or disposal of material.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ruins">
+    <rdfs:label xml:lang="en">ruins</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A site or location where remains of ancient civilisations or human activity have been discovered.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Tunnel">
+    <rdfs:label xml:lang="en">tunnel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An underground or underwater passage, open at both ends, and usually containing a road or railway.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_armament_production">
+    <rdfs:label xml:lang="en">military materiel facility, armament production</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for armament production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Apartment_building">
+    <rdfs:label xml:lang="en">apartment building</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A residential unit consisting of a block of flats.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Service,_research,_utility_facility,_telecommunications_facility">
+    <rdfs:label xml:lang="en">service, research, utility facility, telecommunications facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility generally used to support service, research or utility functions in support of telecommunications.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Equipment,_manufacture">
+    <rdfs:label xml:lang="en">equipment, manufacture</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility generally used specifically to support the manufacture of equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Service,_research,_utility_facility,_electric_power_facility">
+    <rdfs:label xml:lang="en">service, research, utility facility, electric power facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility generally used to support service, research or utility functions in support of electric power.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_raft">
+    <rdfs:label xml:lang="en">site, raft</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in APP-6A.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-TYPE_Civilian">
+    <rdfs:label xml:lang="en">civilian</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#PERSON-TYPE"/>
+    <rdfs:comment xml:lang="en">A PERSON-TYPE who is not a uniformed member of a regular armed force.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#">
+    <owl:imports rdf:resource="jc3iedm_OBJECT-TYPE.owl#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_not_otherwise_specified">
+    <rdfs:label xml:lang="en">depot, not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of products or supplies. A facility for the receipt, classification, storage, accounting, issue, maintenance, procurement, manufacture, assembly, research, salvage or disposal of material.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_missile_and_space_system_production">
+    <rdfs:label xml:lang="en">military materiel facility, missile and space system production</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for missile and space system production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Detainee_holding_area">
+    <rdfs:label xml:lang="en">detainee holding area</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where detainees are provided custodial care pending further disposition.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_vehicle_production">
+    <rdfs:label xml:lang="en">military materiel facility, vehicle production</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for vehicle production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Dam/weir">
+    <rdfs:label xml:lang="en">dam/weir</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A permanent barrier across a watercourse used to impound water or to control its flow.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_atomic_energy_reactor">
+    <rdfs:label xml:lang="en">military materiel facility, atomic energy reactor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as an atomic energy reactor.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Network">
+    <rdfs:label xml:lang="en">network</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that provides communication and information services.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Station,_general">
+    <rdfs:label xml:lang="en">station, general</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A stopping place for the transfer of passengers and/or freight.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Police_station">
+    <rdfs:label xml:lang="en">police station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">The office of a local police force.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Power_plant,_thermal">
+    <rdfs:label xml:lang="en">power plant, thermal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that provides power produced from thermal processes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Headquarters">
+    <rdfs:label xml:lang="en">headquarters</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE is a headquarters.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Electronic_installation,_surface_surveillance_jammer">
+    <rdfs:label xml:lang="en">electronic installation, surface surveillance jammer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility whose essential function is jamming to prevent or reduce the enemy's effective use of the electromagnetic spectrum for surface surveillance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#physical_model_only">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_surface_to_surface_missile">
+    <rdfs:label xml:lang="en">site, surface to surface missile</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An installation dedicated to the storage and launch of surface-to-surface missiles.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_CIVILIAN-POST-TYPE">
+    <rdfs:label xml:lang="en">civilian post type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE with a set of duties that are intended to be fulfilled by one person in private sector and non-military government organisations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Detainee_collection_point">
+    <rdfs:label xml:lang="en">detainee collection point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where detainees are assembled for classification, sorting or further movement to other facilities or installations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Power_plant,_hydroelectric">
+    <rdfs:label xml:lang="en">power plant, hydroelectric</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that provides power produced from hydroelectric processes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Tower,_television_transmitter">
+    <rdfs:label xml:lang="en">tower, television transmitter</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A relatively tall structure mounted with a television transmitter.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_ammunition">
+    <rdfs:label xml:lang="en">depot, ammunition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of ammunition.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Rearm,_refuel_and_resupply_point">
+    <rdfs:label xml:lang="en">rearm, refuel and resupply point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A designated facility through which a unit passes where it receives fuel, ammunition, and other necessary supplies to continue combat operations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_chemicals">
+    <rdfs:label xml:lang="en">depot, chemicals</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of chemicals.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Petrochemical_refinery">
+    <rdfs:label xml:lang="en">petrochemical refinery</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">Installations for refining crude oil and/or intermediate petroleum products or for refining synthetic petroleum.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_ammunition_and_explosives_production">
+    <rdfs:label xml:lang="en">military materiel facility, ammunition and explosives production</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for munitions and explosives production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Revetment">
+    <rdfs:label xml:lang="en">revetment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An embankment to provide shelter (as against bomb splinters or strafing).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Governmental_leadership">
+    <rdfs:label xml:lang="en">governmental leadership</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used to support governmental leadership functions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Wing_operations_centre">
+    <rdfs:label xml:lang="en">wing operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_base/facility,_airport/airbase">
+    <rdfs:label xml:lang="en">military base/facility, airport/airbase</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is used as a military base prepared for the accommodation, landing and takeoff of aircraft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Cropland">
+    <rdfs:label xml:lang="en">cropland</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area that has been tilled for the planting of crops.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_POL">
+    <rdfs:label xml:lang="en">depot, pol</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of petroleum, oil and/or lubricants.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Shop">
+    <rdfs:label xml:lang="en">shop</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A small retail store or a speciality department in a large store.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-decoy-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Medical_support">
+    <rdfs:label xml:lang="en">medical support</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that hosts medical personnel who carry out treatment of sick or wounded persons.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Direct_air_support_centre,_airborne">
+    <rdfs:label xml:lang="en">direct air support centre, airborne</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is the principal air control agency of the U.S. Marine air command and control system, operating in an airborne platform responsible for the direction and control of air operations directly supporting the ground combat element.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Meteorological_facility">
+    <rdfs:label xml:lang="en">meteorological facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that supports the study of or the science of, the motions and phenomena of the atmosphere, with a view to forecasting the weather.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Pier">
+    <rdfs:label xml:lang="en">pier</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A solid structure of stone, or of earth faced with piles, extending into the sea or a tidal river to protect or partially enclose a harbour and form a landing place for vessels, or a breakwater.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Road">
+    <rdfs:label xml:lang="en">road</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An open way maintained for vehicular use.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Tactical_air_control_party">
+    <rdfs:label xml:lang="en">tactical air control party</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is an agency that provides assistance in the submission of pre-planned and immediate air support requests, as well as providing terminal control for supporting aircraft. It is an integral part of each combat unit from division down to battalion level and serves as an air advisor to each manoeuvre unit.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_HARBOUR-TYPE">
+    <rdfs:label xml:lang="en">harbour type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a restricted body of water, an anchorage, or other limited coastal water area and its water approaches from which and in which shipping operations are projected or supported.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Traffic_control_post">
+    <rdfs:label xml:lang="en">traffic control post</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility at which traffic is controlled either by police or by mechanical means.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE-TYPE_CONTROL-FEATURE-TYPE">
+    <rdfs:label xml:lang="en">control feature type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">A non-tangible FEATURE-TYPE of military interest that may be represented as a geometric figure and is associated with the conduct of military operations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Production_complex,_petroleum">
+    <rdfs:label xml:lang="en">production complex, petroleum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for petroleum based products production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_aircraft_production_and_assembly">
+    <rdfs:label xml:lang="en">military materiel facility, aircraft production and assembly</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for aircraft production and assembly.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Building">
+    <rdfs:label xml:lang="en">building</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A relatively permanent structure, roofed and usually walled and designed for some particular use.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Mass_grave">
+    <rdfs:label xml:lang="en">mass grave</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE used for the burial of multiple bodies.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Air_operations_coordination_centre">
+    <rdfs:label xml:lang="en">air operations coordination centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE of a tactical air control system collocated with a corps headquarters or an appropriate land force headquarters, which coordinates and directs close air support and other tactical air support.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Sewage_treatment_facility">
+    <rdfs:label xml:lang="en">sewage treatment facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for the handling and treatment of sewage.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_POW_camp">
+    <rdfs:label xml:lang="en">pow camp</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A camp of semi-permanent nature established for the internment of prisoners of war (POW).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Field_storage_stack-ammunition">
+    <rdfs:label xml:lang="en">field storage stack ammunition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where approximately 1 tonne gross weight of ammunition and explosives stored under tactical field conditions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Electronic_installation,_radar_dome">
+    <rdfs:label xml:lang="en">electronic installation, radar dome</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A cover usually intended for protecting radar from the effects of its physical environment without degrading significantly its electrical performance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL-TYPE_EQUIPMENT-TYPE">
+    <rdfs:label xml:lang="en">equipment type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A MATERIEL-TYPE that is not intended for consumption.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_materiel_facility,_ship_construction">
+    <rdfs:label xml:lang="en">military materiel facility, ship construction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used as for ship construction.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Civilian_collection_point">
+    <rdfs:label xml:lang="en">civilian collection point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where civilians are assembled for classification, sorting or further movement to other facilities or installations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Unit_of_accommodation">
+    <rdfs:label xml:lang="en">unit of accommodation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An amount of living space distinct and separate. (Intended for humanitarian aid scenario to enable general indication of accommodation requirements).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Wall">
+    <rdfs:label xml:lang="en">wall</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A continuous, vertical structure, such as a concrete or rock wall serving to enclose, divide, support or protect an area of land. Includes sea walls.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Town">
+    <rdfs:label xml:lang="en">town</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An urban area with a name, defined boundaries and local government, being larger than a village and usually not created a city.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Fence">
+    <rdfs:label xml:lang="en">fence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A man-made barrier of relatively light structure used as an enclosure or boundary.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Service,_research,_utility_facility,_technological_research_facility">
+    <rdfs:label xml:lang="en">service, research, utility facility, technological research facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility generally used to support service, research or utility functions in support of technological research.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_base/facility,_army">
+    <rdfs:label xml:lang="en">military base/facility, army</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is used as a military base by the army.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Bank">
+    <rdfs:label xml:lang="en">bank</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An establishment where money is stored for saving or commercial purposes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-TYPE_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#PERSON-TYPE"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Foxhole">
+    <rdfs:label xml:lang="en">foxhole</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A hole in the ground used by a soldier for protection.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Hut">
+    <rdfs:label xml:lang="en">hut</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A small simple or crude house or shelter.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Trail">
+    <rdfs:label xml:lang="en">trail</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A beaten path, especially through a wild region.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">organisation type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents administrative or functional structures.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Civilian-military_coordination_centre">
+    <rdfs:label xml:lang="en">civilian military coordination centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility at which civilian-military coordination operations are performed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Cleared_way/firebreak">
+    <rdfs:label xml:lang="en">cleared way/firebreak</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A man-made clearing in a cultural area or through a stand of trees, designed to provide access for a road, railroad, pipeline or power transmission line, or to impede the progress of forest fires.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Drainage/sewage">
+    <rdfs:label xml:lang="en">drainage/sewage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for emptying of liquid and channelling sewage to get rid of waste, dirty water and drain water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Marine_tactical_air_command_centre">
+    <rdfs:label xml:lang="en">marine tactical air command centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is the senior U.S. Marine command and control agency providing centralized command for Marine Air Ground Task Forces, and serves as the command post for the aviation combat element (ACE) commander.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">object type</rdfs:label>
+    <rdfs:comment xml:lang="en">An individually identified class of objects that has military or civilian significance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Processing_facility">
+    <rdfs:label xml:lang="en">processing facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility generally used to support a particular method of operation in any manufacture or to support a series of actions or events.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Warehouse">
+    <rdfs:label xml:lang="en">warehouse</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility for the receipt, classification, storage, accounting, issue, maintenance, procurement, manufacture, assembly, research, salvage or disposal of material.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Relay_facility">
+    <rdfs:label xml:lang="en">relay facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An installation organised, equipped, and located for the purpose of extending the coverage of electronic communications and detection.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Apron">
+    <rdfs:label xml:lang="en">apron</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is an area intended for parking, loading, unloading and/or servicing.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Berm">
+    <rdfs:label xml:lang="en">berm</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An artificial ridge or embankment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE-TYPE_GEOGRAPHIC-FEATURE-TYPE">
+    <rdfs:label xml:lang="en">geographic feature type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">A FEATURE-TYPE that describes terrain characteristics to which military significance is attached.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_base/facility,_seaport/naval_base">
+    <rdfs:label xml:lang="en">military base/facility, seaport/naval base</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is used as a naval base and where ships may receive or discharge their cargoes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PERSON-TYPE_Not_known">
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#PERSON-TYPE"/>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_NBC_observation_post_(dismounted)">
+    <rdfs:label xml:lang="en">nbc observation post (dismounted)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility from which chemical, biological, radiological, or nuclear observations are made and which possesses appropriate communications; it is dismounted.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Alternate_decontamination_facility">
+    <rdfs:label xml:lang="en">alternate decontamination facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A decontamination facility designated as the alternate to the primary decontamination facility that can be used in place of the where personnel and/or materiel (incl. vehicles) can be cleaned after (potential) contamination of radioactive, biological, or chemical material.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OBJECT-TYPE_Not_known">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Motorway">
+    <rdfs:label xml:lang="en">motorway</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An open, broad way, often with shoulders and barriers, maintained for vehicular use.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Heliport">
+    <rdfs:label xml:lang="en">heliport</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A place designated for the landing and takeoff of helicopters, including its buildings and facilities.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Power_plant,_nuclear">
+    <rdfs:label xml:lang="en">power plant, nuclear</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that provides power produced from nuclear energy.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Railway,_junction">
+    <rdfs:label xml:lang="en">railway, junction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A site where two or more railway tracks join or form a connection.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Nuclear_facility">
+    <rdfs:label xml:lang="en">nuclear facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An installation with associated buildings capable of handling civilian or military nuclear material.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_ground_surveillance_radar">
+    <rdfs:label xml:lang="en">site, ground surveillance radar</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing radar employed for ground surveillance purposes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_military_bridging">
+    <rdfs:label xml:lang="en">site, military bridging</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is used as a basis for military bridging.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Military_base/facility">
+    <rdfs:label xml:lang="en">military base/facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is used as a military base.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Quay">
+    <rdfs:label xml:lang="en">quay</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a solidly constructed platform, usually parallel to the shoreline of navigable water, alongside which a vessel can be docked or berthed and, on which, the vessel can be accessed and cargo can be loaded or unloaded on one side of the vessel only.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Control_and_reporting_centre">
+    <rdfs:label xml:lang="en">control and reporting centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that serves as the senior ground radar element of the theatre air control system (TACS). Mission is to detect, identify, and verify airborne targets in assigned area. CRC also provides decentralized execution of air defence and airspace control, provides early warning to air and ground elements and manages subordinate radar units.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Berth">
+    <rdfs:label xml:lang="en">berth</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a space or length in the water at a harbour allocated to or reserved for a vessel to dock and moor for loading or unloading.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Mining_installation,_underwater">
+    <rdfs:label xml:lang="en">mining installation, underwater</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where materials are extracted from the bottom of a lake, river or sea.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Maintenance_facility,_motor_vehicle">
+    <rdfs:label xml:lang="en">maintenance facility, motor vehicle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing the resources and infrastructure to enable it to be used for the repair and servicing of motor vehicles.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Pumping_station">
+    <rdfs:label xml:lang="en">pumping station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that supports the movement of gases or liquids.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Production_complex,_chemical">
+    <rdfs:label xml:lang="en">production complex, chemical</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for production of chemicals.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Slipway">
+    <rdfs:label xml:lang="en">slipway</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that provides a sloping surface or inclined structure leading down to the water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_artillery_locating">
+    <rdfs:label xml:lang="en">site, artillery locating</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing equipment employed for locating artillery.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Production_complex,_aircraft">
+    <rdfs:label xml:lang="en">production complex, aircraft</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for aircraft production.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Power_transmission_line">
+    <rdfs:label xml:lang="en">power transmission line</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A system of above ground wires including their supports, which transmit electricity over distance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Cemetery/graveyard/burial_ground">
+    <rdfs:label xml:lang="en">cemetery/graveyard/burial ground</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility that is an area of land for burying the dead.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Airborne_early_warning_ground_facility">
+    <rdfs:label xml:lang="en">airborne early warning ground facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility on the ground that has an electromagnetic link to an airborne early warning system.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Casualty_collection_point">
+    <rdfs:label xml:lang="en">casualty collection point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where casualties are assembled to be transported to a medical treatment facility for example a company aid post.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Forward_arming_and_refuelling_point">
+    <rdfs:label xml:lang="en">forward arming and refuelling point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A temporary facility that is organised, equipped, and deployed by an aviation commander and normally located in the main battle area closer to the area of operations than the aviation unit's combat service support (CSS) area. It provides fuel and ammunition necessary for the employment of aviation manoeuvre units in combat. It permits combat aircraft to rapidly refuel and rearm simultaneously.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Communications_tower">
+    <rdfs:label xml:lang="en">communications tower</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A relatively tall structure used for transmitting and/or receiving electronic communications signals.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_City">
+    <rdfs:label xml:lang="en">city</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A large town. In most cases a town created a city by charter.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Government_building">
+    <rdfs:label xml:lang="en">government building</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A building for the administration of local, regional, or national government.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Camp">
+    <rdfs:label xml:lang="en">camp</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An accommodation based upon a number of tents or huts.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Headquarters_facility">
+    <rdfs:label xml:lang="en">headquarters facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility from which administrative and/or command functions are performed.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Not_known">
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Maintenance_facility,_armour/artillery">
+    <rdfs:label xml:lang="en">maintenance facility, armour/artillery</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing the resources and infrastructure to enable it to be used for the repair and servicing of armour/artillery equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_NBC">
+    <rdfs:label xml:lang="en">depot, nbc</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of chemical, biological, radiological, or nuclear materiel.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Bulk_fuel_installation,_field">
+    <rdfs:label xml:lang="en">bulk fuel installation, field</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing fuel containers, pipe work and dispensing equipment connected together to form a temporary fuel installation within a tactical field location.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Marine_tactical_air_operations_centre">
+    <rdfs:label xml:lang="en">marine tactical air operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE that is the principal air control agency of the U.S. Marine air command and control system responsible for airspace control and management. It provides real-time surveillance, direction, positive control, and navigational assistance for friendly aircraft. It performs real-time direction and control of all anti-air warfare operations, to include manned interceptors and surface-to-air weapons. It is subordinate to the tactical air command centre.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_MILITARY-OBSTACLE-TYPE">
+    <rdfs:label xml:lang="en">military obstacle type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a class of man-made devices or passive defence works that are designed to stop, impede, or divert movement of amphibious or ground forces.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Ground_based_air_defence_operations_centre">
+    <rdfs:label xml:lang="en">ground based air defence operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">No definition provided in ADatP-3 Baseline 13.1 FFIRN/FUD 1874/4.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Railway_crossing">
+    <rdfs:label xml:lang="en">railway crossing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A predefined place at which a railway may be crossed at the same level by a road.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Hangar">
+    <rdfs:label xml:lang="en">hangar</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A covered space, shed or shelter for the accommodation of aircraft or spacecraft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_BRIDGE-TYPE">
+    <rdfs:label xml:lang="en">bridge type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a class of structures (including overpasses and viaducts), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Mining_installation,_underground">
+    <rdfs:label xml:lang="en">mining installation, underground</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where materials are extracted from the ground using underground tunnels and shafts.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Maintenance_collection_point">
+    <rdfs:label xml:lang="en">maintenance collection point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility established to collect equipment awaiting repair, controlled exchange, cannibalisation or evacuation. May be operated by the user or by intermediate maintenance units.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_POL_point">
+    <rdfs:label xml:lang="en">pol point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility for the distribution of petroleum and associated products.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Air_support_operations_centre">
+    <rdfs:label xml:lang="en">air support operations centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE of a tactical air control system collocated with a corps headquarters or an appropriate land force headquarters, which coordinates and directs close air support and other tactical air support.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Prisoner_of_war_collection_point">
+    <rdfs:label xml:lang="en">prisoner of war collection point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where Prisoners of war are assembled for classification, sorting or further movement to other facilities or installations.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_medical">
+    <rdfs:label xml:lang="en">depot, medical</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of medical supplies.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Ammunition_cache">
+    <rdfs:label xml:lang="en">ammunition cache</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A hiding place for ammunition.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Windmill">
+    <rdfs:label xml:lang="en">windmill</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A wind-driven system of vanes attached to a tower-like structure (excluding wind-generated power plants).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Channel_pass_lock">
+    <rdfs:label xml:lang="en">channel pass lock</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A confined section of a canal or river where the level can be changed for raising and lowering boats between adjacent sections by the use of gates and sluices.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Jetty">
+    <rdfs:label xml:lang="en">jetty</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a platform that may be fixed or floating extending from a shore, normally attached to a wharf or the shore, and which allows access to a vessel lying alongside, used to secure, protect and provide landing and docking for vessels.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_Coordination_centre">
+    <rdfs:label xml:lang="en">coordination centre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">The ORGANISATION-TYPE is a coordination centre.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Port">
+    <rdfs:label xml:lang="en">port</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A town or place possessing a harbour where vessels load and unload, or begin or end their voyage.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_AIRFIELD-TYPE">
+    <rdfs:label xml:lang="en">airfield type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a class of an area prepared for the accommodation (including any buildings, installations, or equipment) of landing and take off of aircraft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Farm">
+    <rdfs:label xml:lang="en">farm</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">Land devoted to agricultural production, raising and breeding of animals or an area of water devoted to the raising and breeding of aquatic animals.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Urban_area">
+    <rdfs:label xml:lang="en">urban area</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A developed area, constituting, forming, or including a city, town, or burgh, or part of such.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Supply_point">
+    <rdfs:label xml:lang="en">supply point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where supply services are provided.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL-TYPE_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#MATERIEL-TYPE"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Hamlet">
+    <rdfs:label xml:lang="en">hamlet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A small village, especially one without a church.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-TYPE.owl#MATERIEL-TYPE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">materiel type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents equipment, apparatus or supplies of military interest without distinction to its application for administrative or combat purposes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#OBJECT-TYPE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Water_tower">
+    <rdfs:label xml:lang="en">water tower</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An elevated container and its supporting structure used to hold water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Shed">
+    <rdfs:label xml:lang="en">shed</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A storage facility usually characterised by one or more open sides, support pillars and a roof.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Tower,_flak">
+    <rdfs:label xml:lang="en">tower, flak</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A relatively tall structure mounted with an anti-aircraft gun.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Omnirange_station">
+    <rdfs:label xml:lang="en">omnirange station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility used for non-directional radio transmissions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_air-defence_radar">
+    <rdfs:label xml:lang="en">site, air defence radar</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing radar employed for air-defence purposes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Communications_building">
+    <rdfs:label xml:lang="en">communications building</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A building in which communications signals are processed or controlled.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Depot,_missile_ammunition">
+    <rdfs:label xml:lang="en">depot, missile ammunition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area used for the storage of missile ammunition.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Orchard/plantation">
+    <rdfs:label xml:lang="en">orchard/plantation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An area covered by systematic plantings of trees that yield fruits, nuts or other products.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Field_storage_site-ammunition">
+    <rdfs:label xml:lang="en">field storage site ammunition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility with a group of field storage modules containing a max of 200 tonnes gross weight of ammunition and explosives.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Site,_radar">
+    <rdfs:label xml:lang="en">site, radar</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility containing radar that may be employed for the tracking and identification of battlespace objects.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Canal">
+    <rdfs:label xml:lang="en">canal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A man-made or improved natural waterway used for transportation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Religious_facility">
+    <rdfs:label xml:lang="en">religious facility</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">An ecclesiastical facility established for the purpose of worship and prayer.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Medical_facility,_hospital">
+    <rdfs:label xml:lang="en">medical facility, hospital</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A fixed medical treatment facility capable of providing inpatient care.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Mining_installation,_open_sky">
+    <rdfs:label xml:lang="en">mining installation, open sky</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility where materials are extracted from the ground directly, without using tunnels.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE_PRIVATE-SECTOR-ORGANISATION-TYPE">
+    <rdfs:label xml:lang="en">private sector organisation type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
+    <rdfs:comment xml:lang="en">An ORGANISATION-TYPE that is a non-government organisation and is constituted for business, commerce, manufacturing, trade, relief or philanthropy.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Loading_platform">
+    <rdfs:label xml:lang="en">loading platform</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A facility constructed for loading goods/equipment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY-TYPE_Tower,_non-communications">
+    <rdfs:label xml:lang="en">tower, non communications</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>
+    <rdfs:comment xml:lang="en">A relatively tall structure which may be used for observation, support, or storage etc.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

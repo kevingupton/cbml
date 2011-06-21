@@ -11,7 +11,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#physical_model_only">
-    <rdfs:domain rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
+    <rdfs:domain rdf:resource="#POINT-REFERENCE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#RELATIVE-COORDINATE-SYSTEM">
@@ -20,13 +20,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#OBJECT-REFERENCE">
-    <rdfs:subClassOf rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
     <rdfs:comment xml:lang="en">A RELATIVE-COORDINATE-SYSTEM that has its frame of reference defined by using the position and orientation of a specific OBJECT-ITEM at a given point in time.</rdfs:comment>
     <rdfs:label xml:lang="en">object reference</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#POINT-REFERENCE">
-    <rdfs:subClassOf rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
     <rdfs:comment xml:lang="en">A RELATIVE-COORDINATE-SYSTEM that uses three specific POINTs to establish its frame of reference.</rdfs:comment>
     <rdfs:label xml:lang="en">point reference</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
