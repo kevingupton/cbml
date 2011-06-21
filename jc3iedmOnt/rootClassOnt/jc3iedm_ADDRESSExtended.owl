@@ -1,0 +1,79 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ADDRESSExtended.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ADDRESSExtended.owl#" > 
+  <rdf:Description rdf:about="#PHYSICAL-ADDRESS_Return_address">
+    <rdfs:label xml:lang="en">return address</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS"/>
+    <rdfs:comment xml:lang="en">An address to which a specific piece of mail should be returned to if not delivered.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ADDRESS_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_ADDRESS.owl#ADDRESS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">address</rdfs:label>
+    <rdfs:comment xml:lang="en">Precise information on the basis of which a physical or electronic destination may be accessed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_ADDRESS.owl#address-place-name-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_ADDRESS.owl#address-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PHYSICAL-ADDRESS_Mailing_address">
+    <rdfs:label xml:lang="en">mailing address</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS"/>
+    <rdfs:comment xml:lang="en">An address to which a specific piece of mail is sent.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PHYSICAL-ADDRESS_Postmark">
+    <rdfs:label xml:lang="en">postmark</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS"/>
+    <rdfs:comment xml:lang="en">The mark affixed to a mailed item by the post office.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_ADDRESS.owl#physical_model_only">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_ADDRESS.owl#ELECTRONIC-ADDRESS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">electronic address</rdfs:label>
+    <rdfs:comment xml:lang="en">An ADDRESS that is reached by using the specified NETWORK-SERVICE.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PHYSICAL-ADDRESS_Physical_address">
+    <rdfs:label xml:lang="en">physical address</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS"/>
+    <rdfs:comment xml:lang="en">The actual address of a facility, organisation or person.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#">
+    <owl:imports rdf:resource="jc3iedm_ADDRESS.owl#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PHYSICAL-ADDRESS_Not_otherwise_specified">
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS"/>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">physical address</rdfs:label>
+    <rdfs:comment xml:lang="en">An ADDRESS that represents a physical location that is reachable by use of transportation, to include the use of postal services.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
+  </rdf:Description>
+</rdf:RDF>
