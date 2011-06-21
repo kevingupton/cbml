@@ -2,12 +2,14 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_AFFILIATION.owl#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_AFFILIATION.owl#" > 
-  <rdf:Description rdf:about="#physical_model_only">
-    <rdfs:domain rdf:resource="#AFFILIATION"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#" > 
+  <rdf:Description rdf:about="#AFFILIATION-FUNCTIONAL-GROUP">
+    <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
+    <rdfs:comment xml:lang="en">A specification of a functional group characterised by its primary purpose to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:label xml:lang="en">affiliation functional group</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#AFFILIATION-GEOPOLITICAL">
     <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
@@ -15,20 +17,20 @@
     <rdfs:label xml:lang="en">affiliation geopolitical</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#AFFILIATION">
+    <rdfs:comment xml:lang="en">A specification of a country, nationality, ethnic group, functional group, exercise group, or religion to which membership or allegiance may be ascribed.</rdfs:comment>
+    <rdfs:label xml:lang="en">affiliation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#affiliation-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AFFILIATION"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#AFFILIATION-ETHNIC-GROUP">
     <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
     <rdfs:comment xml:lang="en">A specification of an ethnic group to which membership or allegiance may be ascribed.</rdfs:comment>
     <rdfs:label xml:lang="en">affiliation ethnic group</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#affiliation-category-code">
-    <rdfs:domain rdf:resource="#AFFILIATION"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#AFFILIATION-FUNCTIONAL-GROUP">
-    <rdfs:subClassOf rdf:resource="#AFFILIATION"/>
-    <rdfs:comment xml:lang="en">A specification of a functional group characterised by its primary purpose to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:label xml:lang="en">affiliation functional group</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#AFFILIATION-RELIGION">
@@ -37,9 +39,8 @@
     <rdfs:label xml:lang="en">affiliation religion</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#AFFILIATION">
-    <rdfs:comment xml:lang="en">A specification of a country, nationality, ethnic group, functional group, exercise group, or religion to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:label xml:lang="en">affiliation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="#physical_model_only">
+    <rdfs:domain rdf:resource="#AFFILIATION"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
 </rdf:RDF>

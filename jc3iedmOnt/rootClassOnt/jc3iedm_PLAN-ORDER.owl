@@ -1,19 +1,23 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_PLAN-ORDER.owl#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDER.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_PLAN-ORDER.owl#" > 
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDER.owl#" > 
+  <rdf:Description rdf:about="#PLAN-ORDER">
+    <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#physical_model_only">
+    <rdfs:domain rdf:resource="#PLAN-ORDER"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#PLAN">
     <rdfs:subClassOf rdf:resource="#PLAN-ORDER"/>
     <rdfs:comment xml:lang="en">A proposal for putting into effect a command decision or project; it represents the preparation for future or anticipated operations.</rdfs:comment>
     <rdfs:label xml:lang="en">plan</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PLAN-ORDER">
-    <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
-    <rdfs:label xml:lang="en">plan order</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ORDER">
@@ -23,10 +27,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#plan-order-category-code">
-    <rdfs:domain rdf:resource="#PLAN-ORDER"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#physical_model_only">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>

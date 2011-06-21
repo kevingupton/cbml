@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ADDRESS.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ADDRESS.owl#" > 
+  <rdf:Description rdf:about="#ADDRESS">
+    <rdfs:comment xml:lang="en">Precise information on the basis of which a physical or electronic destination may be accessed.</rdfs:comment>
+    <rdfs:label xml:lang="en">address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#address-place-name-text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ADDRESS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#address-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ADDRESS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ELECTRONIC-ADDRESS">
+    <rdfs:subClassOf rdf:resource="#ADDRESS"/>
+    <rdfs:comment xml:lang="en">An ADDRESS that is reached by using the specified NETWORK-SERVICE.</rdfs:comment>
+    <rdfs:label xml:lang="en">electronic address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PHYSICAL-ADDRESS">
+    <rdfs:subClassOf rdf:resource="#ADDRESS"/>
+    <rdfs:comment xml:lang="en">An ADDRESS that represents a physical location that is reachable by use of transportation, to include the use of postal services.</rdfs:comment>
+    <rdfs:label xml:lang="en">physical address</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#physical_model_only">
+    <rdfs:domain rdf:resource="#ADDRESS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>
