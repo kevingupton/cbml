@@ -1,15 +1,17 @@
 <rdf:RDF
+    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTION.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_ACTION.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedm_ACTION.owl#" > 
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTION.owl#" > 
   <rdf:Description rdf:about="#action-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#action-name-text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -17,15 +19,15 @@
     <rdfs:domain rdf:resource="#ACTION"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ACTION">
-    <rdfs:comment xml:lang="en">An activity, or the occurrence of an activity, that may utilise resources and may be focused against an objective.</rdfs:comment>
-    <rdfs:label xml:lang="en">action</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#ACTION-TASK">
     <rdfs:subClassOf rdf:resource="#ACTION"/>
     <rdfs:comment xml:lang="en">An ACTION that is being or has been planned and for which the planning details are known.</rdfs:comment>
     <rdfs:label xml:lang="en">action task</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION">
+    <rdfs:comment xml:lang="en">An activity, or the occurrence of an activity, that may utilise resources and may be focused against an objective.</rdfs:comment>
+    <rdfs:label xml:lang="en">action</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT">
