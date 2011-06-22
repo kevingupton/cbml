@@ -28,30 +28,24 @@
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#person-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PERSON-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#object-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#VESSEL-TYPE">
     <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
     <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to operate on or under the water surface.</rdfs:comment>
     <rdfs:label xml:lang="en">vessel type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#ammunition-type-mine-maritime-firing-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AMMUNITION-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#consumable-materiel-type-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ammunition-type-mine-maritime-firing-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AMMUNITION-TYPE"/>
+  <rdf:Description rdf:about="#railcar-type-gauge-dimension">
+    <rdfs:domain rdf:resource="#RAILCAR-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#AMMUNITION-TYPE">
@@ -59,15 +53,6 @@
     <rdfs:comment xml:lang="en">A CONSUMABLE-MATERIEL-TYPE that is a complete device charged with explosives, propellants, pyrotechnics, initiating composition, or nuclear, biological, or chemical material for use in military operations.</rdfs:comment>
     <rdfs:label xml:lang="en">ammunition type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#railcar-type-gauge-dimension">
-    <rdfs:domain rdf:resource="#RAILCAR-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#person-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PERSON-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#physical_model_only">
     <rdfs:domain rdf:resource="#TASK-FORMATION-TYPE"/>
@@ -107,14 +92,19 @@
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#vehicle-type-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#VEHICLE-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#aircraft-type-airframe-design-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#vehicle-type-category-code">
+  <rdf:Description rdf:about="#military-obstacle-type-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#VEHICLE-TYPE"/>
+    <rdfs:domain rdf:resource="#MILITARY-OBSTACLE-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CBRN-EQUIPMENT-TYPE">
@@ -123,11 +113,6 @@
     <rdfs:label xml:lang="en">cbrn equipment type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#military-obstacle-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MILITARY-OBSTACLE-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#RAILCAR-TYPE">
     <rdfs:subClassOf rdf:resource="#EQUIPMENT-TYPE"/>
     <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to operate on rail tracks.</rdfs:comment>
@@ -135,32 +120,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FACILITY-TYPE">
-    <rdfs:comment xml:lang="en">An OBJECT-TYPE that is intended to be built, installed or established to serve some particular purpose and is identified by the service it is intended to provide rather than by its content.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
     <rdfs:label xml:lang="en">facility type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that is intended to be built, installed or established to serve some particular purpose and is identified by the service it is intended to provide rather than by its content.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#materiel-type-stock-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#subsurface-vessel-type-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SUBSURFACE-VESSEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#materiel-type-issuing-length-dimension">
-    <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#facility-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#FACILITY-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#object-type-decoy-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ammunition-type-exercise-mine-flare-colour-code">
@@ -174,14 +141,14 @@
     <rdfs:label xml:lang="en">engineering equipment type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#private-sector-organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PRIVATE-SECTOR-ORGANISATION-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#unit-type-qualifier-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#private-sector-organisation-type-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#PRIVATE-SECTOR-ORGANISATION-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MISCELLANEOUS-EQUIPMENT-TYPE">
@@ -193,11 +160,6 @@
   <rdf:Description rdf:about="#biological-materiel-type-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BIOLOGICAL-MATERIEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#object-type-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#VEHICLE-TYPE">
@@ -233,14 +195,19 @@
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#equipment-type-fuel-capacity-quantity">
+    <rdfs:domain rdf:resource="#EQUIPMENT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#BRIDGE-TYPE">
     <rdfs:subClassOf rdf:resource="#FACILITY-TYPE"/>
     <rdfs:comment xml:lang="en">A FACILITY-TYPE that is a class of structures (including overpasses and viaducts), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
     <rdfs:label xml:lang="en">bridge type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#equipment-type-fuel-capacity-quantity">
-    <rdfs:domain rdf:resource="#EQUIPMENT-TYPE"/>
+  <rdf:Description rdf:about="#weapon-type-subcategory-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#WEAPON-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#WEAPON-TYPE">
@@ -249,24 +216,19 @@
     <rdfs:label xml:lang="en">weapon type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#weapon-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#WEAPON-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#military-post-type-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-POST-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#maritime-equipment-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MARITIME-EQUIPMENT-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#military-obstacle-type-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-OBSTACLE-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#maritime-equipment-type-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#MARITIME-EQUIPMENT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#unit-type-general-mobility-code">
@@ -290,11 +252,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="#vessel-type-maximum-speed-rate">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#person-type-rank-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PERSON-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#consumable-materiel-type-issuing-element-code">
@@ -321,11 +278,6 @@
     <rdfs:domain rdf:resource="#RADIOACTIVE-MATERIEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#task-formation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#TASK-FORMATION-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#CONSUMABLE-MATERIEL-TYPE">
     <rdfs:subClassOf rdf:resource="#MATERIEL-TYPE"/>
     <rdfs:comment xml:lang="en">A MATERIEL-TYPE that is an expendable class of supply.</rdfs:comment>
@@ -337,6 +289,11 @@
     <rdfs:comment xml:lang="en">A GOVERNMENT-ORGANISATION-TYPE that is officially sanctioned and is trained and equipped to exert force.</rdfs:comment>
     <rdfs:label xml:lang="en">military organisation type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#task-formation-type-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TASK-FORMATION-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ammunition-type-calibre-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -406,9 +363,8 @@
     <rdfs:domain rdf:resource="#MARITIME-EQUIPMENT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#materiel-type-supply-class-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
+  <rdf:Description rdf:about="#vessel-type-acoustic-merit-index-quantity">
+    <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#bridge-type-design-type-code">
@@ -416,33 +372,26 @@
     <rdfs:domain rdf:resource="#BRIDGE-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#vessel-type-acoustic-merit-index-quantity">
-    <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#aircraft-type-main-purpose-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION-TYPE">
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
+    <rdfs:label xml:lang="en">organisation type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents administrative or functional structures.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#military-post-type-rank-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-POST-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ORGANISATION-TYPE">
-    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents administrative or functional structures.</rdfs:comment>
-    <rdfs:label xml:lang="en">organisation type</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#aircraft-type-takeoff-and-landing-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#FEATURE-TYPE">
-    <rdfs:comment xml:lang="en">An OBJECT-TYPE that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
     <rdfs:label xml:lang="en">feature type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#GOVERNMENT-ORGANISATION-TYPE">
@@ -450,6 +399,11 @@
     <rdfs:comment xml:lang="en">An ORGANISATION-TYPE that controls and administers public policy either under a national or international mandate.</rdfs:comment>
     <rdfs:label xml:lang="en">government organisation type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aircraft-type-takeoff-and-landing-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#control-feature-type-echelon-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -472,14 +426,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#OBJECT-TYPE">
-    <rdfs:comment xml:lang="en">An individually identified class of objects that has military or civilian significance.</rdfs:comment>
-    <rdfs:label xml:lang="en">object type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#materiel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#railcar-type-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -543,17 +490,7 @@
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#organisation-type-command-function-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#aircraft-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#aircraft-type-training-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -561,6 +498,11 @@
   <rdf:Description rdf:about="#miscellaneous-equipment-type-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MISCELLANEOUS-EQUIPMENT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aircraft-type-training-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#surface-vessel-type-category-code">
@@ -578,10 +520,6 @@
     <rdfs:comment xml:lang="en">An EQUIPMENT-TYPE that is designed to fly.</rdfs:comment>
     <rdfs:label xml:lang="en">aircraft type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#materiel-type-issuing-height-dimension">
-    <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURFACE-VESSEL-TYPE">
     <rdfs:subClassOf rdf:resource="#VESSEL-TYPE"/>
@@ -608,22 +546,17 @@
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ROUTE-TYPE">
-    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE-TYPE"/>
-    <rdfs:comment xml:lang="en">A CONTROL-FEATURE-TYPE that is the prescribed course to be travelled from a point of origin to a destination.</rdfs:comment>
-    <rdfs:label xml:lang="en">route type</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#UNIT-TYPE">
     <rdfs:subClassOf rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
     <rdfs:comment xml:lang="en">A MILITARY-ORGANISATION-TYPE whose structure is prescribed by competent authority.</rdfs:comment>
     <rdfs:label xml:lang="en">unit type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#organisation-type-command-and-control-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="#ROUTE-TYPE">
+    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE-TYPE"/>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE-TYPE that is the prescribed course to be travelled from a point of origin to a destination.</rdfs:comment>
+    <rdfs:label xml:lang="en">route type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#chemical-materiel-type-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -635,16 +568,16 @@
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#aircraft-type-weather-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#BIOLOGICAL-MATERIEL-TYPE">
     <rdfs:subClassOf rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
     <rdfs:comment xml:lang="en">A CONSUMABLE-MATERIEL-TYPE that is either a microorganism that causes disease in man, plants, or animals or causes the deterioration of materiel; or a toxin, produced by an animal, plant, or microorganism, which may kill, seriously injure, or incapacitate personnel through its physiological effects.</rdfs:comment>
     <rdfs:label xml:lang="en">biological materiel type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aircraft-type-weather-qualifier-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#GROUP-ORGANISATION-TYPE">
     <rdfs:subClassOf rdf:resource="#ORGANISATION-TYPE"/>
@@ -652,19 +585,15 @@
     <rdfs:label xml:lang="en">group organisation type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#feature-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#FEATURE-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#biological-materiel-type-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BIOLOGICAL-MATERIEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#PERSON-TYPE">
-    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents human beings about whom information is to be held.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
     <rdfs:label xml:lang="en">person type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents human beings about whom information is to be held.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#unit-type-arm-category-code">
@@ -766,8 +695,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MATERIEL-TYPE">
-    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents equipment, apparatus or supplies of military interest without distinction to its application for administrative or combat purposes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#OBJECT-TYPE"/>
     <rdfs:label xml:lang="en">materiel type</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-TYPE that represents equipment, apparatus or supplies of military interest without distinction to its application for administrative or combat purposes.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ammunition-type-category-code">
@@ -780,30 +710,16 @@
     <rdfs:domain rdf:resource="#CHEMICAL-MATERIEL-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#materiel-type-issuing-width-dimension">
-    <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#materiel-type-reportable-item-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="#SUBSURFACE-VESSEL-TYPE">
+    <rdfs:subClassOf rdf:resource="#VESSEL-TYPE"/>
+    <rdfs:comment xml:lang="en">A vessel principally designed to operate under the water surface.</rdfs:comment>
+    <rdfs:label xml:lang="en">subsurface vessel type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MILITARY-POST-TYPE">
     <rdfs:subClassOf rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
     <rdfs:comment xml:lang="en">A MILITARY-ORGANISATION-TYPE with a set of duties that can be fulfilled by one person.</rdfs:comment>
     <rdfs:label xml:lang="en">military post type</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#SUBSURFACE-VESSEL-TYPE">
-    <rdfs:subClassOf rdf:resource="#VESSEL-TYPE"/>
-    <rdfs:comment xml:lang="en">A vessel principally designed to operate under the water surface.</rdfs:comment>
-    <rdfs:label xml:lang="en">subsurface vessel type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#aircraft-type-design-range-code">
@@ -813,11 +729,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="#vessel-type-gross-registered-tonnage-quantity">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#organisation-type-description-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CONTROL-FEATURE-TYPE">

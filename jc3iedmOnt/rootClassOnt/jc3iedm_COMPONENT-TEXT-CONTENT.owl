@@ -6,17 +6,6 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_COMPONENT-TEXT-CONTENT.owl#" > 
   <rdf:Description rdf:about="#COMPONENT-TEXT-CONTENT">
-    <rdfs:comment xml:lang="en">A textual statement of substantive subject matter.</rdfs:comment>
-    <rdfs:label xml:lang="en">component text content</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#physical_model_only">
-    <rdfs:domain rdf:resource="#COMPONENT-TEXT-CONTENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#component-text-content-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#COMPONENT-TEXT-CONTENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
 </rdf:RDF>

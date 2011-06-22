@@ -5,202 +5,421 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#" > 
-  <rdf:Description rdf:about="#FACILITY_RUNWAY">
-    <rdfs:label xml:lang="en">runway</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a specifically prepared surface along which aircraft take off and land.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FEATURE_Not_otherwise_specified">
-    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
-    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ORGANISATION_UNIT">
-    <rdfs:label xml:lang="en">unit</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
-    <rdfs:comment xml:lang="en">A military ORGANISATION whose structure is prescribed by competent authority.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_ROAD">
-    <rdfs:label xml:lang="en">road</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a path or way with a specially prepared surface.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_SLIPWAY">
-    <rdfs:label xml:lang="en">slipway</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that provides a sloping surface or inclined structure leading down to the water.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_RAILWAY">
-    <rdfs:label xml:lang="en">railway</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a track or set of tracks made of steel rails along which trains run.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#MATERIEL_Not_otherwise_specified">
-    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
-    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#MATERIEL">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">materiel</rdfs:label>
-    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is equipment, apparatus or supplies of military interest without distinction as to its application for administrative or combat purposes.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_BERTH">
-    <rdfs:label xml:lang="en">berth</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a space or length in the water at a harbour allocated to or reserved for a vessel to dock and moor for loading or unloading.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_BASIN">
-    <rdfs:label xml:lang="en">basin</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is an open area of water, usually artificial and enclosed by dock gates lined with wharves, warehouses and berths to enable vessels to load and unload.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_MILITARY-OBSTACLE">
-    <rdfs:label xml:lang="en">military obstacle</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY designed to stop, impede, or divert movement of amphibious or ground forces.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FEATURE_METEOROLOGIC-FEATURE">
-    <rdfs:label xml:lang="en">meteorologic feature</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
-    <rdfs:comment xml:lang="en">A FEATURE that describes reported or forecast weather and light conditions.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#FEATURE">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">feature</rdfs:label>
-    <rdfs:comment xml:lang="en">An OBJECT-ITEM that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#PERSON">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">person</rdfs:label>
-    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is a human being to whom military or civilian significance is attached.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">facility</rdfs:label>
-    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is built, installed or established to serve some particular purpose and is identified by the service it provides rather than by its content.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_QUAY">
-    <rdfs:label xml:lang="en">quay</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a solidly constructed platform, usually parallel to the shoreline of navigable water, alongside which a vessel can be docked or berthed and, on which, the vessel can be accessed and cargo can be loaded or unloaded on one side of the vessel only.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#physical_model_only">
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#light-category-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_DRY-DOCK">
-    <rdfs:label xml:lang="en">dry dock</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that provides an enclosure for maintenance, building or repairing ships, from which water can be pumped out.</rdfs:comment>
+  <rdf:Description rdf:about="#WIND_Turbulence,_light">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">turbulence, light</rdfs:label>
+    <rdfs:comment xml:lang="en">Light turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_HARBOUR">
-    <rdfs:label xml:lang="en">harbour</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a restricted body of water, an anchorage, or other limited coastal water area and its water approaches from which and in which shipping operations are projected or supported.</rdfs:comment>
+  <rdf:Description rdf:about="#ATMOSPHERE_Warm_front">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">warm front</rdfs:label>
+    <rdfs:comment xml:lang="en">The discontinuity at the forward edge of an advancing warm air mass that is displacing cooler air in its path.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">object item</rdfs:label>
-    <rdfs:comment xml:lang="en">An individually identified object that has military or civilian significance.</rdfs:comment>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-moorings-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ORGANISATION_CONVOY">
+  <rdf:Description rdf:about="#CLOUD-COVER_Smoke">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+    <rdfs:label xml:lang="en">smoke</rdfs:label>
+    <rdfs:comment xml:lang="en">A weather condition in which the sky or part of the sky is covered by smoke.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#LIGHT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">light</rdfs:label>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the availability of natural illumination by type and time.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-vegetation-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Jet_stream">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">jet stream</rdfs:label>
+    <rdfs:comment xml:lang="en">A narrow belt of strong winds, with speeds of 50 to 200 knots (92.6 to 370.4 km/hr), in the upper troposphere.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-fire-fighting-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-maximum-vessel-width-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#CONVOY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">convoy</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
     <rdfs:comment xml:lang="en">An ORGANISATION that is a group of vehicles or vessels organised for the purpose of control and orderly movement with or without escort protection.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#MATERIEL_INSTRUMENT-LANDING-SYSTEM">
-    <rdfs:label xml:lang="en">instrument landing system</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
-    <rdfs:comment xml:lang="en">A MATERIEL that provides aircraft with horizontal and vertical guidance just before landing and during landing, and at certain fixed points, indicates the distance to the reference point of landing.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">organisation</rdfs:label>
-    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is an administrative or functional structure.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_Not_otherwise_specified">
-    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ORGANISATION_Not_otherwise_specified">
-    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#person-professing-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Hurricane">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">hurricane</rdfs:label>
+    <rdfs:comment xml:lang="en">A tropical cyclone, especially in the West Indies, in which wind velocity equals or exceeds 64 knots (118.5 km/hr).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Snow_grains">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">snow grains</rdfs:label>
+    <rdfs:comment xml:lang="en">Precipitation of very small, white, opaque particles of ice; the solid equivalent of drizzle. The grains are fairly flat or elongated. Diameters are generally less than 1 mm. When the grains hit hard ground, they do not bounce or shatter. They usually fall in very small quantities from stratus clouds (or occasionally from fog).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ICING_Clear_icing">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
+    <rdfs:label xml:lang="en">clear icing</rdfs:label>
+    <rdfs:comment xml:lang="en">Glossy, clear, or translucent ice formed by the relatively slow freezing of large supercooled droplets. The droplets spread out over the airframe surface before completely freezing.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RUNWAY_Medium">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:label xml:lang="en">medium</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value between 201 to 400 pci (pavement condition index) for rigid pavements, and by (California Bearing Ratio) CBR of 9 to 13% for flexible pavements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-maximum-vessel-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Tropical_storm">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">tropical storm</rdfs:label>
+    <rdfs:comment xml:lang="en">A tropical cyclone having winds ranging from approximately 48 to 121 kilometres per hour.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Simplified,_stable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">simplified, stable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is stable, so there is little mixing, and the material is effective over longer distances.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#APPROACH-DIRECTION_True">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
+    <rdfs:label xml:lang="en">true</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value, which specifies that the approach direction is comparable to the true heading not magnetic heading.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Rain_shower">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">rain shower</rdfs:label>
+    <rdfs:comment xml:lang="en">The rain changes intensity or starts and stops abruptly. These showers fall exclusively from cumuliform clouds.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#RUNWAY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">runway</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a specifically prepared surface along which aircraft take off and land.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">anchorage</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a place where vessels anchor.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#unit-identification-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#UNIT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-vegetation-subcategory-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-beam-width-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-hangar-area-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-day-speed-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-speed-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-description-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Smoke">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">smoke</rdfs:label>
+    <rdfs:comment xml:lang="en">A suspension in the air of small particles produced by combustion. A transition to haze may occur when smoke particles have travelled great distances (40 to 160 kilometres or more) and when the larger particles have settled out and the remaining particles have become widely scattered through the atmosphere. When viewed through smoke, the disk of the sun at sunrise and sunset appears very red. The disk may have an orange tinge when the sun is above the horizon. Evenly distributed smoke from distant sources generally has a light greyish or bluish appearance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">control feature</rdfs:label>
+    <rdfs:comment xml:lang="en">A non-tangible FEATURE of military interest that is administratively specified, may be represented by a geometric figure, and is associated with the conduct of military operations.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOGRAPHIC-FEATURE_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
     <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code">
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#VISIBILITY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">visibility</rdfs:label>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the distance at which an object illuminated by light in the visual spectrum can be detected.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-pressure-system-category-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FEATURE_GEOGRAPHIC-FEATURE">
-    <rdfs:label xml:lang="en">geographic feature</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
-    <rdfs:comment xml:lang="en">A FEATURE describing terrain characteristics to which military significance is attached.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_NETWORK">
-    <rdfs:label xml:lang="en">network</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that provides bearer services for communication and information services and is composed of one or more links and nodes.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_APRON">
-    <rdfs:label xml:lang="en">apron</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is an area intended for parking, loading, unloading and/or servicing.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_AIRFIELD">
-    <rdfs:label xml:lang="en">airfield</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is an area prepared for the accommodation (including any buildings, installations, or equipment) landing and take off of aircraft.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_ANCHORAGE">
-    <rdfs:label xml:lang="en">anchorage</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a place where vessels anchor.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-name-text">
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-dirty-ballast-indicator-code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_JETTY">
-    <rdfs:label xml:lang="en">jetty</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a platform that may be fixed or floating extending from a shore, normally attached to a wharf or the shore, and which allows access to a vessel lying alongside, used to secure, protect and provide landing and docking for vessels.</rdfs:comment>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-roll-on-roll-off-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-classification-number-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-maximum-tyre-pressure-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#APPROACH-DIRECTION_Centre">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
+    <rdfs:label xml:lang="en">centre</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that specifies the centre runway approach for parallel runways.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_OBJECT-ITEM.owl#"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">minefield maritime</rdfs:label>
+    <rdfs:comment xml:lang="en">A MINEFIELD that is an area or volume of water containing mines.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#person-gender-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-gross-trailing-load-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-threshold-crossing-height-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Rain">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">rain</rdfs:label>
+    <rdfs:comment xml:lang="en">Precipitation, either in the form of drops larger than 0.5 mm, or smaller drops, which in contrast to drizzle, are widely separated.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Sleet">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">sleet</rdfs:label>
+    <rdfs:comment xml:lang="en">A condition with precipitation of rain and snow.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-visual-navigational-aid-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-bottom-hardness-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-approach-channel-depth-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-bottom-natural-camouflage-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Ice_crystals">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">ice crystals</rdfs:label>
+    <rdfs:comment xml:lang="en">A fall of unbranched (snow crystals are branched) ice crystals in the form of needles, columns, or plates. They are termed "ice prisms" in synoptic observations. Ice crystals are often so tiny they seem to be suspended in air. They may fall from a cloud or from clear air. The crystals are visible mainly when they glitter in the sunshine or other bright light (diamond dust), thus producing a luminous pillar or other optical phenomena. This hydrometer (rarely more than the lightest precipitation), which is frequent in polar regions, occurs only at very low temperatures in stable air masses.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK_Not_known">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Local">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">local</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific ROAD is a local road or street.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-civil-military-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-entrance-restrictions-ice-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-marine-railway-size-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#APPROACH-DIRECTION_Left">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
+    <rdfs:label xml:lang="en">left</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that specifies the left side runway approach for parallel runways.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#route-mobility-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-base-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Simplified,_neutral">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">simplified, neutral</rdfs:label>
+    <rdfs:comment xml:lang="en">The degree of mixing is intermediate between that for stable and unstable conditions, and the range of effectiveness is intermediate between that for stable and unstable conditions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-signal-system-efficiency-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Upper_warm_front">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">upper warm front</rdfs:label>
+    <rdfs:comment xml:lang="en">Occurs when discontinuity at the forward edge of an advancing warm air mass is displacing cooler air in its path and the two air masses intersect above ground level.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tanker-facilities-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-minimum-capacity-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CONTROL-FEATURE_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-night-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-maximum-speed-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-transit-accommodation-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-persistence-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-weight-bearing-capacity-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Turbulence,_severe">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">turbulence, severe</rdfs:label>
+    <rdfs:comment xml:lang="en">Severe turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-depth-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-convoy-marshalling-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-width-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </rdf:Description>
   <rdf:Description rdf:about="#OBJECT-ITEM_Not_known">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
@@ -208,16 +427,1646 @@
     <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FEATURE_CONTROL-FEATURE">
-    <rdfs:label xml:lang="en">control feature</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
-    <rdfs:comment xml:lang="en">A non-tangible FEATURE of military interest that is administratively specified, may be represented by a geometric figure, and is associated with the conduct of military operations.</rdfs:comment>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-maximum-deadweight-tonnage-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#FACILITY_BRIDGE">
-    <rdfs:label xml:lang="en">bridge</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
-    <rdfs:comment xml:lang="en">A FACILITY that is a structure (including overpass and viaduct), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
+  <rdf:Description rdf:about="#PRECIPITATION_Snow">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">snow</rdfs:label>
+    <rdfs:comment xml:lang="en">Frozen precipitation in the form of white or translucent hexagonal ice crystals that fall in soft, white flakes.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-packet-size-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-direction-angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-draught-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-identification-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Variable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">variable</rdfs:label>
+    <rdfs:comment xml:lang="en">Winds that have a variable force.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#AIRSPACE-CONTROL-MEANS">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">airspace control means</rdfs:label>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE that reserves airspace for specific airspace users, restricts the action of airspace users, controls the actions of specific airspace users, and/or requires airspace users to accomplish specific actions.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-expected-vessel-transit-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-maximum-beam-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">instrument landing system</rdfs:label>
+    <rdfs:comment xml:lang="en">A MATERIEL that provides aircraft with horizontal and vertical guidance just before landing and during landing, and at certain fixed points, indicates the distance to the reference point of landing.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-day-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_No_precipitation">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">no precipitation</rdfs:label>
+    <rdfs:comment xml:lang="en">No measurable precipitation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Freezing_drizzle">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">freezing drizzle</rdfs:label>
+    <rdfs:comment xml:lang="en">Drizzle which freezes upon impact with the ground, with objects in flight, or with objects on the ground. Produces glaze (clear) ice.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MILITARY-OBSTACLE_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#approach-direction-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#light-moon-phase-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#bridge-span-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BRIDGE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Occluded_front">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">occluded front</rdfs:label>
+    <rdfs:comment xml:lang="en">The line along which a cold front has overtaken a warm front at ground level.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-track-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#road-quality-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-length-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">organisation</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is an administrative or functional structure.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-night-vehicle-gap-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-nuclear-yield-qualifier-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK_Multicast">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:label xml:lang="en">multicast</rdfs:label>
+    <rdfs:comment xml:lang="en">A mode of transmission where information is conveyed from one sender to a determined number of receivers</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Main">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">main</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific ROAD is a main road, highway or federal road.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">route segment</rdfs:label>
+    <rdfs:comment xml:lang="en">A portion of a route usually without an intermediate stop, as defined by two consecutive significant points.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Freezing_fog">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">freezing fog</rdfs:label>
+    <rdfs:comment xml:lang="en">A suspension of numerous minute ice crystals in the air, or water droplets at temperatures below 0 degrees Celsius, based at the Earth’s surface and extending vertically to greater than 1.8 metres. FZFG reduces prevailing visibility to less than 1000 metres and, unlike drizzle, does not fall to the ground. The water droplets may freeze upon contact with exposed objects to form a coating of rime or glaze and it can occur even though the air temperature is above freezing. Also called Ice Fog.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-source-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ICING">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">icing</rdfs:label>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the accumulation of frozen water on stationary or moving surfaces.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-instrument-landing-system-presence-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Sandstorm">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">sandstorm</rdfs:label>
+    <rdfs:comment xml:lang="en">Particles of sand ranging in diameter from 0.2 millimetres to 1 millimetre carried aloft by a strong wind. A sandstorm is reported if the prevailing visibility is reduced to less than 1,000 metres, but not less than 500 metres. Report a heavy (severe) sandstorm (+SS) if the visibility is reduced to less than 500 metres.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-required-navigation-performance-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-mine-requisition-case-number-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-refuelling-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-top-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-rail-served-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-shelter-quality-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-night-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#basin-deadweight-tonnage-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BASIN"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-turnaround-time-duration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-entrance-restrictions-swell-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">atmosphere</rdfs:label>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies humidity, pressure, and temperature characteristics of Earth's atmosphere.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#basin-location-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BASIN"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-probability-ratio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#icing-severity-qualifier-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#road-traffic-density-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Motorway">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">motorway</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific ROAD is a motorway or expressway.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">dry dock</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that provides an enclosure for maintenance, building or repairing ships, from which water can be pumped out.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-prevailing-wind-maximum-speed-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-architecture-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-hull-number-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-turning-area-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIGHT_Nautical_twilight">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+    <rdfs:label xml:lang="en">nautical twilight</rdfs:label>
+    <rdfs:comment xml:lang="en">The periods of incomplete darkness following sunset and preceding sunrise. The darker limit occurs when the centre of the sun is 12 degrees below the celestial horizon.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Turbulence,_extreme">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">turbulence, extreme</rdfs:label>
+    <rdfs:comment xml:lang="en">Extreme turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FEATURE_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Typhoon">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">typhoon</rdfs:label>
+    <rdfs:comment xml:lang="en">A severe tropical hurricane.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-fresh-water-availability-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Blowing_dust_or_sand">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">blowing dust or sand</rdfs:label>
+    <rdfs:comment xml:lang="en">Dust or sand raised by the wind to a height of 1.8 metres or more.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tidal-mean-neap-range-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Thunderstorm">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">thunderstorm</rdfs:label>
+    <rdfs:comment xml:lang="en">A local storm produced by a cumulonimbus cloud accompanied by strong gusty winds, vertical currents at higher levels, and heavy precipitation with lightning and/or thunder. It is usually a few miles in both horizontal and vertical dimensions, extending from the ground up to 6,000, 12,000 or even 18,000 metres in the most vigorous examples.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-temperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Lightning">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">lightning</rdfs:label>
+    <rdfs:comment xml:lang="en">A luminous manifestation accompanying a sudden electrical discharge, which takes place from or inside a cloud or, less often, from high structures on the ground, or from mountains.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#precipitation-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-deadweight-tonnage-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Ridge_line">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">ridge line</rdfs:label>
+    <rdfs:comment xml:lang="en">An elongated region of high atmospheric pressure.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-rail-availability-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ICING_Mixed_icing">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
+    <rdfs:label xml:lang="en">mixed icing</rdfs:label>
+    <rdfs:comment xml:lang="en">A hard rough conglomerate of ice that can cause very rough accumulation and severe loss of lift.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Detailed,_slightly_stable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">detailed, slightly stable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is slightly stable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">military obstacle</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY designed to stop, impede, or divert movement of amphibious or ground forces.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Hail">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">hail</rdfs:label>
+    <rdfs:comment xml:lang="en">Precipitation in the form of small balls or other pieces of ice falling separately or frozen together in irregular lumps. Hailstones consist of alternate opaque and clear layers of ice in most cases. Hail is normally associated with thunderstorms and surface temperatures above freezing.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-international-civil-aviation-organisation-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-boat-lift-capacity-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#apron-weight-bearing-capacity-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#APRON"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-biologically-secure-availability-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-night-speed-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-channel-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#QUAY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">quay</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a solidly constructed platform, usually parallel to the shoreline of navigable water, alongside which a vessel can be docked or berthed and, on which, the vessel can be accessed and cargo can be loaded or unloaded on one side of the vessel only.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Squalls">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">squalls</rdfs:label>
+    <rdfs:comment xml:lang="en">A strong wind that rises suddenly, generally lasts for some minutes, and dies comparatively suddenly away. It is distinguished from a gust by its longer duration.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Railway">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">railway</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific ROAD is a railway road.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-day-vehicle-gap-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-maximum-capacity-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Not_known">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">minefield</rdfs:label>
+    <rdfs:comment xml:lang="en">A MILITARY-OBSTACLE that is an area or volume containing mines.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIGHT_Civil_twilight">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+    <rdfs:label xml:lang="en">civil twilight</rdfs:label>
+    <rdfs:comment xml:lang="en">The periods of incomplete darkness following sunset and preceding sunrise. The darker limit occurs when the centre of the sun is 6 degrees below the celestial horizon.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">precipitation</rdfs:label>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the type of particulate matter in the Earth's atmosphere and the rate of its descent onto the Earth's surface.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-lighting-presence-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-packet-gap-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-function-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-depth-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-bottom-penetration-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-storage-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-primary-construction-material-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#APPROACH-DIRECTION_Right">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
+    <rdfs:label xml:lang="en">right</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that specifies the right side runway approach for parallel runways.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIGHT_Daylight">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+    <rdfs:label xml:lang="en">daylight</rdfs:label>
+    <rdfs:comment xml:lang="en">Ambient atmospheric light resulting from the sun.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-effective-downwind-direction-angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-maximum-deadweight-tonnage-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-destruction-datetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-crane-offloading-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-vessel-maximum-beam-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">cloud cover</rdfs:label>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the characteristics of clouds above Earth's surface.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#person-blood-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-light-refraction-ratio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#NETWORK">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">network</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that provides bearer services for communication and information services and is composed of one or more links and nodes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Low_pressure_centre">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">low pressure centre</rdfs:label>
+    <rdfs:comment xml:lang="en">1. An area of low atmospheric pressure that has a closed circulation that is cyclonic, i.e., as viewed from above, the circulation is counterclockwise in the Northern Hemisphere, clockwise in the Southern Hemisphere, undefined at the Equator. Because cyclonic circulation and relatively low atmospheric pressure usually coexist, in common practice the terms cyclone and low are used interchangeably. Also, because cyclones often are accompanied by inclement (sometimes destructive) weather, they are frequently referred to simply as storms. 2. Frequently misused to denote a tornado. 3. In the Indian Ocean, a tropical cyclone of hurricane or typhoon force.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#visibility-direction-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">object item</rdfs:label>
+    <rdfs:comment xml:lang="en">An individually identified object that has military or civilian significance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-entrance-restrictions-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-maximum-vessel-length-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-name-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Tornado">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">tornado</rdfs:label>
+    <rdfs:comment xml:lang="en">A violent, rotating column of air touching the ground; funnel cloud touching the ground. A tornado nearly always starts as a funnel cloud and is accompanied by a loud, roaring noise.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Storm">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">storm</rdfs:label>
+    <rdfs:comment xml:lang="en">An atmospheric disturbance manifested in strong winds with precipitation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#">
+    <owl:imports rdf:resource="jc3iedm_OBJECT-ITEM.owl#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ICING_Rime_icing">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
+    <rdfs:label xml:lang="en">rime icing</rdfs:label>
+    <rdfs:comment xml:lang="en">Rough, milky opaque ice formed by the instantaneous freezing of small supercooled droplets which trap air within the ice as they strike the aircraft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Detailed,_slightly_unstable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">detailed, slightly unstable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is slightly unstable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-first-port-of-entry-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Limited_all-weather">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">limited all weather</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value, which determines that the volume of ROAD traffic may be limited by bad weather. Heavy unrestricted use during adverse weather may cause complete breakdown of surface (normally roads with non-waterproof surfaces).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#military-obstacle-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-location-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-airport-near-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">air route segment</rdfs:label>
+    <rdfs:comment xml:lang="en">A portion of a route to be flown usually without an intermediate stop, as defined by two consecutive significant points.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-degaussing-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Pedestrian">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">pedestrian</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific ROAD is a pedestrian road.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-interpretation-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#airspace-control-means-transit-instruction-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRSPACE-CONTROL-MEANS"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-set-number-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-base-identification-code-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Funnel_cloud">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">funnel cloud</rdfs:label>
+    <rdfs:comment xml:lang="en">A violent, rotating column of air that does not touch the ground, usually appended to a cumulonimbus cloud. Also called a tuba.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-slaved-variation-angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-day-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#road-weather-condition-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK_Point-to-point">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:label xml:lang="en">point to point</rdfs:label>
+    <rdfs:comment xml:lang="en">A transmission where information is transferred between two nodes.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Cold_Front">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">cold front</rdfs:label>
+    <rdfs:comment xml:lang="en">The discontinuity at the forward edge of an advancing cold air mass that is displacing warmer air in its path.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RUNWAY_Low">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:label xml:lang="en">low</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value between 100 and 200 pci (pavement condition index) for rigid pavements, and by (California Bearing Ratio) CBR of 5 to 8% for flexible pavements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#BRIDGE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">bridge</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a structure (including overpass and viaduct), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Trough_line">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">trough line</rdfs:label>
+    <rdfs:comment xml:lang="en">An elongated region of low atmospheric pressure.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-night-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-depth-placement-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-container-handling-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Gusting">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">gusting</rdfs:label>
+    <rdfs:comment xml:lang="en">A rapid increase in the strength of the wind relative to the mean strength at the time.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-block-distance-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#organisation-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Constant">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">constant</rdfs:label>
+    <rdfs:comment xml:lang="en">Winds that have a constant force.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Thunderstorms_and_rain">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">thunderstorms and rain</rdfs:label>
+    <rdfs:comment xml:lang="en">A local storm produced by a cumulonimbus cloud accompanied by lightning and/or thunder and precipitation, either in the form of drops larger than 0.5 mm, or smaller drops, which in contrast to drizzle, are widely separated.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Squall_line">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">squall line</rdfs:label>
+    <rdfs:comment xml:lang="en">A line of high winds and thunderstorms in convectively unstable air, an instability line (of non-frontal nature); it may be generated by a cold front.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#BERTH">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">berth</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a space or length in the water at a harbour allocated to or reserved for a vessel to dock and moor for loading or unloading.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#slipway-location-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#SLIPWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Haze">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">haze</rdfs:label>
+    <rdfs:comment xml:lang="en">A suspension in the air of extremely small, dry particles invisible to the naked eye and sufficiently numerous to give the air an opalescent appearance. This phenomenon resembles a uniform veil over the landscape and subdues all colours. Dark objects viewed through this veil tend to have a bluish tinge while bright objects, such as the sun or distant lights, tend to have a dirty yellow or reddish hue. When haze is present and the sun is well above the horizon, its light may have a peculiar silvery tinge. Haze particles may be composed of a variety of substances; e.g., dust, salt, residue from distant fires or volcanoes, pollen, etc., which generally are well diffused through the atmosphere.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-depth-placement-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-stopping-power-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Detailed,_neutral">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">detailed, neutral</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is neutral in stability, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-mine-spacing-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Simplified,_unstable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">simplified, unstable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is unstable, so there is strong mixing, and the material is effective over shorter distances.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-mean-tidal-current-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#MATERIEL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">materiel</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is equipment, apparatus or supplies of military interest without distinction as to its application for administrative or combat purposes.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-maximum-draught-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#light-down-datetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#BASIN">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">basin</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is an open area of water, usually artificial and enclosed by dock gates lined with wharves, warehouses and berths to enable vessels to load and unload.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-life-duration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-mmoe-initial-threat-probability-ratio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Not_known">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">not known</rdfs:label>
+    <rdfs:comment xml:lang="en">It is not possible to determine which value is most applicable.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#FEATURE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">feature</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-location-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#PERSON">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is a human being to whom military or civilian significance is attached.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">facility</rdfs:label>
+    <rdfs:comment xml:lang="en">An OBJECT-ITEM that is built, installed or established to serve some particular purpose and is identified by the service it provides rather than by its content.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#slipway-gradient-angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#SLIPWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#visibility-range-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_High_pressure_centre">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">high pressure centre</rdfs:label>
+    <rdfs:comment xml:lang="en">An area of high atmospheric pressure that has a closed circulation that is anticyclonic, i.e., as viewed from above, the circulation is clockwise in the Northern Hemisphere, counterclockwise in the southern Hemisphere, undefined at the Equator.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-bearing-angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-bottom-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-subfunction-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tidal-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-pilotage-availability-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-surface-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-fire-fighting-capability-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#APPROACH-DIRECTION_STOL">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
+    <rdfs:label xml:lang="en">stol</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that specifies short take-off and landing approach direction.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-train-density-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Waterspout">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">waterspout</rdfs:label>
+    <rdfs:comment xml:lang="en">A violent, rotating column of air that forms over a body of water, such as a bay, gulf, or lake, and touches the water surface; a tornado or funnel cloud that touches a body of water.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-air-traffic-control-presence-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#visibility-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Dust_storm">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">dust storm</rdfs:label>
+    <rdfs:comment xml:lang="en">An unusual, frequently severe weather condition characterised by strong winds and dust-filled air over an extensive area. Report a dust storm if the prevailing visibility is reduced to less than 1,000 meters, but not less than 500 metres. Report a heavy (severe) dust storm (+DS) if the visibility is reduced to less than 500 metres.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-draught-low-tide-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RUNWAY_Ultra-low">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:label xml:lang="en">ultra low</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value less than 100 pci (pavement condition index) for rigid pavements, and by a (California Bearing Ratio) CBR value less than 5% for flexible pavements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-distance-measuring-equipment-distance-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-day-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-estimated-time-of-arrival-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">minefield land</rdfs:label>
+    <rdfs:comment xml:lang="en">A MINEFIELD that is an area of land containing mines.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-maximum-capacity-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Detailed,_stable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">detailed, stable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is stable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#physical_model_only">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-serial-number-identification-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#person-birth-datetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#AIRFIELD">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">airfield</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is an area prepared for the accommodation (including any buildings, installations, or equipment) of landing and take off of aircraft.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#precipitation-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-container-maximum-handling-length-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#route-mode-of-transportation-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Stationary_front">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">stationary front</rdfs:label>
+    <rdfs:comment xml:lang="en">A situation in which the surface position of a front does not move; the flow on either side of such a boundary is nearly parallel to the position of the front.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tug-availability-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Wind_shear">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">wind shear</rdfs:label>
+    <rdfs:comment xml:lang="en">A variation in wind velocity at right angles to the wind's direction.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIGHT_Moonlight">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+    <rdfs:label xml:lang="en">moonlight</rdfs:label>
+    <rdfs:comment xml:lang="en">Ambient atmospheric light resulting from the moon.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Whirlwind">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">whirlwind</rdfs:label>
+    <rdfs:comment xml:lang="en">A small revolving storm of wind in which the air whirls around a core of low pressure. Whirlwinds sometimes extend upwards to a height of many hundreds of metres and cause dust whirls formed over a desert.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-lighterage-availability-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-lot-identification-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-lash-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-refuelling-location-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ROAD">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">road</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a path or way with a specially prepared surface.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#JETTY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">jetty</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a platform that may be fixed or floating extending from a shore, normally attached to a wharf or the shore, and which allows access to a vessel lying alongside, used to secure, protect and provide landing and docking for vessels.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#HARBOUR">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">harbour</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a restricted body of water, an anchorage, or other limited coastal water area and its water approaches from which and in which shipping operations are projected or supported.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#unit-formal-abbreviated-name-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#UNIT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOGRAPHIC-FEATURE_Solid_surface">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:label xml:lang="en">solid surface</rdfs:label>
+    <rdfs:comment xml:lang="en">The boundary of the ground with the atmosphere or liquid.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-day-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-night-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#road-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Snow_shower">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">snow shower</rdfs:label>
+    <rdfs:comment xml:lang="en">Snow changes intensity or starts and stops abruptly. These showers fall exclusively from cumuliform clouds.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tidal-mean-spring-range-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-mine-detailed-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-air-stability-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-height-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RUNWAY_High">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:label xml:lang="en">high</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value greater than 400 pci (pavement condition index) for rigid pavements, and by a (California Bearing Ratio) CBR value above 13% for flexible pavements.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-pressure-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-draught-high-tide-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GEOGRAPHIC-FEATURE_Liquid_surface">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:label xml:lang="en">liquid surface</rdfs:label>
+    <rdfs:comment xml:lang="en">The boundary of a liquid with the atmosphere or solid.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-rail-capacity-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#light-up-datetime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-means-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Freezing_rain">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">freezing rain</rdfs:label>
+    <rdfs:comment xml:lang="en">Rain that freezes on impact with the ground, with objects in flight, or with objects on the ground. Produces glaze (clear) ice.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-refuelling-availability-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-vehicle-handling-type-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-day-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Ice_pellets">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">ice pellets</rdfs:label>
+    <rdfs:comment xml:lang="en">Precipitation of transparent or translucent pellets of ice, which are round or irregular, rarely conical, and have a diameter of 5 mm or less. The pellets usually rebound when striking hard ground and make a sound on impact. There are two main types: hard grains of ice consisting of frozen raindrops or melted and refrozen snowflakes and pellets of snow encased in a thin layer of ice formed from the freezing, either of droplets intercepted by the pellets, or of water resulting from the partial melting of the pellets.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-detection-probability-ratio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MATERIEL_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-mode-of-transportation-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-localiser-distance-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#basin-depth-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BASIN"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Fair-weather">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">fair weather</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value, which determines that the ROAD is passable only in fair weather. Quickly becomes impassable in bad weather. Cannot be kept open by maintenance short of major construction.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Detailed,_very_stable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">detailed, very stable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is very stable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-prevailing-wind-direction-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Blowing_snow">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">blowing snow</rdfs:label>
+    <rdfs:comment xml:lang="en">Snow particles raised and stirred violently by the wind to moderate or great heights. Prevailing visibility is reduced to less than 11,260 metres and the sky may become obscured when the particles are raised to great heights.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">geographic feature</rdfs:label>
+    <rdfs:comment xml:lang="en">A FEATURE describing terrain characteristics to which military significance is attached.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-prevailing-wind-maximum-speed-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Detailed,_unstable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">detailed, unstable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is unstable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-glide-path-angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-terrain-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Detailed,_very_unstable">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">detailed, very unstable</rdfs:label>
+    <rdfs:comment xml:lang="en">The air is very unstable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table, developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-signal-system-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#APRON">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">apron</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is an area intended for parking, loading, unloading and/or servicing.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CLOUD-COVER_Radioactive_cloud">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+    <rdfs:label xml:lang="en">radioactive cloud</rdfs:label>
+    <rdfs:comment xml:lang="en">A cloud that contains the hot gases, smoke, dust and other particulate matter from the nuclear bomb itself or other sources that are carried aloft.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#SLIPWAY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">slipway</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that provides a sloping surface or inclined structure leading down to the water.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-magnetic-variation-angle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-crane-offloading-lift-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-pattern-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-rail-served-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NETWORK_Broadcast">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:label xml:lang="en">broadcast</rdfs:label>
+    <rdfs:comment xml:lang="en">A broadcast network used to transport voice and/or data.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-vessel-tonnage-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-maximum-vessel-draught-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-inversion-layer-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Regional">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">regional</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific ROAD is a regional, secondary or district road.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CLOUD-COVER_Clouds">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+    <rdfs:label xml:lang="en">clouds</rdfs:label>
+    <rdfs:comment xml:lang="en">A weather condition in which the sky or part of the sky is covered or partly covered by clouds.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_Lane">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">lane</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific ROAD is a track or lane.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-solid-surface-composition-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ATMOSPHERE_Upper_cold_front">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:label xml:lang="en">upper cold front</rdfs:label>
+    <rdfs:comment xml:lang="en">Occurs when discontinuity at the forward edge of an advancing cold air mass is displacing warmer air in its path and the two air masses intersect above ground level.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">wind</rdfs:label>
+    <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the velocity and directional characteristics of atmospheric movement.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-function-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROUTE-SEGMENT_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-persistence-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-maintained-speed-rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-evaluation-method-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#network-subcategory-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-seasonal-detail-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-average-coverage-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FACILITY_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#route-direction-usage-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-prevailing-wind-direction-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#bridge-longest-span-length-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BRIDGE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">meteorologic feature</rdfs:label>
+    <rdfs:comment xml:lang="en">A FEATURE that describes reported or forecast weather and light conditions.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-halt-duration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-altitude-layer-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-subgrade-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-mines-laid-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PRECIPITATION_Drizzle">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
+    <rdfs:label xml:lang="en">drizzle</rdfs:label>
+    <rdfs:comment xml:lang="en">Fairly uniform precipitation composed exclusively of fine drops (diameter less than 0.5 mm) very close together. Drizzle appears to float while following air currents although, unlike fog droplets, it falls to the ground. It usually falls from low stratus clouds and is frequently accompanied by low visibility and fog.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LIGHT_Darkness">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
+    <rdfs:label xml:lang="en">darkness</rdfs:label>
+    <rdfs:comment xml:lang="en">The absence of light.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#RAILWAY">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">railway</rdfs:label>
+    <rdfs:comment xml:lang="en">A FACILITY that is a track or set of tracks made of steel rails along which trains run.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-mobility-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-pilotage-requirement-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-humidity-ratio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-major-vessel-class-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">approach direction</rdfs:label>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE that specifies approach directional details for takeoff and landing.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#WIND_Turbulence,_moderate">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
+    <rdfs:label xml:lang="en">turbulence, moderate</rdfs:label>
+    <rdfs:comment xml:lang="en">Moderate turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ROAD_All-weather">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:label xml:lang="en">all weather</rdfs:label>
+    <rdfs:comment xml:lang="en">The specific value, which determines that the ROAD is passable, to all traffic in any weather except deep snow or flood (normally roads with waterproof surfaces).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Dust_devil">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">dust devil</rdfs:label>
+    <rdfs:comment xml:lang="en">Well-developed dust/sand whirls (PO). An ensemble of particles of dust or sand, sometimes accompanied by small litter, raised from the ground in the form of a whirling column of varying height with a small diameter and an approximately vertical axis. Reported regardless of the visibility.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#road-shoulder-width-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#icing-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-traction-system-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#UNIT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">unit</rdfs:label>
+    <rdfs:comment xml:lang="en">A military ORGANISATION whose structure is prescribed by competent authority.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VISIBILITY_Fog/mist">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
+    <rdfs:label xml:lang="en">fog/mist</rdfs:label>
+    <rdfs:comment xml:lang="en">A visible aggregate of minute water particles (droplets), which are based on the Earth’s surface, extends vertically, and reduces horizontal visibility to less than 1,000 metres. When fog is further described by the descriptors BC, MI, or PR, the prevailing visibility may be equal to or greater than 1,000 metres. Unlike drizzle, Fog does not fall to the ground.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-track-gauge-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#ROUTE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">route</rdfs:label>
+    <rdfs:comment xml:lang="en">A CONTROL-FEATURE that is the prescribed course to be travelled from a specific point of origin to a specific destination.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-sleeper-density-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-container-maximum-handling-weight-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ORGANISATION_Not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-overhead-limits-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-temperature-gradient-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-rail-capacity-count">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#approach-direction-angle-text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-international-route-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#bridge-usage-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BRIDGE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#METEOROLOGIC-FEATURE_Cyclone">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
+    <rdfs:label xml:lang="en">cyclone</rdfs:label>
+    <rdfs:comment xml:lang="en">The atmospheric pressure distribution in which there is a low central pressure relative to the surroundings. Cyclonic circulation is anticlockwise round the centre in the northern hemisphere and clockwise in the southern hemisphere; in either case the sense of rotation about the vertical is the same as that of the earth's rotation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-passenger-handling-indicator-code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-vessel-maximum-beam-dimension">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-night-limit-net-explosive-quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </rdf:Description>
 </rdf:RDF>
