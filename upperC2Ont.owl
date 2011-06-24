@@ -5,23 +5,21 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#" >
 ]>
 
 
 <rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
      xml:base="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl"
-     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace">
-    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl"/>
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl">
+        <rdfs:label>Upper C2 Ontology</rdfs:label>
+    </owl:Ontology>
     
 
 
@@ -90,246 +88,251 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Action -->
 
-    <owl:Class rdf:about="&upperC2Ont;Action">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Event"/>
-        <rdfs:isDefinedBy>&#39;Something that is done.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/1938&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Event"/>
+        <rdfs:comment>&#39;Something that is done.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/1938&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Animal -->
 
-    <owl:Class rdf:about="&upperC2Ont;Animal">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;LivingThing"/>
-        <rdfs:isDefinedBy>&#39;A living organism which feeds on organic matter, typically having specialized sense organs and a nervous system and able to respond rapidly to stimuli; any living creature, including man.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/273779&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Animal">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#LivingThing"/>
+        <rdfs:comment>&#39;A living organism which feeds on organic matter, typically having specialized sense organs and a nervous system and able to respond rapidly to stimuli; any living creature, including man.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/273779&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Capability -->
 
-    <owl:Class rdf:about="&upperC2Ont;Capability">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
-        <rdfs:isDefinedBy>&#39;Power or ability in general, whether physical or mental; capacity.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/27353&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Capability">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Property"/>
+        <rdfs:comment>&#39;Power or ability in general, whether physical or mental; capacity.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/27353&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#CommunicationAct -->
 
-    <owl:Class rdf:about="&upperC2Ont;CommunicationAct">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Action"/>
-        <rdfs:isDefinedBy>&#39;The transmission or exchange of information, knowledge, or ideas, by means of speech, writing, mechanical or electronic media&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/37309&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#CommunicationAct">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Action"/>
+        <rdfs:comment>&#39;The transmission or exchange of information, knowledge, or ideas, by means of speech, writing, mechanical or electronic media&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/37309&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity -->
 
-    <owl:Class rdf:about="&upperC2Ont;Entity">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <owl:disjointWith rdf:resource="&upperC2Ont;Event"/>
-        <rdfs:isDefinedBy>&#39;Being, existence, as opposed to non-existence; the existence, as distinguished from the qualities or relations, of anything.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/62904&gt;</rdfs:isDefinedBy>
+        <owl:disjointWith rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Event"/>
+        <rdfs:comment>&#39;Being, existence, as opposed to non-existence; the existence, as distinguished from the qualities or relations, of anything.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/62904&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Equipment -->
 
-    <owl:Class rdf:about="&upperC2Ont;Equipment">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Materiel"/>
-        <rdfs:isDefinedBy>&#39;All nonexpendable items needed to outfit or equip an individual
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Equipment">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Materiel"/>
+        <rdfs:comment>&#39;All nonexpendable items needed to outfit or equip an individual
 or organization&#39;
-&lt;http://www.dtic.mil/doctrine/new_pubs/jp1_02.pdf&gt;</rdfs:isDefinedBy>
+&lt;http://www.dtic.mil/doctrine/new_pubs/jp1_02.pdf&gt;comment
+</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Event -->
 
-    <owl:Class rdf:about="&upperC2Ont;Event">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Event">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy>&#39;Anything that happens, or is contemplated as happening; an incident, occurrence&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/65287&gt;</rdfs:isDefinedBy>
+        <rdfs:comment>&#39;Anything that happens, or is contemplated as happening; an incident, occurrence&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/65287&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Facility -->
 
-    <owl:Class rdf:about="&upperC2Ont;Facility">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
-        <rdfs:isDefinedBy>&#39;A real property entity consisting of one or more of the following: a building, a
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Facility">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity"/>
+        <rdfs:comment>&#39;A real property entity consisting of one or more of the following: a building, a
 structure, a utility system, pavement, and underlying land&#39;
-&lt;http://www.dtic.mil/doctrine/new_pubs/jp1_02.pdf&gt;</rdfs:isDefinedBy>
+&lt;http://www.dtic.mil/doctrine/new_pubs/jp1_02.pdf&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialBoundary -->
 
-    <owl:Class rdf:about="&upperC2Ont;GeospatialBoundary">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;GeospatialRegion"/>
-        <rdfs:isDefinedBy>&#39;Boundary of a GeospatialRegion&#39;
-&lt;http://C2-Core-Taxonomy-OWL-DL#GeospatialBoundary&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialBoundary">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialRegion"/>
+        <rdfs:comment>&#39;Boundary of a GeospatialRegion&#39;
+&lt;http://C2-Core-Taxonomy-OWL-DL#GeospatialBoundary&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialFeature -->
 
-    <owl:Class rdf:about="&upperC2Ont;GeospatialFeature">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
-        <rdfs:isDefinedBy>&#39;A PhysicalEntity whose (relatively) stable location in some GeospatialRegion can be described by location-specific data.&#39;
-&lt;http://UCore-SL-Taxonomy-OWL-DL#GeographicFeature&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialFeature">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity"/>
+        <rdfs:comment>&#39;A PhysicalEntity whose (relatively) stable location in some GeospatialRegion can be described by location-specific data.&#39;
+&lt;http://UCore-SL-Taxonomy-OWL-DL#GeographicFeature&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialLocation -->
 
-    <owl:Class rdf:about="&upperC2Ont;GeospatialLocation">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;GeospatialRegion"/>
-        <rdfs:isDefinedBy>&#39;A GeospatialRegion at which a Entity or Event is located&#39;
-&lt;http://C2-Core-Taxonomy-OWL-DL#GeospatialLocation&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialLocation">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialRegion"/>
+        <rdfs:comment>&#39;A GeospatialRegion at which a Entity or Event is located&#39;
+&lt;http://C2-Core-Taxonomy-OWL-DL#GeospatialLocation&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialRegion -->
 
-    <owl:Class rdf:about="&upperC2Ont;GeospatialRegion">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;SpatialRegion"/>
-        <rdfs:isDefinedBy>&#39;Spatial region at or near the surface of the Earth&#39;
-&lt;http://C2-Core-Taxonomy-OWL-DL#GeospatialRegion&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GeospatialRegion">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#SpatialRegion"/>
+        <rdfs:comment>&#39;Spatial region at or near the surface of the Earth&#39;
+&lt;http://C2-Core-Taxonomy-OWL-DL#GeospatialRegion&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GroupOfThings -->
 
-    <owl:Class rdf:about="&upperC2Ont;GroupOfThings">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
-        <rdfs:isDefinedBy>&#39;An assemblage of things&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/81855&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#GroupOfThings">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity"/>
+        <rdfs:comment>&#39;An assemblage of things&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/81855&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#LivingThing -->
 
-    <owl:Class rdf:about="&upperC2Ont;LivingThing">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
-        <rdfs:isDefinedBy>&#39;A living organism; an animal or plant.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/200786&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#LivingThing">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity"/>
+        <rdfs:comment>&#39;A living organism; an animal or plant.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/200786&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Materiel -->
 
-    <owl:Class rdf:about="&upperC2Ont;Materiel">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
-        <rdfs:isDefinedBy>&#39;The equipment, supplies, etc., used by an army, navy, or other organization, as distinguished from the personnel or body of people employed.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/114943&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Materiel">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity"/>
+        <rdfs:comment>&#39;The equipment, supplies, etc., used by an army, navy, or other organization, as distinguished from the personnel or body of people employed.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/114943&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Organization -->
 
-    <owl:Class rdf:about="&upperC2Ont;Organization">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
-        <rdfs:isDefinedBy>&#39;An organized body of people with a particular purpose, as a business, government department, charity, etc.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/132452&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Organization">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity"/>
+        <rdfs:comment>&#39;An organized body of people with a particular purpose, as a business, government department, charity, etc.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/132452&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Person -->
 
-    <owl:Class rdf:about="&upperC2Ont;Person">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Animal"/>
-        <rdfs:isDefinedBy>&#39;The self, being, or individual personality of a man or woman, esp. as distinct from his or her occupation, works, etc. &#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/141476&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Animal"/>
+        <rdfs:comment>&#39;The self, being, or individual personality of a man or woman, esp. as distinct from his or her occupation, works, etc. &#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/141476&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#PhysicalProperty -->
 
-    <owl:Class rdf:about="&upperC2Ont;PhysicalProperty">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
-        <rdfs:isDefinedBy>&#39;A Property that inheres_in some PhysicalEntity&#39;
-&lt;http://C2-Core-Taxonomy-OWL-DL#PhysicalProperty&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#PhysicalProperty">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Property"/>
+        <rdfs:comment>&#39;A Property that inheres_in some PhysicalEntity&#39;
+&lt;http://C2-Core-Taxonomy-OWL-DL#PhysicalProperty&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Property -->
 
-    <owl:Class rdf:about="&upperC2Ont;Property">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Property">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:isDefinedBy>&#39;An attribute, characteristic, or quality of a thing.&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/152674&gt;</rdfs:isDefinedBy>
+        <rdfs:comment>&#39;An attribute, characteristic, or quality of a thing.&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/152674&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Role -->
 
-    <owl:Class rdf:about="&upperC2Ont;Role">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
-        <rdfs:isDefinedBy>&#39;The function performed by someone or something in a particular situation or process.&#39; &lt;http://www.oed.com/viewdictionaryentry/Entry/166971&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Role">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Property"/>
+        <rdfs:comment>&#39;The function performed by someone or something in a particular situation or process.&#39; &lt;http://www.oed.com/viewdictionaryentry/Entry/166971&gt;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#SpatialRegion -->
 
-    <owl:Class rdf:about="&upperC2Ont;SpatialRegion">
-        <owl:disjointWith rdf:resource="&upperC2Ont;TemporalRegion"/>
-        <rdfs:isDefinedBy>&lt;http://www.ifomis.org/bfo/1.1/snap#SpatialRegion&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#SpatialRegion">
+        <owl:disjointWith rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalRegion"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpatialRegion"/>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalBoundary -->
 
-    <owl:Class rdf:about="&upperC2Ont;TemporalBoundary">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;TemporalRegion"/>
-        <rdfs:isDefinedBy>Boundary of a TemporalRegion</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalBoundary">
+        <rdfs:label>Temporal Boundary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalRegion"/>
+        <rdfs:comment>Boundary of a TemporalRegion</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalInstant -->
 
-    <owl:Class rdf:about="&upperC2Ont;TemporalInstant">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;TemporalRegion"/>
-        <rdfs:isDefinedBy>&lt;http://www.ifomis.org/bfo/1.1/span#TemporalInstant&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalInstant">
+        <rdfs:label>Temporal Instant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalRegion"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalRegion -->
 
-    <owl:Class rdf:about="&upperC2Ont;TemporalRegion">
-        <rdfs:isDefinedBy>&lt;http://www.ifomis.org/bfo/1.1/span#TemporalRegion&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalRegion">
+        <rdfs:label>Temporal Region</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalRegion"/>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemportalInterval -->
 
-    <owl:Class rdf:about="&upperC2Ont;TemportalInterval">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;TemporalRegion"/>
-        <rdfs:isDefinedBy>&lt;http://www.ifomis.org/bfo/1.1/span#TemporalInterval&gt;</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemportalInterval">
+        <rdfs:label>Temporal Interval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#TemporalRegion"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInterval"/>
     </owl:Class>
     
 
@@ -337,8 +340,8 @@ structure, a utility system, pavement, and underlying land&#39;
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="&owl;Thing">
-        <rdfs:isDefinedBy>&#39;That which exists individually (in the most general sense, in fact or in idea); that which is or may be in any way an object of perception, knowledge, or thought; an entity, a being. (Including persons, in contexts where personality is not significant.)&#39;
-&lt;http://www.oed.com/viewdictionaryentry/Entry/200786&gt;</rdfs:isDefinedBy>
+        <rdfs:comment>&#39;That which exists individually (in the most general sense, in fact or in idea); that which is or may be in any way an object of perception, knowledge, or thought; an entity, a being. (Including persons, in contexts where personality is not significant.)&#39;
+&lt;http://www.oed.com/viewdictionaryentry/Entry/200786&gt;</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
 
