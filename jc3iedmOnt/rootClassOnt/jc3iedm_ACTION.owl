@@ -11,9 +11,15 @@
   </rdf:Description>
   <rdf:Description rdf:about="#CBRN-EVENT">
     <rdfs:subClassOf rdf:resource="#ACTION-EVENT"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
     <rdfs:comment xml:lang="en">An ACTION-EVENT that involves chemical, biological, radiological or nuclear materiel individually or in combination.</rdfs:comment>
     <rdfs:label xml:lang="en">cbrn event</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-operational-level-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#cbrn-event-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -25,12 +31,6 @@
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#REQUEST">
-    <rdfs:subClassOf rdf:resource="#ACTION-TASK"/>
-    <rdfs:comment xml:lang="en">An ACTION-TASK that states a requirement.</rdfs:comment>
-    <rdfs:label xml:lang="en">request</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#cbrn-event-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
@@ -40,74 +40,80 @@
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#request-latest-answer-datetime">
-    <rdfs:domain rdf:resource="#REQUEST"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#request-immediate-interest-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#REQUEST"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#nuclear-weapon-event-crater-width-dimension">
     <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#nuclear-weapon-event-yield-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:hasValue xml:lang="en">NUCLEAR-EVENT</owl:hasValue>
+    <owl:onProperty rdf:resource="#radioactive-event-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#NUCLEAR-WEAPON-EVENT">
-    <rdfs:subClassOf rdf:resource="#NUCLEAR-EVENT"/>
-    <rdfs:comment xml:lang="en">A NUCLEAR-EVENT that involves the detonation of a nuclear device.</rdfs:comment>
-    <rdfs:label xml:lang="en">nuclear weapon event</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:hasValue xml:lang="en">REQUEST</owl:hasValue>
+    <owl:onProperty rdf:resource="#action-task-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:hasValue xml:lang="en">ACTION-EVENT</owl:hasValue>
+    <owl:onProperty rdf:resource="#action-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="#chemical-biological-event-volume-concentration-quantity">
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#action-task-timing-day-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#NUCLEAR-EVENT">
     <rdfs:subClassOf rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
     <rdfs:comment xml:lang="en">A RADIOACTIVE-EVENT involving nuclear materiel and/or nuclear detonation.</rdfs:comment>
     <rdfs:label xml:lang="en">nuclear event</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#radioactive-event-surface-deposition-quantity">
-    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:hasValue xml:lang="en">RADIOLOGICAL-EVENT</owl:hasValue>
+    <owl:onProperty rdf:resource="#radioactive-event-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-priority-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#cbrn-event-materiel-container-total-count">
-    <rdfs:domain rdf:resource="#CBRN-EVENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#chemical-biological-event-mass-fraction-concentration-quantity">
-    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
+  <rdf:Description rdf:about="#action-task-timing-hour-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#CHEMICAL-BIOLOGICAL-EVENT">
     <rdfs:subClassOf rdf:resource="#CBRN-EVENT"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
     <rdfs:comment xml:lang="en">A CBRN-EVENT involving chemical and/or biological materiel.</rdfs:comment>
     <rdfs:label xml:lang="en">chemical biological event</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#radiological-event-release-category-code">
+  <rdf:Description rdf:about="#action-task-meteorological-impact-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RADIOLOGICAL-EVENT"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#radioactive-event-volume-concentration-quantity">
-    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+  <rdf:Description rdf:about="#action-task-entailed-safety-degree-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#radioactive-event-dose-rate">
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#radioactive-event-category-code">
+  <rdf:Description rdf:about="#action-task-start-qualifier-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#radioactive-event-relative-decay-rate-code">
@@ -115,51 +121,50 @@
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#chemical-biological-event-release-category-code">
+  <rdf:Description rdf:about="#action-name-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
+    <rdfs:domain rdf:resource="#ACTION"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#physical_model_only">
-    <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#RADIOACTIVE-EVENT">
-    <rdfs:subClassOf rdf:resource="#CBRN-EVENT"/>
-    <rdfs:comment xml:lang="en">A CBRN-EVENT involving radioactive materiel(s).</rdfs:comment>
-    <rdfs:label xml:lang="en">radioactive event</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#RADIOLOGICAL-EVENT">
     <rdfs:subClassOf rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
     <rdfs:comment xml:lang="en">A RADIOACTIVE-EVENT involving radioactive materiel(s) but not involving nuclear materiel(s) and/or nuclear detonation.</rdfs:comment>
     <rdfs:label xml:lang="en">radiological event</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-planned-end-datetime">
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#nuclear-weapon-event-yield-quantity">
     <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#action-task-minimum-duration">
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-maximum-duration">
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:hasValue xml:lang="en">ACTION-TASK</owl:hasValue>
+    <owl:onProperty rdf:resource="#action-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#radiological-event-isotope-concentration-ratio">
     <rdfs:domain rdf:resource="#RADIOLOGICAL-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#nuclear-weapon-event-crater-presence-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#nuclear-event-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#NUCLEAR-EVENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:hasValue xml:lang="en">NUCLEAR-WEAPON-EVENT</owl:hasValue>
+    <owl:onProperty rdf:resource="#nuclear-event-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="#chemical-biological-event-spill-size-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#chemical-biological-event-release-height-dimension">
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -176,25 +181,169 @@
     <rdfs:domain rdf:resource="#REQUEST"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#chemical-biological-event-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#cbrn-event-confirmation-test-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#radioactive-event-dose-rate-trend-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACTION">
+    <rdfs:label xml:lang="en">action</rdfs:label>
+    <rdfs:comment xml:lang="en">An activity, or the occurrence of an activity, that may utilise resources and may be focused against an objective.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#REQUEST">
+    <rdfs:subClassOf rdf:resource="#ACTION-TASK"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:comment xml:lang="en">An ACTION-TASK that states a requirement.</rdfs:comment>
+    <rdfs:label xml:lang="en">request</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#request-latest-answer-datetime">
+    <rdfs:domain rdf:resource="#REQUEST"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#request-immediate-interest-indicator-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#REQUEST"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-event-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:hasValue xml:lang="en">CHEMICAL-BIOLOGICAL-EVENT</owl:hasValue>
+    <owl:onProperty rdf:resource="#cbrn-event-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#nuclear-weapon-event-yield-group-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NUCLEAR-WEAPON-EVENT">
+    <rdfs:subClassOf rdf:resource="#NUCLEAR-EVENT"/>
+    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <rdfs:comment xml:lang="en">A NUCLEAR-EVENT that involves the detonation of a nuclear device.</rdfs:comment>
+    <rdfs:label xml:lang="en">nuclear weapon event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:hasValue xml:lang="en">CBRN-EVENT</owl:hasValue>
+    <owl:onProperty rdf:resource="#action-event-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#radioactive-event-surface-deposition-quantity">
+    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#cbrn-event-materiel-container-total-count">
+    <rdfs:domain rdf:resource="#CBRN-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-end-qualifier-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#chemical-biological-event-mass-fraction-concentration-quantity">
+    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#radiological-event-release-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#RADIOLOGICAL-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#radioactive-event-volume-concentration-quantity">
+    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-planned-start-datetime">
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#radioactive-event-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#chemical-biological-event-release-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RADIOACTIVE-EVENT">
+    <rdfs:subClassOf rdf:resource="#CBRN-EVENT"/>
+    <rdfs:subClassOf rdf:nodeID="A8"/>
+    <rdfs:comment xml:lang="en">A CBRN-EVENT involving radioactive materiel(s).</rdfs:comment>
+    <rdfs:label xml:lang="en">radioactive event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-activity-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:hasValue xml:lang="en">RADIOACTIVE-EVENT</owl:hasValue>
+    <owl:onProperty rdf:resource="#cbrn-event-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-estimated-duration">
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#action-task-overt-covert-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#nuclear-weapon-event-crater-presence-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#nuclear-event-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#NUCLEAR-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#chemical-biological-event-release-height-dimension">
+    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#chemical-biological-event-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#ACTION-TASK">
     <rdfs:subClassOf rdf:resource="#ACTION"/>
+    <rdfs:subClassOf rdf:nodeID="A6"/>
     <rdfs:label xml:lang="en">action task</rdfs:label>
     <rdfs:comment xml:lang="en">An ACTION that is being or has been planned and for which the planning details are known.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#radioactive-event-dose-rate-trend-code">
+  <rdf:Description rdf:about="#action-task-detail-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
+    <rdfs:domain rdf:resource="#ACTION-TASK"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#cbrn-event-materiel-container-type-code">
@@ -202,11 +351,9 @@
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ACTION">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="#ACTION-EVENT">
     <rdfs:subClassOf rdf:resource="#ACTION"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
     <rdfs:label xml:lang="en">action event</rdfs:label>
     <rdfs:comment xml:lang="en">An ACTION that is an incident, phenomenon, or occasion of military significance which has occurred or is occurring but for which planning is not known.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>

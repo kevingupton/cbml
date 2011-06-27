@@ -5,67 +5,285 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_CAPABILITY.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_CAPABILITY.owl#" > 
-  <rdf:Description rdf:about="#SUPPORT-CAPABILITY">
-    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
-    <rdfs:label xml:lang="en">support capability</rdfs:label>
-    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs and ORGANISATIONs or FACILITY-TYPEs, EQUIPMENT-TYPEs and ORGANISATION-TYPEs that are deemed as having the ability to provide supplies or services.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:hasValue xml:lang="en">SURVEILLANCE-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY">
-    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
-    <rdfs:label xml:lang="en">operational capability</rdfs:label>
-    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those objects and types of objects that are deemed as having the ability, the training and the equipment to perform an operation.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#CAPABILITY">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="#maintenance-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#MAINTENANCE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SURVEILLANCE-CAPABILITY">
     <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
     <rdfs:label xml:lang="en">surveillance capability</rdfs:label>
     <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs and PERSON-TYPEs that are deemed as having the nominal ability to observe aerospace, surface or subsurface areas, places, persons, or things, by visual, aural, electronic, photographic or other means.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#HANDLING-CAPABILITY">
+  <rdf:Description rdf:about="#mobility-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#MOBILITY-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#engineering-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TRANSMISSION-CAPABILITY">
     <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
-    <rdfs:label xml:lang="en">handling capability</rdfs:label>
-    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs and MATERIELs, or FACILITY-TYPEs and EQUIPMENT-TYPEs that are deemed as having the ability to move materiels (raw materials, scrap, semi-finished, and finished) to, through, and from productive processes; in warehouses and storage; and in receiving and shipping areas.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:label xml:lang="en">transmission capability</rdfs:label>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those MATERIELs or MATERIEL-TYPEs that are deemed as having the ability to generate, receive or affect signals in the electromagnetic spectrum.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OPERATIONAL-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:label xml:lang="en">operational capability</rdfs:label>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those objects and types of objects that are deemed as having the ability, the training and the equipment to perform an operation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#operational-capability-qualifier-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#OPERATIONAL-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#operational-capability-level-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#OPERATIONAL-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#FIRE-CAPABILITY">
     <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
     <rdfs:label xml:lang="en">fire capability</rdfs:label>
     <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs, or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs and PERSON-TYPEs that are deemed as having the ability to discharge or launch a projectile or missile.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#MOBILITY-CAPABILITY">
-    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
-    <rdfs:label xml:lang="en">mobility capability</rdfs:label>
-    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs, and PERSON-TYPEs that are deemed as having the nominal ability to move in space, air, on water, under water, or over a specific type of terrain.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="#maintenance-capability-station-count">
+    <rdfs:domain rdf:resource="#MAINTENANCE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#STORAGE-CAPABILITY">
-    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
-    <rdfs:label xml:lang="en">storage capability</rdfs:label>
-    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs and MATERIELs or EQUIPMENT-TYPEs and FACILITY-TYPEs that are deemed as having the ability to hold a specific OBJECT-TYPE.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="#storage-capability-cargo-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#STORAGE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#ENGINEERING-CAPABILITY">
-    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
-    <rdfs:label xml:lang="en">engineering capability</rdfs:label>
-    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those ORGANISATIONs and PERSONs or ORGANISATION-TYPEs and PERSON-TYPEs that are deemed as having the ability to perform construction or destruction activities.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="#storage-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#STORAGE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="#MAINTENANCE-CAPABILITY">
     <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
     <rdfs:label xml:lang="en">maintenance capability</rdfs:label>
     <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs, and PERSON-TYPEs that are deemed as having the ability to provide a range of activities required to restore or maintain operational usage.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="#TRANSMISSION-CAPABILITY">
-    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
-    <rdfs:label xml:lang="en">transmission capability</rdfs:label>
-    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those MATERIELs or MATERIEL-TYPEs that are deemed as having the ability to generate, receive or affect signals in the electromagnetic spectrum.</rdfs:comment>
+  <rdf:Description rdf:about="#capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:hasValue xml:lang="en">OPERATIONAL-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fire-capability-weapon-type-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#FIRE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#capability-day-night-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:hasValue xml:lang="en">MOBILITY-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#transmission-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TRANSMISSION-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#engineering-capability-facility-height-dimension">
+    <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mobility-capability-terrain-type-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#MOBILITY-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:hasValue xml:lang="en">FIRE-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#capability-unit-of-measure-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#surveillance-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#SURVEILLANCE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CAPABILITY">
+    <rdfs:label xml:lang="en">capability</rdfs:label>
+    <rdfs:comment xml:lang="en">The potential ability to do work, perform a function or mission, achieve an objective, or provide a service.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:hasValue xml:lang="en">TRANSMISSION-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#operational-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#OPERATIONAL-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#STORAGE-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A6"/>
+    <rdfs:label xml:lang="en">storage capability</rdfs:label>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs and MATERIELs or EQUIPMENT-TYPEs and FACILITY-TYPEs that are deemed as having the ability to hold a specific OBJECT-TYPE.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fire-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#FIRE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:hasValue xml:lang="en">SUPPORT-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HANDLING-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A8"/>
+    <rdfs:label xml:lang="en">handling capability</rdfs:label>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs and MATERIELs, or FACILITY-TYPEs and EQUIPMENT-TYPEs that are deemed as having the ability to move materiels (raw materials, scrap, semi-finished, and finished) to, through, and from productive processes; in warehouses and storage; and in receiving and shipping areas.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MOBILITY-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdfs:label xml:lang="en">mobility capability</rdfs:label>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs, ORGANISATIONs and PERSONs or FACILITY-TYPEs, EQUIPMENT-TYPEs, ORGANISATION-TYPEs, and PERSON-TYPEs that are deemed as having the nominal ability to move in space, air, on water, under water, or over a specific type of terrain.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#engineering-capability-facility-width-dimension">
+    <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fire-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#FIRE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#storage-capability-condition-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#STORAGE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <owl:hasValue xml:lang="en">ENGINEERING-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SUPPORT-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <rdfs:label xml:lang="en">support capability</rdfs:label>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those FACILITYs, MATERIELs and ORGANISATIONs or FACILITY-TYPEs, EQUIPMENT-TYPEs and ORGANISATION-TYPEs that are deemed as having the ability to provide supplies or services.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#surveillance-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#SURVEILLANCE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mobility-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#MOBILITY-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#support-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#SUPPORT-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:hasValue xml:lang="en">HANDLING-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#engineering-capability-facility-length-dimension">
+    <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#maintenance-capability-level-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#MAINTENANCE-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#handling-capability-action-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#HANDLING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:hasValue xml:lang="en">MAINTENANCE-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ENGINEERING-CAPABILITY">
+    <rdfs:subClassOf rdf:resource="#CAPABILITY"/>
+    <rdfs:subClassOf rdf:nodeID="A9"/>
+    <rdfs:label xml:lang="en">engineering capability</rdfs:label>
+    <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those ORGANISATIONs and PERSONs or ORGANISATION-TYPEs and PERSON-TYPEs that are deemed as having the ability to perform construction or destruction activities.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#support-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#SUPPORT-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#transmission-capability-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TRANSMISSION-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#handling-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#HANDLING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#engineering-capability-descriptor-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#handling-capability-cargo-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#HANDLING-CAPABILITY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:hasValue xml:lang="en">STORAGE-CAPABILITY</owl:hasValue>
+    <owl:onProperty rdf:resource="#capability-category-code"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

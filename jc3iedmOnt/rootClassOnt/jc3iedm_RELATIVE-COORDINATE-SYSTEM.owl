@@ -5,6 +5,11 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#" > 
+  <rdf:Description rdf:about="#relative-coordinate-system-reference-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="#OBJECT-REFERENCE">
     <rdfs:subClassOf rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
     <rdfs:label xml:lang="en">object reference</rdfs:label>
@@ -12,6 +17,8 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#RELATIVE-COORDINATE-SYSTEM">
+    <rdfs:label xml:lang="en">relative coordinate system</rdfs:label>
+    <rdfs:comment xml:lang="en">A rectangular frame of reference defined by an origin, x and y axes in the horizontal plane, and a z-axis. The vertical z-axis is normal to the xy-plane with positive direction determined from the right-hand rule when the x-axis is rotated toward the y-axis.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="#POINT-REFERENCE">
