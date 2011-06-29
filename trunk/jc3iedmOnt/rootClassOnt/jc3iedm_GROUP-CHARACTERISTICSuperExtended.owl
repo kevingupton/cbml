@@ -7,6 +7,7 @@
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_GROUP-CHARACTERISTICSuperExtended.owl#" > 
   <rdf:Description rdf:about="#">
     <owl:imports rdf:resource="jc3iedm_GROUP-CHARACTERISTICExtended.owl#"/>
+    <owl:imports rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-gender-code">

@@ -26,6 +26,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="#">
     <owl:imports rdf:resource="jc3iedm_SECURITY-CLASSIFICATIONExtended.owl#"/>
+    <owl:imports rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
   <rdf:Description rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-policy-text">
