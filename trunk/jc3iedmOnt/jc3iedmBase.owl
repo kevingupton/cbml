@@ -42,6 +42,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">FEATURE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
@@ -53,7 +61,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">FE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -87,6 +95,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">METEOROLOGIC-FEATURE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-category-code"/>
         </owl:onProperty>
@@ -98,7 +114,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">METEOROLOGIC-FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -126,6 +142,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CBRN-EVENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-event-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-event-category-code"/>
         </owl:onProperty>
@@ -137,7 +161,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CBRN-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">CBRN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -155,6 +179,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a structure (including overpass and viaduct), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
     <rdfs:label xml:lang="en">bridge</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">BRIDGE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">BRIDGE</owl:hasValue>
@@ -204,6 +236,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">UNIT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#organisation-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-category-code"/>
         </owl:onProperty>
@@ -215,7 +255,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">UNIT</owl:hasValue>
+        <owl:hasValue xml:lang="en">UN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -247,6 +287,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">LIQUID-SURFACE-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
         </owl:onProperty>
@@ -258,7 +306,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">LIQUID-SURFACE-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">LQDSRF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -286,6 +334,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">FIRE-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -297,7 +353,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FIRE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">FIRE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -333,6 +389,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">PHYSICAL-ADDRESS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#address-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#address-category-code"/>
         </owl:onProperty>
@@ -344,7 +408,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PHYSICAL-ADDRESS</owl:hasValue>
+        <owl:hasValue xml:lang="en">PHYADR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -396,6 +460,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">DRY-DOCK</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -407,7 +479,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">DRY-DOCK</owl:hasValue>
+        <owl:hasValue xml:lang="en">DRYDCK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -439,6 +511,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ELECTRONIC-ADDRESS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#address-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#address-category-code"/>
         </owl:onProperty>
@@ -450,7 +530,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ELECTRONIC-ADDRESS</owl:hasValue>
+        <owl:hasValue xml:lang="en">ELCADR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -482,6 +562,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">UXO-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#materiel-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-status-category-code"/>
         </owl:onProperty>
@@ -493,7 +581,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">UXO-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">UXOSTA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -529,6 +617,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AIRFIELD-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
         </owl:onProperty>
@@ -540,7 +636,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRFIELD-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRFST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -572,6 +668,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">APPROACH-DIRECTION</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
         </owl:onProperty>
@@ -583,7 +687,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">APPROACH-DIRECTION</owl:hasValue>
+        <owl:hasValue xml:lang="en">APPRDR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -611,6 +715,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">REPORTING-DATA-RELATIVE-TIMING</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#reporting-data-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#reporting-data-category-code"/>
         </owl:onProperty>
@@ -622,7 +734,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#reporting-data-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">REPORTING-DATA-RELATIVE-TIMING</owl:hasValue>
+        <owl:hasValue xml:lang="en">RDRELT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -650,6 +762,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SUBSURFACE-VESSEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#vessel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#vessel-type-category-code"/>
         </owl:onProperty>
@@ -661,7 +781,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#vessel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SUBSURFACE-VESSEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">SUBSRF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -689,6 +809,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">REQUEST</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-task-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-task-category-code"/>
         </owl:onProperty>
@@ -700,7 +828,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-task-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">REQUEST</owl:hasValue>
+        <owl:hasValue xml:lang="en">RQT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -738,6 +866,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A communication that conveys instructions from a superior to a subordinate.</rdfs:comment>
     <rdfs:label xml:lang="en">order</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#plan-order-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
@@ -789,6 +925,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">PERSON-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
@@ -800,7 +944,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PERSON-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">PE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -828,6 +972,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AFFILIATION-FUNCTIONAL-GROUP</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
@@ -839,7 +991,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-FUNCTIONAL-GROUP</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLFNC</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -867,6 +1019,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ORGANISATION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
@@ -878,7 +1038,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">OR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -914,6 +1074,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MILITARY-POST-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
@@ -925,7 +1093,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-POST-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILPST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -953,6 +1121,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">UNIT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
@@ -964,7 +1140,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">UNIT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">UNIT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -992,6 +1168,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MILITARY-OBSTACLE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -1003,7 +1187,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-OBSTACLE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILOBS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1031,6 +1215,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">GEOMETRIC-VOLUME</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#location-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
@@ -1042,7 +1234,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GEOMETRIC-VOLUME</owl:hasValue>
+        <owl:hasValue xml:lang="en">VL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1068,6 +1260,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CONTROL-FEATURE-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
@@ -1079,7 +1279,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONTROL-FEATURE-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">CF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1115,6 +1315,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MARITIME-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -1126,7 +1334,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MARITIME-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MRTMEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1152,6 +1360,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MINEFIELD</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#military-obstacle-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-obstacle-category-code"/>
         </owl:onProperty>
@@ -1163,7 +1379,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-obstacle-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINEFIELD</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNFLD</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1193,6 +1409,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-category-code"/>
         </owl:onProperty>
@@ -1204,7 +1428,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1230,6 +1454,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
         </owl:onProperty>
@@ -1241,7 +1473,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">OT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1273,6 +1505,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AIR-ROUTE-SEGMENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#route-segment-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#route-segment-category-code"/>
         </owl:onProperty>
@@ -1284,7 +1524,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#route-segment-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIR-ROUTE-SEGMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRRTE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1316,6 +1556,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-RECONNAISSANCE-EMPLOYMENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
@@ -1327,7 +1575,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-RECONNAISSANCE-EMPLOYMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">RECEMP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1355,6 +1603,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SURVEILLANCE-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -1366,7 +1622,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SURVEILLANCE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SURV</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1394,6 +1650,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">NUCLEAR-EVENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#radioactive-event-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#radioactive-event-category-code"/>
         </owl:onProperty>
@@ -1405,7 +1669,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#radioactive-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">NUCLEAR-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">NUCEVT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1441,6 +1705,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CANDIDATE-TARGET-DETAIL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#candidate-target-detail-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#candidate-target-detail-category-code"/>
         </owl:onProperty>
@@ -1452,7 +1724,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#candidate-target-detail-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CANDIDATE-TARGET-DETAIL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CTDTYP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1480,6 +1752,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AIRFIELD</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -1491,7 +1771,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRFIELD</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRFLD</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1519,6 +1799,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CBRN-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -1530,7 +1818,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CBRN-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CBRNEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1548,6 +1836,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A proposal for putting into effect a command decision or project; it represents the preparation for future or anticipated operations.</rdfs:comment>
     <rdfs:label xml:lang="en">plan</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#plan-order-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
@@ -1595,6 +1891,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">PRECIPITATION</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
@@ -1606,7 +1910,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PRECIPITATION</owl:hasValue>
+        <owl:hasValue xml:lang="en">PRECIP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1634,6 +1938,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-MARITIME-EMPLOYMENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
@@ -1645,7 +1957,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-MARITIME-EMPLOYMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">MAREMP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1681,6 +1993,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CORRIDOR-AREA</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#surface-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
@@ -1692,7 +2012,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CORRIDOR-AREA</owl:hasValue>
+        <owl:hasValue xml:lang="en">CORDAR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1722,6 +2042,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">GOVERNMENT-ORGANISATION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
@@ -1733,7 +2061,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GOVERNMENT-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GVTORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1763,6 +2091,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CONE-VOLUME</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
         </owl:onProperty>
@@ -1774,7 +2110,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONE-VOLUME</owl:hasValue>
+        <owl:hasValue xml:lang="en">CN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1802,6 +2138,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ELLIPSE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#surface-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
@@ -1813,7 +2157,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ELLIPSE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ELLPSE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1841,6 +2185,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">RAILCAR-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -1852,7 +2204,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RAILCAR-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">RAIL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1884,6 +2236,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">EQUIPMENT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#materiel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-type-category-code"/>
         </owl:onProperty>
@@ -1895,7 +2255,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">EQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1923,6 +2283,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">TRANSMISSION-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -1934,7 +2302,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">TRANSMISSION-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">TRANSM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -1962,6 +2330,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ANCHORAGE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -1973,7 +2349,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ANCHORAGE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ANCHOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2005,6 +2381,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">RADIOLOGICAL-EVENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#radioactive-event-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#radioactive-event-category-code"/>
         </owl:onProperty>
@@ -2016,7 +2400,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#radioactive-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RADIOLOGICAL-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">RADEVT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2044,6 +2428,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CONVOY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#organisation-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-category-code"/>
         </owl:onProperty>
@@ -2055,7 +2447,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONVOY</owl:hasValue>
+        <owl:hasValue xml:lang="en">CO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2111,6 +2503,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MINEFIELD-MARITIME-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
         </owl:onProperty>
@@ -2122,7 +2522,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINEFIELD-MARITIME-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNMAST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2150,6 +2550,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MILITARY-OBSTACLE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
@@ -2161,7 +2569,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-OBSTACLE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILOBS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2189,6 +2597,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">POLYARC-AREA</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#surface-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
@@ -2200,7 +2616,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">POLYARC-AREA</owl:hasValue>
+        <owl:hasValue xml:lang="en">PLYAAR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2235,6 +2651,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">RAILWAY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -2246,7 +2670,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RAILWAY</owl:hasValue>
+        <owl:hasValue xml:lang="en">RALWAY</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2274,6 +2698,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ENGINEERING-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -2285,7 +2717,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ENGINEERING-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">ENGI</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2313,6 +2745,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">EXECUTIVE-MILITARY-ORGANISATION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
@@ -2324,7 +2764,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">EXECUTIVE-MILITARY-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">EXCMIL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2360,6 +2800,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ROUTE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#control-feature-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-type-category-code"/>
         </owl:onProperty>
@@ -2371,7 +2819,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ROUTE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">RTETYP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2399,6 +2847,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">FAN-AREA</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#surface-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
@@ -2410,7 +2866,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FAN-AREA</owl:hasValue>
+        <owl:hasValue xml:lang="en">FA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2445,6 +2901,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">VESSEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -2456,7 +2920,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">VESSEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">VESSEL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2484,6 +2948,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">STORAGE-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -2495,7 +2967,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">STORAGE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">STOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2521,6 +2993,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An ACTION-OBJECTIVE-ITEM that is subject to capture, destruction or intelligence operations.</rdfs:comment>
     <rdfs:label xml:lang="en">target</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">TARGET</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-objective-item-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">TARGET</owl:hasValue>
@@ -2568,6 +3048,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">VISIBILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
@@ -2579,7 +3067,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">VISIBILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">VISIB</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2607,6 +3095,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">FACILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
@@ -2618,7 +3114,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FACILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">FA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2646,6 +3142,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">HANDLING-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -2657,7 +3161,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">HANDLING-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">HNDLNG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2700,6 +3204,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-ITEM</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
         </owl:onProperty>
@@ -2711,7 +3223,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-ITEM</owl:hasValue>
+        <owl:hasValue xml:lang="en">OI</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2739,6 +3251,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MEDICAL-FACILITY-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
         </owl:onProperty>
@@ -2750,7 +3270,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MEDICAL-FACILITY-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">MEDFST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2776,6 +3296,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">PRIVATE-SECTOR-ORGANISATION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
@@ -2787,7 +3315,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PRIVATE-SECTOR-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">PVSORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2823,6 +3351,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AIRSPACE-CONTROL-MEANS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
         </owl:onProperty>
@@ -2834,7 +3370,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRSPACE-CONTROL-MEANS</owl:hasValue>
+        <owl:hasValue xml:lang="en">ACM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2874,6 +3410,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CONSUMABLE-MATERIEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#materiel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-type-category-code"/>
         </owl:onProperty>
@@ -2885,7 +3429,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONSUMABLE-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2913,6 +3457,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MINE-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#materiel-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-status-category-code"/>
         </owl:onProperty>
@@ -2924,7 +3476,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINE-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNESTA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2954,6 +3506,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">FEATURE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
@@ -2965,7 +3525,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FEATURE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">FE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -2995,6 +3555,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">WEAPON-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -3006,7 +3574,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">WEAPON-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">WEPTYP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3032,6 +3600,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">RADIOACTIVE-MATERIEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
@@ -3043,7 +3619,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RADIOACTIVE-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">RADMAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3059,6 +3635,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a specifically prepared surface along which aircraft take off and land.</rdfs:comment>
     <rdfs:label xml:lang="en">runway</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">RUNWAY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">RUNWAY</owl:hasValue>
@@ -3108,6 +3692,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CANDIDATE-TARGET-DETAIL-ITEM</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#candidate-target-detail-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#candidate-target-detail-category-code"/>
         </owl:onProperty>
@@ -3119,7 +3711,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#candidate-target-detail-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CANDIDATE-TARGET-DETAIL-ITEM</owl:hasValue>
+        <owl:hasValue xml:lang="en">CTDITM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3149,6 +3741,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ELECTRONIC-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -3160,7 +3760,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ELECTRONIC-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ELCTRN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3192,6 +3792,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">RELATIVE-POINT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#point-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#point-category-code"/>
         </owl:onProperty>
@@ -3203,7 +3811,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#point-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RELATIVE-POINT</owl:hasValue>
+        <owl:hasValue xml:lang="en">REL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3229,6 +3837,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MATERIEL-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
@@ -3240,7 +3856,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MATERIEL-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">MA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3266,6 +3882,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ENGINEERING-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -3277,7 +3901,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ENGINEERING-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ENGEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3305,6 +3929,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">TASK-FORMATION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
@@ -3316,7 +3948,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">TASK-FORMATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">TASK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3344,6 +3976,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">LIQUID-BODY-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
         </owl:onProperty>
@@ -3355,7 +3995,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">LIQUID-BODY-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">LQDBDY</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3391,6 +4031,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">GEOGRAPHIC-POINT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#absolute-point-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#absolute-point-category-code"/>
         </owl:onProperty>
@@ -3402,7 +4050,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#absolute-point-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GEOGRAPHIC-POINT</owl:hasValue>
+        <owl:hasValue xml:lang="en">GEOGPT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3437,6 +4085,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-TASK</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-category-code"/>
         </owl:onProperty>
@@ -3448,7 +4104,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-TASK</owl:hasValue>
+        <owl:hasValue xml:lang="en">ACTTA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3484,6 +4140,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SURFACE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#location-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
@@ -3495,7 +4159,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SURFACE</owl:hasValue>
+        <owl:hasValue xml:lang="en">SURFAC</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3511,6 +4175,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is an area intended for parking, loading, unloading and/or servicing.</rdfs:comment>
     <rdfs:label xml:lang="en">apron</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">APRON</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">APRON</owl:hasValue>
@@ -3564,6 +4236,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">HARBOUR-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
@@ -3575,7 +4255,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">HARBOUR-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">HARBOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3603,6 +4283,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the availability of natural illumination by type and time.</rdfs:comment>
     <rdfs:label xml:lang="en">light</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LIGHT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LIGHT</owl:hasValue>
@@ -3654,6 +4342,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">BERTH</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -3693,6 +4389,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">LINE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#location-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
@@ -3704,7 +4408,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">LINE</owl:hasValue>
+        <owl:hasValue xml:lang="en">LN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3730,6 +4434,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CHEMICAL-MATERIEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
@@ -3741,7 +4453,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CHEMICAL-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CHMMAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3773,6 +4485,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-EFFECT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-effect-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-effect-category-code"/>
         </owl:onProperty>
@@ -3784,7 +4504,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-effect-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-EFFECT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">AETYPE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3810,6 +4530,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#feature-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-type-category-code"/>
         </owl:onProperty>
@@ -3821,7 +4549,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3847,6 +4575,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AMMUNITION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
@@ -3858,7 +4594,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AMMUNITION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">AMMO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3884,6 +4620,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CHEMICAL-BIOLOGICAL-EVENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#cbrn-event-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#cbrn-event-category-code"/>
         </owl:onProperty>
@@ -3895,7 +4639,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#cbrn-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CHEMICAL-BIOLOGICAL-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">CHMBIO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3932,6 +4676,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">GROUP-ORGANISATION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
@@ -3943,7 +4695,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GROUP-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GRPORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -3969,6 +4721,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-TASK</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
         </owl:onProperty>
@@ -3980,7 +4740,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-TASK</owl:hasValue>
+        <owl:hasValue xml:lang="en">OTASK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4010,6 +4770,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
@@ -4021,7 +4789,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">GF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4055,6 +4823,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">HARBOUR</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -4066,7 +4842,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">HARBOUR</owl:hasValue>
+        <owl:hasValue xml:lang="en">HARBOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4091,6 +4867,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is an open area of water, usually artificial and enclosed by dock gates lined with wharves, warehouses and berths to enable vessels to load and unload.</rdfs:comment>
     <rdfs:label xml:lang="en">basin</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">BASIN</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">BASIN</owl:hasValue>
@@ -4138,6 +4922,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SURFACE-VOLUME</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
         </owl:onProperty>
@@ -4149,7 +4941,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SURFACE-VOLUME</owl:hasValue>
+        <owl:hasValue xml:lang="en">SURVOL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4179,6 +4971,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">REPORTING-DATA-ABSOLUTE-TIMING</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#reporting-data-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#reporting-data-category-code"/>
         </owl:onProperty>
@@ -4190,7 +4990,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#reporting-data-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">REPORTING-DATA-ABSOLUTE-TIMING</owl:hasValue>
+        <owl:hasValue xml:lang="en">RDABST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4206,6 +5006,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a solidly constructed platform, usually parallel to the shoreline of navigable water, alongside which a vessel can be docked or berthed and, on which, the vessel can be accessed and cargo can be loaded or unloaded on one side of the vessel only.</rdfs:comment>
     <rdfs:label xml:lang="en">quay</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">QUAY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">QUAY</owl:hasValue>
@@ -4249,6 +5057,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A CONTROL-FEATURE that is the prescribed course to be travelled from a specific point of origin to a specific destination.</rdfs:comment>
     <rdfs:label xml:lang="en">route</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ROUTE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ROUTE</owl:hasValue>
@@ -4304,6 +5120,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CONTROL-FEATURE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#feature-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-type-category-code"/>
         </owl:onProperty>
@@ -4315,7 +5139,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONTROL-FEATURE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4351,6 +5175,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MAINTENANCE-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -4362,7 +5194,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MAINTENANCE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">MAIN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4388,6 +5220,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ORGANISATION</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
@@ -4399,7 +5239,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ORGANISATION</owl:hasValue>
+        <owl:hasValue xml:lang="en">OR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4425,6 +5265,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">BIOLOGICAL-MATERIEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
@@ -4436,7 +5284,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">BIOLOGICAL-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">BIOMAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4462,6 +5310,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-EVENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-category-code"/>
         </owl:onProperty>
@@ -4473,7 +5329,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">ACTEV</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4499,6 +5355,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SLIPWAY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -4510,7 +5374,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SLIPWAY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SLPWAY</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4542,6 +5406,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">POINT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#location-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
@@ -4553,7 +5425,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#location-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">POINT</owl:hasValue>
+        <owl:hasValue xml:lang="en">PT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4579,6 +5451,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">VEHICLE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -4590,7 +5470,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">VEHICLE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">VEHCLE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4616,6 +5496,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">PERSON</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
@@ -4627,7 +5515,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PERSON</owl:hasValue>
+        <owl:hasValue xml:lang="en">PE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4653,6 +5541,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">RADIOACTIVE-EVENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#cbrn-event-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#cbrn-event-category-code"/>
         </owl:onProperty>
@@ -4664,7 +5560,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#cbrn-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RADIOACTIVE-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">RADCTV</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4690,6 +5586,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MATERIEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
@@ -4701,7 +5605,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4731,6 +5635,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SPHERE-VOLUME</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
         </owl:onProperty>
@@ -4742,7 +5654,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geometric-volume-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SPHERE-VOLUME</owl:hasValue>
+        <owl:hasValue xml:lang="en">SPHVOL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4772,6 +5684,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MISCELLANEOUS-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -4783,7 +5703,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MISCELLANEOUS-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MISCEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4813,6 +5733,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">FACILITY-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
@@ -4824,7 +5752,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FACILITY-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">FA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4854,6 +5782,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ORGANISATION-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
@@ -4865,7 +5801,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ORGANISATION-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">OR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4893,6 +5829,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AIRFIELD-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
@@ -4904,7 +5848,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRFIELD-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRFLD</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4930,6 +5874,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ORBIT-AREA</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#surface-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
@@ -4941,7 +5893,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ORBIT-AREA</owl:hasValue>
+        <owl:hasValue xml:lang="en">ORBTAR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -4975,6 +5927,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-AIRCRAFT-EMPLOYMENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
@@ -4986,7 +5946,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-AIRCRAFT-EMPLOYMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIREMP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5012,6 +5972,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ATMOSPHERE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
@@ -5023,7 +5991,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ATMOSPHERE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ATMOS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5047,6 +6015,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a platform that may be fixed or floating extending from a shore, normally attached to a wharf or the shore, and which allows access to a vessel lying alongside, used to secure, protect and provide landing and docking for vessels.</rdfs:comment>
     <rdfs:label xml:lang="en">jetty</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">JETTY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">JETTY</owl:hasValue>
@@ -5094,6 +6070,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">NUCLEAR-WEAPON-EVENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#nuclear-event-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#nuclear-event-category-code"/>
         </owl:onProperty>
@@ -5105,7 +6089,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#nuclear-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">NUCLEAR-WEAPON-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">NUCWEP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5133,6 +6117,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">OPERATIONAL-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -5144,7 +6136,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">OPERATIONAL-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">OPERAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5170,6 +6162,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-TYPE-IMAGERY-PRODUCT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-objective-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-type-category-code"/>
         </owl:onProperty>
@@ -5181,7 +6181,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-objective-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-OBJECTIVE-TYPE-IMAGERY-PRODUCT</owl:hasValue>
+        <owl:hasValue xml:lang="en">AOTIMG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5207,6 +6207,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">NETWORK</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
@@ -5218,7 +6226,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">NETWORK</owl:hasValue>
+        <owl:hasValue xml:lang="en">NETWRK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5244,6 +6252,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AFFILIATION-RELIGION</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
@@ -5255,7 +6271,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-RELIGION</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLREL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5271,6 +6287,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the accumulation of frozen water on stationary or moving surfaces.</rdfs:comment>
     <rdfs:label xml:lang="en">icing</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ICING</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ICING</owl:hasValue>
@@ -5320,6 +6344,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">INSTRUMENT-LANDING-SYSTEM</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#materiel-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-category-code"/>
         </owl:onProperty>
@@ -5331,7 +6363,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#materiel-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">INSTRUMENT-LANDING-SYSTEM</owl:hasValue>
+        <owl:hasValue xml:lang="en">ILS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5376,6 +6408,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SUPPORT-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -5387,7 +6427,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SUPPORT-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SUPPRT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5419,6 +6459,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ROUTE-SEGMENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
         </owl:onProperty>
@@ -5430,7 +6478,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ROUTE-SEGMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">RTESEG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5460,6 +6508,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MINEFIELD-MARITIME</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#minefield-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#minefield-category-code"/>
         </owl:onProperty>
@@ -5471,7 +6527,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#minefield-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINEFIELD-MARITIME</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNFMRT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5499,6 +6555,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MOBILITY-CAPABILITY</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#capability-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
@@ -5510,7 +6574,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MOBILITY-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">MOBL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5536,6 +6600,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">PERSON-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
@@ -5547,7 +6619,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PERSON-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">PE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5568,6 +6640,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the velocity and directional characteristics of atmospheric movement.</rdfs:comment>
     <rdfs:label xml:lang="en">wind</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">WIND</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">WIND</owl:hasValue>
@@ -5605,6 +6685,14 @@
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a path or way with a specially prepared surface.</rdfs:comment>
     <rdfs:label xml:lang="en">road</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ROAD</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ROAD</owl:hasValue>
@@ -5660,6 +6748,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-ELECTRONIC-WARFARE-EMPLOYMENT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
@@ -5671,7 +6767,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-ELECTRONIC-WARFARE-EMPLOYMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">ELCEMP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5703,6 +6799,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-EFFECT-ITEM</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-effect-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-effect-category-code"/>
         </owl:onProperty>
@@ -5714,7 +6818,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-effect-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-EFFECT-ITEM</owl:hasValue>
+        <owl:hasValue xml:lang="en">AEITEM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5740,6 +6844,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-RESOURCE-ITEM</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-resource-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-category-code"/>
         </owl:onProperty>
@@ -5751,7 +6863,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-RESOURCE-ITEM</owl:hasValue>
+        <owl:hasValue xml:lang="en">RI</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5777,6 +6889,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MATERIEL</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
@@ -5788,7 +6908,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MATERIEL</owl:hasValue>
+        <owl:hasValue xml:lang="en">MA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5814,6 +6934,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MILITARY-ORGANISATION-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#government-organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#government-organisation-type-category-code"/>
         </owl:onProperty>
@@ -5825,7 +6953,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#government-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5855,6 +6983,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AIRCRAFT-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
@@ -5866,7 +7002,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRCRAFT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRCFT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5908,6 +7044,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SOLID-SURFACE-STATUS</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
         </owl:onProperty>
@@ -5919,7 +7063,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SOLID-SURFACE-STATUS</owl:hasValue>
+        <owl:hasValue xml:lang="en">SLDSRF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5949,6 +7093,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">TRACK-AREA</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#surface-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
@@ -5960,7 +7112,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">TRACK-AREA</owl:hasValue>
+        <owl:hasValue xml:lang="en">TRCKAR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -5988,6 +7140,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CARTESIAN-POINT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#absolute-point-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#absolute-point-category-code"/>
         </owl:onProperty>
@@ -5999,7 +7159,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#absolute-point-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CARTESIAN-POINT</owl:hasValue>
+        <owl:hasValue xml:lang="en">CARTPT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6025,6 +7185,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">FACILITY-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
@@ -6036,7 +7204,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FACILITY-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">FA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6070,6 +7238,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CLOUD-COVER</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
@@ -6081,7 +7257,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CLOUD-COVER</owl:hasValue>
+        <owl:hasValue xml:lang="en">COVER</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6111,6 +7287,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">SURFACE-VESSEL-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#vessel-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#vessel-type-category-code"/>
         </owl:onProperty>
@@ -6122,7 +7306,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#vessel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SURFACE-VESSEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">SURFAC</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6148,6 +7332,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AFFILIATION-ETHNIC-GROUP</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
@@ -6159,7 +7351,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-ETHNIC-GROUP</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLETH</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6185,6 +7377,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ABSOLUTE-POINT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#point-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#point-category-code"/>
         </owl:onProperty>
@@ -6196,7 +7396,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#point-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ABSOLUTE-POINT</owl:hasValue>
+        <owl:hasValue xml:lang="en">ABS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6222,6 +7422,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">OPERATIONAL-INFORMATION-GROUP</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#context-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#context-category-code"/>
         </owl:onProperty>
@@ -6233,7 +7441,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#context-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">OPERATIONAL-INFORMATION-GROUP</owl:hasValue>
+        <owl:hasValue xml:lang="en">OIG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6263,6 +7471,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">BRIDGE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
@@ -6274,7 +7490,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">BRIDGE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">BRGTYP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6304,6 +7520,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CONTROL-FEATURE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#feature-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-category-code"/>
         </owl:onProperty>
@@ -6315,7 +7539,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONTROL-FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6341,6 +7565,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">POLYGON-AREA</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#surface-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
@@ -6352,7 +7584,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#surface-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">POLYGON-AREA</owl:hasValue>
+        <owl:hasValue xml:lang="en">PLYGAR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6378,6 +7610,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">AFFILIATION-GEOPOLITICAL</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
@@ -6389,7 +7629,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-GEOPOLITICAL</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLGEO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6423,6 +7663,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">MINEFIELD-LAND</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#minefield-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#minefield-category-code"/>
         </owl:onProperty>
@@ -6434,7 +7682,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#minefield-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINEFIELD-LAND</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNFLND</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6468,6 +7716,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTION-RESOURCE-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#action-resource-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-category-code"/>
         </owl:onProperty>
@@ -6479,7 +7735,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#action-resource-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-RESOURCE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">RT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6509,6 +7765,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:hasValue xml:lang="en">CIVILIAN-POST-TYPE</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
@@ -6520,7 +7784,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CIVILIAN-POST-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CIVPST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -6824,8 +8088,8 @@
     <rdfs:range rdf:resource="#ORGANISATION"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#ATTRIBUTE_identifies-update-seqnr-column_(CREATOR-UPDATE-IDENTIFICATION)">
-    <rdfs:domain rdf:resource="#ATTRIBUTE"/>
     <rdfs:range rdf:resource="#CREATOR-UPDATE-IDENTIFICATION"/>
+    <rdfs:domain rdf:resource="#ATTRIBUTE"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#REPORTING-DATA_provides-applicable-information-for_(ORGANISATION-STRUCTURE)">
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
@@ -6914,15 +8178,15 @@
     <rdfs:range rdf:resource="#FOREIGN-KEY-ATTRIBUTE"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="POINT-REFERENCE_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="#POINT_is-endpoint-of-x-vector-for_(POINT-REFERENCE)"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#POINT_is-endpoint-of-y-vector-for_(POINT-REFERENCE)"/>
+    </owl:inverseOf>
     <rdfs:domain rdf:resource="#POINT-REFERENCE"/>
     <rdfs:range rdf:resource="#POINT"/>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#POINT_is-origin-for_(POINT-REFERENCE)"/>
     </owl:inverseOf>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#POINT_is-endpoint-of-y-vector-for_(POINT-REFERENCE)"/>
-    </owl:inverseOf>
+    <owl:inverseOf rdf:resource="#POINT_is-endpoint-of-x-vector-for_(POINT-REFERENCE)"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#REPORTING-DATA_provides-applicable-information-for_(OBJECT-ITEM-HOSTILITY-STATUS)">
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
@@ -7179,8 +8443,8 @@
     <rdfs:domain rdf:resource="#OBJECT-ITEM-STATUS"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#ATTRIBUTE_appears-in_(ALTERNATE-KEY-ATTRIBUTE)">
-    <rdfs:range rdf:resource="#ALTERNATE-KEY-ATTRIBUTE"/>
     <rdfs:domain rdf:resource="#ATTRIBUTE"/>
+    <rdfs:range rdf:resource="#ALTERNATE-KEY-ATTRIBUTE"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#APPROACH-DIRECTION_is-the-object-of_(RUNWAY-APPROACH-DIRECTION-ASSOCIATION)">
     <rdfs:domain rdf:resource="#APPROACH-DIRECTION"/>
@@ -7248,12 +8512,12 @@
     <rdfs:range rdf:resource="#PLAN-STATUS"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="TRACK-AREA_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="#POINT_is-ending-point-for_(TRACK-AREA)"/>
-    <rdfs:domain rdf:resource="#TRACK-AREA"/>
-    <rdfs:range rdf:resource="#POINT"/>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#POINT_is-beginning-point-for_(TRACK-AREA)"/>
     </owl:inverseOf>
+    <rdfs:domain rdf:resource="#TRACK-AREA"/>
+    <rdfs:range rdf:resource="#POINT"/>
+    <owl:inverseOf rdf:resource="#POINT_is-ending-point-for_(TRACK-AREA)"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#CANDIDATE-TARGET-DETAIL-TYPE_may-be-specified-as_(ACTION-OBJECTIVE-TYPE)">
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL-TYPE"/>
@@ -7780,10 +9044,10 @@
     <rdfs:range rdf:resource="#ACTION-EFFECT"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="ORBIT-AREA_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="#POINT_is-first-point-for_(ORBIT-AREA)"/>
+    <owl:inverseOf rdf:resource="#POINT_is-second-point-for_(ORBIT-AREA)"/>
     <rdfs:domain rdf:resource="#ORBIT-AREA"/>
     <rdfs:range rdf:resource="#POINT"/>
-    <owl:inverseOf rdf:resource="#POINT_is-second-point-for_(ORBIT-AREA)"/>
+    <owl:inverseOf rdf:resource="#POINT_is-first-point-for_(ORBIT-AREA)"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="ACTION-RESOURCE-EMPLOYMENT_describes-use-of_ACTION-RESOURCE">
     <owl:inverseOf rdf:resource="#ACTION-RESOURCE_is-used-according-to_(ACTION-RESOURCE-EMPLOYMENT)"/>

@@ -4,17 +4,13 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERExtended.owl#">
-  <owl:Ontology rdf:about="#">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+  <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERExtended.owl#">
     <owl:imports>
       <owl:Ontology rdf:about="jc3iedm_PLAN-ORDER.owl#"/>
     </owl:imports>
   </owl:Ontology>
-  <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER">
-    <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
-    <rdfs:label xml:lang="en">plan order</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="#ORDER_Administrative/Logistics_order">
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Administrative/Logistics_order">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER"/>
     </rdfs:subClassOf>
@@ -29,7 +25,11 @@
     <rdfs:label xml:lang="en">administrative/logistics order</rdfs:label>
     <rdfs:comment xml:lang="en">An order to give the commander’s plan for administrative and service support of operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ORDER_Operations_order">
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER">
+    <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
+    <rdfs:label xml:lang="en">plan order</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Operations_order">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER"/>
     </rdfs:subClassOf>
@@ -44,7 +44,7 @@
     <rdfs:label xml:lang="en">operations order</rdfs:label>
     <rdfs:comment xml:lang="en">An order that includes only such detail as is necessary for commanders of subordinate formations/units to issue their own orders and to ensure coordination.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PLAN_Operations_plan">
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#PLAN_Operations_plan">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN"/>
     </rdfs:subClassOf>
@@ -59,7 +59,7 @@
     <rdfs:label xml:lang="en">operations plan</rdfs:label>
     <rdfs:comment xml:lang="en">A mechanism which a command uses to plan/prepare to conduct military operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ORDER_Fragmentary_order_to_existing_operation_order">
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Fragmentary_order_to_existing_operation_order">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER"/>
     </rdfs:subClassOf>
@@ -100,7 +100,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
   </owl:Class>
-  <owl:Class rdf:ID="ORDER_Warning_order">
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Warning_order">
     <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
     <rdfs:subClassOf>
       <owl:Restriction>

@@ -4,13 +4,13 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_CAPABILITYExtended.owl#">
-  <owl:Ontology rdf:about="#">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+  <owl:Ontology rdf:about="jc3iedm_CAPABILITYExtended.owl#">
     <owl:imports>
       <owl:Ontology rdf:about="jc3iedm_CAPABILITY.owl#"/>
     </owl:imports>
   </owl:Ontology>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Mountain">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Mountain">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -25,7 +25,7 @@
     <rdfs:label xml:lang="en">mountain</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to conduct military operations in mountainous areas.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ENGINEERING-CAPABILITY_Construction">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#ENGINEERING-CAPABILITY_Construction">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -40,7 +40,7 @@
     <rdfs:label xml:lang="en">construction</rdfs:label>
     <rdfs:comment xml:lang="en">The action or process of constructing.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Education">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Education">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -70,7 +70,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Electronic_warfare,_jamming">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Electronic_warfare,_jamming">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -83,7 +83,7 @@
     <rdfs:label xml:lang="en">electronic warfare, jamming</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to deliver radiation, re-radiation or reflection of electromagnetic energy with the object of impairing the use of electronic devices, equipment or systems being used by an enemy.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_radio_relay">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_radio_relay">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -96,7 +96,7 @@
     <rdfs:label xml:lang="en">signal, radio relay</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a communications radio relay.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Close_air_support">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Close_air_support">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -109,7 +109,7 @@
     <rdfs:label xml:lang="en">close air support</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform an air action against hostile targets which are in close proximity to friendly forces and which require detailed integration of each air mission with the fire and movement of those forces.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Shipwright">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Shipwright">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -124,7 +124,7 @@
     <rdfs:label xml:lang="en">shipwright</rdfs:label>
     <rdfs:comment xml:lang="en">Equipment and resources for the construction, fitting and repairing the wooden parts of a docked vessel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Sewage">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Sewage">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -139,7 +139,7 @@
     <rdfs:label xml:lang="en">sewage</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide sewage and refuse disposal.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Mortuary/graves_registry">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Mortuary/graves_registry">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -152,7 +152,7 @@
     <rdfs:label xml:lang="en">mortuary/graves registry</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide care and disposition of deceased personnel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Electronic_warfare,_intercept">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Electronic_warfare,_intercept">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -165,7 +165,7 @@
     <rdfs:label xml:lang="en">electronic warfare, intercept</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to intercept intentional or unintentional radiated electromagnetic energy for the purpose of immediate threat recognition.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Finance">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Finance">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -178,7 +178,7 @@
     <rdfs:label xml:lang="en">finance</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide financial advice and guidance, support for the procurement process, providing pay and disbursing support.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply_(water)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply_(water)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -191,7 +191,7 @@
     <rdfs:label xml:lang="en">supply (water)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide drinking water.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_subsurface">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_subsurface">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -206,7 +206,7 @@
     <rdfs:label xml:lang="en">water, subsurface</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to move on or under the water surface.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Sea_to_air">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Sea_to_air">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -221,7 +221,7 @@
     <rdfs:label xml:lang="en">sea to air</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from a vessel to airborne targets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Personnel_services">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Personnel_services">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -234,7 +234,7 @@
     <rdfs:label xml:lang="en">personnel services</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide the support services needed by military and civilian personnel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MOBILITY-CAPABILITY_Arctic">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Arctic">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -249,7 +249,7 @@
     <rdfs:label xml:lang="en">arctic</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to move on or through ice.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Water">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Water">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -264,7 +264,7 @@
     <rdfs:label xml:lang="en">water</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide potable water.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Land,_railed">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Land,_railed">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -279,7 +279,7 @@
     <rdfs:label xml:lang="en">land, railed</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to move along rails.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Transportation,_SPOD/SPOE">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Transportation,_SPOD/SPOE">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -292,7 +292,7 @@
     <rdfs:label xml:lang="en">transportation, spod/spoe</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide transportation services at seaports where cargo or personnel arrive or depart.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SURVEILLANCE-CAPABILITY_Communication">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SURVEILLANCE-CAPABILITY_Communication">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SURVEILLANCE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -307,7 +307,7 @@
     <rdfs:label xml:lang="en">communication</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to gain information by exploiting communications systems.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply,_laundry/bath">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply,_laundry/bath">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -320,7 +320,7 @@
     <rdfs:label xml:lang="en">supply, laundry/bath</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide laundry and/or bath services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Attack">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Attack">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -333,7 +333,7 @@
     <rdfs:label xml:lang="en">attack</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform an offensive mission.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Military_intelligence,_tactical_exploitation">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Military_intelligence,_tactical_exploitation">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -346,7 +346,7 @@
     <rdfs:label xml:lang="en">military intelligence, tactical exploitation</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to use information required for the planning and conducting tactical operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Air_to_ground">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Air_to_ground">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -359,7 +359,7 @@
     <rdfs:label xml:lang="en">air to ground</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform air to ground operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Land,_wheeled">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Land,_wheeled">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -374,7 +374,7 @@
     <rdfs:label xml:lang="en">land, wheeled</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to move on wheels.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Railway">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Railway">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -387,7 +387,7 @@
     <rdfs:label xml:lang="en">railway</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide rail services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Theatre_missile_defence">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Theatre_missile_defence">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -400,7 +400,7 @@
     <rdfs:label xml:lang="en">theatre missile defence</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to manage, operate and maintain theatre missile defence assets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Supply_(class_II)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Supply_(class_II)">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -415,7 +415,7 @@
     <rdfs:label xml:lang="en">supply (class ii)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide materiel (supplies for which allowances are established by tables of organisation and equipment).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Infrastructure_support">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Infrastructure_support">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -430,7 +430,7 @@
     <rdfs:label xml:lang="en">infrastructure support</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide infrastructure support.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_C2">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_C2">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -443,7 +443,7 @@
     <rdfs:label xml:lang="en">c2</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to exercise the authority, responsibilities and activities of military commanders in direction and co-ordination or military forces and the implementation of orders related to the execution of operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Compressed_air">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Compressed_air">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -458,7 +458,7 @@
     <rdfs:label xml:lang="en">compressed air</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide air at more than atmospheric pressure - often used to power mechanical devices or to provide a portable supply of oxygen.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Electronic_warfare">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Electronic_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -471,7 +471,7 @@
     <rdfs:label xml:lang="en">electronic warfare</rdfs:label>
     <rdfs:comment xml:lang="en">The capability involving the use of electromagnetic energy to determine, exploit, reduce, or prevent hostile use of the electromagnetic spectrum and action to retain its effective use by friendly forces.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Electronic_ranging">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Electronic_ranging">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -484,7 +484,7 @@
     <rdfs:label xml:lang="en">electronic ranging</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to establish target distance electronically.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SURVEILLANCE-CAPABILITY_Signal">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SURVEILLANCE-CAPABILITY_Signal">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SURVEILLANCE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -499,7 +499,7 @@
     <rdfs:label xml:lang="en">signal</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to gain information from exploiting EMS (not imagery) systems.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Counter_intelligence">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Counter_intelligence">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -512,7 +512,7 @@
     <rdfs:label xml:lang="en">counter intelligence</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to conduct activities that are concerned with identifying and counteracting the threat to security posed by hostile intelligence services or organisations, or by individuals engaged in espionage, sabotage, subversion or terrorism.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Air_assault">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Air_assault">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -525,7 +525,7 @@
     <rdfs:label xml:lang="en">air assault</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform a mission involving total integration of helicopter assets in their ground or air roles.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Target_acquisition,_radar">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Target_acquisition,_radar">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -538,7 +538,7 @@
     <rdfs:label xml:lang="en">target acquisition, radar</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to manage, operate and maintain radar target acquisition assets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Legal">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Legal">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -551,7 +551,7 @@
     <rdfs:label xml:lang="en">legal</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide legal services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Airborne">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Airborne">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -579,7 +579,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Civilian_law_enforcement">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Civilian_law_enforcement">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -592,7 +592,7 @@
     <rdfs:label xml:lang="en">civilian law enforcement</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to conduct civilian law enforcement operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MOBILITY-CAPABILITY_Airborne">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Airborne">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -607,7 +607,7 @@
     <rdfs:label xml:lang="en">airborne</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to be employed, following transport by air, in an assault debarkation either by parachuting or touchdown.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Search_and_rescue">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Search_and_rescue">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -620,7 +620,7 @@
     <rdfs:label xml:lang="en">search and rescue</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to use aircraft, surface craft, submarines, specialised rescue teams, and equipment to search for and rescue personnel in distress on land or sea.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Maintenance,_ordnance">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Maintenance,_ordnance">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -633,7 +633,7 @@
     <rdfs:label xml:lang="en">maintenance, ordnance</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to maintain ordnance (ammunition) in or to restore it to a specified condition.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Steam">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Steam">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -648,7 +648,7 @@
     <rdfs:label xml:lang="en">steam</rdfs:label>
     <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide steam repair.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Ground_to_sea">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Ground_to_sea">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -663,7 +663,7 @@
     <rdfs:label xml:lang="en">ground to sea</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from the ground to targets at sea.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Surveillance">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Surveillance">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -676,7 +676,7 @@
     <rdfs:label xml:lang="en">surveillance</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform systematic observation of aerospace, surface or subsurface areas, places, persons, or things by visual, aural, electronic, photographic, or other means.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Air_to_ground">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Air_to_ground">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -691,7 +691,7 @@
     <rdfs:label xml:lang="en">air to ground</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from aircraft at targets on the ground.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MOBILITY-CAPABILITY_Military_load_classification">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Military_load_classification">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -706,7 +706,7 @@
     <rdfs:label xml:lang="en">military load classification</rdfs:label>
     <rdfs:comment xml:lang="en">The characteristics, required for planning, of those CONTROL-FEATUREs, FACILITYs and MATERIELs or CONTROL-FEATURE-TYPEs, FACILITY-TYPEs and EQUIPMENT-TYPEs, and ORGANISATION-TYPEs that represents the standard system in which a route, bridge or raft is assigned class number(s) representing the load it can carry. Vehicles are also assigned number(s) indicating the minimum class of route, bridge or raft they are authorized to use.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Laundry">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Laundry">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -721,7 +721,7 @@
     <rdfs:label xml:lang="en">laundry</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide laundry services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Surveillance,_meteorological">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Surveillance,_meteorological">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -734,7 +734,7 @@
     <rdfs:label xml:lang="en">surveillance, meteorological</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform systematic observation of meteorological conditions.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_lake">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_lake">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -764,7 +764,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Sea_to_sea">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Sea_to_sea">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -779,7 +779,7 @@
     <rdfs:label xml:lang="en">sea to sea</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from a vessel to targets at sea.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_NBC,_chemical,_smoke">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC,_chemical,_smoke">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -792,7 +792,7 @@
     <rdfs:label xml:lang="en">nbc, chemical, smoke</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to employ chemical materiel released as a cloud of smoke or defence against such employment.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Peace_support">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Peace_support">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -805,7 +805,7 @@
     <rdfs:label xml:lang="en">peace support</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to conduct multi-functional operations involving military forces and diplomatic and humanitarian agencies. The operations are designed to achieve humanitarian goals or a long term peace settlement.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Air_to_sea">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Air_to_sea">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -820,7 +820,7 @@
     <rdfs:label xml:lang="en">air to sea</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from aircraft at targets at sea.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_river">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_river">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -835,7 +835,7 @@
     <rdfs:label xml:lang="en">water, river</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate rivers.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ENGINEERING-CAPABILITY_Demolition">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#ENGINEERING-CAPABILITY_Demolition">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -850,7 +850,7 @@
     <rdfs:label xml:lang="en">demolition</rdfs:label>
     <rdfs:comment xml:lang="en">The action or process of demolishing or being demolished.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Land,_towed">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Land,_towed">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -865,7 +865,7 @@
     <rdfs:label xml:lang="en">land, towed</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to move by means of external propulsion (mechanical or animal).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_bay">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_bay">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -880,7 +880,7 @@
     <rdfs:label xml:lang="en">water, bay</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate in bays.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_NBC,_chemical">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC,_chemical">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -893,7 +893,7 @@
     <rdfs:label xml:lang="en">nbc, chemical</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to employ chemical materiel to kill, injure, or incapacitate for a significant period of time, man or animals, and deny or hinder the use of areas, facilities or materiel; or defence against such employment.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Transportation,_movement_control">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Transportation,_movement_control">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -906,7 +906,7 @@
     <rdfs:label xml:lang="en">transportation, movement control</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide planning, routing, scheduling and control of personnel and freight movements over lines of communication.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply_(class_IV)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply_(class_IV)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -919,7 +919,7 @@
     <rdfs:label xml:lang="en">supply (class iv)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide construction materials.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Paint_shop">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Paint_shop">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -932,7 +932,7 @@
     <rdfs:label xml:lang="en">paint shop</rdfs:label>
     <rdfs:comment xml:lang="en">Equipment and resources for painting any part of a docked vessel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Navigational_equipment">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Navigational_equipment">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -945,7 +945,7 @@
     <rdfs:label xml:lang="en">navigational equipment</rdfs:label>
     <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide navigational equipment repair.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MOBILITY-CAPABILITY_Amphibious">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Amphibious">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -960,7 +960,7 @@
     <rdfs:label xml:lang="en">amphibious</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to operate both on land and in water.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Recovery">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Recovery">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -973,7 +973,7 @@
     <rdfs:label xml:lang="en">recovery</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to contact, protect and extract personnel, small groups or units, or materiel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Electrical">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Electrical">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -1003,7 +1003,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Supply_(class_IV)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Supply_(class_IV)">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -1018,7 +1018,7 @@
     <rdfs:label xml:lang="en">supply (class iv)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide construction materials (supplies for which initial issue allowances are not prescribed by approved issue tables).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Command_operations">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Command_operations">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1031,7 +1031,7 @@
     <rdfs:label xml:lang="en">command operations</rdfs:label>
     <rdfs:comment xml:lang="en">No definition provided in APP-6A.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply_(class_I)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply_(class_I)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1044,7 +1044,7 @@
     <rdfs:label xml:lang="en">supply (class i)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide combat/fresh rations, water and personal, health and welfare items.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Maintenance,_electro-optical">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Maintenance,_electro-optical">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1072,7 +1072,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_sea">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_sea">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1085,7 +1085,7 @@
     <rdfs:label xml:lang="en">water, sea</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate seas.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Medical">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Medical">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -1100,7 +1100,7 @@
     <rdfs:label xml:lang="en">medical</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to treat people for illnesses and injuries.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Tank_cleaning">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Tank_cleaning">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1113,7 +1113,7 @@
     <rdfs:label xml:lang="en">tank cleaning</rdfs:label>
     <rdfs:comment xml:lang="en">Equipment and resources for the removal of any trace of the original contents of any tank belonging to a docked vessel. Removal is often carried out by means of a high-pressure water jet.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_node,_small_extension">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_node,_small_extension">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1126,7 +1126,7 @@
     <rdfs:label xml:lang="en">signal, node, small extension</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a communications small extension node.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MOBILITY-CAPABILITY_Road_march">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Road_march">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1154,7 +1154,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Water_purification">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Water_purification">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1167,7 +1167,7 @@
     <rdfs:label xml:lang="en">water purification</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide clean potable drinking/bathing water.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply_(class_II)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply_(class_II)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1180,7 +1180,7 @@
     <rdfs:label xml:lang="en">supply (class ii)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide materiel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Shotblast">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Shotblast">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1193,7 +1193,7 @@
     <rdfs:label xml:lang="en">shotblast</rdfs:label>
     <rdfs:comment xml:lang="en">Equipment and resources for the cleaning of metal, belonging to a docked vessel, by the impact of a stream of shot (lead pellets).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Public_affairs,_joint_information">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Public_affairs,_joint_information">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1206,7 +1206,7 @@
     <rdfs:label xml:lang="en">public affairs, joint information</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide those public information, command information, and community relations activities directed towards the general public in a joint services environment.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Central_intelligence">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Central_intelligence">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1219,7 +1219,7 @@
     <rdfs:label xml:lang="en">central intelligence</rdfs:label>
     <rdfs:comment xml:lang="en">No definition provided in APP-6A.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Bedding">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Bedding">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1232,7 +1232,7 @@
     <rdfs:label xml:lang="en">bedding</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide bedding.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Recreation">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Recreation">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1245,7 +1245,7 @@
     <rdfs:label xml:lang="en">recreation</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide recreation services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_fjord">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_fjord">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1258,7 +1258,7 @@
     <rdfs:label xml:lang="en">water, fjord</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate fjords.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Morale,_welfare_recreation">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Morale,_welfare_recreation">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1271,7 +1271,7 @@
     <rdfs:label xml:lang="en">morale, welfare recreation</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide morale, welfare and recreation services in support of military personnel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply_(class_III_aviation)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply_(class_III_aviation)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1284,7 +1284,7 @@
     <rdfs:label xml:lang="en">supply (class iii aviation)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide aviation fuel and lubricants.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Engineer,_construction_naval">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Engineer,_construction_naval">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1297,7 +1297,7 @@
     <rdfs:label xml:lang="en">engineer, construction naval</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to build various facilities in direct support of naval operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Targeting">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Targeting">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1310,7 +1310,7 @@
     <rdfs:label xml:lang="en">targeting</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide targeting services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Reconnaissance">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Reconnaissance">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1338,7 +1338,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Supply_(class_III_aviation)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Supply_(class_III_aviation)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1351,7 +1351,7 @@
     <rdfs:label xml:lang="en">supply (class iii aviation)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide aviation fuel and lubricants.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Anti-submarine_warfare">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Anti-submarine_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1364,7 +1364,7 @@
     <rdfs:label xml:lang="en">anti submarine warfare</rdfs:label>
     <rdfs:comment xml:lang="en">Operations conducted with the intention of denying the enemy the effective use of his submarines.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Mine_countermeasure">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Mine_countermeasure">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1377,7 +1377,7 @@
     <rdfs:label xml:lang="en">mine countermeasure</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to prevent or reduce damage or danger from mines.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MOBILITY-CAPABILITY_Self-deployable">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Self-deployable">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1390,7 +1390,7 @@
     <rdfs:label xml:lang="en">self deployable</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to be brought into effective action by its own means.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Supply_(class_III)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Supply_(class_III)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1403,7 +1403,7 @@
     <rdfs:label xml:lang="en">supply (class iii)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide fuel and lubricants.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Air_defence">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Air_defence">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1416,7 +1416,7 @@
     <rdfs:label xml:lang="en">air defence</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to nullify or reduce the effectiveness of hostile air action.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Military_intelligence,_aerial_exploitation">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Military_intelligence,_aerial_exploitation">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1429,7 +1429,7 @@
     <rdfs:label xml:lang="en">military intelligence, aerial exploitation</rdfs:label>
     <rdfs:comment xml:lang="en">No definition provided in APP-6A.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="TRANSMISSION-CAPABILITY_Transmit">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#TRANSMISSION-CAPABILITY_Transmit">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#TRANSMISSION-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -1444,7 +1444,7 @@
     <rdfs:label xml:lang="en">transmit</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to broadcast or send out a signal or programme.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Public_affairs">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Public_affairs">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1457,7 +1457,7 @@
     <rdfs:label xml:lang="en">public affairs</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide those public information, command information, and community relations activities directed towards the general public.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_NBC,_biological">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC,_biological">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1470,7 +1470,7 @@
     <rdfs:label xml:lang="en">nbc, biological</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to employ biological materiel to produce casualties in man or animals and damage to plants or materiel; or defence against such employment.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Surveillance,_long_range">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Surveillance,_long_range">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1483,7 +1483,7 @@
     <rdfs:label xml:lang="en">surveillance, long range</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform, from long range, systematic observation of aerospace, surface or subsurface areas, places, persons, or things by visual, aural, electronic, photographic, or other means from a ground station.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_NBC,_chemical_decontamination">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC,_chemical_decontamination">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1496,7 +1496,7 @@
     <rdfs:label xml:lang="en">nbc, chemical decontamination</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to make any person, object, or area safe by absorbing, destroying, neutralizing, making harmless, or removing, chemical materiel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Air_to_air">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Air_to_air">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -1511,7 +1511,7 @@
     <rdfs:label xml:lang="en">air to air</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from aircraft at targets in the air.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Animal,_mounted">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Animal,_mounted">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1539,7 +1539,7 @@
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="MOBILITY-CAPABILITY_Dismounted">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Dismounted">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1552,7 +1552,7 @@
     <rdfs:label xml:lang="en">dismounted</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of moving on foot.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Transportation,_missile">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Transportation,_missile">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1565,7 +1565,7 @@
     <rdfs:label xml:lang="en">transportation, missile</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide equipment for transportation of missiles.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Personal_equipment">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Personal_equipment">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1578,7 +1578,7 @@
     <rdfs:label xml:lang="en">personal equipment</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide clothing.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Maritime">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Maritime">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1591,7 +1591,7 @@
     <rdfs:label xml:lang="en">maritime</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform maritime/deep water operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Maintenance,_ordnance_missile">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Maintenance,_ordnance_missile">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1604,7 +1604,7 @@
     <rdfs:label xml:lang="en">maintenance, ordnance missile</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to maintain ordnance missile (materiel) in or to restore it to a specified condition.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Utility">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Utility">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1617,7 +1617,7 @@
     <rdfs:label xml:lang="en">utility</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide utilities (water, gas, electric, et al).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_NBC,_nuclear">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC,_nuclear">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1630,7 +1630,7 @@
     <rdfs:label xml:lang="en">nbc, nuclear</rdfs:label>
     <rdfs:comment xml:lang="en">No definition provided in APP-6A.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Electronic_warfare,_direction_finding">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Electronic_warfare,_direction_finding">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1643,7 +1643,7 @@
     <rdfs:label xml:lang="en">electronic warfare, direction finding</rdfs:label>
     <rdfs:comment xml:lang="en">The capability for obtaining bearings of radio frequency emitters by using a directional antenna and a display unit on an intercept receiver or ancillary equipment.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Medical_supplies">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Medical_supplies">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1656,7 +1656,7 @@
     <rdfs:label xml:lang="en">medical supplies</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide medicine.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_radio">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_radio">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1669,7 +1669,7 @@
     <rdfs:label xml:lang="en">signal, radio</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a radio communications.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Maintenance">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Maintenance">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1686,7 +1686,7 @@
     <rdfs:comment xml:lang="en">The potential ability to do work, perform a function or mission, achieve an objective, or provide a service.</rdfs:comment>
     <rdfs:label xml:lang="en">capability</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="SURVEILLANCE-CAPABILITY_Human">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SURVEILLANCE-CAPABILITY_Human">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SURVEILLANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1699,7 +1699,7 @@
     <rdfs:label xml:lang="en">human</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to gain information by exploiting human senses.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Food/rations">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Food/rations">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1712,7 +1712,7 @@
     <rdfs:label xml:lang="en">food/rations</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide food.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Target_acquisition,_flash">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Target_acquisition,_flash">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1725,7 +1725,7 @@
     <rdfs:label xml:lang="en">target acquisition, flash</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to manage, operate and maintain flash target acquisition assets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_surface">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_surface">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1738,7 +1738,7 @@
     <rdfs:label xml:lang="en">water, surface</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to move on the water surface.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_canal">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_canal">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1751,7 +1751,7 @@
     <rdfs:label xml:lang="en">water, canal</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate canals.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Interrogation">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Interrogation">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1764,7 +1764,7 @@
     <rdfs:label xml:lang="en">interrogation</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to procure information by direct questioning of a person under the control of a questioner.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Medical_evacuation">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Medical_evacuation">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1777,7 +1777,7 @@
     <rdfs:label xml:lang="en">medical evacuation</rdfs:label>
     <rdfs:comment xml:lang="en">The capability for timely and efficient movement of patients while providing en route medical care to and between medical treatment facilities.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_node,_large_extension">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_node,_large_extension">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1790,7 +1790,7 @@
     <rdfs:label xml:lang="en">signal, node, large extension</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a communications large extension node.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Engineer,_construction">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Engineer,_construction">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1803,7 +1803,7 @@
     <rdfs:label xml:lang="en">engineer, construction</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to build various facilities in direct support of military operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Aerial_refuelling">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Aerial_refuelling">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1816,7 +1816,7 @@
     <rdfs:label xml:lang="en">aerial refuelling</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to refuel aircraft in flight, which extends presence, increases range, and serves as a force multiplier.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="TRANSMISSION-CAPABILITY_Receive">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#TRANSMISSION-CAPABILITY_Receive">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#TRANSMISSION-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -1831,7 +1831,7 @@
     <rdfs:label xml:lang="en">receive</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to detect or pick up a broadcast, a signal or programme.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_support">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_support">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1844,7 +1844,7 @@
     <rdfs:label xml:lang="en">signal, support</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide personnel and equipment from other forces for the establishment of a special or supplementary communications system.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_tidal">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_tidal">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1857,7 +1857,7 @@
     <rdfs:label xml:lang="en">water, tidal</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate tidal waters.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Cable">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Cable">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1870,7 +1870,7 @@
     <rdfs:label xml:lang="en">cable</rdfs:label>
     <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide cable repair.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Electrical">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Electrical">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1883,7 +1883,7 @@
     <rdfs:label xml:lang="en">electrical</rdfs:label>
     <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide electrical repair.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Military_intelligence,_operation">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Military_intelligence,_operation">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1896,7 +1896,7 @@
     <rdfs:label xml:lang="en">military intelligence, operation</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide information required for the planning and conducting campaigns and major operations to accomplish strategic objectives within theatres or areas of operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Air,_lighter_than_air">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Air,_lighter_than_air">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1909,7 +1909,7 @@
     <rdfs:label xml:lang="en">air, lighter than air</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of an air vehicle to remain airborne and move by displacing a weight of air greater than its own.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Air,_rotary_wing">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Air,_rotary_wing">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1922,7 +1922,7 @@
     <rdfs:label xml:lang="en">air, rotary wing</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to move through the air by deriving lift from aerofoils that rotate.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Air,_fixed_wing">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Air,_fixed_wing">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1935,7 +1935,7 @@
     <rdfs:label xml:lang="en">air, fixed wing</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to move through the air by deriving lift from fixed wings.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Ground_to_air">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Ground_to_air">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1948,7 +1948,7 @@
     <rdfs:label xml:lang="en">ground to air</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from the ground to an airborne target.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="TRANSMISSION-CAPABILITY_Transceive">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#TRANSMISSION-CAPABILITY_Transceive">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#TRANSMISSION-CAPABILITY"/>
     </rdfs:subClassOf>
@@ -1963,7 +1963,7 @@
     <rdfs:label xml:lang="en">transceive</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to detect, pick up, broadcast or send out a signal or programme.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Joint_intelligence">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Joint_intelligence">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1976,7 +1976,7 @@
     <rdfs:label xml:lang="en">joint intelligence</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to produce intelligence from elements of more than one Service.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Target_acquisition,_sound">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Target_acquisition,_sound">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1989,7 +1989,7 @@
     <rdfs:label xml:lang="en">target acquisition, sound</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to manage, operate and maintain sound target acquisition assets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_radio_teletype">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_radio_teletype">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2002,7 +2002,7 @@
     <rdfs:label xml:lang="en">signal, radio teletype</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a radio teletype communications.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Amphibious">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Amphibious">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2015,7 +2015,7 @@
     <rdfs:label xml:lang="en">amphibious</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to conduct an operation launched from the sea by military forces against a hostile or potentially hostile shore.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Supply_(class_V)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Supply_(class_V)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2028,7 +2028,7 @@
     <rdfs:label xml:lang="en">supply (class v)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide ammunition, explosives and chemical agents.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Arctic">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Arctic">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2041,7 +2041,7 @@
     <rdfs:label xml:lang="en">arctic</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform a mission involving an arctic operation.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Air,_composite">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Air,_composite">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2054,7 +2054,7 @@
     <rdfs:label xml:lang="en">air, composite</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to move through the air by means that combine deriving lift from fixed wings or from aerofoils that rotate.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Artillery_survey">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Artillery_survey">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2067,7 +2067,7 @@
     <rdfs:label xml:lang="en">artillery survey</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to calculate the coordinates and the altitude of an object/point and from which the bearings/azimuths to a number of reference objects are also known.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Land,_tracked">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Land,_tracked">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2080,7 +2080,7 @@
     <rdfs:label xml:lang="en">land, tracked</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to move on caterpillar treads.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Supply_(class_I)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Supply_(class_I)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2093,7 +2093,7 @@
     <rdfs:label xml:lang="en">supply (class i)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide combat/fresh rations, water and personal, health and welfare items.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_swamp">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_swamp">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2106,7 +2106,7 @@
     <rdfs:label xml:lang="en">water, swamp</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate swamps.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Engine">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Engine">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2119,7 +2119,7 @@
     <rdfs:label xml:lang="en">engine</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide engine supplies.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Labour">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Labour">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2145,7 +2145,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Training">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Training">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2158,7 +2158,7 @@
     <rdfs:label xml:lang="en">training</rdfs:label>
     <rdfs:comment xml:lang="en">A capability that enables an equipment to be used to train personnel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_radio_tactical_satellite">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_radio_tactical_satellite">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2171,7 +2171,7 @@
     <rdfs:label xml:lang="en">signal, radio tactical satellite</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a tactical satellite terminal.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signals_intelligence_(SIGINT)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signals_intelligence_(SIGINT)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2184,7 +2184,7 @@
     <rdfs:label xml:lang="en">signals intelligence (sigint)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide intelligence derived from communications, electronics, and instrumentation signals.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Sea_to_ground">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Sea_to_ground">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2197,7 +2197,7 @@
     <rdfs:label xml:lang="en">sea to ground</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from a vessel to targets on the ground.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Surveillance,_sensor">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Surveillance,_sensor">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2210,7 +2210,7 @@
     <rdfs:label xml:lang="en">surveillance, sensor</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to manage, operate and maintain sensor surveillance assets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_NBC,_radiological">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC,_radiological">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2223,7 +2223,7 @@
     <rdfs:label xml:lang="en">nbc, radiological</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to employ radiological materiel to produce casualties in man or animals and damage to plants or materiel; or defence against such employment.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Replacement_holding">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Replacement_holding">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2236,7 +2236,7 @@
     <rdfs:label xml:lang="en">replacement holding</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide personnel to take the place of other personnel who depart a unit.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Transportation,_APOD/APOE">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Transportation,_APOD/APOE">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2249,7 +2249,7 @@
     <rdfs:label xml:lang="en">transportation, apod/apoe</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide transportation services at aerial ports where cargo or personnel arrive or depart.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Messing">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Messing">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2262,7 +2262,7 @@
     <rdfs:label xml:lang="en">messing</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide a place providing meals and recreational facilities.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Steelwork_fabrication">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Steelwork_fabrication">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2275,7 +2275,7 @@
     <rdfs:label xml:lang="en">steelwork fabrication</rdfs:label>
     <rdfs:comment xml:lang="en">Equipment and resources for the construction or manufacture of any article made of steel required for a docked vessel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_NBC,_decontamination">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC,_decontamination">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2288,7 +2288,7 @@
     <rdfs:label xml:lang="en">nbc, decontamination</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to make any person, object, or area safe by absorbing, destroying, neutralizing, making harmless, or removing, chemical or biological materiel, or by removing radioactive material clinging to or around it.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply_(class_V)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply_(class_V)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2301,7 +2301,7 @@
     <rdfs:label xml:lang="en">supply (class v)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide ammunition, explosives and chemical agents.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Public_affairs,_broadcast">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Public_affairs,_broadcast">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2314,7 +2314,7 @@
     <rdfs:label xml:lang="en">public affairs, broadcast</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide those public information, command information, and community relation activities over a broadcast medium, such as radio or TV, directed towards the general public.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Security">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Security">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2327,7 +2327,7 @@
     <rdfs:label xml:lang="en">security</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide security services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Scout">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Scout">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2353,7 +2353,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Helicopter_platform">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Helicopter_platform">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2366,7 +2366,7 @@
     <rdfs:label xml:lang="en">helicopter platform</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide a surface for helicopter take off and landing.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_forward_communications">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_forward_communications">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2379,7 +2379,7 @@
     <rdfs:label xml:lang="en">signal, forward communications</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide tactical communications in the combat zone.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_creek">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_creek">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2392,7 +2392,7 @@
     <rdfs:label xml:lang="en">water, creek</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate in creeks.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Healthcare">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Healthcare">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2405,7 +2405,7 @@
     <rdfs:label xml:lang="en">healthcare</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide health care services.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SURVEILLANCE-CAPABILITY_Imaging">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SURVEILLANCE-CAPABILITY_Imaging">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SURVEILLANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2418,7 +2418,7 @@
     <rdfs:label xml:lang="en">imaging</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to gain information by exploiting imaging systems.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Tactical_air_reconnaissance">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Tactical_air_reconnaissance">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2431,7 +2431,7 @@
     <rdfs:label xml:lang="en">tactical air reconnaissance</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to use of air vehicles to obtain information concerning terrain, weather, and the disposition, composition, movement, installations, lines of communications, electronic and communication emissions of enemy forces. Also included are artillery and naval gunfire adjustment, and systematic and random observation of ground battle areas, targets, and/ or sectors of airspace.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SUPPORT-CAPABILITY_Fuel,_heating">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Fuel,_heating">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2444,7 +2444,7 @@
     <rdfs:label xml:lang="en">fuel, heating</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide fuel for heating.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MAINTENANCE-CAPABILITY_Plumbing">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Plumbing">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2457,7 +2457,7 @@
     <rdfs:label xml:lang="en">plumbing</rdfs:label>
     <rdfs:comment xml:lang="en">Equipment and resources for fitting and repairing pipes, fixtures and other apparatus of a water gas or sewage system belonging to a docked vessel.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Surveillance,_ground_module">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Surveillance,_ground_module">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2470,7 +2470,7 @@
     <rdfs:label xml:lang="en">surveillance, ground module</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to manage and operate a ground module for a surveillance system.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Engineer,_combat">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Engineer,_combat">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2483,7 +2483,7 @@
     <rdfs:label xml:lang="en">engineer, combat</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform engineer functions in direct support of combat operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SURVEILLANCE-CAPABILITY_Electronic">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SURVEILLANCE-CAPABILITY_Electronic">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SURVEILLANCE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2496,7 +2496,7 @@
     <rdfs:label xml:lang="en">electronic</rdfs:label>
     <rdfs:comment xml:lang="en">The ability to gain information by exploiting non-communications electronic systems (generally pulsed).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="FIRE-CAPABILITY_Ground_to_ground">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Ground_to_ground">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2509,7 +2509,7 @@
     <rdfs:label xml:lang="en">ground to ground</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves surface firing.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Water,_nontidal">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_nontidal">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2522,7 +2522,7 @@
     <rdfs:label xml:lang="en">water, nontidal</rdfs:label>
     <rdfs:comment xml:lang="en">The capability of a device to navigate non-tidal waters.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ENGINEERING-CAPABILITY_Breaching">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#ENGINEERING-CAPABILITY_Breaching">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2535,7 +2535,7 @@
     <rdfs:label xml:lang="en">breaching</rdfs:label>
     <rdfs:comment xml:lang="en">The action or process of making a gap in a wall or barrier.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Supply_(class_III)">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Supply_(class_III)">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2548,7 +2548,7 @@
     <rdfs:label xml:lang="en">supply (class iii)</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide fuel and lubricants.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Target_acquisition">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Target_acquisition">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2561,7 +2561,7 @@
     <rdfs:label xml:lang="en">target acquisition</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to manage, operate and maintain target acquisition assets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Deck">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Deck">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2574,7 +2574,7 @@
     <rdfs:label xml:lang="en">deck</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide deck supplies.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Marine">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Marine">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2587,7 +2587,7 @@
     <rdfs:label xml:lang="en">marine</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to perform maritime/littoral operations.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Air_interdiction">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Air_interdiction">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2600,7 +2600,7 @@
     <rdfs:label xml:lang="en">air interdiction</rdfs:label>
     <rdfs:comment xml:lang="en">Air operations conducted to destroy, neutralize, or delay the enemy's military potential before it can be brought to bear effectively against friendly forces at such distance from friendly forces that detailed integration of each air mission with the fire and movement of friendly forces is not required.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#OPERATIONAL-CAPABILITY_Signal,_node_centre">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_node_centre">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2613,7 +2613,7 @@
     <rdfs:label xml:lang="en">signal, node centre</rdfs:label>
     <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a communications node centre.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="SUPPORT-CAPABILITY_Shelter">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#SUPPORT-CAPABILITY_Shelter">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -2626,7 +2626,7 @@
     <rdfs:label xml:lang="en">shelter</rdfs:label>
     <rdfs:comment xml:lang="en">The capability to provide shelter.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#MOBILITY-CAPABILITY_Land,_self-propelled">
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Land,_self-propelled">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>

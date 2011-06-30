@@ -1,18 +1,17 @@
-<rdf:RDF
+﻿<rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERSuperExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERSuperExtended.owl#">
-  <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERExtended.owl#">
+  <owl:Ontology rdf:about="#"/>  
+<owl:Ontology rdf:about="jc3iedm_PLAN-ORDERExtended.owl#">
     <owl:imports>
       <owl:Ontology rdf:about="jc3iedm_PLAN-ORDER.owl#"/>
     </owl:imports>
   </owl:Ontology>
-  <owl:Ontology rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_PLAN-ORDERExtended.owl#"/>
-  </owl:Ontology>
+
   <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Administrative/Logistics_order">
     <rdfs:comment xml:lang="en">An order to give the commander’s plan for administrative and service support of operations.</rdfs:comment>
     <rdfs:label xml:lang="en">administrative/logistics order</rdfs:label>

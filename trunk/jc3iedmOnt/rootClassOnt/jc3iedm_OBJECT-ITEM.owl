@@ -4,1474 +4,1474 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#">
-  <owl:Ontology rdf:about="#"/>
-  <owl:Class rdf:ID="RAILWAY">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+  <owl:Ontology rdf:about="jc3iedm_OBJECT-ITEM.owl#"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#RAILWAY">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">RALWAY</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a track or set of tracks made of steel rails along which trains run.</rdfs:comment>
     <rdfs:label xml:lang="en">railway</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="QUAY">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#QUAY">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">QUAY</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a solidly constructed platform, usually parallel to the shoreline of navigable water, alongside which a vessel can be docked or berthed and, on which, the vessel can be accessed and cargo can be loaded or unloaded on one side of the vessel only.</rdfs:comment>
     <rdfs:label xml:lang="en">quay</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="LIGHT">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#LIGHT">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="METEOROLOGIC-FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LIGHT</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="meteorologic-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the availability of natural illumination by type and time.</rdfs:comment>
     <rdfs:label xml:lang="en">light</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="AIR-ROUTE-SEGMENT">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="ROUTE-SEGMENT"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">AIRRTE</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="route-segment-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A portion of a route to be flown usually without an intermediate stop, as defined by two consecutive significant points.</rdfs:comment>
     <rdfs:label xml:lang="en">air route segment</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="WIND">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#METEOROLOGIC-FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">WIND</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the velocity and directional characteristics of atmospheric movement.</rdfs:comment>
     <rdfs:label xml:lang="en">wind</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="MATERIEL">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MATERIEL">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="OBJECT-ITEM"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MA</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="object-item-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">materiel</rdfs:label>
     <rdfs:comment xml:lang="en">An OBJECT-ITEM that is equipment, apparatus or supplies of military interest without distinction as to its application for administrative or combat purposes.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="AIRSPACE-CONTROL-MEANS">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#AIRSPACE-CONTROL-MEANS">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="CONTROL-FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ACM</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="control-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A CONTROL-FEATURE that reserves airspace for specific airspace users, restricts the action of airspace users, controls the actions of specific airspace users, and/or requires airspace users to accomplish specific actions.</rdfs:comment>
     <rdfs:label xml:lang="en">airspace control means</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="HARBOUR">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#HARBOUR">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">HARBOR</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a restricted body of water, an anchorage, or other limited coastal water area and its water approaches from which and in which shipping operations are projected or supported.</rdfs:comment>
     <rdfs:label xml:lang="en">harbour</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="JETTY">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#JETTY">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">JETTY</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a platform that may be fixed or floating extending from a shore, normally attached to a wharf or the shore, and which allows access to a vessel lying alongside, used to secure, protect and provide landing and docking for vessels.</rdfs:comment>
     <rdfs:label xml:lang="en">jetty</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ROAD">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ROAD</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a path or way with a specially prepared surface.</rdfs:comment>
     <rdfs:label xml:lang="en">road</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="APPROACH-DIRECTION">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#CONTROL-FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">APPRDR</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A CONTROL-FEATURE that specifies approach directional details for takeoff and landing.</rdfs:comment>
     <rdfs:label xml:lang="en">approach direction</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="CONVOY">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CONVOY">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="ORGANISATION"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">CO</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="organisation-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An ORGANISATION that is a group of vehicles or vessels organised for the purpose of control and orderly movement with or without escort protection.</rdfs:comment>
     <rdfs:label xml:lang="en">convoy</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#CONTROL-FEATURE">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">CF</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A non-tangible FEATURE of military interest that is administratively specified, may be represented by a geometric figure, and is associated with the conduct of military operations.</rdfs:comment>
     <rdfs:label xml:lang="en">control feature</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="INSTRUMENT-LANDING-SYSTEM">
-    <rdfs:subClassOf rdf:resource="#MATERIEL"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ILS</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="materiel-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A MATERIEL that provides aircraft with horizontal and vertical guidance just before landing and during landing, and at certain fixed points, indicates the distance to the reference point of landing.</rdfs:comment>
     <rdfs:label xml:lang="en">instrument landing system</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="BASIN">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#BASIN">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">BASIN</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is an open area of water, usually artificial and enclosed by dock gates lined with wharves, warehouses and berths to enable vessels to load and unload.</rdfs:comment>
     <rdfs:label xml:lang="en">basin</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="CLOUD-COVER">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#METEOROLOGIC-FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">COVER</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the characteristics of clouds above Earth's surface.</rdfs:comment>
     <rdfs:label xml:lang="en">cloud cover</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#METEOROLOGIC-FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ATMOS</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies humidity, pressure, and temperature characteristics of Earth's atmosphere.</rdfs:comment>
     <rdfs:label xml:lang="en">atmosphere</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#VISIBILITY">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#METEOROLOGIC-FEATURE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">VISIB</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the distance at which an object illuminated by light in the visual spectrum can be detected.</rdfs:comment>
     <rdfs:label xml:lang="en">visibility</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="NETWORK">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#NETWORK">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">NETWRK</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that provides bearer services for communication and information services and is composed of one or more links and nodes.</rdfs:comment>
     <rdfs:label xml:lang="en">network</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#FEATURE">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FEATURE">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#OBJECT-ITEM"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">FE</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">feature</rdfs:label>
     <rdfs:comment xml:lang="en">An OBJECT-ITEM that encompasses meteorological, geographic, and control features of military significance.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="BERTH">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#BERTH">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#FACILITY"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">BERTH</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a space or length in the water at a harbour allocated to or reserved for a vessel to dock and moor for loading or unloading.</rdfs:comment>
     <rdfs:label xml:lang="en">berth</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="UNIT">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#UNIT">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#ORGANISATION"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">UN</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#organisation-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A military ORGANISATION whose structure is prescribed by competent authority.</rdfs:comment>
     <rdfs:label xml:lang="en">unit</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="GEOGRAPHIC-FEATURE">
-    <rdfs:subClassOf rdf:resource="#FEATURE"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">GF</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FEATURE describing terrain characteristics to which military significance is attached.</rdfs:comment>
     <rdfs:label xml:lang="en">geographic feature</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="PERSON">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PERSON">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#OBJECT-ITEM"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">PE</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">person</rdfs:label>
     <rdfs:comment xml:lang="en">An OBJECT-ITEM that is a human being to whom military or civilian significance is attached.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#FACILITY">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#OBJECT-ITEM"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">FA</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">facility</rdfs:label>
     <rdfs:comment xml:lang="en">An OBJECT-ITEM that is built, installed or established to serve some particular purpose and is identified by the service it provides rather than by its content.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MINEFIELD-LAND">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="MINEFIELD"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MNFLND</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="minefield-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A MINEFIELD that is an area of land containing mines.</rdfs:comment>
     <rdfs:label xml:lang="en">minefield land</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="ROUTE">
-    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ROUTE">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ROUTE</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A CONTROL-FEATURE that is the prescribed course to be travelled from a specific point of origin to a specific destination.</rdfs:comment>
     <rdfs:label xml:lang="en">route</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#OBJECT-ITEM">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM">
     <rdfs:label xml:lang="en">object item</rdfs:label>
     <rdfs:comment xml:lang="en">An individually identified object that has military or civilian significance.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#ORGANISATION">
-    <rdfs:subClassOf rdf:resource="#OBJECT-ITEM"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">OR</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#object-item-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">organisation</rdfs:label>
     <rdfs:comment xml:lang="en">An OBJECT-ITEM that is an administrative or functional structure.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="MINEFIELD-MARITIME">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#MINEFIELD"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MNFMRT</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#minefield-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A MINEFIELD that is an area or volume of water containing mines.</rdfs:comment>
     <rdfs:label xml:lang="en">minefield maritime</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="AIRFIELD">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#AIRFIELD">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">AIRFLD</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is an area prepared for the accommodation (including any buildings, installations, or equipment) of landing and take off of aircraft.</rdfs:comment>
     <rdfs:label xml:lang="en">airfield</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="APRON">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#APRON">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">APRON</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is an area intended for parking, loading, unloading and/or servicing.</rdfs:comment>
     <rdfs:label xml:lang="en">apron</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="DRY-DOCK">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">DRYDCK</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that provides an enclosure for maintenance, building or repairing ships, from which water can be pumped out.</rdfs:comment>
     <rdfs:label xml:lang="en">dry dock</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="RUNWAY">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#RUNWAY">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">RUNWAY</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a specifically prepared surface along which aircraft take off and land.</rdfs:comment>
     <rdfs:label xml:lang="en">runway</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#MINEFIELD">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MINEFIELD">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="MILITARY-OBSTACLE"/>
+      <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MNFLD</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:ID="military-obstacle-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#military-obstacle-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A MILITARY-OBSTACLE that is an area or volume containing mines.</rdfs:comment>
     <rdfs:label xml:lang="en">minefield</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#ROUTE-SEGMENT">
-    <rdfs:subClassOf rdf:resource="#CONTROL-FEATURE"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">RTESEG</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#control-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A portion of a route usually without an intermediate stop, as defined by two consecutive significant points.</rdfs:comment>
     <rdfs:label xml:lang="en">route segment</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#METEOROLOGIC-FEATURE">
-    <rdfs:subClassOf rdf:resource="#FEATURE"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MF</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FEATURE that describes reported or forecast weather and light conditions.</rdfs:comment>
     <rdfs:label xml:lang="en">meteorologic feature</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="SLIPWAY">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#SLIPWAY">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">SLPWAY</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that provides a sloping surface or inclined structure leading down to the water.</rdfs:comment>
     <rdfs:label xml:lang="en">slipway</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="#MILITARY-OBSTACLE">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MILOBS</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY designed to stop, impede, or divert movement of amphibious or ground forces.</rdfs:comment>
     <rdfs:label xml:lang="en">military obstacle</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION">
-    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">PRECIP</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the type of particulate matter in the Earth's atmosphere and the rate of its descent onto the Earth's surface.</rdfs:comment>
     <rdfs:label xml:lang="en">precipitation</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="ICING">
-    <rdfs:subClassOf rdf:resource="#METEOROLOGIC-FEATURE"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ICING">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ICING</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A METEOROLOGIC-FEATURE that specifies the accumulation of frozen water on stationary or moving surfaces.</rdfs:comment>
     <rdfs:label xml:lang="en">icing</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="BRIDGE">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#BRIDGE">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">BRIDGE</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a structure (including overpass and viaduct), fixed or moveable, spanning and/or providing passage over an object.</rdfs:comment>
     <rdfs:label xml:lang="en">bridge</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="ANCHORAGE">
-    <rdfs:subClassOf rdf:resource="#FACILITY"/>
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE">
+    <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ANCHOR</owl:hasValue>
         <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="#facility-category-code"/>
+          <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A FACILITY that is a place where vessels anchor.</rdfs:comment>
     <rdfs:label xml:lang="en">anchorage</rdfs:label>
   </owl:Class>
-  <owl:DatatypeProperty rdf:about="#military-obstacle-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#military-obstacle-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MILITARY-OBSTACLE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="dry-dock-location-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-location-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#DRY-DOCK"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="light-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#light-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#LIGHT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-moorings-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-moorings-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-airport-near-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-airport-near-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="geographic-feature-vegetation-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-vegetation-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-degaussing-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-degaussing-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-maximum-vessel-width-dimension">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-maximum-vessel-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-fire-fighting-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-fire-fighting-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#materiel-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="person-professing-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#person-professing-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PERSON"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="meteorologic-feature-interpretation-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-interpretation-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="airspace-control-means-transit-instruction-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#airspace-control-means-transit-instruction-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRSPACE-CONTROL-MEANS"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRSPACE-CONTROL-MEANS"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-set-number-count">
-    <rdfs:domain rdf:resource="#NETWORK"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-set-number-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-maximum-vessel-count">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-maximum-vessel-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="facility-base-identification-code-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-base-identification-code-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#FACILITY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-slaved-variation-angle">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-slaved-variation-angle">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-day-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-day-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="road-weather-condition-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#road-weather-condition-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROAD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="unit-identification-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#unit-identification-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#UNIT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#UNIT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="geographic-feature-vegetation-subcategory-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-vegetation-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-night-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-night-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-depth-placement-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-depth-placement-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#NETWORK"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-beam-width-dimension">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-beam-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="airfield-hangar-area-quantity">
-    <rdfs:domain rdf:resource="#AIRFIELD"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-hangar-area-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-container-handling-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-container-handling-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#QUAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="convoy-day-speed-rate">
-    <rdfs:domain rdf:resource="#CONVOY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-day-speed-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="wind-speed-rate">
-    <rdfs:domain rdf:resource="#WIND"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-speed-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-block-distance-dimension">
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-block-distance-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="air-route-segment-description-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-description-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#organisation-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#organisation-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ORGANISATION"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#feature-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="atmosphere-pressure-system-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-pressure-system-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ATMOSPHERE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-dirty-ballast-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-dirty-ballast-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-roll-on-roll-off-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-roll-on-roll-off-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#BERTH"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="runway-pavement-classification-number-count">
-    <rdfs:domain rdf:resource="#RUNWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-classification-number-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="runway-pavement-maximum-tyre-pressure-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-maximum-tyre-pressure-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RUNWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="slipway-location-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#slipway-location-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#SLIPWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#SLIPWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="person-gender-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#person-gender-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PERSON"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-gross-trailing-load-quantity">
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-gross-trailing-load-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-land-depth-placement-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-depth-placement-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-land-stopping-power-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-stopping-power-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-threshold-crossing-height-dimension">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-threshold-crossing-height-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="airfield-visual-navigational-aid-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-visual-navigational-aid-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRFIELD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#facility-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#FACILITY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-approach-channel-depth-dimension">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-approach-channel-depth-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="geographic-feature-bottom-hardness-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-bottom-hardness-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-mine-spacing-dimension">
-    <rdfs:domain rdf:resource="#MINEFIELD"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-mine-spacing-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-bottom-natural-camouflage-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-bottom-natural-camouflage-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#minefield-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-mean-tidal-current-rate">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-mean-tidal-current-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="runway-pavement-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RUNWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="air-route-segment-civil-military-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-civil-military-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="jetty-maximum-draught-dimension">
-    <rdfs:domain rdf:resource="#JETTY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-maximum-draught-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-entrance-restrictions-ice-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-entrance-restrictions-ice-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="dry-dock-marine-railway-size-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-marine-railway-size-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#DRY-DOCK"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="light-down-datetime">
-    <rdfs:domain rdf:resource="#LIGHT"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#light-down-datetime">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="route-mobility-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-mobility-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROUTE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="cloud-cover-base-dimension">
-    <rdfs:domain rdf:resource="#CLOUD-COVER"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-base-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-mmoe-initial-threat-probability-ratio">
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-mmoe-initial-threat-probability-ratio">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-life-duration">
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-life-duration">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-signal-system-efficiency-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-signal-system-efficiency-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-location-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-location-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#BERTH"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="slipway-gradient-angle">
-    <rdfs:domain rdf:resource="#SLIPWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#slipway-gradient-angle">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#SLIPWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="visibility-range-dimension">
-    <rdfs:domain rdf:resource="#VISIBILITY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#visibility-range-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="cloud-cover-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#CLOUD-COVER"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-minimum-capacity-rate">
-    <rdfs:domain rdf:resource="#NETWORK"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-minimum-capacity-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-tanker-facilities-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tanker-facilities-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-bearing-angle">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-bearing-angle">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-bottom-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-bottom-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-night-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-night-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-maximum-speed-rate">
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-maximum-speed-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-transit-accommodation-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-transit-accommodation-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-subfunction-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-subfunction-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-persistence-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-persistence-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="runway-weight-bearing-capacity-quantity">
-    <rdfs:domain rdf:resource="#RUNWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-weight-bearing-capacity-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#control-feature-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#CONTROL-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-tidal-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tidal-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-convoy-marshalling-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-convoy-marshalling-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-depth-dimension">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-depth-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="facility-width-dimension">
-    <rdfs:domain rdf:resource="#FACILITY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-pilotage-availability-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-pilotage-availability-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-maximum-deadweight-tonnage-quantity">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-maximum-deadweight-tonnage-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="convoy-packet-size-count">
-    <rdfs:domain rdf:resource="#CONVOY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-packet-size-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="geographic-feature-surface-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-surface-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-fire-fighting-capability-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-fire-fighting-capability-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="wind-direction-angle">
-    <rdfs:domain rdf:resource="#WIND"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-direction-angle">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-train-density-count">
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-train-density-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-draught-dimension">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-draught-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-identification-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-identification-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-expected-vessel-transit-count">
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-expected-vessel-transit-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-maximum-beam-dimension">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-maximum-beam-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="airfield-air-traffic-control-presence-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-air-traffic-control-presence-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRFIELD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="visibility-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#visibility-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#VISIBILITY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-draught-low-tide-dimension">
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-draught-low-tide-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-day-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-day-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-distance-measuring-equipment-distance-dimension">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-distance-measuring-equipment-distance-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="jetty-day-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#JETTY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-day-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-estimated-time-of-arrival-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-estimated-time-of-arrival-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="approach-direction-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#approach-direction-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#APPROACH-DIRECTION"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="light-moon-phase-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#light-moon-phase-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#LIGHT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="bridge-span-count">
-    <rdfs:domain rdf:resource="#BRIDGE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#bridge-span-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BRIDGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-maximum-capacity-quantity">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-maximum-capacity-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-track-count">
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-track-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="facility-length-dimension">
-    <rdfs:domain rdf:resource="#FACILITY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-length-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="road-quality-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#road-quality-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROAD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="convoy-night-vehicle-gap-dimension">
-    <rdfs:domain rdf:resource="#CONVOY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-night-vehicle-gap-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="wind-nuclear-yield-qualifier-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-nuclear-yield-qualifier-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#WIND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="materiel-serial-number-identification-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-serial-number-identification-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="person-birth-datetime">
-    <rdfs:domain rdf:resource="#PERSON"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#person-birth-datetime">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="precipitation-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#precipitation-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PRECIPITATION"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-container-maximum-handling-length-dimension">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-container-maximum-handling-length-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="route-mode-of-transportation-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-mode-of-transportation-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROUTE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="meteorologic-feature-source-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-source-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-tug-availability-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tug-availability-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="airfield-instrument-landing-system-presence-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-instrument-landing-system-presence-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRFIELD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="air-route-segment-required-navigation-performance-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-required-navigation-performance-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-lighterage-availability-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-lighterage-availability-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="materiel-mine-requisition-case-number-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-mine-requisition-case-number-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-refuelling-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-refuelling-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="materiel-lot-identification-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-lot-identification-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-lash-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-lash-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="cloud-cover-top-dimension">
-    <rdfs:domain rdf:resource="#CLOUD-COVER"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-top-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-rail-served-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-rail-served-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#QUAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-refuelling-location-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-refuelling-location-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-shelter-quality-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-shelter-quality-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-night-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-night-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="basin-deadweight-tonnage-quantity">
-    <rdfs:domain rdf:resource="#BASIN"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#basin-deadweight-tonnage-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BASIN"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="unit-formal-abbreviated-name-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#unit-formal-abbreviated-name-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#UNIT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#UNIT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-turnaround-time-duration">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-turnaround-time-duration">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-entrance-restrictions-swell-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-entrance-restrictions-swell-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="jetty-night-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#JETTY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-night-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-day-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-day-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="basin-location-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#basin-location-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#BASIN"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BASIN"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="meteorologic-feature-probability-ratio">
-    <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-probability-ratio">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="icing-severity-qualifier-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#icing-severity-qualifier-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ICING"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="road-traffic-density-count">
-    <rdfs:domain rdf:resource="#ROAD"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#road-traffic-density-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="road-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#road-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROAD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-tidal-mean-spring-range-dimension">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tidal-mean-spring-range-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-mine-detailed-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-mine-detailed-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="wind-air-stability-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-air-stability-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#WIND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="facility-height-dimension">
-    <rdfs:domain rdf:resource="#FACILITY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-height-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-prevailing-wind-maximum-speed-rate">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-prevailing-wind-maximum-speed-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="atmosphere-pressure-quantity">
-    <rdfs:domain rdf:resource="#ATMOSPHERE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-pressure-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-draught-high-tide-dimension">
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-draught-high-tide-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-rail-capacity-count">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-rail-capacity-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-architecture-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-architecture-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#NETWORK"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="materiel-hull-number-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-hull-number-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MATERIEL"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-turning-area-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-turning-area-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="light-up-datetime">
-    <rdfs:domain rdf:resource="#LIGHT"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#light-up-datetime">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-means-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-means-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#NETWORK"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-refuelling-availability-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-refuelling-availability-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-vehicle-handling-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-vehicle-handling-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-fresh-water-availability-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-fresh-water-availability-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-day-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-day-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-detection-probability-ratio">
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-detection-probability-ratio">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-tidal-mean-neap-range-dimension">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-tidal-mean-neap-range-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="route-segment-mode-of-transportation-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-mode-of-transportation-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROUTE-SEGMENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-localiser-distance-dimension">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-localiser-distance-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="basin-depth-dimension">
-    <rdfs:domain rdf:resource="#BASIN"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#basin-depth-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BASIN"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="atmosphere-temperature">
-    <rdfs:domain rdf:resource="#ATMOSPHERE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-temperature">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-prevailing-wind-direction-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-prevailing-wind-direction-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="precipitation-rate">
-    <rdfs:domain rdf:resource="#PRECIPITATION"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#precipitation-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-deadweight-tonnage-quantity">
-    <rdfs:domain rdf:resource="#BERTH"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-deadweight-tonnage-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-prevailing-wind-maximum-speed-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-prevailing-wind-maximum-speed-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-glide-path-angle">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-glide-path-angle">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="geographic-feature-terrain-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-terrain-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-rail-availability-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-rail-availability-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#BERTH"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-signal-system-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-signal-system-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-land-pattern-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-pattern-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-crane-offloading-lift-quantity">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-crane-offloading-lift-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="instrument-landing-system-magnetic-variation-angle">
-    <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#instrument-landing-system-magnetic-variation-angle">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="jetty-rail-served-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-rail-served-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#JETTY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="airfield-international-civil-aviation-organisation-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#airfield-international-civil-aviation-organisation-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIRFIELD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIRFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="dry-dock-boat-lift-capacity-quantity">
-    <rdfs:domain rdf:resource="#DRY-DOCK"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-boat-lift-capacity-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="apron-weight-bearing-capacity-quantity">
-    <rdfs:domain rdf:resource="#APRON"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#apron-weight-bearing-capacity-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#APRON"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-biologically-secure-availability-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-biologically-secure-availability-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="convoy-night-speed-rate">
-    <rdfs:domain rdf:resource="#CONVOY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-night-speed-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-maximum-vessel-draught-dimension">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-maximum-vessel-draught-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="anchorage-vessel-tonnage-quantity">
-    <rdfs:domain rdf:resource="#ANCHORAGE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#anchorage-vessel-tonnage-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ANCHORAGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-channel-count">
-    <rdfs:domain rdf:resource="#NETWORK"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-channel-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="atmosphere-inversion-layer-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-inversion-layer-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ATMOSPHERE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="geographic-feature-solid-surface-composition-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-solid-surface-composition-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-land-function-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-function-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-land-persistence-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-land-persistence-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="air-route-segment-maintained-speed-rate">
-    <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-maintained-speed-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="runway-pavement-evaluation-method-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-evaluation-method-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RUNWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-subcategory-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-subcategory-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#NETWORK"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="cloud-cover-average-coverage-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-average-coverage-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#CLOUD-COVER"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="convoy-day-vehicle-gap-dimension">
-    <rdfs:domain rdf:resource="#CONVOY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-day-vehicle-gap-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-seasonal-detail-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-seasonal-detail-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="network-maximum-capacity-rate">
-    <rdfs:domain rdf:resource="#NETWORK"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#network-maximum-capacity-rate">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="route-direction-usage-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-direction-usage-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROUTE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-prevailing-wind-direction-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-prevailing-wind-direction-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="bridge-longest-span-length-dimension">
-    <rdfs:domain rdf:resource="#BRIDGE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#bridge-longest-span-length-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BRIDGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="convoy-halt-duration">
-    <rdfs:domain rdf:resource="#CONVOY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-halt-duration">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="runway-lighting-presence-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-lighting-presence-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RUNWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="wind-altitude-layer-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-altitude-layer-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#WIND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="runway-pavement-subgrade-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#runway-pavement-subgrade-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RUNWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="convoy-packet-gap-dimension">
-    <rdfs:domain rdf:resource="#CONVOY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#convoy-packet-gap-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONVOY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-mines-laid-count">
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-mines-laid-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="wind-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#WIND"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-maritime-function-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-maritime-function-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="dry-dock-depth-dimension">
-    <rdfs:domain rdf:resource="#DRY-DOCK"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#dry-dock-depth-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#DRY-DOCK"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="geographic-feature-bottom-penetration-quantity">
-    <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#geographic-feature-bottom-penetration-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-pilotage-requirement-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-pilotage-requirement-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="route-segment-mobility-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-mobility-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROUTE-SEGMENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-storage-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-storage-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#QUAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="facility-primary-construction-material-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-primary-construction-material-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#FACILITY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="jetty-maximum-deadweight-tonnage-quantity">
-    <rdfs:domain rdf:resource="#JETTY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-maximum-deadweight-tonnage-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="wind-effective-downwind-direction-angle">
-    <rdfs:domain rdf:resource="#WIND"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#wind-effective-downwind-direction-angle">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="atmosphere-humidity-ratio">
-    <rdfs:domain rdf:resource="#ATMOSPHERE"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-humidity-ratio">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="minefield-destruction-datetime">
-    <rdfs:domain rdf:resource="#MINEFIELD"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-destruction-datetime">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="berth-major-vessel-class-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#berth-major-vessel-class-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#BERTH"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BERTH"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-vessel-maximum-beam-dimension">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-vessel-maximum-beam-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-crane-offloading-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-crane-offloading-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#QUAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="person-blood-type-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#person-blood-type-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PERSON"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#PERSON"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="road-shoulder-width-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#road-shoulder-width-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROAD"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="icing-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#icing-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ICING"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="cloud-cover-light-refraction-ratio">
-    <rdfs:domain rdf:resource="#CLOUD-COVER"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#cloud-cover-light-refraction-ratio">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-traction-system-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-traction-system-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-track-gauge-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-track-gauge-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="railway-sleeper-density-dimension">
-    <rdfs:domain rdf:resource="#RAILWAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#railway-sleeper-density-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#RAILWAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="visibility-direction-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#visibility-direction-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#VISIBILITY"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="quay-container-maximum-handling-weight-quantity">
-    <rdfs:domain rdf:resource="#QUAY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#quay-container-maximum-handling-weight-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#QUAY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-entrance-restrictions-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-entrance-restrictions-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-overhead-limits-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-overhead-limits-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="atmosphere-temperature-gradient-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#atmosphere-temperature-gradient-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ATMOSPHERE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#object-item-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#OBJECT-ITEM"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="jetty-rail-capacity-count">
-    <rdfs:domain rdf:resource="#JETTY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-rail-capacity-count">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-maximum-vessel-length-dimension">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-maximum-vessel-length-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="approach-direction-angle-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#approach-direction-angle-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#APPROACH-DIRECTION"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="object-item-name-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-name-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#OBJECT-ITEM"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="air-route-segment-international-route-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#air-route-segment-international-route-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="bridge-usage-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#bridge-usage-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#BRIDGE"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#BRIDGE"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-passenger-handling-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-passenger-handling-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#route-segment-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ROUTE-SEGMENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="jetty-vessel-maximum-beam-dimension">
-    <rdfs:domain rdf:resource="#JETTY"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#jetty-vessel-maximum-beam-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#JETTY"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-night-limit-net-explosive-quantity">
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-night-limit-net-explosive-quantity">
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="harbour-first-port-of-entry-indicator-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#harbour-first-port-of-entry-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#HARBOUR"/>
+    <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#HARBOUR"/>
   </owl:DatatypeProperty>
 </rdf:RDF>

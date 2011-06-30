@@ -4,26 +4,26 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#">
-  <owl:Ontology rdf:about="#"/>
-  <owl:Class rdf:ID="OBJECT-REFERENCE">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+  <owl:Ontology rdf:about="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#"/>
+  <owl:Class rdf:about="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#OBJECT-REFERENCE">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="RELATIVE-COORDINATE-SYSTEM"/>
+      <owl:Class rdf:about="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#RELATIVE-COORDINATE-SYSTEM"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">object reference</rdfs:label>
     <rdfs:comment xml:lang="en">A RELATIVE-COORDINATE-SYSTEM that has its frame of reference defined by using the position and orientation of a specific OBJECT-ITEM at a given point in time.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#RELATIVE-COORDINATE-SYSTEM">
+  <owl:Class rdf:about="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#RELATIVE-COORDINATE-SYSTEM">
     <rdfs:label xml:lang="en">relative coordinate system</rdfs:label>
     <rdfs:comment xml:lang="en">A rectangular frame of reference defined by an origin, x and y axes in the horizontal plane, and a z-axis. The vertical z-axis is normal to the xy-plane with positive direction determined from the right-hand rule when the x-axis is rotated toward the y-axis.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="POINT-REFERENCE">
-    <rdfs:subClassOf rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
+  <owl:Class rdf:about="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#POINT-REFERENCE">
+    <rdfs:subClassOf rdf:resource="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#RELATIVE-COORDINATE-SYSTEM"/>
     <rdfs:label xml:lang="en">point reference</rdfs:label>
     <rdfs:comment xml:lang="en">A RELATIVE-COORDINATE-SYSTEM that uses three specific POINTs to establish its frame of reference.</rdfs:comment>
   </owl:Class>
-  <owl:DatatypeProperty rdf:ID="relative-coordinate-system-reference-category-code">
+  <owl:DatatypeProperty rdf:about="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#relative-coordinate-system-reference-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
+    <rdfs:domain rdf:resource="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#RELATIVE-COORDINATE-SYSTEM"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
