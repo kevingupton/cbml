@@ -5,6 +5,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTIONExtended.owl#">
+  <owl:Ontology rdf:about="jc3iedm_ACTION.owl#"/>
   <owl:Ontology rdf:about="#">
     <owl:imports rdf:resource="jc3iedm_ACTION.owl#"/>
   </owl:Ontology>
@@ -725,7 +726,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#action-task-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">REQUEST</owl:hasValue>
+        <owl:hasValue xml:lang="en">RQT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1145,7 +1146,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RADIOACTIVE-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">RADCTV</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1338,7 +1339,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#action-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CBRN-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">CBRN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1683,7 +1684,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#radioactive-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">NUCLEAR-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">NUCEVT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#RADIOACTIVE-EVENT"/>
@@ -1951,7 +1952,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#radioactive-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RADIOLOGICAL-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">RADEVT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#RADIOACTIVE-EVENT"/>
@@ -2399,7 +2400,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#nuclear-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">NUCLEAR-WEAPON-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">NUCWEP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#NUCLEAR-EVENT"/>
@@ -3141,7 +3142,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CHEMICAL-BIOLOGICAL-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">CHMBIO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#CBRN-EVENT"/>
@@ -4379,7 +4380,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#action-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-TASK</owl:hasValue>
+        <owl:hasValue xml:lang="en">ACTTA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION"/>
@@ -4407,7 +4408,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ACTION.owl#action-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ACTION-EVENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">ACTEV</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION"/>

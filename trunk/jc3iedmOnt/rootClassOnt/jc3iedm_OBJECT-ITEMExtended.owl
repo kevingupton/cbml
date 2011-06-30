@@ -5,6 +5,7 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#">
+  <owl:Ontology rdf:about="jc3iedm_OBJECT-ITEM.owl#"/>
   <owl:Ontology rdf:about="#">
     <owl:imports rdf:resource="jc3iedm_OBJECT-ITEM.owl#"/>
   </owl:Ontology>
@@ -83,7 +84,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#route-segment-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIR-ROUTE-SEGMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRRTE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -128,7 +129,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">HARBOUR</owl:hasValue>
+        <owl:hasValue xml:lang="en">HARBOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -150,7 +151,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONVOY</owl:hasValue>
+        <owl:hasValue xml:lang="en">CO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -178,7 +179,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ATMOSPHERE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ATMOS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -348,7 +349,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">DRY-DOCK</owl:hasValue>
+        <owl:hasValue xml:lang="en">DRYDCK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -423,7 +424,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ANCHORAGE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ANCHOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -611,7 +612,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONTROL-FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -671,7 +672,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">VISIBILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">VISIB</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -721,7 +722,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -786,7 +787,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINEFIELD-MARITIME</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNFMRT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -861,7 +862,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SLIPWAY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SLPWAY</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -876,7 +877,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-OBSTACLE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILOBS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1098,7 +1099,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MATERIEL</owl:hasValue>
+        <owl:hasValue xml:lang="en">MA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1182,7 +1183,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">FE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1197,7 +1198,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PERSON</owl:hasValue>
+        <owl:hasValue xml:lang="en">PE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1212,7 +1213,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FACILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">FA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1237,7 +1238,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#military-obstacle-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINEFIELD</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNFLD</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE"/>
@@ -1250,7 +1251,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">METEOROLOGIC-FEATURE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
@@ -1276,7 +1277,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PRECIPITATION</owl:hasValue>
+        <owl:hasValue xml:lang="en">PRECIP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
@@ -1328,7 +1329,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RAILWAY</owl:hasValue>
+        <owl:hasValue xml:lang="en">RALWAY</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
@@ -1382,7 +1383,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRSPACE-CONTROL-MEANS</owl:hasValue>
+        <owl:hasValue xml:lang="en">ACM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
@@ -1436,7 +1437,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">APPROACH-DIRECTION</owl:hasValue>
+        <owl:hasValue xml:lang="en">APPRDR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
@@ -1480,7 +1481,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#materiel-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">INSTRUMENT-LANDING-SYSTEM</owl:hasValue>
+        <owl:hasValue xml:lang="en">ILS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
@@ -1532,7 +1533,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CLOUD-COVER</owl:hasValue>
+        <owl:hasValue xml:lang="en">COVER</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
@@ -1558,7 +1559,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">NETWORK</owl:hasValue>
+        <owl:hasValue xml:lang="en">NETWRK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
@@ -1571,7 +1572,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">UNIT</owl:hasValue>
+        <owl:hasValue xml:lang="en">UN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1599,7 +1600,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MINEFIELD-LAND</owl:hasValue>
+        <owl:hasValue xml:lang="en">MNFLND</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
@@ -1652,7 +1653,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ORGANISATION</owl:hasValue>
+        <owl:hasValue xml:lang="en">OR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
@@ -1665,7 +1666,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRFIELD</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRFLD</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
@@ -1704,7 +1705,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ROUTE-SEGMENT</owl:hasValue>
+        <owl:hasValue xml:lang="en">RTESEG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>

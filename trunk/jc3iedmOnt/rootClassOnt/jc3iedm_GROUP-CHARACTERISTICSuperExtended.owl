@@ -11,7 +11,9 @@
     </owl:imports>
   </owl:Ontology>
   <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTICExtended.owl#">
-    <owl:imports rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#"/>
+    <owl:imports>
+      <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#"/>
+    </owl:imports>
   </owl:Ontology>
   <owl:Class rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC">
     <rdfs:label xml:lang="en">group characteristic</rdfs:label>

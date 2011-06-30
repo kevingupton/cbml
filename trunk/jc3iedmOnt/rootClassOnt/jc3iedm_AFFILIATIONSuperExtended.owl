@@ -5,6 +5,7 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATIONSuperExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATIONSuperExtended.owl#">
+  <owl:Ontology rdf:about="jc3iedm_AFFILIATION.owl#"/>
   <owl:Ontology rdf:about="jc3iedm_AFFILIATIONExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_AFFILIATION.owl#"/>
   </owl:Ontology>
@@ -30,7 +31,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-FUNCTIONAL-GROUP</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLFNC</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -53,7 +54,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-GEOPOLITICAL</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLGEO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -78,7 +79,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-ETHNIC-GROUP</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLETH</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -99,7 +100,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFFILIATION-RELIGION</owl:hasValue>
+        <owl:hasValue xml:lang="en">AFLREL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>

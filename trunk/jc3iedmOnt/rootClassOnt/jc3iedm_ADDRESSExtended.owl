@@ -6,7 +6,9 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ADDRESSExtended.owl#">
   <owl:Ontology rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_ADDRESS.owl#"/>
+    <owl:imports>
+      <owl:Ontology rdf:about="jc3iedm_ADDRESS.owl#"/>
+    </owl:imports>
   </owl:Ontology>
   <owl:Class rdf:ID="PHYSICAL-ADDRESS_Return_address">
     <rdfs:subClassOf>
@@ -80,7 +82,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PHYSICAL-ADDRESS</owl:hasValue>
+        <owl:hasValue xml:lang="en">PHYADR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
@@ -93,7 +95,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ELECTRONIC-ADDRESS</owl:hasValue>
+        <owl:hasValue xml:lang="en">ELCADR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>

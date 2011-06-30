@@ -5,6 +5,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#">
+  <owl:Ontology rdf:about="jc3iedm_OBJECT-TYPE.owl#"/>
   <owl:Ontology rdf:about="#">
     <owl:imports rdf:resource="jc3iedm_OBJECT-TYPE.owl#"/>
   </owl:Ontology>
@@ -541,7 +542,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">HARBOUR-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">HARBOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -734,7 +735,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RADIOACTIVE-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">RADMAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1302,7 +1303,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-POST-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILPST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1392,7 +1393,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ELECTRONIC-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ELCTRN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1510,7 +1511,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CBRN-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CBRNEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1765,7 +1766,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MARITIME-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MRTMEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -2033,7 +2034,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">TASK-FORMATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">TASK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -2063,7 +2064,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">OR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -2589,7 +2590,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CHEMICAL-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CHMMAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -3265,7 +3266,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRFIELD-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRFLD</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -3398,7 +3399,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FEATURE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">FE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -3754,7 +3755,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">BIOLOGICAL-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">BIOMAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -4634,7 +4635,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MISCELLANEOUS-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MISCEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -4823,7 +4824,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PRIVATE-SECTOR-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">PVSORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
@@ -5994,7 +5995,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">BRIDGE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">BRGTYP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -6155,7 +6156,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#government-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -7180,7 +7181,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">VESSEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">VESSEL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -7253,7 +7254,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">RAILCAR-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">RAIL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -8040,7 +8041,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#control-feature-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ROUTE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">RTETYP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -8411,7 +8412,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#feature-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONTROL-FEATURE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FEATURE-TYPE"/>
@@ -8577,7 +8578,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">EXECUTIVE-MILITARY-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">EXCMIL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#MILITARY-ORGANISATION-TYPE"/>
@@ -9050,7 +9051,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">EQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -9943,7 +9944,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#consumable-materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AMMUNITION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">AMMO</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -10336,7 +10337,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#materiel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CONSUMABLE-MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -10480,7 +10481,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GOVERNMENT-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GVTORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
@@ -10669,7 +10670,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">AIRCRAFT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">AIRCFT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#EQUIPMENT-TYPE"/>
@@ -11142,7 +11143,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#vessel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SUBSURFACE-VESSEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">SUBSRF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#VESSEL-TYPE"/>
@@ -11667,7 +11668,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">WEAPON-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">WEPTYP</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#EQUIPMENT-TYPE"/>
@@ -12180,7 +12181,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PERSON-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">PE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -12964,7 +12965,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">CIVILIAN-POST-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">CIVPST</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
@@ -14277,7 +14278,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">VEHICLE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">VEHCLE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#EQUIPMENT-TYPE"/>
@@ -14893,7 +14894,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GROUP-ORGANISATION-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GRPORG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#ORGANISATION-TYPE"/>
@@ -15651,7 +15652,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#equipment-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ENGINEERING-EQUIPMENT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">ENGEQ</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#EQUIPMENT-TYPE"/>
@@ -16013,7 +16014,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#feature-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">GEOGRAPHIC-FEATURE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">GF</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FEATURE-TYPE"/>
@@ -19147,7 +19148,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MATERIEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -19367,7 +19368,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#object-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FACILITY-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">FA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -20105,7 +20106,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#vessel-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SURFACE-VESSEL-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">SURFAC</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#VESSEL-TYPE"/>
@@ -20131,7 +20132,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#military-organisation-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">UNIT-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">UNIT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#MILITARY-ORGANISATION-TYPE"/>
@@ -21225,7 +21226,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_OBJECT-TYPE.owl#facility-type-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MILITARY-OBSTACLE-TYPE</owl:hasValue>
+        <owl:hasValue xml:lang="en">MILOBS</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-TYPE.owl#FACILITY-TYPE"/>

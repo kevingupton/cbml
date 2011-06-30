@@ -6,7 +6,9 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_CAPABILITYExtended.owl#">
   <owl:Ontology rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_CAPABILITY.owl#"/>
+    <owl:imports>
+      <owl:Ontology rdf:about="jc3iedm_CAPABILITY.owl#"/>
+    </owl:imports>
   </owl:Ontology>
   <owl:Class rdf:ID="OPERATIONAL-CAPABILITY_Mountain">
     <rdfs:subClassOf>
@@ -61,7 +63,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">OPERATIONAL-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">OPERAT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -570,7 +572,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SURVEILLANCE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SURV</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -755,7 +757,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MAINTENANCE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">MAIN</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -994,7 +996,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">STORAGE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">STOR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1063,7 +1065,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">MOBILITY-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">MOBL</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1145,7 +1147,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">SUPPORT-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SUPPRT</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1329,7 +1331,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ENGINEERING-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">ENGI</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1530,7 +1532,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">FIRE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">FIRE</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -2138,7 +2140,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">TRANSMISSION-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">TRANSM</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
@@ -2346,7 +2348,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">HANDLING-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">HNDLNG</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
