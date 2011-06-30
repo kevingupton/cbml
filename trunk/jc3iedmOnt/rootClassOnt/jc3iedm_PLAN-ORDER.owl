@@ -4,49 +4,48 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDER.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDER.owl#" > 
-  <rdf:Description rdf:about="#PLAN-ORDER">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDER.owl#">
+  <owl:Ontology rdf:about="#"/>
+  <owl:Class rdf:ID="PLAN-ORDER">
     <rdfs:label xml:lang="en">plan order</rdfs:label>
     <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#plan-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#PLAN"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A0">
-    <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
-    <owl:onProperty rdf:resource="#plan-order-category-code"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PLAN">
+  </owl:Class>
+  <owl:Class rdf:ID="PLAN">
     <rdfs:subClassOf rdf:resource="#PLAN-ORDER"/>
-    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="plan-order-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">plan</rdfs:label>
     <rdfs:comment xml:lang="en">A proposal for putting into effect a command decision or project; it represents the preparation for future or anticipated operations.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#order-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#ORDER"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ORDER">
+  </owl:Class>
+  <owl:Class rdf:ID="ORDER">
     <rdfs:subClassOf rdf:resource="#PLAN-ORDER"/>
-    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#plan-order-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">order</rdfs:label>
     <rdfs:comment xml:lang="en">A communication that conveys instructions from a superior to a subordinate.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
-    <owl:onProperty rdf:resource="#plan-order-category-code"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#plan-order-category-code">
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="plan-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#PLAN"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="order-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ORDER"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#plan-order-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
+  </owl:DatatypeProperty>
 </rdf:RDF>
