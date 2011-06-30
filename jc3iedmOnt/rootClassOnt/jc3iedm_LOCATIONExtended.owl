@@ -4,9 +4,8 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATIONExtended.owl#">
-  <owl:Ontology rdf:about="jc3iedm_LOCATION.owl#"/>
-  <owl:Ontology rdf:about="#">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+  <owl:Ontology rdf:about="jc3iedm_LOCATIONExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_LOCATION.owl#"/>
   </owl:Ontology>
   <owl:Class rdf:about="jc3iedm_LOCATION.owl#ELLIPSE">
@@ -202,7 +201,7 @@
       <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="LOCATION_Undefined">
+  <owl:Class rdf:about="jc3iedm_LOCATIONExtended.owl#LOCATION_Undefined">
     <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -327,11 +326,11 @@
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-coordinate-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#corridor-area-width-dimension">
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CORRIDOR-AREA"/>
-  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#polyarc-area-begin-bearing-angle">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#corridor-area-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CORRIDOR-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#sphere-volume-radius-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#SPHERE-VOLUME"/>

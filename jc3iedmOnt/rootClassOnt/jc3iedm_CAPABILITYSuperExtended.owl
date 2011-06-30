@@ -5,11 +5,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_CAPABILITYSuperExtended.owl#">
-  <owl:Ontology rdf:about="#">
-    <owl:imports>
-      <owl:Ontology rdf:about="jc3iedm_CAPABILITYExtended.owl#"/>
-    </owl:imports>
-  </owl:Ontology>
+  <owl:Ontology rdf:about="#"/>
   <owl:Ontology rdf:about="jc3iedm_CAPABILITYExtended.owl#">
     <owl:imports>
       <owl:Ontology rdf:about="jc3iedm_CAPABILITY.owl#"/>
@@ -66,7 +62,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">OPERATIONAL-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">OPERAT</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -583,7 +579,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">SURVEILLANCE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SURV</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -654,21 +650,6 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Ground_to_sea">
-    <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from the ground to targets at sea.</rdfs:comment>
-    <rdfs:label xml:lang="en">ground to sea</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#fire-capability-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">GRDSEA</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
-    </rdfs:subClassOf>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MAINTENANCE-CAPABILITY_Steam">
     <rdfs:comment xml:lang="en">The specific MAINTENANCE-CAPABILITY determines the ability to provide steam repair.</rdfs:comment>
     <rdfs:label xml:lang="en">steam</rdfs:label>
@@ -682,6 +663,21 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Ground_to_sea">
+    <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from the ground to targets at sea.</rdfs:comment>
+    <rdfs:label xml:lang="en">ground to sea</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#fire-capability-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">GRDSEA</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Surveillance">
@@ -776,7 +772,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">MAINTENANCE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">MAIN</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -821,6 +817,19 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Peace_support">
+    <rdfs:comment xml:lang="en">The capability to conduct multi-functional operations involving military forces and diplomatic and humanitarian agencies. The operations are designed to achieve humanitarian goals or a long term peace settlement.</rdfs:comment>
+    <rdfs:label xml:lang="en">peace support</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">PSO</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#FIRE-CAPABILITY_Air_to_sea">
     <rdfs:comment xml:lang="en">The specific value implies that a specific FIRE-CAPABILITY involves firing from aircraft at targets at sea.</rdfs:comment>
     <rdfs:label xml:lang="en">air to sea</rdfs:label>
@@ -835,19 +844,6 @@
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Peace_support">
-    <rdfs:comment xml:lang="en">The capability to conduct multi-functional operations involving military forces and diplomatic and humanitarian agencies. The operations are designed to achieve humanitarian goals or a long term peace settlement.</rdfs:comment>
-    <rdfs:label xml:lang="en">peace support</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">PSO</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#MOBILITY-CAPABILITY_Water,_river">
     <rdfs:comment xml:lang="en">The capability of a device to navigate rivers.</rdfs:comment>
@@ -1023,7 +1019,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">STORAGE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">STOR</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -1100,7 +1096,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">MOBILITY-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">MOBL</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -1190,7 +1186,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">SUPPORT-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">SUPPRT</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -1382,7 +1378,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ENGINEERING-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">ENGI</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -1591,7 +1587,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">FIRE-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">FIRE</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -2201,24 +2197,11 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_radio_tactical_satellite">
-    <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a tactical satellite terminal.</rdfs:comment>
-    <rdfs:label xml:lang="en">signal, radio tactical satellite</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">SGRDTA</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_CAPABILITY.owl#TRANSMISSION-CAPABILITY">
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">TRANSMISSION-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">TRANSM</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>
@@ -2244,6 +2227,19 @@
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-category-code"/>
         </owl:onProperty>
         <owl:hasValue xml:lang="en">TRAIN</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_Signal,_radio_tactical_satellite">
+    <rdfs:comment xml:lang="en">The capability in signal services to manage, operate and control a tactical satellite terminal.</rdfs:comment>
+    <rdfs:label xml:lang="en">signal, radio tactical satellite</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">SGRDTA</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
@@ -2421,7 +2417,7 @@
     <rdfs:subClassOf rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">HANDLING-CAPABILITY</owl:hasValue>
+        <owl:hasValue xml:lang="en">HNDLNG</owl:hasValue>
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code"/>
         </owl:onProperty>

@@ -5,14 +5,13 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_SECURITY-CLASSIFICATIONSuperExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_SECURITY-CLASSIFICATIONSuperExtended.owl#">
-  <owl:Ontology rdf:about="jc3iedm_SECURITY-CLASSIFICATIONExtended.owl#">
+  <owl:Ontology rdf:about="#"/>  
+<owl:Ontology rdf:about="jc3iedm_SECURITY-CLASSIFICATIONExtended.owl#">
     <owl:imports>
       <owl:Ontology rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#"/>
     </owl:imports>
   </owl:Ontology>
-  <owl:Ontology rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_SECURITY-CLASSIFICATIONExtended.owl#"/>
-  </owl:Ontology>
+
   <owl:Class rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION">
     <rdfs:label xml:lang="en">security classification</rdfs:label>
     <rdfs:comment xml:lang="en">The security classification applicable to an information resource within the domain of classified security information.</rdfs:comment>

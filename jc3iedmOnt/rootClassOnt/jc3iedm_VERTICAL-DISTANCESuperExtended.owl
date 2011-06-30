@@ -5,12 +5,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_VERTICAL-DISTANCESuperExtended.owl#">
-  <owl:Ontology rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#"/>
-  <owl:Ontology rdf:about="#">
-    <owl:imports>
-      <owl:Ontology rdf:about="jc3iedm_VERTICAL-DISTANCEExtended.owl#"/>
-    </owl:imports>
-  </owl:Ontology>
+  <owl:Ontology rdf:about="#"/>
   <owl:Ontology rdf:about="jc3iedm_VERTICAL-DISTANCEExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#"/>
   </owl:Ontology>

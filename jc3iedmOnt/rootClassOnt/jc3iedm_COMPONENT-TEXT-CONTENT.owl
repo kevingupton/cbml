@@ -4,14 +4,14 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_COMPONENT-TEXT-CONTENT.owl#">
-  <owl:Ontology rdf:about="#"/>
-  <owl:Class rdf:ID="COMPONENT-TEXT-CONTENT">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+  <owl:Ontology rdf:about="jc3iedm_COMPONENT-TEXT-CONTENT.owl#"/>
+  <owl:Class rdf:about="jc3iedm_COMPONENT-TEXT-CONTENT.owl#COMPONENT-TEXT-CONTENT">
     <rdfs:label xml:lang="en">component text content</rdfs:label>
     <rdfs:comment xml:lang="en">A textual statement of substantive subject matter.</rdfs:comment>
   </owl:Class>
-  <owl:DatatypeProperty rdf:ID="component-text-content-text">
+  <owl:DatatypeProperty rdf:about="jc3iedm_COMPONENT-TEXT-CONTENT.owl#component-text-content-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#COMPONENT-TEXT-CONTENT"/>
+    <rdfs:domain rdf:resource="jc3iedm_COMPONENT-TEXT-CONTENT.owl#COMPONENT-TEXT-CONTENT"/>
   </owl:DatatypeProperty>
 </rdf:RDF>

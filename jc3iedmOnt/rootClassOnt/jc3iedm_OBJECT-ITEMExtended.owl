@@ -1,15 +1,14 @@
-<rdf:RDF
+﻿<rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMExtended.owl#">
-  <owl:Ontology rdf:about="jc3iedm_OBJECT-ITEM.owl#"/>
-  <owl:Ontology rdf:about="#">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+  <owl:Ontology rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_OBJECT-ITEM.owl#"/>
   </owl:Ontology>
-  <owl:Class rdf:about="#WIND_Turbulence,_light">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Turbulence,_light">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -24,14 +23,14 @@
     <rdfs:label xml:lang="en">turbulence, light</rdfs:label>
     <rdfs:comment xml:lang="en">Light turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Warm_front">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Warm_front">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">warm front</rdfs:label>
     <rdfs:comment xml:lang="en">The discontinuity at the forward edge of an advancing warm air mass that is displacing cooler air in its path.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="CLOUD-COVER_Smoke">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#CLOUD-COVER_Smoke">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
     </rdfs:subClassOf>
@@ -61,7 +60,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Jet_stream">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Jet_stream">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -136,7 +135,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="GEOGRAPHIC-FEATURE_Solid_surface">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#GEOGRAPHIC-FEATURE_Solid_surface">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -158,7 +157,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Pedestrian">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Pedestrian">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -186,7 +185,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Hurricane">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Hurricane">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -201,7 +200,7 @@
     <rdfs:label xml:lang="en">hurricane</rdfs:label>
     <rdfs:comment xml:lang="en">A tropical cyclone, especially in the West Indies, in which wind velocity equals or exceeds 64 knots (118.5 km/hr).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Snow_grains">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Snow_grains">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -216,7 +215,7 @@
     <rdfs:label xml:lang="en">snow grains</rdfs:label>
     <rdfs:comment xml:lang="en">Precipitation of very small, white, opaque particles of ice; the solid equivalent of drizzle. The grains are fairly flat or elongated. Diameters are generally less than 1 mm. When the grains hit hard ground, they do not bounce or shatter. They usually fall in very small quantities from stratus clouds (or occasionally from fog).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ICING_Clear_icing">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ICING_Clear_icing">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ICING"/>
     </rdfs:subClassOf>
@@ -231,14 +230,14 @@
     <rdfs:label xml:lang="en">clear icing</rdfs:label>
     <rdfs:comment xml:lang="en">Glossy, clear, or translucent ice formed by the relatively slow freezing of large supercooled droplets. The droplets spread out over the airframe surface before completely freezing.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="RUNWAY_Medium">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#RUNWAY_Medium">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">medium</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value between 201 to 400 pci (pavement condition index) for rigid pavements, and by (California Bearing Ratio) CBR of 9 to 13% for flexible pavements.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Motorway">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Motorway">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -251,7 +250,7 @@
     <rdfs:label xml:lang="en">motorway</rdfs:label>
     <rdfs:comment xml:lang="en">The specific ROAD is a motorway or expressway.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Snow_shower">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Snow_shower">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -266,7 +265,7 @@
     <rdfs:label xml:lang="en">snow shower</rdfs:label>
     <rdfs:comment xml:lang="en">Snow changes intensity or starts and stops abruptly. These showers fall exclusively from cumuliform clouds.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Simplified,_stable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Simplified,_stable">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -281,7 +280,7 @@
     <rdfs:label xml:lang="en">simplified, stable</rdfs:label>
     <rdfs:comment xml:lang="en">The air is stable, so there is little mixing, and the material is effective over longer distances.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Tropical_storm">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Tropical_storm">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -296,7 +295,7 @@
     <rdfs:label xml:lang="en">tropical storm</rdfs:label>
     <rdfs:comment xml:lang="en">A tropical cyclone having winds ranging from approximately 48 to 121 kilometres per hour.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Funnel_cloud">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Funnel_cloud">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -311,7 +310,7 @@
     <rdfs:label xml:lang="en">funnel cloud</rdfs:label>
     <rdfs:comment xml:lang="en">A violent, rotating column of air that does not touch the ground, usually appended to a cumulonimbus cloud. Also called a tuba.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="APPROACH-DIRECTION_True">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#APPROACH-DIRECTION_True">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
     </rdfs:subClassOf>
@@ -326,7 +325,7 @@
     <rdfs:label xml:lang="en">true</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value, which specifies that the approach direction is comparable to the true heading not magnetic heading.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Rain_shower">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Rain_shower">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -371,7 +370,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="NETWORK_Point-to-point">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#NETWORK_Point-to-point">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
     </rdfs:subClassOf>
@@ -386,12 +385,12 @@
     <rdfs:label xml:lang="en">point to point</rdfs:label>
     <rdfs:comment xml:lang="en">A transmission where information is transferred between two nodes.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Cold_Front">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Cold_Front">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">cold front</rdfs:label>
     <rdfs:comment xml:lang="en">The discontinuity at the forward edge of an advancing cold air mass that is displacing warmer air in its path.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="RUNWAY_Low">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#RUNWAY_Low">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
     <rdfs:label xml:lang="en">low</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value between 100 and 200 pci (pavement condition index) for rigid pavements, and by (California Bearing Ratio) CBR of 5 to 8% for flexible pavements.</rdfs:comment>
@@ -411,7 +410,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="RUNWAY_High">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#RUNWAY_High">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
     <rdfs:label xml:lang="en">high</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value greater than 400 pci (pavement condition index) for rigid pavements, and by a (California Bearing Ratio) CBR value above 13% for flexible pavements.</rdfs:comment>
@@ -431,19 +430,19 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Trough_line">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Trough_line">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">trough line</rdfs:label>
     <rdfs:comment xml:lang="en">An elongated region of low atmospheric pressure.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="GEOGRAPHIC-FEATURE_Liquid_surface">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#GEOGRAPHIC-FEATURE_Liquid_surface">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">liquid surface</rdfs:label>
     <rdfs:comment xml:lang="en">The boundary of a liquid with the atmosphere or solid.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="LIGHT_Nautical_twilight">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#LIGHT_Nautical_twilight">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -456,7 +455,7 @@
     <rdfs:label xml:lang="en">nautical twilight</rdfs:label>
     <rdfs:comment xml:lang="en">The periods of incomplete darkness following sunset and preceding sunrise. The darker limit occurs when the centre of the sun is 12 degrees below the celestial horizon.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Turbulence,_extreme">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Turbulence,_extreme">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -471,7 +470,7 @@
     <rdfs:label xml:lang="en">turbulence, extreme</rdfs:label>
     <rdfs:comment xml:lang="en">Extreme turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Freezing_rain">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Freezing_rain">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -486,7 +485,7 @@
     <rdfs:label xml:lang="en">freezing rain</rdfs:label>
     <rdfs:comment xml:lang="en">Rain that freezes on impact with the ground, with objects in flight, or with objects on the ground. Produces glaze (clear) ice.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Typhoon">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Typhoon">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -501,7 +500,7 @@
     <rdfs:label xml:lang="en">typhoon</rdfs:label>
     <rdfs:comment xml:lang="en">A severe tropical hurricane.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Ice_pellets">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Ice_pellets">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -516,7 +515,7 @@
     <rdfs:label xml:lang="en">ice pellets</rdfs:label>
     <rdfs:comment xml:lang="en">Precipitation of transparent or translucent pellets of ice, which are round or irregular, rarely conical, and have a diameter of 5 mm or less. The pellets usually rebound when striking hard ground and make a sound on impact. There are two main types: hard grains of ice consisting of frozen raindrops or melted and refrozen snowflakes and pellets of snow encased in a thin layer of ice formed from the freezing, either of droplets intercepted by the pellets, or of water resulting from the partial melting of the pellets.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Blowing_dust_or_sand">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Blowing_dust_or_sand">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     </rdfs:subClassOf>
@@ -531,7 +530,7 @@
     <rdfs:label xml:lang="en">blowing dust or sand</rdfs:label>
     <rdfs:comment xml:lang="en">Dust or sand raised by the wind to a height of 1.8 metres or more.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Thunderstorm">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Thunderstorm">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -546,7 +545,7 @@
     <rdfs:label xml:lang="en">thunderstorm</rdfs:label>
     <rdfs:comment xml:lang="en">A local storm produced by a cumulonimbus cloud accompanied by strong gusty winds, vertical currents at higher levels, and heavy precipitation with lightning and/or thunder. It is usually a few miles in both horizontal and vertical dimensions, extending from the ground up to 6,000, 12,000 or even 18,000 metres in the most vigorous examples.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="WIND_Gusting">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Gusting">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -561,7 +560,7 @@
     <rdfs:label xml:lang="en">gusting</rdfs:label>
     <rdfs:comment xml:lang="en">A rapid increase in the strength of the wind relative to the mean strength at the time.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Detailed,_very_stable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Detailed,_very_stable">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -576,7 +575,7 @@
     <rdfs:label xml:lang="en">detailed, very stable</rdfs:label>
     <rdfs:comment xml:lang="en">The air is very stable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Fair-weather">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Fair-weather">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -589,7 +588,7 @@
     <rdfs:label xml:lang="en">fair weather</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value, which determines that the ROAD is passable only in fair weather. Quickly becomes impassable in bad weather. Cannot be kept open by maintenance short of major construction.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Smoke">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Smoke">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     </rdfs:subClassOf>
@@ -619,7 +618,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="WIND_Constant">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Constant">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -634,7 +633,7 @@
     <rdfs:label xml:lang="en">constant</rdfs:label>
     <rdfs:comment xml:lang="en">Winds that have a constant force.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Blowing_snow">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Blowing_snow">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     </rdfs:subClassOf>
@@ -649,7 +648,7 @@
     <rdfs:label xml:lang="en">blowing snow</rdfs:label>
     <rdfs:comment xml:lang="en">Snow particles raised and stirred violently by the wind to moderate or great heights. Prevailing visibility is reduced to less than 11,260 metres and the sky may become obscured when the particles are raised to great heights.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Thunderstorms_and_rain">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Thunderstorms_and_rain">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -679,7 +678,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Lightning">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Lightning">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     </rdfs:subClassOf>
@@ -694,7 +693,7 @@
     <rdfs:label xml:lang="en">lightning</rdfs:label>
     <rdfs:comment xml:lang="en">A luminous manifestation accompanying a sudden electrical discharge, which takes place from or inside a cloud or, less often, from high structures on the ground, or from mountains.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Squall_line">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Squall_line">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">squall line</rdfs:label>
     <rdfs:comment xml:lang="en">A line of high winds and thunderstorms in convectively unstable air, an instability line (of non-frontal nature); it may be generated by a cold front.</rdfs:comment>
@@ -729,12 +728,12 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Ridge_line">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Ridge_line">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">ridge line</rdfs:label>
     <rdfs:comment xml:lang="en">An elongated region of high atmospheric pressure.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Detailed,_unstable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Detailed,_unstable">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -749,7 +748,7 @@
     <rdfs:label xml:lang="en">detailed, unstable</rdfs:label>
     <rdfs:comment xml:lang="en">The air is unstable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Detailed,_very_unstable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Detailed,_very_unstable">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -764,7 +763,7 @@
     <rdfs:label xml:lang="en">detailed, very unstable</rdfs:label>
     <rdfs:comment xml:lang="en">The air is very unstable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table, developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="APPROACH-DIRECTION_Centre">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#APPROACH-DIRECTION_Centre">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
     </rdfs:subClassOf>
@@ -809,7 +808,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="CLOUD-COVER_Radioactive_cloud">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#CLOUD-COVER_Radioactive_cloud">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
     </rdfs:subClassOf>
@@ -824,7 +823,7 @@
     <rdfs:label xml:lang="en">radioactive cloud</rdfs:label>
     <rdfs:comment xml:lang="en">A cloud that contains the hot gases, smoke, dust and other particulate matter from the nuclear bomb itself or other sources that are carried aloft.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ICING_Mixed_icing">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ICING_Mixed_icing">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ICING"/>
     </rdfs:subClassOf>
@@ -839,7 +838,7 @@
     <rdfs:label xml:lang="en">mixed icing</rdfs:label>
     <rdfs:comment xml:lang="en">A hard rough conglomerate of ice that can cause very rough accumulation and severe loss of lift.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Detailed,_slightly_stable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Detailed,_slightly_stable">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -884,7 +883,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Haze">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Haze">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -897,7 +896,7 @@
     <rdfs:label xml:lang="en">haze</rdfs:label>
     <rdfs:comment xml:lang="en">A suspension in the air of extremely small, dry particles invisible to the naked eye and sufficiently numerous to give the air an opalescent appearance. This phenomenon resembles a uniform veil over the landscape and subdues all colours. Dark objects viewed through this veil tend to have a bluish tinge while bright objects, such as the sun or distant lights, tend to have a dirty yellow or reddish hue. When haze is present and the sun is well above the horizon, its light may have a peculiar silvery tinge. Haze particles may be composed of a variety of substances; e.g., dust, salt, residue from distant fires or volcanoes, pollen, etc., which generally are well diffused through the atmosphere.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Hail">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Hail">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -912,7 +911,7 @@
     <rdfs:label xml:lang="en">hail</rdfs:label>
     <rdfs:comment xml:lang="en">Precipitation in the form of small balls or other pieces of ice falling separately or frozen together in irregular lumps. Hailstones consist of alternate opaque and clear layers of ice in most cases. Hail is normally associated with thunderstorms and surface temperatures above freezing.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="NETWORK_Broadcast">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#NETWORK_Broadcast">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
     </rdfs:subClassOf>
@@ -927,7 +926,7 @@
     <rdfs:label xml:lang="en">broadcast</rdfs:label>
     <rdfs:comment xml:lang="en">A broadcast network used to transport voice and/or data.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Rain">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Rain">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -942,7 +941,7 @@
     <rdfs:label xml:lang="en">rain</rdfs:label>
     <rdfs:comment xml:lang="en">Precipitation, either in the form of drops larger than 0.5 mm, or smaller drops, which in contrast to drizzle, are widely separated.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Sleet">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Sleet">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -957,7 +956,7 @@
     <rdfs:label xml:lang="en">sleet</rdfs:label>
     <rdfs:comment xml:lang="en">A condition with precipitation of rain and snow.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Detailed,_neutral">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Detailed,_neutral">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -972,7 +971,7 @@
     <rdfs:label xml:lang="en">detailed, neutral</rdfs:label>
     <rdfs:comment xml:lang="en">The air is neutral in stability, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Regional">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Regional">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -985,7 +984,7 @@
     <rdfs:label xml:lang="en">regional</rdfs:label>
     <rdfs:comment xml:lang="en">The specific ROAD is a regional, secondary or district road.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Simplified,_unstable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Simplified,_unstable">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     </rdfs:subClassOf>
@@ -1015,7 +1014,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="CLOUD-COVER_Clouds">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#CLOUD-COVER_Clouds">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#CLOUD-COVER"/>
     </rdfs:subClassOf>
@@ -1030,7 +1029,7 @@
     <rdfs:label xml:lang="en">clouds</rdfs:label>
     <rdfs:comment xml:lang="en">A weather condition in which the sky or part of the sky is covered or partly covered by clouds.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Lane">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Lane">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1043,7 +1042,7 @@
     <rdfs:label xml:lang="en">lane</rdfs:label>
     <rdfs:comment xml:lang="en">The specific ROAD is a track or lane.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Ice_crystals">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Ice_crystals">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     </rdfs:subClassOf>
@@ -1058,12 +1057,12 @@
     <rdfs:label xml:lang="en">ice crystals</rdfs:label>
     <rdfs:comment xml:lang="en">A fall of unbranched (snow crystals are branched) ice crystals in the form of needles, columns, or plates. They are termed "ice prisms" in synoptic observations. Ice crystals are often so tiny they seem to be suspended in air. They may fall from a cloud or from clear air. The crystals are visible mainly when they glitter in the sunshine or other bright light (diamond dust), thus producing a luminous pillar or other optical phenomena. This hydrometer (rarely more than the lightest precipitation), which is frequent in polar regions, occurs only at very low temperatures in stable air masses.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Upper_cold_front">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Upper_cold_front">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">upper cold front</rdfs:label>
     <rdfs:comment xml:lang="en">Occurs when discontinuity at the forward edge of an advancing cold air mass is displacing warmer air in its path and the two air masses intersect above ground level.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Local">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Local">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1106,7 +1105,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="WIND_Squalls">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Squalls">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1119,7 +1118,7 @@
     <rdfs:label xml:lang="en">squalls</rdfs:label>
     <rdfs:comment xml:lang="en">A strong wind that rises suddenly, generally lasts for some minutes, and dies comparatively suddenly away. It is distinguished from a gust by its longer duration.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="APPROACH-DIRECTION_Left">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#APPROACH-DIRECTION_Left">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
     </rdfs:subClassOf>
@@ -1134,7 +1133,7 @@
     <rdfs:label xml:lang="en">left</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value that specifies the left side runway approach for parallel runways.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Railway">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Railway">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1162,7 +1161,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Simplified,_neutral">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Simplified,_neutral">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1220,12 +1219,12 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Upper_warm_front">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Upper_warm_front">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">upper warm front</rdfs:label>
     <rdfs:comment xml:lang="en">Occurs when discontinuity at the forward edge of an advancing warm air mass is displacing cooler air in its path and the two air masses intersect above ground level.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_High_pressure_centre">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_High_pressure_centre">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">high pressure centre</rdfs:label>
     <rdfs:comment xml:lang="en">An area of high atmospheric pressure that has a closed circulation that is anticyclonic, i.e., as viewed from above, the circulation is clockwise in the Northern Hemisphere, counterclockwise in the southern Hemisphere, undefined at the Equator.</rdfs:comment>
@@ -1256,7 +1255,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FEATURE"/>
   </owl:Class>
-  <owl:Class rdf:ID="LIGHT_Civil_twilight">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#LIGHT_Civil_twilight">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1282,7 +1281,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Drizzle">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Drizzle">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1295,7 +1294,7 @@
     <rdfs:label xml:lang="en">drizzle</rdfs:label>
     <rdfs:comment xml:lang="en">Fairly uniform precipitation composed exclusively of fine drops (diameter less than 0.5 mm) very close together. Drizzle appears to float while following air currents although, unlike fog droplets, it falls to the ground. It usually falls from low stratus clouds and is frequently accompanied by low visibility and fog.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Turbulence,_severe">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Turbulence,_severe">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1308,7 +1307,7 @@
     <rdfs:label xml:lang="en">turbulence, severe</rdfs:label>
     <rdfs:comment xml:lang="en">Severe turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="LIGHT_Darkness">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#LIGHT_Darkness">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1334,7 +1333,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Snow">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Snow">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1347,7 +1346,7 @@
     <rdfs:label xml:lang="en">snow</rdfs:label>
     <rdfs:comment xml:lang="en">Frozen precipitation in the form of white or translucent hexagonal ice crystals that fall in soft, white flakes.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="APPROACH-DIRECTION_STOL">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#APPROACH-DIRECTION_STOL">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
     </rdfs:subClassOf>
@@ -1362,7 +1361,7 @@
     <rdfs:label xml:lang="en">stol</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value that specifies short take-off and landing approach direction.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Waterspout">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Waterspout">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1388,7 +1387,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
   </owl:Class>
-  <owl:Class rdf:ID="WIND_Variable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Variable">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1401,7 +1400,7 @@
     <rdfs:label xml:lang="en">variable</rdfs:label>
     <rdfs:comment xml:lang="en">Winds that have a variable force.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="LIGHT_Daylight">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#LIGHT_Daylight">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1414,7 +1413,7 @@
     <rdfs:label xml:lang="en">daylight</rdfs:label>
     <rdfs:comment xml:lang="en">Ambient atmospheric light resulting from the sun.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="APPROACH-DIRECTION_Right">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#APPROACH-DIRECTION_Right">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#APPROACH-DIRECTION"/>
     </rdfs:subClassOf>
@@ -1442,7 +1441,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Dust_storm">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Dust_storm">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1455,7 +1454,7 @@
     <rdfs:label xml:lang="en">dust storm</rdfs:label>
     <rdfs:comment xml:lang="en">An unusual, frequently severe weather condition characterised by strong winds and dust-filled air over an extensive area. Report a dust storm if the prevailing visibility is reduced to less than 1,000 meters, but not less than 500 metres. Report a heavy (severe) dust storm (+DS) if the visibility is reduced to less than 500 metres.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Turbulence,_moderate">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Turbulence,_moderate">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1468,7 +1467,7 @@
     <rdfs:label xml:lang="en">turbulence, moderate</rdfs:label>
     <rdfs:comment xml:lang="en">Moderate turbulence is a transitory atmospheric condition that has varying effects on aircraft operations. It is a serious hazard to pilots that may occur without warning.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="RUNWAY_Ultra-low">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#RUNWAY_Ultra-low">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#RUNWAY"/>
     <rdfs:label xml:lang="en">ultra low</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value that indicates that the pavement subgrade is characterised by a (spring constant) K value less than 100 pci (pavement condition index) for rigid pavements, and by a (California Bearing Ratio) CBR value less than 5% for flexible pavements.</rdfs:comment>
@@ -1486,7 +1485,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MATERIEL"/>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_All-weather">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_All-weather">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1499,7 +1498,7 @@
     <rdfs:label xml:lang="en">all weather</rdfs:label>
     <rdfs:comment xml:lang="en">The specific value, which determines that the ROAD is passable, to all traffic in any weather except deep snow or flood (normally roads with waterproof surfaces).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_Freezing_drizzle">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_Freezing_drizzle">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1512,7 +1511,7 @@
     <rdfs:label xml:lang="en">freezing drizzle</rdfs:label>
     <rdfs:comment xml:lang="en">Drizzle which freezes upon impact with the ground, with objects in flight, or with objects on the ground. Produces glaze (clear) ice.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="PRECIPITATION_No_precipitation">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#PRECIPITATION_No_precipitation">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#PRECIPITATION"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1538,7 +1537,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Dust_devil">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Dust_devil">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1579,7 +1578,7 @@
       <owl:Class rdf:about="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#VISIBILITY_Fog/mist">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Fog/mist">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1605,12 +1604,12 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#MINEFIELD"/>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Occluded_front">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Occluded_front">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">occluded front</rdfs:label>
     <rdfs:comment xml:lang="en">The line along which a cold front has overtaken a warm front at ground level.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Detailed,_stable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Detailed,_stable">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1623,7 +1622,7 @@
     <rdfs:label xml:lang="en">detailed, stable</rdfs:label>
     <rdfs:comment xml:lang="en">The air is stable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Low_pressure_centre">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Low_pressure_centre">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">low pressure centre</rdfs:label>
     <rdfs:comment xml:lang="en">1. An area of low atmospheric pressure that has a closed circulation that is cyclonic, i.e., as viewed from above, the circulation is counterclockwise in the Northern Hemisphere, clockwise in the Southern Hemisphere, undefined at the Equator. Because cyclonic circulation and relatively low atmospheric pressure usually coexist, in common practice the terms cyclone and low are used interchangeably. Also, because cyclones often are accompanied by inclement (sometimes destructive) weather, they are frequently referred to simply as storms. 2. Frequently misused to denote a tornado. 3. In the Indian Ocean, a tropical cyclone of hurricane or typhoon force.</rdfs:comment>
@@ -1671,7 +1670,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#FACILITY"/>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Main">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Main">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1684,7 +1683,7 @@
     <rdfs:label xml:lang="en">main</rdfs:label>
     <rdfs:comment xml:lang="en">The specific ROAD is a main road, highway or federal road.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="NETWORK_Multicast">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#NETWORK_Multicast">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#NETWORK"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1710,7 +1709,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE"/>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Freezing_fog">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Freezing_fog">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1723,7 +1722,7 @@
     <rdfs:label xml:lang="en">freezing fog</rdfs:label>
     <rdfs:comment xml:lang="en">A suspension of numerous minute ice crystals in the air, or water droplets at temperatures below 0 degrees Celsius, based at the Earth’s surface and extending vertically to greater than 1.8 metres. FZFG reduces prevailing visibility to less than 1000 metres and, unlike drizzle, does not fall to the ground. The water droplets may freeze upon contact with exposed objects to form a coating of rime or glaze and it can occur even though the air temperature is above freezing. Also called Ice Fog.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ATMOSPHERE_Stationary_front">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ATMOSPHERE_Stationary_front">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ATMOSPHERE"/>
     <rdfs:label xml:lang="en">stationary front</rdfs:label>
     <rdfs:comment xml:lang="en">A situation in which the surface position of a front does not move; the flow on either side of such a boundary is nearly parallel to the position of the front.</rdfs:comment>
@@ -1741,7 +1740,7 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
   </owl:Class>
-  <owl:Class rdf:ID="WIND_Wind_shear">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Wind_shear">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1754,7 +1753,7 @@
     <rdfs:label xml:lang="en">wind shear</rdfs:label>
     <rdfs:comment xml:lang="en">A variation in wind velocity at right angles to the wind's direction.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Tornado">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Tornado">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1767,7 +1766,7 @@
     <rdfs:label xml:lang="en">tornado</rdfs:label>
     <rdfs:comment xml:lang="en">A violent, rotating column of air touching the ground; funnel cloud touching the ground. A tornado nearly always starts as a funnel cloud and is accompanied by a loud, roaring noise.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Cyclone">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Cyclone">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1780,7 +1779,7 @@
     <rdfs:label xml:lang="en">cyclone</rdfs:label>
     <rdfs:comment xml:lang="en">The atmospheric pressure distribution in which there is a low central pressure relative to the surroundings. Cyclonic circulation is anticlockwise round the centre in the northern hemisphere and clockwise in the southern hemisphere; in either case the sense of rotation about the vertical is the same as that of the earth's rotation.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Storm">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Storm">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1793,7 +1792,7 @@
     <rdfs:label xml:lang="en">storm</rdfs:label>
     <rdfs:comment xml:lang="en">An atmospheric disturbance manifested in strong winds with precipitation.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="LIGHT_Moonlight">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#LIGHT_Moonlight">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#LIGHT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1806,7 +1805,7 @@
     <rdfs:label xml:lang="en">moonlight</rdfs:label>
     <rdfs:comment xml:lang="en">Ambient atmospheric light resulting from the moon.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ICING_Rime_icing">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ICING_Rime_icing">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ICING"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1819,7 +1818,7 @@
     <rdfs:label xml:lang="en">rime icing</rdfs:label>
     <rdfs:comment xml:lang="en">Rough, milky opaque ice formed by the instantaneous freezing of small supercooled droplets which trap air within the ice as they strike the aircraft.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="VISIBILITY_Sandstorm">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#VISIBILITY_Sandstorm">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#VISIBILITY"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1832,7 +1831,7 @@
     <rdfs:label xml:lang="en">sandstorm</rdfs:label>
     <rdfs:comment xml:lang="en">Particles of sand ranging in diameter from 0.2 millimetres to 1 millimetre carried aloft by a strong wind. A sandstorm is reported if the prevailing visibility is reduced to less than 1,000 metres, but not less than 500 metres. Report a heavy (severe) sandstorm (+SS) if the visibility is reduced to less than 500 metres.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#WIND_Detailed,_slightly_unstable">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#WIND_Detailed,_slightly_unstable">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#WIND"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1845,7 +1844,7 @@
     <rdfs:label xml:lang="en">detailed, slightly unstable</rdfs:label>
     <rdfs:comment xml:lang="en">The air is slightly unstable, with reference to the detailed class. This is determined from observations of wind speed, cloud cover, and time of day based on a standard table developed from the work of Pasquill, Gifford, and Turner. The more unstable the conditions, the greater the degree of mixing, and the shorter the range of effectiveness.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="METEOROLOGIC-FEATURE_Whirlwind">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#METEOROLOGIC-FEATURE_Whirlwind">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#METEOROLOGIC-FEATURE"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1858,7 +1857,7 @@
     <rdfs:label xml:lang="en">whirlwind</rdfs:label>
     <rdfs:comment xml:lang="en">A small revolving storm of wind in which the air whirls around a core of low pressure. Whirlwinds sometimes extend upwards to a height of many hundreds of metres and cause dust whirls formed over a desert.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:ID="ROAD_Limited_all-weather">
+  <owl:Class rdf:about="jc3iedm_OBJECT-ITEMExtended.owl#ROAD_Limited_all-weather">
     <rdfs:subClassOf rdf:resource="jc3iedm_OBJECT-ITEM.owl#ROAD"/>
     <rdfs:subClassOf>
       <owl:Restriction>
