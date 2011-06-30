@@ -4,392 +4,395 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATIONExtended.owl#" > 
-  <rdf:Description rdf:nodeID="A0">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-    <owl:hasValue xml:lang="en">ORBIT-AREA</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#polyarc-area-arc-radius-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#LOCATION">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A specification of position and geometry with respect to a specified horizontal frame of reference and a vertical distance measured from a specified datum.</rdfs:comment>
-    <rdfs:label xml:lang="en">location</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#ORBIT-AREA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">orbit area</rdfs:label>
-    <rdfs:comment xml:lang="en">A SURFACE that is (a) an open rectangular section defined by its width and the distance between the two specific POINTs, (b) is closed by two half-circles with radii equal to half the width, and is positioned left, centred, or right with respect to the line formed by the defining points.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A0"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-    <owl:hasValue xml:lang="en">POINT</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#fan-area-sector-size-angle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#SURFACE-VOLUME">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">surface volume</rdfs:label>
-    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME that has its horizontal boundaries defined by a specific SURFACE.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A2"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <owl:hasValue xml:lang="en">Undefined</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#CONE-VOLUME">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">cone volume</rdfs:label>
-    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME whose boundary is swept by a line that has a fixed point and another that moves along the path defined by the border of a specific SURFACE.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A4"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#POLYGON-AREA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">polygon area</rdfs:label>
-    <rdfs:comment xml:lang="en">A SURFACE that has its boundaries defined by a specific LINE.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A5"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#geographic-point-latitude-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#SURFACE">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A two-dimensional LOCATION.</rdfs:comment>
-    <rdfs:label xml:lang="en">surface</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A6"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
-    <owl:hasValue xml:lang="en">CONE-VOLUME</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#relative-point-y-coordinate-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-    <owl:hasValue xml:lang="en">TRACK-AREA</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#relative-point-y-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#polyarc-area-begin-bearing-angle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#corridor-area-width-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CORRIDOR-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#sphere-volume-radius-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#SPHERE-VOLUME"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#cartesian-point-z-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#relative-point-x-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#geometric-volume-category-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#ELLIPSE">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATIONExtended.owl#">
+  <owl:Ontology rdf:about="#">
+    <owl:imports rdf:resource="jc3iedm_LOCATION.owl#"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#ELLIPSE">
     <rdfs:label xml:lang="en">ellipse</rdfs:label>
     <rdfs:comment xml:lang="en">A planar SURFACE in the form of an ellipse.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A8"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#TRACK-AREA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">ELLIPSE</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#TRACK-AREA">
     <rdfs:label xml:lang="en">track area</rdfs:label>
     <rdfs:comment xml:lang="en">A SURFACE that is a rectangular section with its length defined by the two specific POINTs and its width by the sum of the widths to the left and right of the connecting line between the two points.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A7"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#relative-point-z-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#RELATIVE-POINT">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">relative point</rdfs:label>
-    <rdfs:comment xml:lang="en">A POINT whose position is specified with respect to a specific RELATIVE-COORDINATE-SYSTEM.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A9"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#absolute-point-category-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ABSOLUTE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#geographic-point-latitude-coordinate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A10">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
-    <owl:hasValue xml:lang="en">SPHERE-VOLUME</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-    <owl:hasValue xml:lang="en">SURFACE</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A11">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
-    <owl:hasValue xml:lang="en">GEOGRAPHIC-POINT</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#orbit-area-width-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ORBIT-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_LOCATION.owl#"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-    <owl:hasValue xml:lang="en">ELLIPSE</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#orbit-area-alignment-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ORBIT-AREA"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#ABSOLUTE-POINT">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">absolute point</rdfs:label>
-    <rdfs:comment xml:lang="en">A POINT in a geodetic system.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A12"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#point-category-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#fan-area-maximum-range-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#track-area-left-width-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#TRACK-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#cartesian-point-y-coordinate-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">TRACK-AREA</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT">
     <rdfs:label xml:lang="en">geographic point</rdfs:label>
     <rdfs:comment xml:lang="en">An ABSOLUTE-POINT that has its position specified with respect to the surface of the World Geodetic System 1984 (WGS 84) ellipsoid.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A11"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#ABSOLUTE-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A13">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-    <owl:hasValue xml:lang="en">POLYARC-AREA</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#SPHERE-VOLUME">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">sphere volume</rdfs:label>
-    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME that has its horizontal boundaries defined by the spherical surface determined by the radius and the specified POINT.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A10"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#POINT">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A zero dimensional LOCATION.</rdfs:comment>
-    <rdfs:label xml:lang="en">point</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A1"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#surface-category-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
-    <owl:hasValue xml:lang="en">SURFACE-VOLUME</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A12">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#point-category-code"/>
-    <owl:hasValue xml:lang="en">ABSOLUTE-POINT</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#cartesian-point-y-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#fan-area-orientation-angle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A14">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-    <owl:hasValue xml:lang="en">GEOMETRIC-VOLUME</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#relative-point-x-coordinate-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#geographic-point-longitude-coordinate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#LOCATION_Undefined">
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
-    <rdfs:subClassOf rdf:nodeID="A3"/>
-    <rdfs:label xml:lang="en">undefined</rdfs:label>
-    <rdfs:comment xml:lang="en">A LOCATION that refers to a position that cannot be determined.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#location-category-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-    <owl:hasValue xml:lang="en">POLYGON-AREA</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-coordinate-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#FAN-AREA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">GEOGRAPHIC-POINT</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#ABSOLUTE-POINT"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#RELATIVE-POINT">
+    <rdfs:label xml:lang="en">relative point</rdfs:label>
+    <rdfs:comment xml:lang="en">A POINT whose position is specified with respect to a specific RELATIVE-COORDINATE-SYSTEM.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#point-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">RELATIVE-POINT</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#POINT"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#FAN-AREA">
     <rdfs:label xml:lang="en">fan area</rdfs:label>
     <rdfs:comment xml:lang="en">A SURFACE that is in the form of a truncated ring sector, lying between and being bounded by the rays emanating from the centre-point of the ring and having a specified central angle.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A15"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#relative-point-z-coordinate-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A16">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-    <owl:hasValue xml:lang="en">LINE</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#polyarc-area-end-bearing-angle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A15">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-    <owl:hasValue xml:lang="en">FAN-AREA</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#cartesian-point-z-coordinate-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">FAN-AREA</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#SPHERE-VOLUME">
+    <rdfs:label xml:lang="en">sphere volume</rdfs:label>
+    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME that has its horizontal boundaries defined by the spherical surface determined by the radius and the specified POINT.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">SPHERE-VOLUME</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#LOCATION">
+    <rdfs:comment xml:lang="en">A specification of position and geometry with respect to a specified horizontal frame of reference and a vertical distance measured from a specified datum.</rdfs:comment>
+    <rdfs:label xml:lang="en">location</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#ORBIT-AREA">
+    <rdfs:label xml:lang="en">orbit area</rdfs:label>
+    <rdfs:comment xml:lang="en">A SURFACE that is (a) an open rectangular section defined by its width and the distance between the two specific POINTs, (b) is closed by two half-circles with radii equal to half the width, and is positioned left, centred, or right with respect to the line formed by the defining points.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">ORBIT-AREA</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#POINT">
+    <rdfs:comment xml:lang="en">A zero dimensional LOCATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">point</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#location-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">POINT</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE-VOLUME">
+    <rdfs:label xml:lang="en">surface volume</rdfs:label>
+    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME that has its horizontal boundaries defined by a specific SURFACE.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">SURFACE-VOLUME</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME">
     <rdfs:comment xml:lang="en">A specific LOCATION that is a three-dimensional bounded space.</rdfs:comment>
     <rdfs:label xml:lang="en">geometric volume</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A14"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#location-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">GEOMETRIC-VOLUME</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#track-area-right-width-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#TRACK-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#CARTESIAN-POINT">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#CONE-VOLUME">
+    <rdfs:label xml:lang="en">cone volume</rdfs:label>
+    <rdfs:comment xml:lang="en">A GEOMETRIC-VOLUME whose boundary is swept by a line that has a fixed point and another that moves along the path defined by the border of a specific SURFACE.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">CONE-VOLUME</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#CARTESIAN-POINT">
     <rdfs:label xml:lang="en">cartesian point</rdfs:label>
     <rdfs:comment xml:lang="en">An ABSOLUTE-POINT that has its position specified in a three-dimensional Earth-centred Cartesian system.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A17"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#ABSOLUTE-POINT"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#point-category-code"/>
-    <owl:hasValue xml:lang="en">RELATIVE-POINT</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A18">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-    <owl:hasValue xml:lang="en">CORRIDOR-AREA</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A17">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
-    <owl:hasValue xml:lang="en">CARTESIAN-POINT</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#LINE">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">CARTESIAN-POINT</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#ABSOLUTE-POINT"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#POLYGON-AREA">
+    <rdfs:label xml:lang="en">polygon area</rdfs:label>
+    <rdfs:comment xml:lang="en">A SURFACE that has its boundaries defined by a specific LINE.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">POLYGON-AREA</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LOCATION_Undefined">
+    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">UND</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#location-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">undefined</rdfs:label>
+    <rdfs:comment xml:lang="en">A LOCATION that refers to a position that cannot be determined.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#SURFACE">
+    <rdfs:comment xml:lang="en">A two-dimensional LOCATION.</rdfs:comment>
+    <rdfs:label xml:lang="en">surface</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#location-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">SURFACE</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#LINE">
     <rdfs:comment xml:lang="en">A LOCATION that is defined by two or more POINTs connected by one-dimensional line segments in an ordered sequence.</rdfs:comment>
     <rdfs:label xml:lang="en">line</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A16"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#location-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">LINE</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#geographic-point-longitude-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#fan-area-minimum-range-dimension">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-precision-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#POLYARC-AREA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#ABSOLUTE-POINT">
+    <rdfs:label xml:lang="en">absolute point</rdfs:label>
+    <rdfs:comment xml:lang="en">A POINT in a geodetic system.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#point-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">ABSOLUTE-POINT</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#POLYARC-AREA">
     <rdfs:label xml:lang="en">polyarc area</rdfs:label>
     <rdfs:comment xml:lang="en">A SURFACE that consists of a circular arc and a polygonal segment defined by a specific LINE whose beginning coincides with the initial point of the arc and whose end coincides with the last point of the arc.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A13"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">POLYARC-AREA</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_LOCATION.owl#CORRIDOR-AREA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_LOCATION.owl#CORRIDOR-AREA">
     <rdfs:label xml:lang="en">corridor area</rdfs:label>
     <rdfs:comment xml:lang="en">A SURFACE that is defined by its width and a sequence of points.</rdfs:comment>
-    <rdfs:subClassOf rdf:nodeID="A18"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">CORRIDOR-AREA</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-  </rdf:Description>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#track-area-left-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#TRACK-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-y-coordinate-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#polyarc-area-arc-radius-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#fan-area-sector-size-angle">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-y-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geographic-point-latitude-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#fan-area-orientation-angle">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-x-coordinate-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geographic-point-longitude-coordinate">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#location-category-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-y-coordinate-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-y-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-coordinate-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#corridor-area-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CORRIDOR-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#polyarc-area-begin-bearing-angle">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#sphere-volume-radius-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#SPHERE-VOLUME"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-z-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geometric-volume-category-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-x-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-z-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#absolute-point-category-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ABSOLUTE-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geographic-point-latitude-coordinate">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-z-coordinate-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#polyarc-area-end-bearing-angle">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-z-coordinate-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#track-area-right-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#TRACK-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#orbit-area-width-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ORBIT-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#fan-area-minimum-range-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geographic-point-longitude-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#orbit-area-alignment-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ORBIT-AREA"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-precision-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#point-category-code">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#fan-area-maximum-range-dimension">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
+  </owl:DatatypeProperty>
 </rdf:RDF>

@@ -4,29 +4,25 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_VERTICAL-DISTANCE.owl#" > 
-  <rdf:Description rdf:about="#vertical-distance-datum-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#VERTICAL-DISTANCE">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_VERTICAL-DISTANCE.owl#">
+  <owl:Ontology rdf:about="#"/>
+  <owl:Class rdf:ID="VERTICAL-DISTANCE">
     <rdfs:label xml:lang="en">vertical distance</rdfs:label>
     <rdfs:comment xml:lang="en">A specification of the altitude or height of a point or a level as measured with respect to a specified reference datum in the direction normal to the plane that is tangent to the WGS84 ellipsoid of revolution.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#vertical-distance-precision-code">
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="vertical-distance-datum-text">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#vertical-distance-dimension">
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="vertical-distance-dimension">
     <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#vertical-distance-reference-code">
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="vertical-distance-precision-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="vertical-distance-reference-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
+  </owl:DatatypeProperty>
 </rdf:RDF>

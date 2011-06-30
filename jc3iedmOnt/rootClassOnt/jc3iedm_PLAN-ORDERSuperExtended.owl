@@ -4,154 +4,170 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERSuperExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERSuperExtended.owl#" > 
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERSuperExtended.owl#">
+  <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_PLAN-ORDER.owl#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDER.owl#plan-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A0">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
-    <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN">
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
-    <rdfs:subClassOf rdf:nodeID="A1"/>
-    <rdfs:label xml:lang="en">plan</rdfs:label>
-    <rdfs:comment xml:lang="en">A proposal for putting into effect a command decision or project; it represents the preparation for future or anticipated operations.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="A0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER">
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
-    <rdfs:subClassOf rdf:nodeID="A2"/>
-    <rdfs:label xml:lang="en">order</rdfs:label>
-    <rdfs:comment xml:lang="en">A communication that conveys instructions from a superior to a subordinate.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="A3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#PLAN_Not_otherwise_specified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
-    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A4"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Operations_order">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">An order that includes only such detail as is necessary for commanders of subordinate formations/units to issue their own orders and to ensure coordination.</rdfs:comment>
-    <rdfs:label xml:lang="en">operations order</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A5"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-category-code"/>
-    <owl:hasValue xml:lang="en">Not otherwise specified</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#PLAN_Operations_plan">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A mechanism which a command uses to plan/prepare to conduct military operations.</rdfs:comment>
-    <rdfs:label xml:lang="en">operations plan</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A6"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Fragmentary_order_to_existing_operation_order">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">An abbreviated form of an Operations order.</rdfs:comment>
-    <rdfs:label xml:lang="en">fragmentary order to existing operation order</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A7"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
-    <owl:hasValue xml:lang="en">Warning order</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
-    <owl:hasValue xml:lang="en">Fragmentary order to existing operation order</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
-    <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Warning_order">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">An order to assist units and their staffs initiate the preparations for and the execution of their new mission by giving them the maximum warning and essential details of impending operations and information of time available.</rdfs:comment>
-    <rdfs:label xml:lang="en">warning order</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A8"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
-    <owl:hasValue xml:lang="en">Not otherwise specified</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Administrative/Logistics_order">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">An order to give the commander’s plan for administrative and service support of operations.</rdfs:comment>
-    <rdfs:label xml:lang="en">administrative/logistics order</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A10"/>
-    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER">
+  </owl:Ontology>
+  <owl:Ontology rdf:about="#">
+    <owl:imports rdf:resource="jc3iedm_PLAN-ORDERExtended.owl#"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER">
     <rdfs:label xml:lang="en">plan order</rdfs:label>
     <rdfs:comment xml:lang="en">A planned or ordered scheme worked out beforehand for the accomplishment of an operational objective.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
-    <owl:hasValue xml:lang="en">Operations order</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_PLAN-ORDERExtended.owl#"/>
-    <owl:imports rdf:resource="jc3iedm_PLAN-ORDER.owl#"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-category-code"/>
-    <owl:hasValue xml:lang="en">Operations plan</owl:hasValue>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Not_otherwise_specified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Administrative/Logistics_order">
+    <rdfs:comment xml:lang="en">An order to give the commander’s plan for administrative and service support of operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">administrative/logistics order</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">Administrative/Logistics order</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Operations_order">
+    <rdfs:comment xml:lang="en">An order that includes only such detail as is necessary for commanders of subordinate formations/units to issue their own orders and to ensure coordination.</rdfs:comment>
+    <rdfs:label xml:lang="en">operations order</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">Operations order</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#PLAN_Operations_plan">
+    <rdfs:comment xml:lang="en">A mechanism which a command uses to plan/prepare to conduct military operations.</rdfs:comment>
+    <rdfs:label xml:lang="en">operations plan</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">Operations plan</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Not_otherwise_specified">
     <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
     <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="A9"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">Not otherwise specified</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Fragmentary_order_to_existing_operation_order">
+    <rdfs:comment xml:lang="en">An abbreviated form of an Operations order.</rdfs:comment>
+    <rdfs:label xml:lang="en">fragmentary order to existing operation order</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">Fragmentary order to existing operation order</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#PLAN">
+    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">plan</rdfs:label>
+    <rdfs:comment xml:lang="en">A proposal for putting into effect a command decision or project; it represents the preparation for future or anticipated operations.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDER.owl#ORDER">
+    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">order</rdfs:label>
+    <rdfs:comment xml:lang="en">A communication that conveys instructions from a superior to a subordinate.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#PLAN_Not_otherwise_specified">
+    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
+    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">Not otherwise specified</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN"/>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Warning_order">
+    <rdfs:comment xml:lang="en">An order to assist units and their staffs initiate the preparations for and the execution of their new mission by giving them the maximum warning and essential details of impending operations and information of time available.</rdfs:comment>
+    <rdfs:label xml:lang="en">warning order</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
+        </owl:onProperty>
+        <owl:hasValue xml:lang="en">Warning order</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code">
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A10">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#order-category-code"/>
-    <owl:hasValue xml:lang="en">Administrative/Logistics order</owl:hasValue>
-  </rdf:Description>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
+  </owl:DatatypeProperty>
 </rdf:RDF>

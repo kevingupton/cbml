@@ -4,29 +4,24 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_SECURITY-CLASSIFICATIONExtended.owl#" > 
-  <rdf:Description rdf:about="#">
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_SECURITY-CLASSIFICATIONExtended.owl#">
+  <owl:Ontology rdf:about="#">
     <owl:imports rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-caveat-text">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-level-code">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION">
     <rdfs:comment xml:lang="en">The security classification applicable to an information resource within the domain of classified security information.</rdfs:comment>
     <rdfs:label xml:lang="en">security classification</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-policy-text">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-caveat-text">
     <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-level-code">
+    <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-policy-text">
+    <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
 </rdf:RDF>

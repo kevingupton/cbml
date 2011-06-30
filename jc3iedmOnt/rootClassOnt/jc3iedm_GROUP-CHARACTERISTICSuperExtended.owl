@@ -4,49 +4,41 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_GROUP-CHARACTERISTICSuperExtended.owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_GROUP-CHARACTERISTICSuperExtended.owl#" > 
-  <rdf:Description rdf:about="#">
-    <owl:imports rdf:resource="jc3iedm_GROUP-CHARACTERISTICExtended.owl#"/>
+  xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_GROUP-CHARACTERISTICSuperExtended.owl#">
+  <owl:Ontology rdf:about="#">
+    <owl:imports>
+      <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTICExtended.owl#"/>
+    </owl:imports>
+  </owl:Ontology>
+  <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTICExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-gender-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTICExtended.owl#">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <owl:imports rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC">
+  </owl:Ontology>
+  <owl:Class rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC">
     <rdfs:label xml:lang="en">group characteristic</rdfs:label>
     <rdfs:comment xml:lang="en">A reference to a set of characteristics that may be used for identifying a distinct collection of objects.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-code">
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-gender-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-triage-code">
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-age-group-code">
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-triage-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-transmissibility-indicator-code">
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-language-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-language-code">
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-transmissibility-indicator-code">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-age-group-code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
+  </owl:DatatypeProperty>
 </rdf:RDF>
