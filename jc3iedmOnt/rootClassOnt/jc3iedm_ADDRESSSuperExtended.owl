@@ -11,7 +11,9 @@
     </owl:imports>
   </owl:Ontology>
   <owl:Ontology rdf:about="jc3iedm_ADDRESSExtended.owl#">
-    <owl:imports rdf:resource="jc3iedm_ADDRESS.owl#"/>
+    <owl:imports>
+      <owl:Ontology rdf:about="jc3iedm_ADDRESS.owl#"/>
+    </owl:imports>
   </owl:Ontology>
   <owl:Class rdf:about="jc3iedm_ADDRESSExtended.owl#PHYSICAL-ADDRESS_Return_address">
     <rdfs:comment xml:lang="en">An address to which a specific piece of mail should be returned to if not delivered.</rdfs:comment>
@@ -21,7 +23,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#physical-address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">Return address</owl:hasValue>
+        <owl:hasValue xml:lang="en">RTADDR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -36,26 +38,11 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#physical-address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">Physical address</owl:hasValue>
+        <owl:hasValue xml:lang="en">PHADDR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ADDRESSExtended.owl#ADDRESS_Not_otherwise_specified">
-    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
-    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#address-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">Not otherwise specified</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="jc3iedm_ADDRESS.owl#ADDRESS"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ADDRESS.owl#ADDRESS">
@@ -70,7 +57,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#physical-address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">Postmark</owl:hasValue>
+        <owl:hasValue xml:lang="en">PSTMRK</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -85,7 +72,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#physical-address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">Mailing address</owl:hasValue>
+        <owl:hasValue xml:lang="en">MLADDR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -109,22 +96,9 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">PHYSICAL-ADDRESS</owl:hasValue>
+        <owl:hasValue xml:lang="en">PHYADR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ADDRESSExtended.owl#PHYSICAL-ADDRESS_Not_otherwise_specified">
-    <rdfs:comment xml:lang="en">The appropriate value is not in the set of specified values.</rdfs:comment>
-    <rdfs:label xml:lang="en">not otherwise specified</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#physical-address-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">Not otherwise specified</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#PHYSICAL-ADDRESS"/>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ADDRESS.owl#ELECTRONIC-ADDRESS">
     <rdfs:subClassOf rdf:resource="jc3iedm_ADDRESS.owl#ADDRESS"/>
@@ -143,7 +117,7 @@
         <owl:onProperty>
           <owl:DatatypeProperty rdf:about="jc3iedm_ADDRESS.owl#address-category-code"/>
         </owl:onProperty>
-        <owl:hasValue xml:lang="en">ELECTRONIC-ADDRESS</owl:hasValue>
+        <owl:hasValue xml:lang="en">ELCADR</owl:hasValue>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
