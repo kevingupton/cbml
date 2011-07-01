@@ -5,6 +5,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
+
   <owl:Ontology rdf:about="jc3iedm_LOCATIONExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_LOCATION.owl#"/>
   </owl:Ontology>
@@ -326,11 +327,11 @@
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-coordinate-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#polyarc-area-begin-bearing-angle">
-    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
-  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#corridor-area-width-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CORRIDOR-AREA"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#polyarc-area-begin-bearing-angle">
+    <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POLYARC-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#sphere-volume-radius-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#SPHERE-VOLUME"/>
