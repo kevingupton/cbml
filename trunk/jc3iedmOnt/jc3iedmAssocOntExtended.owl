@@ -11,6 +11,7 @@
     <!ENTITY jc3iedm_OBJECT-TYPEExtended "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#" >
     <!ENTITY jc3iedm_OBJECT-TYPESuperExtended "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#" >
     <!ENTITY ACTION-EVENT_Fix "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fix," >
+    <!ENTITY Chemical "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Chemical," >
     <!ENTITY Data_link "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Data_link," >
     <!ENTITY ACTION-EVENT_Bombing "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Bombing," >
     <!ENTITY ACTION-EVENT_Accident "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident," >
@@ -19,9 +20,13 @@
     <!ENTITY Anti-tank_gun "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_gun," >
     <!ENTITY VEHICLE-TYPE_Truck "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#VEHICLE-TYPE_Truck," >
     <!ENTITY FACILITY-TYPE_Road "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#FACILITY-TYPE_Road," >
+    <!ENTITY Public_affairs "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs," >
     <!ENTITY AMMUNITION-TYPE_Mine "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#AMMUNITION-TYPE_Mine," >
+    <!ENTITY _smoke "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Chemical,_smoke/" >
     <!ENTITY FACILITY-TYPE_Railway "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#FACILITY-TYPE_Railway," >
     <!ENTITY SURFACE-VESSEL-TYPE_Tug "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#SURFACE-VESSEL-TYPE_Tug," >
+    <!ENTITY Target_acquisition "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition," >
+    <!ENTITY Electronic_warfare "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Electronic_warfare," >
     <!ENTITY VEHICLE-TYPE_Battle_tank "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#VEHICLE-TYPE_Battle_tank," >
     <!ENTITY OPERATIONAL-CAPABILITY_NBC "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_CAPABILITYExtended.owl#OPERATIONAL-CAPABILITY_NBC," >
     <!ENTITY FACILITY-TYPE_Supply_dump "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#FACILITY-TYPE_Supply_dump," >
@@ -154,7 +159,9 @@
      xmlns:_hospital="&jc3iedm_OBJECT-TYPEExtended;FACILITY-TYPE_Medical_facility,_hospital,"
      xmlns:_research="&jc3iedm_OBJECT-TYPEExtended;FACILITY-TYPE_Service,_research,"
      xmlns:AMMUNITION-TYPE_Mine="&jc3iedm_OBJECT-TYPEExtended;AMMUNITION-TYPE_Mine,"
+     xmlns:Public_affairs="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,"
      xmlns:Data_link="&jc3iedm_OBJECT-TYPESuperExtended;Data_link,"
+     xmlns:Chemical="&jc3iedm_OBJECT-TYPESuperExtended;Chemical,"
      xmlns:_ocean-going="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Tug,_ocean-going,"
      xmlns:ACTION-EVENT_Bombing="&jc3iedm_ACTIONExtended;ACTION-EVENT_Bombing,"
      xmlns:_scientific_research="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Merchant_ship,_scientific_research/"
@@ -163,7 +170,9 @@
      xmlns:SURFACE-VESSEL-TYPE_Frigate="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Frigate,"
      xmlns:_engineering_equipment_production="&jc3iedm_OBJECT-TYPEExtended;FACILITY-TYPE_Military_materiel_facility,_engineering_equipment_production,"
      xmlns:SURFACE-VESSEL-TYPE_Merchant_ship="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Merchant_ship,"
+     xmlns:_smoke="&jc3iedm_OBJECT-TYPESuperExtended;Chemical,_smoke/"
      xmlns:SURFACE-VESSEL-TYPE_Patrol_combatant="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Patrol_combatant,"
+     xmlns:Electronic_warfare="&jc3iedm_OBJECT-TYPESuperExtended;Electronic_warfare,"
      xmlns:SURFACE-VESSEL-TYPE_Aviation_tender="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Aviation_tender,"
      xmlns:FACILITY-TYPE_Maintenance_facility="&jc3iedm_OBJECT-TYPEExtended;FACILITY-TYPE_Maintenance_facility,"
      xmlns:_transport="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Ammunition_ship,_transport,"
@@ -187,8 +196,8 @@
      xmlns:sweeper="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Minehunter/sweeper,"
      xmlns:SURFACE-VESSEL-TYPE_Barge="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Barge,"
      xmlns:_heavy2="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Repair_ship,_heavy,"
-     xmlns:sweeper_w="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Minehunter/sweeper_w/"
      xmlns:_small_or_corvette="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Frigate,_small_or_corvette,"
+     xmlns:sweeper_w="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Minehunter/sweeper_w/"
      xmlns:ACTION-EVENT_Deception="&jc3iedm_ACTIONExtended;ACTION-EVENT_Deception,"
      xmlns:_guided_missile="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Cruiser,_guided_missile,"
      xmlns:missile="&jc3iedm_OBJECT-TYPEExtended;AMMUNITION-TYPE_Rocket/missile,"
@@ -218,6 +227,7 @@
      xmlns:SURFACE-VESSEL-TYPE_Cable="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Cable/"
      xmlns:VEHICLE-TYPE_Command_post="&jc3iedm_OBJECT-TYPEExtended;VEHICLE-TYPE_Command_post,"
      xmlns:SURFACE-VESSEL-TYPE_Landing_ship="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Landing_ship,"
+     xmlns:Target_acquisition="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,"
      xmlns:SUBSURFACE-VESSEL-TYPE_Deep_submergence_vehicle="&jc3iedm_OBJECT-TYPEExtended;SUBSURFACE-VESSEL-TYPE_Deep_submergence_vehicle,"
      xmlns:SURFACE-VESSEL-TYPE_Minesweeper="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Minesweeper,"
      xmlns:FACILITY-TYPE_Loading_platform="&jc3iedm_OBJECT-TYPEExtended;FACILITY-TYPE_Loading_platform,"
@@ -225,8 +235,8 @@
      xmlns:_river="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Patrol_boat,_river/"
      xmlns:_fleet="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Minesweeper,_fleet,"
      xmlns:_dry_cargo="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Merchant_ship,_dry_cargo,"
-     xmlns:SURFACE-VESSEL-TYPE_Patrol_ship="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Patrol_ship,"
      xmlns:SURFACE-VESSEL-TYPE_Seaplane="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Seaplane,"
+     xmlns:SURFACE-VESSEL-TYPE_Patrol_ship="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Patrol_ship,"
      xmlns:SURFACE-VESSEL-TYPE_Training_craft="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Training_craft,"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:SURFACE-VESSEL-TYPE_Attack_boat="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Attack_boat,"
@@ -260,8 +270,8 @@
      xmlns:FACILITY-TYPE_Military_base="&jc3iedm_OBJECT-TYPEExtended;FACILITY-TYPE_Military_base/"
      xmlns:SURFACE-VESSEL-TYPE_Tug="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Tug,"
      xmlns:_small="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Torpedo_boat,_small,"
-     xmlns:_chemical="&jc3iedm_CAPABILITYExtended;OPERATIONAL-CAPABILITY_NBC,_chemical,"
      xmlns:netlaying_ship="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Cable/netlaying_ship,"
+     xmlns:_chemical="&jc3iedm_CAPABILITYExtended;OPERATIONAL-CAPABILITY_NBC,_chemical,"
      xmlns:_re-supply="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Lighter,_amphibious,_re-supply,"
      xmlns:VEHICLE-TYPE_Battle_tank="&jc3iedm_OBJECT-TYPEExtended;VEHICLE-TYPE_Battle_tank,"
      xmlns:VEHICLE-TYPE_Truck="&jc3iedm_OBJECT-TYPEExtended;VEHICLE-TYPE_Truck,"
@@ -2710,6 +2720,30 @@
     
 
 
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Chemical,_reconnaissance -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Chemical,_reconnaissance">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Chemical"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Chemical,_smoke -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Chemical,_smoke">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Chemical"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Chemical,_smoke/decontamination -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Chemical,_smoke/decontamination">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Chemical"/>
+    </rdf:Description>
+    
+
+
     <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Data_link,_optical -->
 
     <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Data_link,_optical">
@@ -2722,6 +2756,70 @@
 
     <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Data_link,_radio">
         <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Data_link"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Electronic_warfare,_direction_finding -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Electronic_warfare,_direction_finding">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Electronic_warfare"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Electronic_warfare,_intercept -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Electronic_warfare,_intercept">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Electronic_warfare"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Electronic_warfare,_jamming -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Electronic_warfare,_jamming">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Electronic_warfare"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs,_broadcast -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_broadcast">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs,_joint_information -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_joint_information">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_optical -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_optical">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_radar -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_radar">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_sound -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_sound">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
     </rdf:Description>
 </rdf:RDF>
 
