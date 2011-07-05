@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY jc3iedm_OBJECT-TYPE "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPE.owl#" >
+    <!ENTITY jc3iedm_OBJECT-TYPEExtended "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#" >
+    <!ENTITY jc3iedm_OBJECT-TYPESuperExtended "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#" >
+    <!ENTITY Rifle "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Rifle," >
+    <!ENTITY Howitzer "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Howitzer," >
+    <!ENTITY Machine_gun "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Machine_gun," >
+    <!ENTITY Public_affairs "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs," >
+    <!ENTITY Direct_fire_gun "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Direct_fire_gun," >
+    <!ENTITY Air-defence_gun "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_gun," >
+    <!ENTITY Grenade_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Grenade_launcher," >
+    <!ENTITY Target_acquisition "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition," >
+    <!ENTITY Single_rocket_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Single_rocket_launcher," >
+    <!ENTITY Multiple_rocket_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Multiple_rocket_launcher," >
+    <!ENTITY Anti-tank_rocket_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_rocket_launcher," >
+    <!ENTITY Anti-tank_grenade_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_grenade_launcher," >
+    <!ENTITY Anti-tank_missile_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_missile_launcher," >
+    <!ENTITY Air-defence_missile_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_missile_launcher," >
+    <!ENTITY SURFACE-VESSEL-TYPE_Amphibious_ship "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#SURFACE-VESSEL-TYPE_Amphibious_ship," >
+    <!ENTITY Surface-to-surface_missile_launcher "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Surface-to-surface_missile_launcher," >
+    <!ENTITY ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle," >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOntSuperExt.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOntSuperExt.owl"
+     xmlns:jc3iedm_OBJECT-TYPE="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPE.owl#"
+     xmlns:Single_rocket_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,"
+     xmlns:Public_affairs="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Howitzer="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,"
+     xmlns:Anti-tank_rocket_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,"
+     xmlns:Multiple_rocket_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,"
+     xmlns:Surface-to-surface_missile_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:Air-defence_missile_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,"
+     xmlns:ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle="&jc3iedm_OBJECT-TYPEExtended;ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle,"
+     xmlns:Direct_fire_gun="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun,"
+     xmlns:Machine_gun="&jc3iedm_OBJECT-TYPESuperExtended;Machine_gun,"
+     xmlns:SURFACE-VESSEL-TYPE_Amphibious_ship="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Amphibious_ship,"
+     xmlns:jc3iedm_OBJECT-TYPEExtended="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#"
+     xmlns:jc3iedm_OBJECT-TYPESuperExtended="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#"
+     xmlns:Anti-tank_grenade_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,"
+     xmlns:Air-defence_gun="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Anti-tank_missile_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Rifle="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,"
+     xmlns:Target_acquisition="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,"
+     xmlns:Grenade_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOntSuperExt.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssocOntExtended.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#CBRN-EQUIPMENT-TYPE_CBRN_decontamination_vehicle -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;CBRN-EQUIPMENT-TYPE_CBRN_decontamination_vehicle">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;VEHICLE-TYPE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#CBRN-EQUIPMENT-TYPE_CBRN_reconnaissance_vehicle -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;CBRN-EQUIPMENT-TYPE_CBRN_reconnaissance_vehicle">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;VEHICLE-TYPE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle,_armoured -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle,_armoured">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;VEHICLE-TYPE_Armoured"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#ENGINEERING-EQUIPMENT-TYPE_Bridge_vehicle -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;ENGINEERING-EQUIPMENT-TYPE_Bridge_vehicle">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;VEHICLE-TYPE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#ENGINEERING-EQUIPMENT-TYPE_Construction_vehicle -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;ENGINEERING-EQUIPMENT-TYPE_Construction_vehicle">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;VEHICLE-TYPE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#MISCELLANEOUS-EQUIPMENT-TYPE_Tank -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;MISCELLANEOUS-EQUIPMENT-TYPE_Tank">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;VEHICLE-TYPE_Armoured"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#SURFACE-VESSEL-TYPE_Amphibious_cargo_ship -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Amphibious_cargo_ship">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Amphibious_ship,_general"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#SURFACE-VESSEL-TYPE_Amphibious_fire_support_ship -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Amphibious_fire_support_ship">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Amphibious_ship,_general"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#SURFACE-VESSEL-TYPE_Seaplane -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Seaplane">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;AIRCRAFT-TYPE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#SURFACE-VESSEL-TYPE_Stores_ship,_small_(naval) -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Stores_ship,_small_(naval)">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Stores_ship_(naval)"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPEExtended.owl#WEAPON-TYPE_Tank -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Tank">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;VEHICLE-TYPE_Armoured"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_gun,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_gun,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_gun,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_missile_launcher,_long_range -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_long_range">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_missile_launcher,_medium_range -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_medium_range">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_missile_launcher,_short_range -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_short_range">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Air-defence_missile_launcher,_theatre -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_theatre">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_grenade_launcher,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_grenade_launcher,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_grenade_launcher,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_missile_launcher,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_missile_launcher,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_missile_launcher,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_rocket_launcher,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_rocket_launcher,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Anti-tank_rocket_launcher,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Direct_fire_gun,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Direct_fire_gun,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Direct_fire_gun,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Grenade_launcher,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Grenade_launcher,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Grenade_launcher,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Howitzer,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Howitzer,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Howitzer,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Machine_gun,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Machine_gun,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Machine_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Machine_gun,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Machine_gun,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Machine_gun"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Multiple_rocket_launcher,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Multiple_rocket_launcher,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Multiple_rocket_launcher,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs,_broadcast -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_broadcast">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs,_joint_information -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_joint_information">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Rifle,_assault -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,_assault">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Rifle"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Rifle,_carbine -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,_carbine">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Rifle"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Single_rocket_launcher,_heavy -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,_heavy">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Single_rocket_launcher,_light -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,_light">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Single_rocket_launcher,_medium -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,_medium">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Surface-to-surface_missile_launcher,_long_range -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,_long_range">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Surface-to-surface_missile_launcher,_medium_range -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,_medium_range">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Surface-to-surface_missile_launcher,_short_range -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,_short_range">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_optical -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_optical">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_radar -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_radar">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_sound -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_sound">
+        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+
