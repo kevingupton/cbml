@@ -31,14 +31,14 @@
 
 <rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOntSuperExt.owl#"
      xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOntSuperExt.owl"
-     xmlns:jc3iedm_OBJECT-TYPE="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPE.owl#"
      xmlns:Single_rocket_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,"
+     xmlns:jc3iedm_OBJECT-TYPE="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPE.owl#"
      xmlns:Public_affairs="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:Howitzer="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,"
      xmlns:Anti-tank_rocket_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,"
-     xmlns:Multiple_rocket_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,"
      xmlns:Surface-to-surface_missile_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,"
+     xmlns:Multiple_rocket_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:Air-defence_missile_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,"
      xmlns:ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle="&jc3iedm_OBJECT-TYPEExtended;ENGINEERING-EQUIPMENT-TYPE_Bridge_launching_vehicle,"
@@ -49,11 +49,11 @@
      xmlns:jc3iedm_OBJECT-TYPESuperExtended="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#"
      xmlns:Anti-tank_grenade_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,"
      xmlns:Air-defence_gun="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:Anti-tank_missile_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:Rifle="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,"
      xmlns:Target_acquisition="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,"
+     xmlns:Rifle="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,"
      xmlns:Grenade_launcher="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,">
     <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOntSuperExt.owl">
         <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssocOntExtended.owl"/>
@@ -400,22 +400,6 @@
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs,_broadcast -->
-
-    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_broadcast">
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Public_affairs,_joint_information -->
-
-    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_joint_information">
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs"/>
-    </rdf:Description>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Rifle,_assault -->
 
     <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,_assault">
@@ -476,30 +460,6 @@
 
     <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,_short_range">
         <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_optical -->
-
-    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_optical">
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_radar -->
-
-    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_radar">
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPESuperExtended.owl#Target_acquisition,_sound -->
-
-    <rdf:Description rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_sound">
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition"/>
     </rdf:Description>
 </rdf:RDF>
 
