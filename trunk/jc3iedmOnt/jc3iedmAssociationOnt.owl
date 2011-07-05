@@ -39431,7 +39431,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Amphibious_cargo_ship">
         <rdfs:label xml:lang="en">amphibious cargo ship</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;SURFACE-VESSEL-TYPE"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;surface-vessel-type-category-code"/>
@@ -39447,7 +39446,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Amphibious_fire_support_ship">
         <rdfs:label xml:lang="en">amphibious fire support ship</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;SURFACE-VESSEL-TYPE"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;surface-vessel-type-category-code"/>
@@ -44919,7 +44917,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPEExtended;SURFACE-VESSEL-TYPE_Stores_ship,_small_(naval)">
         <rdfs:label xml:lang="en">stores ship, small (naval)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPE;SURFACE-VESSEL-TYPE"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;surface-vessel-type-category-code"/>
@@ -47958,7 +47955,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,_heavy">
         <rdfs:label xml:lang="en">Air-defence gun, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Air-defence"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -47974,7 +47970,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,_light">
         <rdfs:label xml:lang="en">Air-defence gun, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Air-defence"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -47990,7 +47985,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_gun,_medium">
         <rdfs:label xml:lang="en">Air-defence gun, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Air-defence"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48023,8 +48017,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_long_range">
         <rdfs:label xml:lang="en">Air-defence missile launcher, long range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Air-defence"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48040,8 +48032,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_medium_range">
         <rdfs:label xml:lang="en">Air-defence missile launcher, medium range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Air-defence"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48057,8 +48047,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_short_range">
         <rdfs:label xml:lang="en">Air-defence missile launcher, short range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Air-defence"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48074,8 +48062,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Air-defence_missile_launcher,_theatre">
         <rdfs:label xml:lang="en">Air-defence missile launcher, theatre</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Air-defence"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48632,7 +48618,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,_heavy">
         <rdfs:label xml:lang="en">Anti-tank grenade launcher, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48648,7 +48633,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,_light">
         <rdfs:label xml:lang="en">Anti-tank grenade launcher, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48664,7 +48648,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_grenade_launcher,_medium">
         <rdfs:label xml:lang="en">Anti-tank grenade launcher, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48758,8 +48741,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,_heavy">
         <rdfs:label xml:lang="en">Anti-tank missile launcher, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48775,8 +48756,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,_light">
         <rdfs:label xml:lang="en">Anti-tank missile launcher, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48792,8 +48771,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_missile_launcher,_medium">
         <rdfs:label xml:lang="en">Anti-tank missile launcher, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48825,7 +48802,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,_heavy">
         <rdfs:label xml:lang="en">Anti-tank rocket launcher, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48841,7 +48817,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,_light">
         <rdfs:label xml:lang="en">Anti-tank rocket launcher, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -48857,7 +48832,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Anti-tank_rocket_launcher,_medium">
         <rdfs:label xml:lang="en">Anti-tank rocket launcher, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -50969,7 +50943,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun,_heavy">
         <rdfs:label xml:lang="en">Direct fire gun, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -50985,7 +50958,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun,_light">
         <rdfs:label xml:lang="en">Direct fire gun, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -51001,7 +50973,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Direct_fire_gun,_medium">
         <rdfs:label xml:lang="en">Direct fire gun, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -51820,8 +51791,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,_heavy">
         <rdfs:label xml:lang="en">Grenade launcher, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -51837,8 +51806,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,_light">
         <rdfs:label xml:lang="en">Grenade launcher, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -51854,8 +51821,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Grenade_launcher,_medium">
         <rdfs:label xml:lang="en">Grenade launcher, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Anti-tank"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -52324,8 +52289,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,_heavy">
         <rdfs:label xml:lang="en">Howitzer, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Cannon"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Field_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -52341,8 +52304,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,_light">
         <rdfs:label xml:lang="en">Howitzer, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Cannon"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Field_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -52358,8 +52319,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Howitzer,_medium">
         <rdfs:label xml:lang="en">Howitzer, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Cannon"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Field_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -53468,7 +53427,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Machine_gun,_heavy">
         <rdfs:label xml:lang="en">Machine gun, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -53484,7 +53442,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Machine_gun,_light">
         <rdfs:label xml:lang="en">Machine gun, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -54873,7 +54830,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,_heavy">
         <rdfs:label xml:lang="en">Multiple rocket launcher, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Rocket_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -54889,7 +54845,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,_light">
         <rdfs:label xml:lang="en">Multiple rocket launcher, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Rocket_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -54905,7 +54860,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Multiple_rocket_launcher,_medium">
         <rdfs:label xml:lang="en">Multiple rocket launcher, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Rocket_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -55818,7 +55772,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_broadcast">
         <rdfs:label xml:lang="en">Public affairs, broadcast</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Administrative"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;unit-type-arm-specialisation-code"/>
@@ -55834,7 +55787,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Public_affairs,_joint_information">
         <rdfs:label xml:lang="en">Public affairs, joint information</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Administrative"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;unit-type-arm-specialisation-code"/>
@@ -56791,7 +56743,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,_assault">
         <rdfs:label xml:lang="en">Rifle, assault</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -56807,7 +56758,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Rifle,_carbine">
         <rdfs:label xml:lang="en">Rifle, carbine</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Small_arms"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -57473,7 +57423,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,_heavy">
         <rdfs:label xml:lang="en">Single rocket launcher, heavy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Rocket_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -57489,7 +57438,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,_light">
         <rdfs:label xml:lang="en">Single rocket launcher, light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Rocket_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -57505,7 +57453,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Single_rocket_launcher,_medium">
         <rdfs:label xml:lang="en">Single rocket launcher, medium</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Rocket_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -58248,7 +58195,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,_long_range">
         <rdfs:label xml:lang="en">Surface-to-surface missile launcher, long range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -58264,7 +58210,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,_medium_range">
         <rdfs:label xml:lang="en">Surface-to-surface missile launcher, medium range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -58280,7 +58225,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Surface-to-surface_missile_launcher,_short_range">
         <rdfs:label xml:lang="en">Surface-to-surface missile launcher, short range</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;WEAPON-TYPE_Missile_system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;weapon-type-subcategory-code"/>
@@ -59015,8 +58959,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_optical">
         <rdfs:label xml:lang="en">Target acquisition, optical</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Artillery"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Field_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;unit-type-arm-specialisation-code"/>
@@ -59032,8 +58974,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_radar">
         <rdfs:label xml:lang="en">Target acquisition, radar</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Artillery"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Field_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;unit-type-arm-specialisation-code"/>
@@ -59049,8 +58989,6 @@
 
     <owl:Class rdf:about="&jc3iedm_OBJECT-TYPESuperExtended;Target_acquisition,_sound">
         <rdfs:label xml:lang="en">Target acquisition, sound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Artillery"/>
-        <rdfs:subClassOf rdf:resource="&jc3iedm_OBJECT-TYPEExtended;UNIT-TYPE_Field_artillery"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&jc3iedm_OBJECT-TYPE;unit-type-arm-specialisation-code"/>
