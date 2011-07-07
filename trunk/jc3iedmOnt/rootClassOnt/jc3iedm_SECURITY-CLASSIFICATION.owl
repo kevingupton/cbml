@@ -11,15 +11,12 @@
     <rdfs:comment xml:lang="en">The security classification applicable to an information resource within the domain of classified security information.</rdfs:comment>
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-caveat-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-policy-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
   </owl:DatatypeProperty>
 </rdf:RDF>

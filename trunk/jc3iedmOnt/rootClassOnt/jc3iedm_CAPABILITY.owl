@@ -145,127 +145,99 @@
     <rdfs:comment xml:lang="en">A CAPABILITY, required for planning, of those MATERIELs or MATERIEL-TYPEs that are deemed as having the ability to generate, receive or affect signals in the electromagnetic spectrum.</rdfs:comment>
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#fire-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#maintenance-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#engineering-capability-facility-width-dimension">
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#fire-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#mobility-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#storage-capability-condition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#STORAGE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#engineering-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#surveillance-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#SURVEILLANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#mobility-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#support-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#storage-capability-cargo-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#STORAGE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#maintenance-capability-station-count">
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#storage-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#STORAGE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#fire-capability-weapon-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#FIRE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-day-night-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#engineering-capability-facility-length-dimension">
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#transmission-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#TRANSMISSION-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#maintenance-capability-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#MAINTENANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#engineering-capability-facility-height-dimension">
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#mobility-capability-terrain-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#MOBILITY-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#handling-capability-action-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#HANDLING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#transmission-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#TRANSMISSION-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#support-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#SUPPORT-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#capability-unit-of-measure-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#surveillance-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#SURVEILLANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#handling-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#HANDLING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#operational-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#OPERATIONAL-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#engineering-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_CAPABILITY.owl#handling-capability-cargo-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_CAPABILITY.owl#HANDLING-CAPABILITY"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
