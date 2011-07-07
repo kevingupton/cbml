@@ -5,24 +5,7 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_VERTICAL-DISTANCEExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
-
   <owl:Ontology rdf:about="jc3iedm_VERTICAL-DISTANCEExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#"/>
   </owl:Ontology>
-  <owl:Class rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE">
-    <rdfs:comment xml:lang="en">A specification of the altitude or height of a point or a level as measured with respect to a specified reference datum in the direction normal to the plane that is tangent to the WGS84 ellipsoid of revolution.</rdfs:comment>
-    <rdfs:label xml:lang="en">vertical distance</rdfs:label>
-  </owl:Class>
-  <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-datum-text">
-    <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-dimension">
-    <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-precision-code">
-    <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-reference-code">
-    <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
-  </owl:DatatypeProperty>
 </rdf:RDF>
