@@ -16,14 +16,11 @@
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-caveat-text">
     <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-level-code">
     <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_SECURITY-CLASSIFICATION.owl#security-classification-policy-text">
     <rdfs:domain rdf:resource="jc3iedm_SECURITY-CLASSIFICATION.owl#SECURITY-CLASSIFICATION"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
