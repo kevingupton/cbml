@@ -3450,7 +3450,9 @@
     <rdfs:range rdf:resource="#PLAN-STATUS"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="TRACK-AREA_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="#POINT_is-ending-point-for_(TRACK-AREA)"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#POINT_is-beginning-point-for_(TRACK-AREA)"/>
+    </owl:inverseOf>
     <rdfs:domain rdf:resource="#TRACK-AREA"/>
     <rdfs:range rdf:resource="#POINT"/>
   </owl:ObjectProperty>
@@ -3979,7 +3981,7 @@
     <rdfs:range rdf:resource="#ACTION-EFFECT"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="ORBIT-AREA_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="#POINT_is-second-point-for_(ORBIT-AREA)"/>
+    <owl:inverseOf rdf:resource="#POINT_is-first-point-for_(ORBIT-AREA)"/>
     <rdfs:domain rdf:resource="#ORBIT-AREA"/>
     <rdfs:range rdf:resource="#POINT"/>
   </owl:ObjectProperty>
@@ -4205,30 +4207,24 @@
     <rdfs:domain rdf:resource="#POLYGON-AREA"/>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:ID="object-item-alias-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ALIAS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-originator-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-type-arm-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-reference-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-file-size-quantity">
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="route-mobility-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-crane-offloading-lift-quantity">
@@ -4238,7 +4234,6 @@
     <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-street-additional-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="jetty-maximum-draught-dimension">
@@ -4248,23 +4243,18 @@
     <rdfs:domain rdf:resource="#ANCHORAGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="fire-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FIRE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-means-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-frequency-band-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-postbox-identifier-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#location-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="engineering-capability-facility-height-dimension">
@@ -4283,41 +4273,33 @@
     <rdfs:domain rdf:resource="#ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-event-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-tidal-mean-neap-range-dimension">
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-point-longitude-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="weapon-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WEAPON-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="wind-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WIND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="instrument-landing-system-bearing-angle">
     <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-capability-norm-mission-primacy-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE-CAPABILITY-NORM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-aircraft-employment-crew-composition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-AIRCRAFT-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="attribute-primary-key-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="target-engagement-authority-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#TARGET"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="instrument-landing-system-beam-width-dimension">
@@ -4330,100 +4312,78 @@
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-visual-navigational-aid-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-vehicle-handling-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-pilotage-requirement-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-expected-level-mcm-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-minimum-duration">
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-lot-identification-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="foreign-key-attribute-rolename-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FOREIGN-KEY-ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="capability-day-night-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-type-priority-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-aircraft-employment-ingress-direction-angle">
     <rdfs:domain rdf:resource="#ACTION-AIRCRAFT-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="consumable-materiel-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-formal-abbreviated-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-object-item-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-OBJECT-ITEM-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="solid-surface-status-surface-firmness-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SOLID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="polyarc-area-end-bearing-angle">
     <rdfs:domain rdf:resource="#POLYARC-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-meaning-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-type-imagery-product-image-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-TYPE-IMAGERY-PRODUCT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="target-personnel-protection-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#TARGET-PERSONNEL-PROTECTION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-overt-covert-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-header-content-nickname-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-association-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-ASSOCIATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-header-content-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cbrn-event-alarm-result-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-plan-order-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-PLAN-ORDER-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-night-limit-net-explosive-quantity">
@@ -4436,62 +4396,51 @@
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-CASUALTY-ESTIMATE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="civilian-post-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CIVILIAN-POST-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-header-content-datetime">
     <rdfs:domain rdf:resource="#PLAN-ORDER-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-pavement-evaluation-method-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RUNWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="solid-surface-status-demolition-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SOLID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-timing-hour-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-radiation-dose-quantity">
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#reporting-data-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-imo-compliant-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="nuclear-weapon-event-flash-to-bang-duration">
     <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="approach-direction-angle-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#APPROACH-DIRECTION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-type-imagery-product-image-scale-count">
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-TYPE-IMAGERY-PRODUCT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-gender-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="route-segment-mobility-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="air-route-segment-civil-military-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-depth-dimension">
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-item-marking-method-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-ITEM-MARKING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-track-count">
@@ -4507,106 +4456,84 @@
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-demolition-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-materiel-type-association-reportable-type-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-MATERIEL-TYPE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-biological-event-release-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cbrn-event-materiel-container-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-materiel-type-persistency-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CHEMICAL-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-military-civilian-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-terrain-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-frequency-purpose-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="mobility-capability-terrain-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MOBILITY-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-timing-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="electronic-address-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ELECTRONIC-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-version-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-event-volume-concentration-quantity">
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="route-mode-of-transportation-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-maximum-speed-rate">
     <rdfs:domain rdf:resource="#RAILWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="engineering-equipment-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ENGINEERING-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-overhead-limits-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-functional-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-FUNCTIONAL-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-acoustic-merit-index-quantity">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="maintenance-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MAINTENANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-shelter-quality-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="dry-dock-depth-dimension">
     <rdfs:domain rdf:resource="#DRY-DOCK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="request-immediate-interest-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REQUEST"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-association-status-effective-datetime">
     <rdfs:domain rdf:resource="#CONTEXT-ASSOCIATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-operational-status-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="track-area-right-width-dimension">
@@ -4619,7 +4546,6 @@
     <rdfs:domain rdf:resource="#POLYARC-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-capability-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OPERATIONAL-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-point-latitude-coordinate">
@@ -4629,7 +4555,6 @@
     <rdfs:domain rdf:resource="#ACTION-EVENT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="order-status-execution-state-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORDER-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="holding-required-on-hand-quantity">
@@ -4642,7 +4567,6 @@
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-SUSTAINED-THREAT-MEASURE-OF-EFFECTIVENESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="affiliation-functional-group-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AFFILIATION-FUNCTIONAL-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-aircraft-employment-egress-direction-angle">
@@ -4652,29 +4576,24 @@
     <rdfs:domain rdf:resource="#APRON"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="relationship-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-magnetic-degaussing-code-number-quantity">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-refuelling-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-type-rank-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="support-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SUPPORT-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-pending-surgery-count">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-PENDING-SURGERY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-prevailing-wind-direction-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-association-datetime">
@@ -4684,22 +4603,18 @@
     <rdfs:domain rdf:resource="#OPERATIONAL-INFORMATION-GROUP-PLAN-ORDER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="target-description-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#TARGET"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-action-association-intent-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-ACTION-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-maximum-vessel-width-dimension">
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-status-feint-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-status-planning-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="maintenance-capability-station-count">
@@ -4709,37 +4624,30 @@
     <rdfs:domain rdf:resource="#CONVOY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-status-development-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-detail-focus-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="group-organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GROUP-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-prismatic-coefficient-ratio">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="solid-surface-status-vegetation-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SOLID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-type-general-mobility-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="group-characteristic-malady-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-approach-direction-association-landing-distance-dimension">
     <rdfs:domain rdf:resource="#RUNWAY-APPROACH-DIRECTION-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-fire-mode-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-biological-event-surface-deposition-quantity">
@@ -4749,80 +4657,66 @@
     <rdfs:domain rdf:resource="#CONVOY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-decoy-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-lighterage-availability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-height-dimension">
     <rdfs:domain rdf:resource="#FACILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-lighting-presence-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RUNWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-maximum-vessel-count">
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-persistence-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="military-obstacle-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-OBSTACLE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cardinality-relationship-child-minimum-cardinality-count">
     <rdfs:domain rdf:resource="#CARDINALITY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-address-authorisation-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-status-completion-ratio">
     <rdfs:domain rdf:resource="#ACTION-TASK-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="subsurface-vessel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SUBSURFACE-VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="anchorage-bottom-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ANCHORAGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-service-iff-mode-code-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-SERVICE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-weight-bearing-capacity-quantity">
     <rdfs:domain rdf:resource="#RUNWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-status-approval-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-maximum-vessel-draught-dimension">
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-item-marking-recognition-signal-colour-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-ITEM-MARKING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-reference-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-evacuation-count">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-INTERVAL-EVACUATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-relative-speed-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-establishment-operational-mode-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE-ESTABLISHMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-wing-span-dimension">
@@ -4832,54 +4726,42 @@
     <rdfs:domain rdf:resource="#OBJECT-TYPE-ESTABLISHMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-language-skill-general-proficiency-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-LANGUAGE-SKILL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-source-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-structure-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STRUCTURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-language-skill-speaking-proficiency-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-LANGUAGE-SKILL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="order-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORDER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="dry-dock-marine-railway-size-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#DRY-DOCK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="equipment-type-maximum-length-dimension">
     <rdfs:domain rdf:resource="#EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="anchorage-moorings-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ANCHORAGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="ammunition-type-calibre-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AMMUNITION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-maritime-employment-lead-vessel-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-MARITIME-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-status-progress-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="air-route-segment-required-navigation-performance-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-operational-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="light-down-datetime">
@@ -4889,94 +4771,75 @@
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-resource-employment-trajectory-fire-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RESOURCE-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-effect-description-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EFFECT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-turnaround-time-duration">
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-title-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-command-and-control-role-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-postal-box-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-set-number-count">
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-design-range-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-tanker-facilities-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="affiliation-ethnic-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AFFILIATION-ETHNIC-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-comment-long-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-COMMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-effect-type-count">
     <rdfs:domain rdf:resource="#ACTION-EFFECT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="control-feature-type-echelon-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTROL-FEATURE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-night-limit-net-explosive-quantity">
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-tug-availability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-convoy-marshalling-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#nuclear-event-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NUCLEAR-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="convoy-night-speed-rate">
     <rdfs:domain rdf:resource="#CONVOY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-comment-long-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-COMMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="military-post-type-rank-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-POST-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-track-gauge-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RAILWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-land-stopping-power-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-bottom-penetration-quantity">
@@ -4986,19 +4849,15 @@
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-releasability-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-weather-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="anchorage-prevailing-wind-direction-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ANCHORAGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-mine-requisition-case-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-estimated-duration">
@@ -5008,34 +4867,27 @@
     <rdfs:domain rdf:resource="#CONVOY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-reference-association-part-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="icing-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ICING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-status-datetime">
     <rdfs:domain rdf:resource="#PLAN-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-type-stock-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-first-port-of-entry-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="rule-of-engagement-description-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RULE-OF-ENGAGEMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vertical-distance-datum-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="nuclear-weapon-event-crater-width-dimension">
@@ -5051,60 +4903,48 @@
     <rdfs:domain rdf:resource="#OBJECT-ITEM-COMMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="category-relationship-definition-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CATEGORY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-bearing-angle">
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-effect-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EFFECT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-day-limit-net-explosive-quantity">
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-city-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-electronic-warfare-employment-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-ELECTRONIC-WARFARE-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-function-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-header-content-time-zone-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-maximum-capacity-rate">
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-reliability-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="transmission-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#TRANSMISSION-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-enemy-activity-condition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="holding-required-calculation-method-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HOLDING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-type-description-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-operational-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-day-limit-net-explosive-quantity">
@@ -5120,83 +4960,66 @@
     <rdfs:domain rdf:resource="#LIGHT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="consumable-materiel-type-issuing-unit-of-measure-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-distribution-acknowledgement-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-DISTRIBUTION-ACKNOWLEDGEMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="jetty-night-limit-net-explosive-quantity">
     <rdfs:domain rdf:resource="#JETTY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="liquid-surface-status-wave-direction-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#LIQUID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-propulsion-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="private-sector-organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PRIVATE-SECTOR-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="attribute-foreign-key-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="foreign-key-attribute-role-definition-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FOREIGN-KEY-ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#materiel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="security-classification-caveat-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SECURITY-CLASSIFICATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-passenger-handling-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-pilotage-availability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-container-maximum-handling-length-dimension">
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="group-characteristic-triage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-horizontal-accuracy-dimension">
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="biological-materiel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BIOLOGICAL-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-casualty-bed-occupancy-count">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-reserve-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="group-characteristic-language-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="convoy-packet-size-count">
@@ -5206,45 +5029,36 @@
     <rdfs:domain rdf:resource="#SUBSURFACE-VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-pavement-maximum-tyre-pressure-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RUNWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-demolition-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-detection-probability-ratio">
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-solid-surface-composition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-bottom-hardness-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-vegetation-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="solid-surface-status-vegetation-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SOLID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-location-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="private-sector-organisation-type-main-activity-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PRIVATE-SECTOR-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-frequency-band-upper-frequency-quantity">
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="ammunition-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AMMUNITION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-plan-order-association-status-datetime">
@@ -5254,7 +5068,6 @@
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-professing-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-inclination-accuracy-angle">
@@ -5270,15 +5083,12 @@
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-materiel-type-primary-radiation-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RADIOACTIVE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-biological-event-spill-size-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#military-organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="alternate-key-number-quantity">
@@ -5288,11 +5098,9 @@
     <rdfs:domain rdf:resource="#ATMOSPHERE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-type-use-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-status-day-operations-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-casualty-type-admitted-count">
@@ -5302,23 +5110,18 @@
     <rdfs:domain rdf:resource="#ACTION-TEMPORAL-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-identification-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-list-authorisation-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-LIST-AUTHORISATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="capability-reference-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CAPABILITY-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="non-key-attribute-optionality-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NON-KEY-ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-refuelling-availability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="mine-status-mine-buried-ratio">
@@ -5328,41 +5131,33 @@
     <rdfs:domain rdf:resource="#CORRIDOR-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-instrument-landing-system-presence-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="miscellaneous-equipment-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MISCELLANEOUS-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-verification-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="line-point-sequence-ordinal">
     <rdfs:domain rdf:resource="#LINE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-mine-presence-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-type-reportable-item-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-casualty-group-completed-surgery-count">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-establishment-environment-condition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE-ESTABLISHMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-action-task-rule-of-engagement-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-ACTION-TASK-RULE-OF-ENGAGEMENT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-status-radiation-dose-quantity">
@@ -5375,11 +5170,9 @@
     <rdfs:domain rdf:resource="#CARDINALITY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="handling-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HANDLING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-detail-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-materiel-type-association-reportable-type-datetime">
@@ -5389,54 +5182,42 @@
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-reporting-data-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-REPORTING-DATA-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-event-dose-rate-trend-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="military-obstacle-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-OBSTACLE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railcar-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RAILCAR-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-materiel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CHEMICAL-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-training-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="biological-materiel-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BIOLOGICAL-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-assessment-limiting-factors-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-ASSESSMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-street-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-group-account-detail-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-GROUP-ACCOUNT-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-component-structure-datetime">
     <rdfs:domain rdf:resource="#PLAN-ORDER-COMPONENT-STRUCTURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-capability-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OPERATIONAL-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="air-route-segment-maintained-speed-rate">
@@ -5446,96 +5227,75 @@
     <rdfs:domain rdf:resource="#ANCHORAGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-context-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-CONTEXT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-reference-association-specific-part-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="affiliation-geopolitical-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AFFILIATION-GEOPOLITICAL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-service-status-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-SERVICE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="maritime-equipment-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MARITIME-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-signal-system-efficiency-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RAILWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="surface-vessel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SURFACE-VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#feature-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#object-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airspace-control-means-transit-instruction-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRSPACE-CONTROL-MEANS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-establishment-object-type-detail-major-part-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE-ESTABLISHMENT-OBJECT-TYPE-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-type-issuing-length-dimension">
     <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-type-supply-class-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="light-moon-phase-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#LIGHT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-distribution-acknowledgement-datetime">
     <rdfs:domain rdf:resource="#PLAN-ORDER-DISTRIBUTION-ACKNOWLEDGEMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="mine-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-height-above-the-waterline-dimension">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="icing-severity-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ICING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-design-role-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-pending-surgery-triage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-PENDING-SURGERY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cloud-cover-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CLOUD-COVER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-alias-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ALIAS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-status-booby-trap-presence-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="road-traffic-density-count">
@@ -5545,77 +5305,60 @@
     <rdfs:domain rdf:resource="#AIRFIELD-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-gross-trailing-load-quantity">
     <rdfs:domain rdf:resource="#RAILWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cardinality-relationship-child-cardinality-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARDINALITY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-capacity-protocol-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-CAPACITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-seeding-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-association-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-entrance-restrictions-ice-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-priority-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-operational-status-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-primary-construction-material-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-materiel-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CHEMICAL-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-component-structure-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-COMPONENT-STRUCTURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-header-content-serial-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="affiliation-functional-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AFFILIATION-FUNCTIONAL-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-hull-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="equipment-type-fuel-capacity-quantity">
     <rdfs:domain rdf:resource="#EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-service-cryptographic-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-SERVICE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="route-direction-usage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="basin-depth-dimension">
@@ -5625,52 +5368,42 @@
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cardinality-relationship-inverse-verb-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARDINALITY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-information-group-organisation-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="visibility-direction-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VISIBILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="consumable-materiel-type-issuing-count">
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-primary-location-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-start-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-mines-detected-quantity">
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-estimated-time-of-arrival-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="engineering-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-location-bearing-angle">
     <rdfs:domain rdf:resource="#ACTION-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="base-attribute-data-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BASE-ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-establishment-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE-ESTABLISHMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="polyarc-area-begin-bearing-angle">
@@ -5680,158 +5413,126 @@
     <rdfs:domain rdf:resource="#ACTION-RESOURCE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-blood-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="approach-direction-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#APPROACH-DIRECTION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-status-maximum-wbac-park-count">
     <rdfs:domain rdf:resource="#AIRFIELD-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-occupation-program-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#absolute-point-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ABSOLUTE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="attribute-column-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-point-latitude-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="mobility-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MOBILITY-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="road-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROAD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-creation-datetime">
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-main-purpose-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-type-command-and-control-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#organisation-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-group-account-detail-count">
     <rdfs:domain rdf:resource="#OBJECT-ITEM-GROUP-ACCOUNT-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="atmosphere-temperature-gradient-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATMOSPHERE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="holding-on-hand-quantity">
     <rdfs:domain rdf:resource="#HOLDING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-frequency-modulation-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-temporal-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TEMPORAL-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-colour-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="relative-point-y-coordinate-dimension">
     <rdfs:domain rdf:resource="#RELATIVE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-event-status-feint-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EVENT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-mean-tidal-current-rate">
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-comment-short-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-COMMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-medium-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-point-longitude-coordinate">
     <rdfs:domain rdf:resource="#GEOGRAPHIC-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="slipway-location-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SLIPWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vehicle-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VEHICLE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="relative-point-z-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RELATIVE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="wind-nuclear-yield-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WIND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-maximum-deadweight-tonnage-quantity">
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#meteorologic-feature-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-detail-priority-ordinal">
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="jetty-rail-served-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#JETTY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cbrn-event-confirmation-test-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-list-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-LIST"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="subsurface-vessel-type-torpedo-loading-gear-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SUBSURFACE-VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-resource-criticality-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RESOURCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-objective-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-approach-channel-depth-dimension">
@@ -5841,30 +5542,24 @@
     <rdfs:domain rdf:resource="#SLIPWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-casualty-bed-occupancy-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-CASUALTY-BED-OCCUPANCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-type-command-function-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-biological-event-release-height-dimension">
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="attribute-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-format-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-mine-zone-risk-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="electronic-equipment-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ELECTRONIC-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-type-issuing-width-dimension">
@@ -5877,7 +5572,6 @@
     <rdfs:domain rdf:resource="#AIRFIELD-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#object-item-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="fan-area-orientation-angle">
@@ -5887,7 +5581,6 @@
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-objective-item-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-ITEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-resource-type-apportionment-ratio">
@@ -5897,107 +5590,84 @@
     <rdfs:domain rdf:resource="#REPORTING-DATA-ABSOLUTE-TIMING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="handling-capability-cargo-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HANDLING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-dirty-ballast-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="jetty-rail-capacity-count">
     <rdfs:domain rdf:resource="#JETTY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cbrn-event-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-entrance-restrictions-swell-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-reserve-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-element-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-ELEMENT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="storage-capability-cargo-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#STORAGE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#control-feature-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTROL-FEATURE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-entrance-restrictions-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-group-account-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-GROUP-ACCOUNT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-refuelling-location-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="government-organisation-type-main-activity-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GOVERNMENT-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="mobility-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MOBILITY-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-biological-event-atmospheric-particle-concentration-quantity">
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-serial-number-identification-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-base-identification-code-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#vessel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-depth-placement-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-signal-system-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RAILWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-header-content-sponsor-type-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="relative-point-y-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RELATIVE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="base-attribute-data-decimals-count">
     <rdfs:domain rdf:resource="#BASE-ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="surveillance-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SURVEILLANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-address-primacy-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="equipment-type-maximum-width-dimension">
     <rdfs:domain rdf:resource="#EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="wind-altitude-layer-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WIND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-event-dose-rate">
@@ -6007,11 +5677,9 @@
     <rdfs:domain rdf:resource="#SURFACE-VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-fresh-water-availability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-fire-fighting-capability-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cartesian-point-y-coordinate-dimension">
@@ -6027,148 +5695,120 @@
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-capacity-bandwidth-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-CAPACITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#cbrn-event-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-task-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-minimum-capacity-rate">
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#context-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="basin-deadweight-tonnage-quantity">
     <rdfs:domain rdf:resource="#BASIN"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="relative-point-x-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RELATIVE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vertical-distance-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-required-capability-quantity">
     <rdfs:domain rdf:resource="#ACTION-REQUIRED-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-tidal-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-architecture-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-channel-count">
     <rdfs:domain rdf:resource="#NETWORK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-aircraft-employment-deplanement-method-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-AIRCRAFT-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="chemical-biological-event-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CHEMICAL-BIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-vertical-accuracy-dimension">
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-comment-short-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-COMMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="equipment-type-unloaded-weight-quantity">
     <rdfs:domain rdf:resource="#EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="relative-coordinate-system-reference-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RELATIVE-COORDINATE-SYSTEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="nuclear-weapon-event-crater-presence-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railcar-type-gauge-dimension">
     <rdfs:domain rdf:resource="#RAILCAR-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-casualty-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#feature-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FEATURE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-electronic-source-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cartesian-point-x-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARTESIAN-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="instrument-landing-system-threshold-crossing-height-dimension">
     <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-information-group-plan-order-content-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OPERATIONAL-INFORMATION-GROUP-PLAN-ORDER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-airport-near-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="security-classification-policy-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SECURITY-CLASSIFICATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OPERATIONAL-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-identification-document-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-IDENTIFICATION-DOCUMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-postal-code-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="fan-area-maximum-range-dimension">
     <rdfs:domain rdf:resource="#FAN-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-objective-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="atmosphere-pressure-quantity">
     <rdfs:domain rdf:resource="#ATMOSPHERE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-resource-employment-method-of-control-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RESOURCE-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-pending-casualty-evacuation-sitting-count">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-PENDING-CASUALTY-EVACUATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="holding-transfer-reason-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HOLDING-TRANSFER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-status-emission-control-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="engineering-capability-facility-length-dimension">
@@ -6178,71 +5818,57 @@
     <rdfs:domain rdf:resource="#FACILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-status-amend-timing-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="control-feature-status-cbrn-threat-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTROL-FEATURE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-event-surface-deposition-quantity">
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-physical-size-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-establishment-object-type-detail-count">
     <rdfs:domain rdf:resource="#OBJECT-TYPE-ESTABLISHMENT-OBJECT-TYPE-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="road-weather-condition-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROAD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-mines-detected-count">
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="storage-capability-condition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#STORAGE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-lash-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-service-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-SERVICE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-location-accuracy-dimension">
     <rdfs:domain rdf:resource="#ACTION-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-land-pattern-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="air-route-segment-international-route-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="maritime-equipment-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MARITIME-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="biological-materiel-type-persistency-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BIOLOGICAL-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="request-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REQUEST"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="atmosphere-pressure-system-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATMOSPHERE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="bridge-usage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BRIDGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="convoy-halt-duration">
@@ -6252,47 +5878,36 @@
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-SUSTAINED-THREAT-MEASURE-OF-EFFECTIVENESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#equipment-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="miscellaneous-equipment-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MISCELLANEOUS-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-item-primacy-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-ITEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-status-physical-status-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-land-depth-placement-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-item-marking-panel-shape-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-ITEM-MARKING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-marking-colour-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-hostility-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-HOSTILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-language-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-bottom-natural-camouflage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-commitment-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-action-association-effective-datetime">
@@ -6302,60 +5917,48 @@
     <rdfs:domain rdf:resource="#CARTESIAN-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="consumable-materiel-type-issuing-element-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-timing-day-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="liquid-body-status-thermal-layer-depth-quantity">
     <rdfs:domain rdf:resource="#LIQUID-BODY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="transmission-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#TRANSMISSION-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-casualty-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="holding-required-total-quantity">
     <rdfs:domain rdf:resource="#HOLDING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-evacuation-destination-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-INTERVAL-EVACUATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-major-vessel-class-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="wind-effective-downwind-direction-angle">
     <rdfs:domain rdf:resource="#WIND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-rail-availability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="meteorologic-feature-source-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="visibility-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VISIBILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-reconnaissance-employment-type-of-coverage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RECONNAISSANCE-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="track-area-left-width-dimension">
@@ -6365,49 +5968,39 @@
     <rdfs:domain rdf:resource="#PERSON"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-type-arm-specialisation-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-address-transmit-receive-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-capability-mission-primacy-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-reference-association-start-datetime">
     <rdfs:domain rdf:resource="#ORGANISATION-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="precipitation-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PRECIPITATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="weapon-type-calibre-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WEAPON-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="handling-capability-action-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HANDLING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-surface-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-pavement-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RUNWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-transmittal-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-mines-count">
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-operational-status-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="jetty-day-limit-net-explosive-quantity">
@@ -6417,11 +6010,9 @@
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-meteorological-impact-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-fire-fighting-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="wind-direction-angle">
@@ -6431,123 +6022,99 @@
     <rdfs:domain rdf:resource="#SUBSURFACE-VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="control-feature-status-investigation-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTROL-FEATURE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-mine-detailed-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-geographic-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-component-content-reference-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-COMPONENT-CONTENT-REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#address-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-information-group-organisation-association-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OPERATIONAL-INFORMATION-GROUP-ORGANISATION-ASSOCIATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-list-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-LIST-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-resource-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RESOURCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-content-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="liquid-body-status-tidal-stream-rate">
     <rdfs:domain rdf:resource="#LIQUID-BODY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-detail-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="meteorologic-feature-interpretation-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-takeoff-and-landing-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cartesian-point-y-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARTESIAN-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="consumable-materiel-type-perishability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="convoy-day-vehicle-gap-dimension">
     <rdfs:domain rdf:resource="#CONVOY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#candidate-target-detail-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="uxo-status-exposure-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UXO-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-night-limit-net-explosive-quantity">
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-action-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-ACTION-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-distribution-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-DISTRIBUTION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-context-status-effective-datetime">
     <rdfs:domain rdf:resource="#ACTION-CONTEXT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="rule-of-engagement-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RULE-OF-ENGAGEMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="meteorologic-feature-probability-ratio">
     <rdfs:domain rdf:resource="#METEOROLOGIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cbrn-equipment-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CBRN-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-block-distance-dimension">
     <rdfs:domain rdf:resource="#RAILWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-land-function-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-status-maximum-wbac-throughput-count">
     <rdfs:domain rdf:resource="#AIRFIELD-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-association-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ASSOCIATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-casualty-group-death-count">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-INTERVAL-CASUALTY-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-maritime-employment-coordinated-air-sea-procedure-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-MARITIME-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-interval-casualty-type-arrival-count">
@@ -6557,11 +6124,9 @@
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-usage-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-manning-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-life-duration">
@@ -6574,7 +6139,6 @@
     <rdfs:domain rdf:resource="#HOLDING-TRANSFER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="air-route-segment-description-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIR-ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="base-attribute-data-length-count">
@@ -6584,131 +6148,105 @@
     <rdfs:domain rdf:resource="#CLOUD-COVER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="mine-status-air-drop-effect-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-rail-served-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-container-handling-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#consumable-materiel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-effect-item-ratio">
     <rdfs:domain rdf:resource="#ACTION-EFFECT-ITEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-status-evaluation-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#government-organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GOVERNMENT-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-reconnaissance-employment-image-coverage-mode-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RECONNAISSANCE-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-casualty-estimate-given-transit-count">
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-CASUALTY-ESTIMATE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-storage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="fire-capability-weapon-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FIRE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-model-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-status-duty-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="instrument-landing-system-magnetic-variation-angle">
     <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-degaussing-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-maritime-employment-group-vessel-transit-longitudinal-spacing-dimension">
     <rdfs:domain rdf:resource="#ACTION-MARITIME-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="category-relationship-completeness-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CATEGORY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-language-skill-writing-proficiency-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-LANGUAGE-SKILL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-language-skill-reading-proficiency-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-LANGUAGE-SKILL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="jetty-maximum-deadweight-tonnage-quantity">
     <rdfs:domain rdf:resource="#JETTY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="request-answer-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REQUEST-ANSWER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="basin-location-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BASIN"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-draught-dimension">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#affiliation-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AFFILIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="component-header-content-topic-heading-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#COMPONENT-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="group-characteristic-gender-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-event-relative-decay-rate-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-maximum-beam-dimension">
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="control-feature-status-security-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTROL-FEATURE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-crane-offloading-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="relative-point-z-coordinate-dimension">
     <rdfs:domain rdf:resource="#RELATIVE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radiological-event-release-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RADIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-materiel-type-association-reportable-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-MATERIEL-TYPE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-type-size-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-maximum-speed-rate">
@@ -6718,45 +6256,36 @@
     <rdfs:domain rdf:resource="#SPHERE-VOLUME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-event-detail-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EVENT-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="surface-vessel-type-maximum-deck-load-quantity">
     <rdfs:domain rdf:resource="#SURFACE-VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-frequency-channel-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-status-reserve-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-capability-norm-quantity">
     <rdfs:domain rdf:resource="#OBJECT-TYPE-CAPABILITY-NORM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="storage-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#STORAGE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-short-title-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#materiel-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-reconnaissance-employment-image-view-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RECONNAISSANCE-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-status-surface-recirculation-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-list-authorisation-priority-ordinal">
@@ -6766,29 +6295,24 @@
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-header-content-message-reference-number-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER-HEADER-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-detail-authorisation-priority-ordinal">
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL-AUTHORISATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-status-state-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="uxo-status-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UXO-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-object-item-association-status-effective-datetime">
     <rdfs:domain rdf:resource="#CONTEXT-OBJECT-ITEM-ASSOCIATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-entailed-safety-degree-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-buoy-malfunction-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-type-quantity">
@@ -6804,49 +6328,39 @@
     <rdfs:domain rdf:resource="#CONTEXT-ELEMENT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#route-segment-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-turning-area-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cartesian-point-z-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARTESIAN-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-gross-registered-tonnage-quantity">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-context-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-CONTEXT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-validity-period-end-datetime">
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="military-post-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-POST-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="atmosphere-inversion-layer-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATMOSPHERE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cardinality-relationship-identifying-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARDINALITY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-availability-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="mine-status-maritime-mine-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-prevailing-wind-maximum-speed-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cartesian-point-x-coordinate-dimension">
@@ -6856,43 +6370,33 @@
     <rdfs:domain rdf:resource="#RUNWAY-APPROACH-DIRECTION-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-detail-authorisation-approval-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL-AUTHORISATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="orbit-area-alignment-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORBIT-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-operational-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-objective-item-marking-laser-correlation-code-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-ITEM-MARKING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-status-flight-support-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-resource-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RESOURCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-end-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="address-place-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-land-persistence-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-LAND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-seasonal-detail-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-action-task-rule-of-engagement-status-effective-start-datetime">
@@ -6911,44 +6415,36 @@
     <rdfs:domain rdf:resource="#MINEFIELD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-description-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-maritime-employment-vessel-transit-recommended-speed-rate">
     <rdfs:domain rdf:resource="#ACTION-MARITIME-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="group-characteristic-malady-transmissibility-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="engineering-capability-facility-width-dimension">
     <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="bridge-type-design-type-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BRIDGE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-speed-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vertical-distance-reference-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#VERTICAL-DISTANCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-status-mine-presence-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#control-feature-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTROL-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-rail-capacity-count">
     <rdfs:domain rdf:resource="#QUAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="dry-dock-location-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#DRY-DOCK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-frequency-effective-start-datetime">
@@ -6961,57 +6457,45 @@
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-cbrn-dress-state-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-distribution-release-datetime">
     <rdfs:domain rdf:resource="#PLAN-ORDER-DISTRIBUTION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-activity-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-establishment-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE-ESTABLISHMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-biologically-secure-availability-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-inclination-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="fire-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FIRE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="capability-unit-of-measure-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="instrument-landing-system-slaved-variation-angle">
     <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-detail-scheme-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#facility-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-roll-on-roll-off-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#geometric-volume-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOMETRIC-VOLUME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-service-cryptographic-code-short-title-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-SERVICE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="instrument-landing-system-distance-measuring-equipment-distance-dimension">
@@ -7021,19 +6505,15 @@
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-lifecycle-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-aircraft-employment-inflight-report-requirement-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-AIRCRAFT-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-air-traffic-control-presence-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="solid-surface-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SOLID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vertical-distance-dimension">
@@ -7043,66 +6523,54 @@
     <rdfs:domain rdf:resource="#DRY-DOCK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-marking-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-event-dose-quantity">
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="road-quality-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROAD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-swept-depth-quantity">
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="engineering-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ENGINEERING-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="light-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#LIGHT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="bridge-longest-span-length-dimension">
     <rdfs:domain rdf:resource="#BRIDGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="support-capability-descriptor-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SUPPORT-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-approach-direction-association-slope-ratio">
     <rdfs:domain rdf:resource="#RUNWAY-APPROACH-DIRECTION-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cardinality-relationship-parent-cardinality-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARDINALITY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-bearing-precision-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-surgery-backlog-duration">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-service-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-SERVICE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#geographic-feature-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#facility-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="surveillance-capability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SURVEILLANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-plan-order-association-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-PLAN-ORDER-ASSOCIATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-expected-vessel-transit-count">
@@ -7112,124 +6580,96 @@
     <rdfs:domain rdf:resource="#ACTION-OBJECTIVE-ITEM-MARKING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#object-item-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-real-data-exercise-use-only-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reference-approval-datetime">
     <rdfs:domain rdf:resource="#REFERENCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-traction-system-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RAILWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="solid-surface-status-surface-condition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SOLID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-type-qualifier-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="affiliation-religion-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AFFILIATION-RELIGION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="consumable-materiel-type-united-nations-number-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#point-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-object-item-association-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-OBJECT-ITEM-ASSOCIATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="candidate-target-detail-label-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CANDIDATE-TARGET-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-safety-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-aircraft-employment-general-role-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-AIRCRAFT-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#action-resource-employment-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-RESOURCE-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-reinforcement-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="weapon-type-fire-guidance-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WEAPON-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-airframe-design-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-pending-casualty-evacuation-destination-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-PENDING-CASUALTY-EVACUATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-width-dimension">
     <rdfs:domain rdf:resource="#FACILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-accuracy-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-information-group-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OPERATIONAL-INFORMATION-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-subfunction-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-counting-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cbrn-event-materiel-container-total-count">
     <rdfs:domain rdf:resource="#CBRN-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#materiel-status-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="weapon-type-subcategory-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WEAPON-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radioactive-materiel-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RADIOACTIVE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="physical-address-residence-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PHYSICAL-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-readiness-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-address-call-sign-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-ITEM-ADDRESS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="wind-air-stability-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#WIND"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-readiness-duration">
@@ -7242,22 +6682,18 @@
     <rdfs:domain rdf:resource="#CLOUD-COVER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#surface-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SURFACE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="task-formation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#TASK-FORMATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-language-skill-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-LANGUAGE-SKILL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="radiological-event-isotope-concentration-ratio">
     <rdfs:domain rdf:resource="#RADIOLOGICAL-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-reference-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-vessel-maximum-beam-dimension">
@@ -7267,14 +6703,12 @@
     <rdfs:domain rdf:resource="#NETWORK-FREQUENCY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-identification-document-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-IDENTIFICATION-DOCUMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-capability-quantity">
     <rdfs:domain rdf:resource="#OBJECT-ITEM-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#minefield-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="orbit-area-width-dimension">
@@ -7287,26 +6721,21 @@
     <rdfs:domain rdf:resource="#ANCHORAGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="electronic-equipment-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ELECTRONIC-EQUIPMENT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-action-task-rule-of-engagement-status-effective-end-datetime">
     <rdfs:domain rdf:resource="#ORGANISATION-ACTION-TASK-RULE-OF-ENGAGEMENT-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-operational-status-mode-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-task-operational-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-TASK"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-language-skill-listening-proficiency-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-LANGUAGE-SKILL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cardinality-relationship-verb-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CARDINALITY-RELATIONSHIP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="operational-information-group-organisation-association-status-effective-datetime">
@@ -7319,63 +6748,51 @@
     <rdfs:domain rdf:resource="#VISIBILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="group-characteristic-age-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-body-colour-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-relative-timing-offset-duration">
     <rdfs:domain rdf:resource="#REPORTING-DATA-RELATIVE-TIMING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-usage-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="ammunition-type-mine-maritime-firing-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AMMUNITION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="vessel-type-dead-weight-quantity">
     <rdfs:domain rdf:resource="#VESSEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="executive-military-organisation-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#EXECUTIVE-MILITARY-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="facility-status-security-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-absolute-timing-effective-start-datetime">
     <rdfs:domain rdf:resource="#REPORTING-DATA-ABSOLUTE-TIMING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="context-assessment-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTEXT-ASSESSMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-maritime-employment-vessel-transit-instruction-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-MARITIME-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-component-content-datetime">
     <rdfs:domain rdf:resource="#PLAN-ORDER-COMPONENT-CONTENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#plan-order-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PLAN-ORDER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="organisation-status-usage-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ORGANISATION-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="base-attribute-definition-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#BASE-ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="road-shoulder-width-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROAD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-maritime-employment-vessel-transit-longitudinal-spacing-dimension">
@@ -7385,34 +6802,27 @@
     <rdfs:domain rdf:resource="#HOLDING"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-identification-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="harbour-transit-accommodation-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#HARBOUR"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="berth-maximum-capacity-quantity">
     <rdfs:domain rdf:resource="#BERTH"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="reporting-data-credibility-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#REPORTING-DATA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-event-detail-classification-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EVENT-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="geographic-feature-vegetation-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#GEOGRAPHIC-FEATURE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-load-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-status-physical-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="quay-container-maximum-handling-weight-quantity">
@@ -7422,15 +6832,12 @@
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="liquid-surface-status-sea-state-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#LIQUID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#facility-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#FACILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#radioactive-event-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RADIOACTIVE-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="plan-order-component-content-sequence-ordinal">
@@ -7446,38 +6853,30 @@
     <rdfs:domain rdf:resource="#ANCHORAGE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-type-reference-association-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#OBJECT-TYPE-REFERENCE-ASSOCIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="consumable-materiel-type-hazard-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONSUMABLE-MATERIEL-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-event-detail-crime-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EVENT-DETAIL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="alternate-key-uniqueness-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ALTERNATE-KEY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="security-classification-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#SECURITY-CLASSIFICATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="#military-obstacle-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-OBSTACLE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="cloud-cover-average-coverage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CLOUD-COVER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="atmosphere-humidity-ratio">
     <rdfs:domain rdf:resource="#ATMOSPHERE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="person-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#PERSON-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-bearing-accuracy-angle">
@@ -7490,19 +6889,15 @@
     <rdfs:domain rdf:resource="#RUNWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="target-identifier-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#TARGET"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="maintenance-capability-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MAINTENANCE-CAPABILITY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="control-feature-status-usage-status-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#CONTROL-FEATURE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="network-service-cryptographic-plan-short-title-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NETWORK-SERVICE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railway-sleeper-density-dimension">
@@ -7512,60 +6907,48 @@
     <rdfs:domain rdf:resource="#OBJECT-ITEM-LOCATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="minefield-maritime-status-mine-detection-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MINEFIELD-MARITIME-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-aircraft-employment-approach-offset-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-AIRCRAFT-EMPLOYMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="jetty-vessel-maximum-beam-dimension">
     <rdfs:domain rdf:resource="#JETTY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="attribute-standardisation-level-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ATTRIBUTE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="materiel-status-reserve-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MATERIEL-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="action-effect-severity-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ACTION-EFFECT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-type-supplementary-specialisation-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="route-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROUTE-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="unit-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#UNIT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="military-organisation-type-service-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#MILITARY-ORGANISATION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="instrument-landing-system-glide-path-angle">
     <rdfs:domain rdf:resource="#INSTRUMENT-LANDING-SYSTEM"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="ammunition-type-exercise-mine-flare-colour-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AMMUNITION-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="airfield-international-civil-aviation-organisation-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRFIELD"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="medical-facility-status-pending-casualty-evacuation-stretcher-count">
     <rdfs:domain rdf:resource="#MEDICAL-FACILITY-STATUS-PENDING-CASUALTY-EVACUATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="runway-pavement-subgrade-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RUNWAY"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-location-speed-rate">
@@ -7575,30 +6958,24 @@
     <rdfs:domain rdf:resource="#PRECIPITATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="liquid-surface-status-surface-condition-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#LIQUID-SURFACE-STATUS"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="railcar-type-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#RAILCAR-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="object-item-object-type-establishment-effective-datetime">
     <rdfs:domain rdf:resource="#OBJECT-ITEM-OBJECT-TYPE-ESTABLISHMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="route-segment-mode-of-transportation-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#ROUTE-SEGMENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="nuclear-weapon-event-yield-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#NUCLEAR-WEAPON-EVENT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="aircraft-type-training-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#AIRCRAFT-TYPE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="component-text-content-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="#COMPONENT-TEXT-CONTENT"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
