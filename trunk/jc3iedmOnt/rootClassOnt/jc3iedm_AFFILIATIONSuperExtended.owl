@@ -5,13 +5,13 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATIONSuperExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
-
   <owl:Ontology rdf:about="jc3iedm_AFFILIATIONSuperExtended.owl#"/>
-
   <owl:Ontology rdf:about="jc3iedm_AFFILIATION.owl#"/>
   <owl:Ontology rdf:about="jc3iedm_AFFILIATIONExtended.owl#">
-    <owl:imports rdf:resource="jc3iedm_AFFILIATION.owl#"/>
-  </owl:Ontology>  <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION-FUNCTIONAL-GROUP">
+    <owl:imports rdf:resource="jc3iedm_AFFILIATIONExtended.owl#"/>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION-FUNCTIONAL-GROUP">
     <rdfs:subClassOf>
       <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION"/>
     </rdfs:subClassOf>
@@ -104,27 +104,21 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-functional-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-FUNCTIONAL-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-religion-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-RELIGION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-geopolitical-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-GEOPOLITICAL"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-ethnic-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-ETHNIC-GROUP"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-functional-group-name-text">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-FUNCTIONAL-GROUP"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
