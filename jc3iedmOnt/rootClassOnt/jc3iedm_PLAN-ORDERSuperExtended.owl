@@ -5,13 +5,12 @@
     xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_PLAN-ORDERSuperExtended.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/">
- <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERSuperExtended.owl#"/>
-  <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERrExtended.owl#">
+  <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERSuperExtended.owl#">
     <owl:imports>
       <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERExtended.owl#"/>
     </owl:imports>
   </owl:Ontology>
- 
+  <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERSuperExtended.owl#"/>
   <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Administrative/Logistics_order">
     <rdfs:comment xml:lang="en">An order to give the commander’s plan for administrative and service support of operations.</rdfs:comment>
     <rdfs:label xml:lang="en">administrative/logistics order</rdfs:label>
@@ -132,15 +131,12 @@
     <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
   </owl:DatatypeProperty>
 </rdf:RDF>

@@ -8,7 +8,7 @@
   <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTICSuperExtended.owl#"/>
   <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTICExtended.owl#">
     <owl:imports>
-      <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#"/>
+      <owl:Ontology rdf:about="jc3iedm_GROUP-CHARACTERISTICExtended.owl#"/>
     </owl:imports>
   </owl:Ontology>
   <owl:Class rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC">
@@ -16,27 +16,21 @@
     <rdfs:comment xml:lang="en">A reference to a set of characteristics that may be used for identifying a distinct collection of objects.</rdfs:comment>
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-gender-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-triage-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-language-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-transmissibility-indicator-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-age-group-code">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
