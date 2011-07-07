@@ -8,82 +8,20 @@
   <owl:Ontology rdf:about="jc3iedm_AFFILIATIONExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_AFFILIATION.owl#"/>
   </owl:Ontology>
-  <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION-FUNCTIONAL-GROUP">
-    <rdfs:comment xml:lang="en">A specification of a functional group characterised by its primary purpose to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:label xml:lang="en">affiliation functional group</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFLFNC</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION-GEOPOLITICAL">
-    <rdfs:comment xml:lang="en">A specification of a country or political entity to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:label xml:lang="en">affiliation geopolitical</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFLGEO</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION">
-    <rdfs:comment xml:lang="en">A specification of a country, nationality, ethnic group, functional group, exercise group, or religion to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:label xml:lang="en">affiliation</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION-ETHNIC-GROUP">
-    <rdfs:comment xml:lang="en">A specification of an ethnic group to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:label xml:lang="en">affiliation ethnic group</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFLETH</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION"/>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_AFFILIATION.owl#AFFILIATION-RELIGION">
-    <rdfs:comment xml:lang="en">A specification of a religion to which membership or allegiance may be ascribed.</rdfs:comment>
-    <rdfs:label xml:lang="en">affiliation religion</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
-        </owl:onProperty>
-        <owl:hasValue xml:lang="en">AFLREL</owl:hasValue>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION"/>
-  </owl:Class>
-  <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-functional-group-code">
-    <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-FUNCTIONAL-GROUP"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-religion-code">
-    <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-RELIGION"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-category-code">
-    <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-geopolitical-code">
-    <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-GEOPOLITICAL"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-ethnic-group-code">
-    <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-ETHNIC-GROUP"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="jc3iedm_AFFILIATION.owl#affiliation-functional-group-name-text">
-    <rdfs:domain rdf:resource="jc3iedm_AFFILIATION.owl#AFFILIATION-FUNCTIONAL-GROUP"/>
-  </owl:DatatypeProperty>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">AFLGEO</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">AFLETH</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">AFLFNC</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">AFLREL</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
+  </owl:Restriction>
 </rdf:RDF>
