@@ -291,18 +291,15 @@
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#surface-category-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#SURFACE"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#fan-area-sector-size-angle">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-y-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geographic-point-latitude-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#fan-area-orientation-angle">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>
@@ -315,14 +312,12 @@
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#location-category-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#LOCATION"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-y-coordinate-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-y-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-coordinate-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
@@ -338,23 +333,18 @@
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-z-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geometric-volume-category-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOMETRIC-VOLUME"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-x-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#relative-point-z-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#RELATIVE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#absolute-point-category-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ABSOLUTE-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geographic-point-latitude-coordinate">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
@@ -379,19 +369,15 @@
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#geographic-point-longitude-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#GEOGRAPHIC-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#orbit-area-alignment-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ORBIT-AREA"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#cartesian-point-x-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#CARTESIAN-POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#point-category-code">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_LOCATION.owl#fan-area-maximum-range-dimension">
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#FAN-AREA"/>

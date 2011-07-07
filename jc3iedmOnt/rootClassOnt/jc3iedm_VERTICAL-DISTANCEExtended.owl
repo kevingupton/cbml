@@ -15,17 +15,14 @@
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-datum-text">
     <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-dimension">
     <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-precision-code">
     <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_VERTICAL-DISTANCE.owl#vertical-distance-reference-code">
     <rdfs:domain rdf:resource="jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
 </rdf:RDF>

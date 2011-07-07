@@ -115,14 +115,11 @@
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-category-code">
     <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#order-category-code">
     <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_PLAN-ORDER.owl#plan-order-category-code">
     <rdfs:domain rdf:resource="jc3iedm_PLAN-ORDER.owl#PLAN-ORDER"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
 </rdf:RDF>

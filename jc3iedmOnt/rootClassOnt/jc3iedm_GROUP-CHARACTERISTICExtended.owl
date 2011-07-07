@@ -16,26 +16,20 @@
   </owl:Class>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-gender-code">
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-code">
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-triage-code">
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-language-code">
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-malady-transmissibility-indicator-code">
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="jc3iedm_GROUP-CHARACTERISTIC.owl#group-characteristic-age-group-code">
     <rdfs:domain rdf:resource="jc3iedm_GROUP-CHARACTERISTIC.owl#GROUP-CHARACTERISTIC"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
 </rdf:RDF>
