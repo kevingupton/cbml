@@ -12630,17 +12630,6 @@
     <rdfs:label xml:lang="en">arresting, legal</rdfs:label>
     <rdfs:comment xml:lang="en">Seizing and detaining of a person under authority of the law.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="#SURFACE-VESSEL-TYPE-Auxiliary,_miscellaneous">
-    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">AG</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#surface-vessel-type-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">auxiliary, miscellaneous</rdfs:label>
-    <rdfs:comment xml:lang="en">Ship 40 metres or more employed in general or multi-purpose functions of support, training, R&amp;D, or a testing nature.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:ID="GROUP-ORGANISATION-TYPE-Journalist">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#GROUP-ORGANISATION-TYPE"/>
     <rdfs:subClassOf>
@@ -12651,6 +12640,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">journalist</rdfs:label>
     <rdfs:comment xml:lang="en">A GROUP-ORGANISATION-TYPE that comprises persons that earn their living by editing or writing for a public journal.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#SURFACE-VESSEL-TYPE-Auxiliary,_miscellaneous">
+    <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#SURFACE-VESSEL-TYPE"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">AG</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#surface-vessel-type-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">auxiliary, miscellaneous</rdfs:label>
+    <rdfs:comment xml:lang="en">Ship 40 metres or more employed in general or multi-purpose functions of support, training, R&amp;D, or a testing nature.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="OPERATIONAL-CAPABILITY-Target_acquisition">
     <rdfs:subClassOf rdf:resource="jc3iedmBase.owl#OPERATIONAL-CAPABILITY"/>

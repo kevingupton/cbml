@@ -40,7 +40,7 @@
     <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_VERTICAL-DISTANCE.owl#VERTICAL-DISTANCE -->
 
     <rdf:Description rdf:about="&jc3iedm_VERTICAL-DISTANCE;VERTICAL-DISTANCE">
-        <rdfs:subClassOf rdf:resource="&upperC2Ont;GeospatialLocation"/>
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
     </rdf:Description>
 </rdf:RDF>
 
