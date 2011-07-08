@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY jc3iedm_OBJECT-ITEM "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#" >
+    <!ENTITY jc3iedm_ObjectSpliceOnt "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectCombinedOnt.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectCombinedOnt.owl"
+     xmlns:jc3iedm_ObjectSpliceOnt="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:jc3iedm_OBJECT-ITEM="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectCombinedOnt.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEMSuperExtended.owl#"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#AIRFIELD -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;AIRFIELD">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;AIRFIELD"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#BRIDGE -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;BRIDGE">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;BRIDGE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#CONTROL-FEATURE -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;CONTROL-FEATURE">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;CONTROL-FEATURE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#FACILITY -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;FACILITY">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;FACILITY"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#FEATURE -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;FEATURE">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;FEATURE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#GEOGRAPHIC-FEATURE -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;GEOGRAPHIC-FEATURE">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;GEOGRAPHIC-FEATURE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#HARBOUR -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;HARBOUR">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;HARBOUR"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#MATERIEL -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;MATERIEL">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;MATERIEL"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#MILITARY-OBSTACLE -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;MILITARY-OBSTACLE">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;MILITARY-OBSTACLE"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#OBJECT-ITEM -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;OBJECT-ITEM">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;OBJECT"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#ORGANISATION -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;ORGANISATION">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;ORGANISATION"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#PERSON -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;PERSON">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;PERSON"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-ITEM.owl#UNIT -->
+
+    <rdf:Description rdf:about="&jc3iedm_OBJECT-ITEM;UNIT">
+        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;UNIT"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#AIRFIELD -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;AIRFIELD"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#BRIDGE -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;BRIDGE"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#CONTROL-FEATURE -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;CONTROL-FEATURE"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#FACILITY -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;FACILITY"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#FEATURE -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;FEATURE"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#GEOGRAPHIC-FEATURE -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;GEOGRAPHIC-FEATURE"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#HARBOUR -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;HARBOUR"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#MATERIEL -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;MATERIEL"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#MILITARY-OBSTACLE -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;MILITARY-OBSTACLE"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#OBJECT -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;OBJECT"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#ORGANISATION -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;ORGANISATION"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#PERSON -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;PERSON"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#UNIT -->
+
+    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;UNIT"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#" >
+    <!ENTITY upperC2toActionAssociationOnt "http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
+     xmlns:upperC2toActionAssociationOnt="http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#ACTION-COMMENT -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;ACTION-COMMENT">
+        <rdfs:subClassOf rdf:resource="&upperC2toActionAssociationOnt;Relationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#ACTION-CONTEXT -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;ACTION-CONTEXT">
+        <rdfs:subClassOf rdf:resource="&upperC2toActionAssociationOnt;Relationship"/>
+        <rdfs:comment>A relationship between a specific ACTION and a specific CONTEXT.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#ACTION-FUNCTIONAL-ASSOCIATION -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;ACTION-FUNCTIONAL-ASSOCIATION">
+        <rdfs:subClassOf rdf:resource="&upperC2toActionAssociationOnt;Relationship"/>
+        <rdfs:comment>A relationship of an ACTION as a subject with another ACTION as an object in order to specify functional dependence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#ACTION-OBJECTIVE -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;ACTION-OBJECTIVE">
+        <rdfs:subClassOf rdf:resource="&upperC2toActionAssociationOnt;Relationship"/>
+        <rdfs:comment>The focus, in terms of an OBJECT-ITEM, OBJECT-TYPE, or ACTION-TASK, in conducting a specific ACTION.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#ACTION-REFERENCE-ASSOCIATION -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;ACTION-REFERENCE-ASSOCIATION">
+        <rdfs:subClassOf rdf:resource="&upperC2toActionAssociationOnt;Relationship"/>
+        <rdfs:comment>A relationship between a specific ACTION and a specific REFERENCE.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#ACTION-RESOURCE -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;ACTION-RESOURCE">
+        <rdfs:subClassOf rdf:resource="&upperC2toActionAssociationOnt;Relationship"/>
+        <rdfs:comment>An OBJECT-ITEM or an OBJECT-TYPE that is required, requested, allocated or otherwise used or planned to be used in conducting a specific ACTION.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#ACTION-TEMPORAL-ASSOCIATION -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;ACTION-TEMPORAL-ASSOCIATION">
+        <rdfs:subClassOf rdf:resource="&upperC2toActionAssociationOnt;Relationship"/>
+        <rdfs:comment>The relationship of an ACTION as a subject to another ACTION as an object in order to specify time dependence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/upperC2toActionAssociationOnt.owl#Relationship -->
+
+    <owl:Class rdf:about="&upperC2toActionAssociationOnt;Relationship">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Event"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
+
