@@ -6,7 +6,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY MSDLJC3IEDMMapOnt "http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#" >
+    <!ENTITY jc3iedmAssociationOnt "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOnt.owl#" >
     <!ENTITY jc3iedm_LOCATION "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATION.owl#" >
     <!ENTITY jc3iedm_AFFILIATION "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#" >
     <!ENTITY jc3iedm_ObjectSpliceOnt "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#" >
@@ -17,16 +17,17 @@
      xml:base="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl"
      xmlns:jc3iedm_ObjectSpliceOnt="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:jc3iedmAssociationOnt="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOnt.owl#"
      xmlns:jc3iedm_LOCATION="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATION.owl#"
-     xmlns:MSDLJC3IEDMMapOnt="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:jc3iedm_AFFILIATION="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#">
     <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl">
-        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectCombinedOnt.owl"/>
-        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#"/>
-        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATION.owl#"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOntCut.owl#"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATIONSuperExtended.owl#"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATIONSuperExtended.owl#"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#"/>
     </owl:Ontology>
     
 
@@ -64,81 +65,285 @@
     
 
 
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAdditionalInfo -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAdditionalInfo"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAffiliation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAggregateBased -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAggregateBased"/>
+    
+
+
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAllegianceHandle -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasAllegianceHandle"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAllegianceHandle"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAssociation -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasAssociation"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAssociation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAuxiliaryEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAuxiliaryEquipment"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCombatEffectiveness -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCombatEffectiveness"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCommunicationNetInstance -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasCommunicationNetInstance"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCommunicationNetInstance"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCountryCode -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasCountryCode"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCountryCode"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasDisposition -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasDisposition"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasDisposition"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEchelon -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEchelon"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEquipmentSymbolModifier -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEquipmentSymbolModifier"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEquipmentType -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEquipmentType"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationChoice -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationChoice"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationData -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationData"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationLocationType -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationLocationType"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationOrder -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationOrder"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationOrientation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationOrientation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationPosition -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationPosition"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationSpacing -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationSpacing"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasHigherFormation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasHigherFormation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasIFF -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasIFF"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasInstallationSymbolModifier -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasInstallationSymbolModifier"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasLocation"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasMilitaryService -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasMilitaryService"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasMilitaryService"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasModel -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasModel"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasModel"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasName -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasName"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasName"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasObjectHandle -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasObjectHandle"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasObjectHandle"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOrientation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOrientation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOutOfFormation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOutOfFormation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOwner"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasPriorityToSupport -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasPriorityToSupport"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasQuantity -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasQuantity"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasReinforcedReduced -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasReinforcedReduced"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasRelation -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasRelation"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasRelation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasResoultion -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasResoultion"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSensorOrientation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSensorOrientation"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSpecialC2HQ -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSpecialC2HQ"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasStaffComments -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasStaffComments"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasStatus -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasStatus"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasStatus"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportRoleType -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportRoleType"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportType -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportType"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportedUnitHandle -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportedUnitHandle"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSymbolIdentifier -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasSymbolIdentifier"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSymbolIdentifier"/>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasUniqueDesignation -->
+
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasUniqueDesignation"/>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasUnitSymbolModifier -->
 
-    <owl:ObjectProperty rdf:about="&MSDLJC3IEDMMapOnt;hasUnitSymbolModifier"/>
+    <owl:ObjectProperty rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasUnitSymbolModifier"/>
     
 
 
@@ -155,27 +360,15 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAdditionalInfo -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLAdditionalInfo">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAdditionalInfo">
         <rdfs:comment>Definition: The text modifier for an additional information field. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAffiliation -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLAffiliation">
-        <owl:equivalentClass rdf:resource="&jc3iedm_AFFILIATION;AFFILIATION"/>
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLDisposition"/>
-        <rdfs:comment>Definition: The threat posed by a warfighting element in context of the owner. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAggregateBased -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLAggregateBased">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLModel"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAggregateBased">
         <rdfs:comment>Definition: Identifies unit models as being aggregate-based (in contrast to entity-based). [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -183,8 +376,8 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAirFormationType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLAirFormationType">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLFormationData"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAirFormationType">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationData"/>
         <rdfs:comment>Definition: Formation assigned to subordinate air elements. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -192,24 +385,15 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAllegianceHandle -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLAllegianceHandle">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAllegianceHandle">
         <rdfs:comment>Definition: The reference to the Force or Side to which this Force/Side shows Allegiance. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAssociatedOverlays -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLAssociatedOverlays">
-        <rdfs:comment>Definition: The overlays for which this tactical graphic is to be displayed. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAuxiliaryEquipment -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLAuxiliaryEquipment">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLEquipmentSymbolModifiers"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAuxiliaryEquipment">
         <rdfs:comment>Definition: The graphic modifier for equipment that denotes the presence of a towed sonar array. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -217,25 +401,15 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCombatEffectiveness -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCombatEffectiveness">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCombatEffectiveness">
         <rdfs:comment>Definition: The text modifier for units and installations that indicates unit effectiveness or installation capability.  [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommandRelation -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCommandRelation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceRelationData"/>
-        <rdfs:comment>Definition: The command relationship between this unit/equipment and its commanding unit. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommandRelationshipType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCommandRelationshipType">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommandRelationshipType">
         <rdfs:comment>Definition: Type of command under which the unit has been task organized as taken from FM 100-7 &#39;The Army In Theater Operations&#39;. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -243,74 +417,48 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommandingSuperiorHandle -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCommandingSuperiorHandle">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommandingSuperiorHandle">
         <rdfs:comment>Definition: Unique identifier of the unit commanding this unit. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommunicationNetId -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCommunicationNetId">
-        <rdfs:comment>Definition: The Name or ID of the Communication net.  [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommunicationNetInstance -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCommunicationNetInstance">
-        <rdfs:comment>Definition: The communication nets that the unit uses to communicate with other units during a mission.  [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommunicationNetType -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCommunicationNetType">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:comment>Definition: The tactical use/purpose of the communication network.  [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCommunicationService -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCommunicationService">
-        <rdfs:comment>Definition: The type of service being used for communication as defined in JC3IEDM. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCountryCode -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLCountryCode">
-        <rdfs:comment>Definition: Country code as defined in ISO 3166. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLDateTimeGroup -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLDateTimeGroup">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLInstallationSymbolModifiers"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLDateTimeGroup">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLInstallationSymbolModifiers"/>
         <rdfs:comment>Definition: The Date Time Group an Alphanumeric field for date/time which identifies the valid timeframe start, relative to ScenarioTime, for which the symbol is valid. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLDirectionOfMovement -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLDirectionOfMovement">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLDisposition"/>
-        <rdfs:comment>Definition: The Direction of Movement, in compass degrees, of a scenario element. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLDisposition -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLDisposition">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLDisposition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationPosition"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationPosition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;object-item-location-bearing-angle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOwnFormation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;object-item-location-speed-rate"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Definition: Disposition consists of the location of units and the manner in which these units are tactically deployed. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -318,8 +466,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLEchelon -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLEchelon">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLEchelon">
         <rdfs:comment>Definition: Graphic modifier that identifies Command level. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -327,78 +474,91 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLEquipmentSymbolModifiers -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLEquipmentSymbolModifiers">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLEquipmentSymbolModifiers">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasIFF"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLIFF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAuxiliaryEquipment"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAuxiliaryEquipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAdditionalInfo"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAdditionalInfo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasStaffComments"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLStaffComments"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEquipmentType"/>
+                <owl:someValuesFrom rdf:resource="&jc3iedm_ObjectSpliceOnt;EQUIPMENT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasUniqueDesignation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLUniqueDesignation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasQuantity"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLQuantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCombatEffectiveness"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCombatEffectiveness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Definition: Modifiers of an Equipment Symbol. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLEquipmentType -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLEquipmentType">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLEquipmentSymbolModifiers"/>
-        <rdfs:comment>Definition: The text modifier that indicates type of equipment. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceRelation -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceRelation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLRelations"/>
-        <rdfs:comment>Definition: The mission specific command relationship between this unit and its commanding (higher) unit. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceRelationChoice -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceRelationChoice">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceRelation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceRelationData -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceRelationData">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceRelation"/>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSide -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceSide">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSide">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&MSDLJC3IEDMMapOnt;hasAllegianceHandle"/>
-                <owl:someValuesFrom rdf:resource="&MSDLJC3IEDMMapOnt;MSDLAllegianceHandle"/>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;military-organisation-type-service-code"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&MSDLJC3IEDMMapOnt;hasMilitaryService"/>
-                <owl:someValuesFrom rdf:resource="&MSDLJC3IEDMMapOnt;MSDLMilitaryService"/>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasObjectHandle"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLObjectHandle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&MSDLJC3IEDMMapOnt;hasObjectHandle"/>
-                <owl:onClass rdf:resource="&MSDLJC3IEDMMapOnt;MSDLObjectHandle"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;object-item-name-text"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&MSDLJC3IEDMMapOnt;hasCountryCode"/>
-                <owl:someValuesFrom rdf:resource="&MSDLJC3IEDMMapOnt;MSDLCountryCode"/>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAllegianceHandle"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAllegianceHandle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&MSDLJC3IEDMMapOnt;hasName"/>
-                <owl:someValuesFrom rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceSideName"/>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;affiliation-geopolitical-code"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition: Forces and Sides for the scenario</rdfs:comment>
@@ -406,61 +566,9 @@
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSideAssociation -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceSideAssociation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceSideInformation"/>
-        <rdfs:comment>Definition: Associations between forces and sides [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSideAssociation_AffiliateHandle -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceSideAssociation_AffiliateHandle">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceSideAssociation"/>
-        <rdfs:comment>Definition: A force or side&#39;s relationship with another force or side determines the level of threat posed by that force or side.  Units or entities inherit their affiliation to other units or entities based on the relationships between their containing forces and sides. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSideAssociation_Relationship -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceSideAssociation_Relationship">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceSideAssociation"/>
-        <rdfs:comment>Definition: Reference to another Force or Side which has some affiliation to this force [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSideHandle -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceSideHandle">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLForceRelationData"/>
-        <rdfs:comment>Definition: A UUID reference to the Force or Side information. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSideInformation -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceSideInformation">
-        <rdfs:comment>Definition: Force or Side Information [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLForceSideName -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLForceSideName">
-        <rdfs:comment>Definition: Name of the force or side. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationChoice -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFormationChoice">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationChoice">
         <rdfs:comment>Definition: The type of formation (Ground, Air, Surface or Subsurface). [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -468,7 +576,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationData -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFormationData">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationData">
         <rdfs:comment>Definition: The formation data specific to the specified formation type. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -476,7 +584,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationLocationType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFormationLocationType">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationLocationType">
         <rdfs:comment>Definition: The method used to correlate formation to location as center of mass or lead element. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -484,8 +592,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationOrder -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFormationOrder">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLFormationPosition"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationOrder">
         <rdfs:comment>Definition: The placement, 1 to N, of a subordinate in the superior unit formation. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -493,7 +600,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationOrientation -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFormationOrientation">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationOrientation">
         <rdfs:comment>Definition: Orientation in compass degrees for unit formations and equipment. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -501,8 +608,25 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationPosition -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFormationPosition">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLDisposition"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationPosition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSensorOrientation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSensorOrientation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationOrder"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationOrder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOutOfFormation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOutOfFormation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Definition: The position of this unit/equipment in the higher unit formation. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -510,7 +634,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationSpacing -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFormationSpacing">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationSpacing">
         <rdfs:comment>Definition: The default spacing in metres between subordinate elements one echelon below. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -518,8 +642,8 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFrameShapeModifier -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLFrameShapeModifier">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLInstallationSymbolModifiers"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFrameShapeModifier">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLInstallationSymbolModifiers"/>
         <rdfs:comment>Definition: The modifier of the frame shape to support Affiliations (Hostile, Friend, Unknown, and Neutral). [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -527,8 +651,8 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLGroundFormationType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLGroundFormationType">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLFormationData"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLGroundFormationType">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationData"/>
         <rdfs:comment>Definition: Formation assigned to subordinate ground elements. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -536,8 +660,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLHigherFormation -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLHigherFormation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLHigherFormation">
         <rdfs:comment>Definition: The text modifier for units indicating the higher designation for the unit.  For boundaries this is the second designation used to identify the line.  [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -545,8 +668,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLIFF -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLIFF">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLIFF">
         <rdfs:comment>Definition: The text modifier displaying IFF/SIF Identification modes and codes.  [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -554,145 +676,43 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLInstallationSymbolModifiers -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLInstallationSymbolModifiers">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLInstallationSymbolModifiers">
         <rdfs:comment>Definition: Modifiers of an Installation Symbol. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLInstallations -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLInstallations">
-        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;FACILITY"/>
-        <rdfs:comment>Definition: The Installation and Graphic for a Military Scenario. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLLocation -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLLocation">
-        <owl:equivalentClass rdf:resource="&jc3iedm_LOCATION;LOCATION"/>
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLDisposition"/>
-        <rdfs:comment>Definition: The coordinates of an object or anchor point.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLMOPPLevel -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLMOPPLevel">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLStatus"/>
-        <rdfs:comment>Definition: Unit specific Mission Oriented Protective Posture (MOPP) status. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLMilitaryService -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLMilitaryService">
-        <rdfs:comment>Definition: The service code for a military organization. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLModel -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLModel">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLModel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasResoultion"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLResolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAggregateBased"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAggregateBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Definition: Model specifies any detail impacting on the simulation model of the unit. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLName -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLName">
-        <rdfs:comment>Definition: Unabbreviated designation. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLObjectHandle -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLObjectHandle">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLObjectHandle">
         <rdfs:comment>Definition: The Universal Unique Identifier (UUID) of an object. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganicForceSideHandle -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganicForceSideHandle">
-        <rdfs:comment>Definition: Reference to the unit&#39;s Organic force/side which provides the definition of the higher organization&#39;s constructs (doctrine). [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganicRelation -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganicRelation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLRelations"/>
-        <rdfs:comment>Definition: The relationship of units and equipment to the organic (doctrinal) superior element (force or unit). [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganicRelationChoice -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganicRelationChoice">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLOrganicRelation"/>
-        <rdfs:comment>Definition: Type of organic relation being modeled (Unit, Force, or not specified). [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganicRelationData -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganicRelationData">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLOrganicRelation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganicSurperiorHandle -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganicSurperiorHandle">
-        <rdfs:comment>Definition: Reference to the unit&#39;s higher organic organization. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganizations -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganizations">
-        <rdfs:comment>Definition: The mission/scenario specific organizations and equipment of the Military Scenario, to include all military services, governmental, and nongovernmental organizations. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganizations_Equipment -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganizations_Equipment">
-        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;EQUIPMENT"/>
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLOrganizations"/>
-        <rdfs:comment>Definition: Information on all items of equipment used in the scenario. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrganizations_Units -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrganizations_Units">
-        <owl:equivalentClass rdf:resource="&jc3iedm_ObjectSpliceOnt;ORGANISATION"/>
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLOrganizations"/>
-        <rdfs:comment>Definition: The identification of Units of a Military Scenario. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrientation -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOrientation">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrientation">
         <rdfs:comment>Definition: Orientation of the graphic to the right or left as defined in the symbology standard. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -700,33 +720,45 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOutOfFormation -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOutOfFormation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLFormationPosition"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOutOfFormation">
         <rdfs:comment>Definition: Identifies if the element is maneuvering independent from the higher unit&#39;s formation. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOverlayHandle -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOverlayHandle">
-        <rdfs:comment>Definition: UUID of the overlay where the tactical graphic is to be included. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOverlayHandles -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOverlayHandles">
-        <rdfs:comment>Definition: References to all overlays on which this graphic is to be included. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOwnFormation -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLOwnFormation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLDisposition"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOwnFormation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationChoice"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationChoice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationOrientation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationOrientation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationData"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationSpacing"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationSpacing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasFormationLocationType"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationLocationType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Definition: The formation of this unit. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -734,33 +766,29 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLPriorityToSupport -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLPriorityToSupport">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLPriorityToSupport">
         <rdfs:comment>Definition: The Supporting Unit&#39;s priority to Support another unit (from 1 to N where 1 is the top priority). [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLReinforcedReduced -->
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLQuantity -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLReinforcedReduced">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
-        <rdfs:comment>Definition: The graphic modifier in a unit symbol that displays (+) for R-reinforced, (-) for D-reduced, (+-) for RD-reinforced and reduced.  [MSDL]</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLQuantity"/>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLRelations -->
+    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLReinforcedReduced -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLRelations">
-        <rdfs:comment>Definition: Relationship of units in terms of command, support, and organic relationships. [MSDL]</rdfs:comment>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLReinforcedReduced">
+        <rdfs:comment>Definition: The graphic modifier in a unit symbol that displays (+) for R-reinforced, (-) for D-reduced, (+-) for RD-reinforced and reduced.  [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLResolution -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLResolution">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLModel"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLResolution">
         <rdfs:comment>Definition: Enumeration indicating the level of fidelity appropriate for instancing the unit or equipment in the simulation. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -768,77 +796,41 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSensorOrientation -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSensorOrientation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLFormationPosition"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSensorOrientation">
         <rdfs:comment>Definition: Orientation of the main sensor, sights, and weapon in compass degrees relative to orientation of the platform (equipment). [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSourceOverlayType -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSourceOverlayType">
-        <rdfs:comment>Definition: The overlay type of the original overlay on which the tactical graphic originated. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSpecialC2HQ -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSpecialC2HQ">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSpecialC2HQ">
         <rdfs:comment>Definition: The text modifier indicating a unit is a special command and control headquarters. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSpeed -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSpeed">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLDisposition"/>
-        <rdfs:comment>Definition: The field for unit or equipment speed (for display only). Kilometres per Hour for ground units; Nautical miles per Hour for Air. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLStaffComments -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLStaffComments">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLStaffComments">
         <rdfs:comment>Definition: The text modifier for the staff comments field.  [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLStatus -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLStatus">
-        <rdfs:comment>Definition: Unit specific status information. [MSDL]</rdfs:comment>
+        <rdfs:comment>Issue: This might represent the same data as &quot;OBJECT-ITEM-COMMENT&quot;</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSubsurfaceFormationType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSubsurfaceFormationType">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLFormationData"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSubsurfaceFormationType">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationData"/>
         <rdfs:comment>Definition: Formation assigned to subordinate subsurface elements. [MSDL]</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportRelations -->
-
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSupportRelations">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLRelations"/>
-        <rdfs:comment>Definition: Identification of the Units that are being supported and the priority of that support. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportRoleType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSupportRoleType">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportRoleType">
         <rdfs:comment>Definition: The support role taken from classes of Priority of Effort (Chemical, Engineer, Fires, and Intelligence). [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -846,15 +838,16 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSupportType">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportType">
         <rdfs:comment>Definition: Type of support this unit provides the supported unit. [MSDL]</rdfs:comment>
+        <rdfs:comment>Issue: SupportType might be represented under object-item-association-subcategory-code</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportedUnitHandle -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSupportedUnitHandle">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportedUnitHandle">
         <rdfs:comment>Definition: Unique identifier of the unit to which this unit provides support. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -862,8 +855,8 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSurfaceFormationType -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSurfaceFormationType">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLFormationData"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSurfaceFormationType">
+        <rdfs:subClassOf rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLFormationData"/>
         <rdfs:comment>Definition: Formation assigned to subordinate surface elements. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -871,7 +864,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSymbolIdentifier -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLSymbolIdentifier">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSymbolIdentifier">
         <rdfs:comment>Definition: The 15 character Symbol identifier includes dashes for restricted fields that shall not be interpreted.  These fields would be redundant to other explicit elements in the standard.  Affiliation, Status, and Country Code are restricted in this manner.  Affiliation and Country Code fields are provided in the ForceStructure data.  Status field value is &#39;Present&#39; unless specified otherwise by the DateTimeGroup element.  [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -879,8 +872,7 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLUniqueDesignation -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLUniqueDesignation">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier"/>
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLUniqueDesignation">
         <rdfs:comment>Definition: The text modifier for the symbol&#39;s unique designation. [MSDL]</rdfs:comment>
     </owl:Class>
     
@@ -888,48 +880,260 @@
 
     <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLUnitSymbolModifier -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLUnitSymbolModifier">
+    <owl:Class rdf:about="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLUnitSymbolModifier">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasCombatEffectiveness"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLCombatEffectiveness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAdditionalInfo"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLAdditionalInfo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSpecialC2HQ"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSpecialC2HQ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasHigherFormation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLHigherFormation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEchelon"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLEchelon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasUniqueDesignation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLUniqueDesignation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasIFF"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLIFF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasStaffComments"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLStaffComments"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasReinforcedReduced"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLReinforcedReduced"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Definition: Modifiers of a Unit Symbol. [MSDL]</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLWeaponControlStatus -->
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOnt.owl#OBJECT-ITEM-ASSOCIATION -->
 
-    <owl:Class rdf:about="&MSDLJC3IEDMMapOnt;MSDLWeaponControlStatus">
-        <rdfs:subClassOf rdf:resource="&MSDLJC3IEDMMapOnt;MSDLStatus"/>
-        <rdfs:comment>Definition: Degree of fire control (free, tight, and hold).</rdfs:comment>
-    </owl:Class>
+    <rdf:Description rdf:about="&jc3iedmAssociationOnt;OBJECT-ITEM-ASSOCIATION">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportRoleType"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportRoleType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportedUnitHandle"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportedUnitHandle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSupportType"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSupportType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasPriorityToSupport"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLPriorityToSupport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#AFFILIATION -->
 
-    <rdf:Description rdf:about="&jc3iedm_AFFILIATION;AFFILIATION"/>
-    
-
-
-    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_LOCATION.owl#LOCATION -->
-
-    <rdf:Description rdf:about="&jc3iedm_LOCATION;LOCATION"/>
+    <rdf:Description rdf:about="&jc3iedm_AFFILIATION;AFFILIATION">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;object-item-name-text"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#EQUIPMENT -->
 
-    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;EQUIPMENT"/>
+    <owl:Class rdf:about="&jc3iedm_ObjectSpliceOnt;EQUIPMENT">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasDisposition"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLDisposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasEquipmentSymbolModifier"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLEquipmentSymbolModifiers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasRelation"/>
+                <owl:someValuesFrom rdf:resource="&jc3iedmAssociationOnt;OBJECT-ITEM-ASSOCIATION"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasModel"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;object-item-name-text"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasObjectHandle"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLObjectHandle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSymbolIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSymbolIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#FACILITY -->
 
-    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;FACILITY"/>
+    <owl:Class rdf:about="&jc3iedm_ObjectSpliceOnt;FACILITY">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasObjectHandle"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLObjectHandle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOrientation"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLOrientation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="&jc3iedmAssociationOnt;OBJECT-ITEM-LOCATION"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSymbolIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSymbolIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasAffiliation"/>
+                <owl:someValuesFrom rdf:resource="&jc3iedm_AFFILIATION;AFFILIATION"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasInstallationSymbolModifier"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLInstallationSymbolModifiers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasOwner"/>
+                <owl:someValuesFrom rdf:resource="&jc3iedm_ObjectSpliceOnt;OBJECT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#ORGANISATION -->
+    <!-- http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ObjectSpliceOnt.owl#UNIT -->
 
-    <rdf:Description rdf:about="&jc3iedm_ObjectSpliceOnt;ORGANISATION"/>
+    <owl:Class rdf:about="&jc3iedm_ObjectSpliceOnt;UNIT">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasSymbolIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLSymbolIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasRelation"/>
+                <owl:someValuesFrom rdf:resource="&jc3iedmAssociationOnt;OBJECT-ITEM-ASSOCIATION"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasStatus"/>
+                <owl:someValuesFrom rdf:resource="&jc3iedmAssociationOnt;OBJECT-ITEM-STATUS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasObjectHandle"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLObjectHandle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&jc3iedmAssociationOnt;object-item-name-text"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasDisposition"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLDisposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasModel"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#hasUnitSymbolModifier"/>
+                <owl:someValuesFrom rdf:resource="http://cbml.googlecode.com/svn/trunk/MSDLJC3IEDMMapOnt.owl#MSDLUnitSymbolModifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
 </rdf:RDF>
 
 
