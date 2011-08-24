@@ -6213,13 +6213,13 @@
     <rdfs:domain rdf:resource="jc3iedm_OBJECT-ITEM.owl#ORGANISATION"/>
     <rdfs:range rdf:resource="../jc3iedmAssociationOnt.owl#REPORTING-DATA"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="../jc3iedmAssociationOnt.owl#REFERENCE_applies-to_(OBJECT-ITEM-REFERENCE-ASSOCIATION)">
-    <rdfs:domain rdf:resource="../jc3iedmAssociationOnt.owl#REFERENCE"/>
-    <rdfs:range rdf:resource="../jc3iedmAssociationOnt.owl#OBJECT-ITEM-REFERENCE-ASSOCIATION"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="../jc3iedmAssociationOnt.owl#REFERENCE_is-administered-by_(ORGANISATION-REFERENCE-ASSOCIATION)">
     <rdfs:domain rdf:resource="../jc3iedmAssociationOnt.owl#REFERENCE"/>
     <rdfs:range rdf:resource="../jc3iedmAssociationOnt.owl#ORGANISATION-REFERENCE-ASSOCIATION"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="../jc3iedmAssociationOnt.owl#REFERENCE_applies-to_(OBJECT-ITEM-REFERENCE-ASSOCIATION)">
+    <rdfs:domain rdf:resource="../jc3iedmAssociationOnt.owl#REFERENCE"/>
+    <rdfs:range rdf:resource="../jc3iedmAssociationOnt.owl#OBJECT-ITEM-REFERENCE-ASSOCIATION"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="../jc3iedmAssociationOnt.owl#TARGET-PERSONNEL-PROTECTION_is-ascribed-to_TARGET">
     <owl:inverseOf rdf:resource="../jc3iedmAssociationOnt.owl#TARGET_is-recognised-as-having_(TARGET-PERSONNEL-PROTECTION)"/>
@@ -6993,7 +6993,7 @@
     <rdfs:range rdf:resource="../jc3iedmAssociationOnt.owl#ORGANISATION-PLAN-ORDER-ASSOCIATION"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="../jc3iedmAssociationOnt.owl#ORBIT-AREA_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="../jc3iedmAssociationOnt.owl#POINT_is-second-point-for_(ORBIT-AREA)"/>
+    <owl:inverseOf rdf:resource="../jc3iedmAssociationOnt.owl#POINT_is-first-point-for_(ORBIT-AREA)"/>
     <rdfs:domain rdf:resource="jc3iedm_LOCATION.owl#ORBIT-AREA"/>
     <rdfs:range rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
   </owl:ObjectProperty>
@@ -7145,7 +7145,7 @@
     <rdfs:range rdf:resource="../jc3iedmAssociationOnt.owl#OBJECT-ITEM-AFFILIATION"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="../jc3iedmAssociationOnt.owl#POINT-REFERENCE_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="../jc3iedmAssociationOnt.owl#POINT_is-endpoint-of-y-vector-for_(POINT-REFERENCE)"/>
+    <owl:inverseOf rdf:resource="../jc3iedmAssociationOnt.owl#POINT_is-endpoint-of-x-vector-for_(POINT-REFERENCE)"/>
     <rdfs:range rdf:resource="jc3iedm_LOCATION.owl#POINT"/>
     <rdfs:domain rdf:resource="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#POINT-REFERENCE"/>
   </owl:ObjectProperty>

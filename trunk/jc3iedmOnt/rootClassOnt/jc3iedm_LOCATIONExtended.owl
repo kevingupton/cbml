@@ -20,8 +20,36 @@
     <rdfs:comment xml:lang="en">A LOCATION that refers to a position that cannot be determined.</rdfs:comment>
   </owl:Class>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">SPHVOL</owl:hasValue>
+    <owl:hasValue xml:lang="en">CORDAR</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">CN</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">SURVOL</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">CARTPT</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">ELLPSE</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">GEOGPT</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">PLYGAR</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">VL</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">REL</owl:hasValue>
@@ -32,20 +60,24 @@
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#point-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">SURVOL</owl:hasValue>
+    <owl:hasValue xml:lang="en">SPHVOL</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">CORDAR</owl:hasValue>
+    <owl:hasValue xml:lang="en">PLYAAR</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">VL</owl:hasValue>
+    <owl:hasValue xml:lang="en">PT</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ELLPSE</owl:hasValue>
+    <owl:hasValue xml:lang="en">TRCKAR</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">SURFAC</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">FA</owl:hasValue>
@@ -56,39 +88,7 @@
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">TRCKAR</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">PLYAAR</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">PLYGAR</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#surface-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">PT</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">SURFAC</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">CARTPT</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
     <owl:hasValue xml:lang="en">LN</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#location-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">CN</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#geometric-volume-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">GEOGPT</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_LOCATION.owl#absolute-point-category-code"/>
   </owl:Restriction>
 </rdf:RDF>
