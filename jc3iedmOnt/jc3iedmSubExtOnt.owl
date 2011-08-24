@@ -146,18 +146,6 @@
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">FT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">FT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Fit</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -171,13 +159,25 @@
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:comment xml:lang="en">A status indicating that a PERSON is considered as having normal physical capabilities.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">FT</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">FT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">FT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A status indicating that a PERSON is considered as having normal physical capabilities.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">FT</owl:hasValue>
@@ -556,12 +556,6 @@
     <rdfs:comment xml:lang="en">A small sized leaf of paper containing printed matter, chiefly for gratuitous distribution.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Contact">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">CONTCT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
@@ -570,6 +564,12 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:label xml:lang="en">Contact</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CONTCT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism that is designed to fire by physical contact between the target mine or its appendages.</rdfs:comment>
@@ -844,15 +844,15 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Influence">
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">INFLUN</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:label xml:lang="en">Influence</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
@@ -860,15 +860,15 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">INFLUN</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
   </owl:Class>
   <owl:Class rdf:ID="Classic_wizard">
     <rdfs:subClassOf>
@@ -2135,29 +2135,29 @@
   <owl:Class rdf:about="#Magnetic_V,_vertical_component">
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with a magnetic influence circuit which responds to the vertical component of the magnetic field of a ship.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MAGNVV</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
-    <rdfs:label xml:lang="en">Magnetic V, vertical component</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MAGNVV</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Magnetic V, vertical component</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
   </owl:Class>
   <owl:Class rdf:ID="Communication_system">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#ELECTRONIC-EQUIPMENT-TYPE-Communication"/>
@@ -2407,6 +2407,12 @@
   </owl:Class>
   <owl:Class rdf:ID="Sequence">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">SEQUEN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Sequence</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
@@ -2415,22 +2421,16 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">SEQUEN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism that has a firing circuit which requires actuation by a predetermined sequence of influences of predetermined magnitude.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">SEQUEN</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">SEQUEN</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
   </owl:Class>
   <owl:Class rdf:ID="Fixed_and_prefabricated">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#MILITARY-OBSTACLE-TYPE-Anti-tank_obstacle"/>
@@ -2462,12 +2462,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">PRESUR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Pressure</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
@@ -2475,6 +2469,12 @@
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with a pressure sensitive circuit which responds to the pressure variation as a result of a ship or sweep.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">PRESUR</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf>
@@ -2859,17 +2859,17 @@
   </owl:Class>
   <owl:Class rdf:about="#Very_sensitive,_anti_sweeper">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">VERSEN</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">VERSEN</owl:hasValue>
@@ -3599,26 +3599,26 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with an acoustic high frequency circuit, 20 to 50 Hz, which responds to the acoustic field of a ship or sweep.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACOUHF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ACOUHF</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACOUHF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:label xml:lang="en">Acoustic high frequency</rdfs:label>
   </owl:Class>
@@ -3728,22 +3728,22 @@
   <owl:Class rdf:ID="Multi-look_mines">
     <rdfs:label xml:lang="en">Multi-look mines</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">MULTLM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">MULTLM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A type of maritime mine actuation.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">MULTLM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">MULTLM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
@@ -4314,14 +4314,14 @@
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Slightly incapacitated</rdfs:label>
+    <rdfs:comment xml:lang="en">A status indicating that a PERSON is incapacitated, but without any major reduction of normal physical capabilities.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">SI</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">Slightly incapacitated</rdfs:label>
-    <rdfs:comment xml:lang="en">A status indicating that a PERSON is incapacitated, but without any major reduction of normal physical capabilities.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">SI</owl:hasValue>
@@ -4526,30 +4526,30 @@
     <rdfs:comment xml:lang="en">No definition provided in APP-6A.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Magnetic">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">MAGNET</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
-    <rdfs:label xml:lang="en">Magnetic</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MAGNET</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
+    <rdfs:label xml:lang="en">Magnetic</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with a magnetic influence circuit that responds to the magnetic field of a ship.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">MAGNET</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
   </owl:Class>
   <owl:Class rdf:about="#Sweep,_hovercraft_magnetic">
@@ -4636,19 +4636,13 @@
     <rdfs:comment xml:lang="en">Radioactive material, type B(U) package, fissile.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="#Combination,_overlap">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">COMBIN</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">COMBIN</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">COMBIN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:label xml:lang="en">Combination, overlap</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
@@ -4661,6 +4655,12 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">COMBIN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="UN_Dangerous_Goods_NUM_1016">
     <rdfs:subClassOf>
@@ -4774,7 +4774,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MODDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Subjectively judged by the reporting organisation to be moderately damaged.</rdfs:comment>
@@ -4793,7 +4793,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MODDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Moderately damaged</rdfs:label>
@@ -4812,13 +4812,13 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MODDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MODDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -5092,13 +5092,13 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">PASIVE</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism that does not emit a signal to detect the presence of a target.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Glider">
@@ -5604,13 +5604,25 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#Incapacitated,_not_walking">
-    <rdfs:label xml:lang="en">Incapacitated, not walking</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">IN</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">IN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">IN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Incapacitated, not walking</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">IN</owl:hasValue>
@@ -5636,42 +5648,30 @@
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">IN</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">IN</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Acoustic_low_frequency">
     <rdfs:label xml:lang="en">Acoustic low frequency</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACOULF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACOULF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with an acoustic low frequency circuit, less than 2 Hz, which responds to the acoustic field of a ship or sweep.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACOULF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACOULF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
@@ -5706,26 +5706,26 @@
     <rdfs:label xml:lang="en">Antenna</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ANTENA</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ANTENA</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ANTENA</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A contact (maritime) mine firing mechanism which, when touched by a ferrous object, set up galvanic action to fire the mine. The antenna generally takes the form of a special section in the mooring cable, and/or special cable suspended above the mine by a float.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ANTENA</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
   </owl:Class>
   <owl:Class rdf:ID="UN_Dangerous_Goods_NUM_1134">
@@ -5866,19 +5866,13 @@
   <owl:Class rdf:ID="Acoustic">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACOUST</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACOUST</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with an acoustic circuit which responds to the acoustic field of a ship or sweep.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACOUST</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -5889,11 +5883,17 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACOUST</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Maritime_mine_disposal_charge"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:label xml:lang="en">Acoustic</rdfs:label>
   </owl:Class>
@@ -6035,12 +6035,6 @@
   </owl:Class>
   <owl:Class rdf:about="#Magnetic_T,_total_component">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">MAGNTT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
@@ -6048,16 +6042,22 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
-    <rdfs:label xml:lang="en">Magnetic T, total component</rdfs:label>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MAGNTT</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
+    <rdfs:label xml:lang="en">Magnetic T, total component</rdfs:label>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">MAGNTT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:comment xml:lang="en">A (maritime) mine with a magnetic influence circuit that responds to the total component of the magnetic field of a ship.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="#Data_link,_radio">
@@ -6376,6 +6376,7 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism fitted with a ship counting mechanism, a tactical device.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -6383,7 +6384,6 @@
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
   </owl:Class>
   <owl:Class rdf:about="#Sweep,_magnetic_electrode">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#MARITIME-EQUIPMENT-TYPE-Sweep"/>
@@ -6500,30 +6500,30 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Active">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACTIVE</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism actuated by the reflection from a target of a signal emitted by the mine.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">ACTIVE</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:label xml:lang="en">Active</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACTIVE</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
   </owl:Class>
   <owl:Class rdf:ID="Heavily_damaged">
@@ -6741,14 +6741,14 @@
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Incapacitated, walking</rdfs:label>
+    <rdfs:comment xml:lang="en">A status indicating that a PERSON is incapacitated, but is capable of walking.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">IW</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#person-status-physical-status-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">Incapacitated, walking</rdfs:label>
-    <rdfs:comment xml:lang="en">A status indicating that a PERSON is incapacitated, but is capable of walking.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">IW</owl:hasValue>
@@ -6976,23 +6976,23 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">FITWDA</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
-    <rdfs:label xml:lang="en">Fitted with delayed arming or rising mechanism</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">FITWDA</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
+    <rdfs:label xml:lang="en">Fitted with delayed arming or rising mechanism</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="IFF_mode_3A">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#NETWORK-SERVICE-Identification_friend_or_foe"/>
@@ -7546,12 +7546,6 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">COARAS</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
@@ -7566,6 +7560,12 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Coarse, anti-sweep</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">COARAS</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
   </owl:Class>
   <owl:Class rdf:ID="Mural">
@@ -7912,53 +7912,41 @@
     <rdfs:comment xml:lang="en">A characterisation of an area with low-growing woody plants.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:ID="Lightly_damaged">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Lightly damaged</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">Subjectively judged by the reporting organisation to be only lightly damaged.</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -7966,6 +7954,18 @@
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LGTDAM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -8409,28 +8409,28 @@
   </owl:Class>
   <owl:Class rdf:ID="Minehunting_sonar_decoy">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">MINHSD</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
+    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">MINHSD</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
-    <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:label xml:lang="en">Minehunting sonar decoy</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">MINHSD</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:comment xml:lang="en">A small object with a large sonar signal, or inert minelike objects, Non-mine Bottom Objects (NOMBOs).</rdfs:comment>
   </owl:Class>
@@ -8830,26 +8830,26 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACOUAF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Acoustic audio frequency</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACOUAF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with an acoustic audio circuit which responds to the acoustic field of a ship or sweep.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACOUAF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACOUAF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
   </owl:Class>
@@ -8996,12 +8996,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Magnetic H, horizontal component</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">MAGNHH</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism with a magnetic influence circuit that responds to the horizontal component of the magnetic field of a ship.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
@@ -9011,6 +9005,12 @@
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">MAGNHH</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
   </owl:Class>
@@ -9074,26 +9074,26 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LVR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">LVR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:comment xml:lang="en">Subjectively judged by the reporting organisation that a MATERIEL is deficient or lacking of some mission-critical resources (e.g., fuel, ammunition).</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LVR</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">Subjectively judged by the reporting organisation that a MATERIEL is deficient or lacking of some mission-critical resources (e.g., fuel, ammunition).</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LVR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LVR</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Lacking vital resources</rdfs:label>
@@ -9106,6 +9106,12 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LVR</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">LVR</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#organisation-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -9113,12 +9119,6 @@
       <owl:Restriction>
         <owl:hasValue xml:lang="en">LVR</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedmBase.owl#facility-status-operational-status-qualifier-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">LVR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#materiel-status-operational-status-qualifier-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -9540,27 +9540,27 @@
   </owl:Class>
   <owl:Class rdf:ID="Sensitive_for_normal_target">
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Sea_mine"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">SENFNT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_deep_moored"/>
     <rdfs:label xml:lang="en">Sensitive for normal target</rdfs:label>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_moored"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_500kg_or_greater"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_known"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_shallow_moored"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">SENFNT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">SENFNT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Moving_mine,_sea"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Seabed_mine"/>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_seabed_-_explosive_charge_less_than_500kg"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">SENFNT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedmBase.owl#ammunition-type-mine-maritime-firing-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_not_otherwise_specified"/>
     <rdfs:comment xml:lang="en">A (maritime) mine firing mechanism that may actuated by a small change in its influence field.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="jc3iedmSubOnt.owl#AMMUNITION-TYPE-Mine,_maritime,_moving"/>
