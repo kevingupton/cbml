@@ -613,17 +613,6 @@
     <rdfs:label xml:lang="en">war/military conference</rdfs:label>
     <rdfs:comment xml:lang="en">A meeting of a group of persons to discuss war/military process.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Spying">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">SPYING</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">spying</rdfs:label>
-    <rdfs:comment xml:lang="en">Obtaining intelligence information furtively as an agent of a foreign power or competition.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Religious_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -634,6 +623,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">religious warfare</rdfs:label>
     <rdfs:comment xml:lang="en">An act of open armed conflict due to a difference of religious belief between two separate groups.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Spying">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">SPYING</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">spying</rdfs:label>
+    <rdfs:comment xml:lang="en">Obtaining intelligence information furtively as an agent of a foreign power or competition.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Conducting_media_interview">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1955,17 +1955,6 @@
     <rdfs:label xml:lang="en">airspace violation</rdfs:label>
     <rdfs:comment xml:lang="en">The invasion of the declared own airspace by an aircraft.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Coup_d’état">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">COUPDE</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">coup d’état</rdfs:label>
-    <rdfs:comment xml:lang="en">A violent or illegal seizure of power.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Demonstration">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2097,6 +2086,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">aerial engagement</rdfs:label>
     <rdfs:comment xml:lang="en">The occurrence of a hostile encounter between military aircraft.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Coup_d_etat">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">COUPDE</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">coup d’état</rdfs:label>
+    <rdfs:comment xml:lang="en">A violent or illegal seizure of power.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Interdiction">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -4123,12 +4123,20 @@
     <rdfs:comment xml:lang="en">The failure of communications equipment due to a mechanical malfunction.</rdfs:comment>
   </owl:Class>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">CHMBIO</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
+    <owl:hasValue xml:lang="en">CBRN</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">RADCTV</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
+    <owl:hasValue xml:lang="en">ACTEV</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">ACTTA</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">NUCWEP</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#nuclear-event-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">RADEVT</owl:hasValue>
@@ -4139,23 +4147,15 @@
     <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-task-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">NUCWEP</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#nuclear-event-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">CBRN</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">ACTTA</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
     <owl:hasValue xml:lang="en">NUCEVT</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#radioactive-event-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ACTEV</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-category-code"/>
+    <owl:hasValue xml:lang="en">RADCTV</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">CHMBIO</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
   </owl:Restriction>
 </rdf:RDF>

@@ -64,11 +64,11 @@
     <rdfs:comment xml:lang="en">An order to assist units and their staffs initiate the preparations for and the execution of their new mission by giving them the maximum warning and essential details of impending operations and information of time available.</rdfs:comment>
   </owl:Class>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
+    <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ORDER</owl:hasValue>
+    <owl:hasValue xml:lang="en">PLAN</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_PLAN-ORDER.owl#plan-order-category-code"/>
   </owl:Restriction>
 </rdf:RDF>

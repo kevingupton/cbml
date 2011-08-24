@@ -9,11 +9,11 @@
     <owl:imports rdf:resource="jc3iedm_AFFILIATION.owl#"/>
   </owl:Ontology>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">AFLREL</owl:hasValue>
+    <owl:hasValue xml:lang="en">AFLETH</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">AFLETH</owl:hasValue>
+    <owl:hasValue xml:lang="en">AFLGEO</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
@@ -21,7 +21,7 @@
     <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">AFLGEO</owl:hasValue>
+    <owl:hasValue xml:lang="en">AFLREL</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_AFFILIATION.owl#affiliation-category-code"/>
   </owl:Restriction>
 </rdf:RDF>

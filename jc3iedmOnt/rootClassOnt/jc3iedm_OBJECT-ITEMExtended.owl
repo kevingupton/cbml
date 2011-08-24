@@ -1109,44 +1109,16 @@
     <rdfs:comment xml:lang="en">A small revolving storm of wind in which the air whirls around a core of low pressure. Whirlwinds sometimes extend upwards to a height of many hundreds of metres and cause dust whirls formed over a desert.</rdfs:comment>
   </owl:Class>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">HARBOR</owl:hasValue>
+    <owl:hasValue xml:lang="en">UN</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">RALWAY</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">NETWRK</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">VISIB</owl:hasValue>
+    <owl:hasValue xml:lang="en">COVER</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">APPRDR</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">ATMOS</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">QUAY</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">ACM</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">ICING</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">BRIDGE</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">AIRFLD</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">RTESEG</owl:hasValue>
@@ -1157,36 +1129,92 @@
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ROAD</owl:hasValue>
+    <owl:hasValue xml:lang="en">MNFLD</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#military-obstacle-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">LIGHT</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">BASIN</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ROUTE</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
+    <owl:hasValue xml:lang="en">MF</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">JETTY</owl:hasValue>
+    <owl:hasValue xml:lang="en">QUAY</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ANCHOR</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+    <owl:hasValue xml:lang="en">MNFLND</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">WIND</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
+    <owl:hasValue xml:lang="en">BRIDGE</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">ROAD</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">MNFMRT</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">ANCHOR</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">FE</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
     <owl:hasValue xml:lang="en">SLPWAY</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">UN</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
+    <owl:hasValue xml:lang="en">ICING</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">LIGHT</owl:hasValue>
+    <owl:hasValue xml:lang="en">OR</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">CF</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">AIRFLD</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">AIRRTE</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#route-segment-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">VISIB</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">GF</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">JETTY</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">FA</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">MILOBS</owl:hasValue>
@@ -1197,83 +1225,55 @@
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">APRON</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">RALWAY</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">FA</owl:hasValue>
+    <owl:hasValue xml:lang="en">MA</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">DRYDCK</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">OR</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">CO</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">MNFLD</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#military-obstacle-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">BASIN</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">AIRRTE</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#route-segment-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">ILS</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#materiel-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">MA</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
+    <owl:hasValue xml:lang="en">ROUTE</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">DRYDCK</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">NETWRK</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">PRECIP</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">GF</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">COVER</owl:hasValue>
+    <owl:hasValue xml:lang="en">ATMOS</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#meteorologic-feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">MF</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">FE</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">MNFLND</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">CF</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#feature-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">PE</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#object-item-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">MNFMRT</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#minefield-category-code"/>
+    <owl:hasValue xml:lang="en">ACM</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">HARBOR</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">APRON</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#facility-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">APPRDR</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#control-feature-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">CO</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_OBJECT-ITEM.owl#organisation-category-code"/>
   </owl:Restriction>
 </rdf:RDF>
