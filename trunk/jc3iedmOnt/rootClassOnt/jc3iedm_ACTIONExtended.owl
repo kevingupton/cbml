@@ -129,28 +129,6 @@
     <rdfs:label xml:lang="en">treaty violation</rdfs:label>
     <rdfs:comment xml:lang="en">An infringement or breaking of the provisions of a formal agreement.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Neutralize,_explosive">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">NTREXP</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">neutralize, explosive</rdfs:label>
-    <rdfs:comment xml:lang="en">Rendering bombs, mines, missiles, and booby traps into a safe state.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Collision,_mid-air">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">COLMID</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">collision, mid air</rdfs:label>
-    <rdfs:comment xml:lang="en">In-flight collision of an aircraft with another aircraft.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Securing">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -161,17 +139,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">securing</rdfs:label>
     <rdfs:comment xml:lang="en">Gaining possession of a position or terrain feature, with or without force, and making such disposition to prevent, as far as possible, its destruction or loss by enemy action.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking,_not_otherwise_specified">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">HIJACK</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">hijacking, not otherwise specified</rdfs:label>
-    <rdfs:comment xml:lang="en">Seizure of a vehicle in order to go somewhere other than the scheduled destination.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Aircraft_launch_activity">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -217,17 +184,6 @@
     <rdfs:label xml:lang="en">atmospheric pollution</rdfs:label>
     <rdfs:comment xml:lang="en">Contamination of the atmosphere caused by a poison or toxin.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Massive_deportation/banishment">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">DEPORT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">massive deportation/banishment</rdfs:label>
-    <rdfs:comment xml:lang="en">The driving out or removing from a home or place of usual resort or continuance of a large number of people.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Mortar_fire">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -238,6 +194,28 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">mortar fire</rdfs:label>
     <rdfs:comment xml:lang="en">The discharge of a projectile from a mortar weapon.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack__main">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ATTMN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">attack, main</rdfs:label>
+    <rdfs:comment xml:lang="en">Conducting the principal attack or effort into which the commander throws the full weight of the offensive power at his disposal. An attack directed against the chief objective of the campaign or battle.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident__mine">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACCMNE</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">accident, mine</rdfs:label>
+    <rdfs:comment xml:lang="en">An accident involving unexploded ordnance.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Political_demonstration">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -250,17 +228,6 @@
     <rdfs:label xml:lang="en">political demonstration</rdfs:label>
     <rdfs:comment xml:lang="en">A public display of group feelings towards a political idea, person or cause.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Build-up">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">BLDUP</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">build up</rdfs:label>
-    <rdfs:comment xml:lang="en">Attaining prescribed strength of units and prescribed levels of vehicles, equipment, stores and supplies.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Dazzle">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -272,17 +239,6 @@
     <rdfs:label xml:lang="en">dazzle</rdfs:label>
     <rdfs:comment xml:lang="en">Causing a temporary loss of vision or a temporary reduction in visual acuity; may also be applied to effects on optics.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Oceans,_seas_or_water_pollution">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">WATPOL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">oceans, seas or water pollution</rdfs:label>
-    <rdfs:comment xml:lang="en">Contamination of a body of water caused by a poison or toxin.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#REQUEST_Presence">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#REQUEST"/>
     <rdfs:subClassOf>
@@ -293,6 +249,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">presence</rdfs:label>
     <rdfs:comment xml:lang="en">To discover the manifestation of an ACTION-OBJECTIVE in the area of operational interest specified through another ACTION-OBJECTIVE (OBJECT-ITEM: FACILITY, FEATURE).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Build-up">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">BLDUP</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">build up</rdfs:label>
+    <rdfs:comment xml:lang="en">Attaining prescribed strength of units and prescribed levels of vehicles, equipment, stores and supplies.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -338,16 +305,16 @@
     <rdfs:label xml:lang="en">issuing media article</rdfs:label>
     <rdfs:comment xml:lang="en">Sending forth or putting into circulation a non-fictional essay, especially one included with others in a newspaper, magazine, or journal.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Famine">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing__illegal">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">FAMINE</owl:hasValue>
+        <owl:hasValue xml:lang="en">BCILGL</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">famine</rdfs:label>
-    <rdfs:comment xml:lang="en">An extreme scarcity of food.</rdfs:comment>
+    <rdfs:label xml:lang="en">border crossing, illegal</rdfs:label>
+    <rdfs:comment xml:lang="en">A border crossing that is forbidden by law.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_UXO_discovery">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -359,6 +326,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">uxo discovery</rdfs:label>
     <rdfs:comment xml:lang="en">The detection of the presence of unexploded explosive ordnance.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Famine">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">FAMINE</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">famine</rdfs:label>
+    <rdfs:comment xml:lang="en">An extreme scarcity of food.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Redeployment">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -381,17 +359,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">unidentified release other than attack (rota)</rdfs:label>
     <rdfs:comment xml:lang="en">The release of an unknown chemical, biological, nuclear, radiological materiel(s) [agent(s)] into the environment intentionally or accidentally but not for the intended purpose of conducting an attack.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Bombing,_accidental">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">BMBACC</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">bombing, accidental</rdfs:label>
-    <rdfs:comment xml:lang="en">An unfortunate bombing incident that happens unexpectedly and unintentionally.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#NUCLEAR-EVENT_Nuclear_release_other_than_attack_(ROTA)">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#NUCLEAR-EVENT"/>
@@ -459,16 +426,16 @@
     <rdfs:label xml:lang="en">epidemic</rdfs:label>
     <rdfs:comment xml:lang="en">A widespread occurrence of a disease in a community at a particular time.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Gunnery,_air-to-air">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Bombing__accidental">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">GUNATA</owl:hasValue>
+        <owl:hasValue xml:lang="en">BMBACC</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">gunnery, air to air</rdfs:label>
-    <rdfs:comment xml:lang="en">The act of firing an air-to-air weapon, usually at an aircraft.</rdfs:comment>
+    <rdfs:label xml:lang="en">bombing, accidental</rdfs:label>
+    <rdfs:comment xml:lang="en">An unfortunate bombing incident that happens unexpectedly and unintentionally.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Political_execution">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -492,16 +459,16 @@
     <rdfs:label xml:lang="en">natural disaster</rdfs:label>
     <rdfs:comment xml:lang="en">The damage caused by force of nature, such as a hurricane, cyclone, tornado or tidal wave.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident,_weapon">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Strafing__aerial">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACCWPN</owl:hasValue>
+        <owl:hasValue xml:lang="en">STRFAR</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">accident, weapon</rdfs:label>
-    <rdfs:comment xml:lang="en">An accident involving a weapon.</rdfs:comment>
+    <rdfs:label xml:lang="en">strafing, aerial</rdfs:label>
+    <rdfs:comment xml:lang="en">Attack by enemy aircraft against ground targets using forward firing ordnance (bullets, shells, or rockets).</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Security_violation">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -525,6 +492,17 @@
     <rdfs:label xml:lang="en">robbery</rdfs:label>
     <rdfs:comment xml:lang="en">Unlawfully taking property, valuables or money from a person or place.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Civil_demonstration__legal">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CIVDML</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">civil demonstration, legal</rdfs:label>
+    <rdfs:comment xml:lang="en">A public meeting or march legally expressing protest or other opinion on an issue.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Canalise">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -535,6 +513,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">canalise</rdfs:label>
     <rdfs:comment xml:lang="en">Restricting operations to a narrow zone by use of existing or reinforcing obstacles or by fire or bombing.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Death__natural_causes">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">DTHNAT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">death, natural causes</rdfs:label>
+    <rdfs:comment xml:lang="en">Normal termination of life.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Transporting">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -591,16 +580,16 @@
     <rdfs:label xml:lang="en">advancing</rdfs:label>
     <rdfs:comment xml:lang="en">Moving towards an objective in some form of tactical formation. This is a transitional phase between operations that may or may not result in contact with the enemy.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing,_not-planned">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident__aircraft_ground">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">BCNTPL</owl:hasValue>
+        <owl:hasValue xml:lang="en">ACCAIR</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">border crossing, not planned</rdfs:label>
-    <rdfs:comment xml:lang="en">A border crossing that is unplanned.</rdfs:comment>
+    <rdfs:label xml:lang="en">accident, aircraft ground</rdfs:label>
+    <rdfs:comment xml:lang="en">An accident involving an aircraft during ground operations or maintenance.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Amphibious_operation">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -613,38 +602,16 @@
     <rdfs:label xml:lang="en">amphibious operation</rdfs:label>
     <rdfs:comment xml:lang="en">Mounting an operation launched from the sea by naval and land forces against a hostile, or potentially hostile shore.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking,_hooliganism">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_War_military_conference">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">TRBHLG</owl:hasValue>
+        <owl:hasValue xml:lang="en">WARCON</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">troublemaking, hooliganism</rdfs:label>
-    <rdfs:comment xml:lang="en">Causing difficulties by the actions of hoodlums, especially young ruffians.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing,_land_combat">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">CLRLND</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">clearing, land combat</rdfs:label>
-    <rdfs:comment xml:lang="en">Removing all enemy forces from a specific location, area, or zone.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Religious_warfare">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">RELWAR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">religious warfare</rdfs:label>
-    <rdfs:comment xml:lang="en">An act of open armed conflict due to a difference of religious belief between two separate groups.</rdfs:comment>
+    <rdfs:label xml:lang="en">war/military conference</rdfs:label>
+    <rdfs:comment xml:lang="en">A meeting of a group of persons to discuss war/military process.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Spying">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -657,6 +624,17 @@
     <rdfs:label xml:lang="en">spying</rdfs:label>
     <rdfs:comment xml:lang="en">Obtaining intelligence information furtively as an agent of a foreign power or competition.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Religious_warfare">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">RELWAR</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">religious warfare</rdfs:label>
+    <rdfs:comment xml:lang="en">An act of open armed conflict due to a difference of religious belief between two separate groups.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Conducting_media_interview">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -667,17 +645,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">conducting media interview</rdfs:label>
     <rdfs:comment xml:lang="en">Conducting a conversation between a reporter etc. and a person of public interest, used as a basis of a broadcast or publication.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Neutralize,_chemical">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">NTRCHM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">neutralize, chemical</rdfs:label>
-    <rdfs:comment xml:lang="en">Making safe or non-toxic an object contaminated with a chemical agent.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Consolidating_of_a_position">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -700,28 +667,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">evacuating</rdfs:label>
     <rdfs:comment xml:lang="en">Clearing or removing materiel and personnel from a given locality.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing,_forced">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">BCFRCD</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">border crossing, forced</rdfs:label>
-    <rdfs:comment xml:lang="en">A border crossing that is conducted under pressure.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack,_diversion">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ATTDVR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">attack, diversion</rdfs:label>
-    <rdfs:comment xml:lang="en">Conducting an attack wherein a force attacks, or threatens to attack, a target other than the main target for the purpose of drawing enemy defences away from the main effort.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Crime_against_humanity">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -766,17 +711,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">publishing media article</rdfs:label>
     <rdfs:comment xml:lang="en">Making generally known a non-fictional essay, especially one included with others in a newspaper, magazine, journal, etc.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drug_distribution,_illegal">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">DRGDST</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">drug distribution, illegal</rdfs:label>
-    <rdfs:comment xml:lang="en">An action to distribute illegal drugs or to illegally distribute legal drugs.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Providing_accommodation">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -833,6 +767,17 @@
     <rdfs:label xml:lang="en">communications deactivation</rdfs:label>
     <rdfs:comment xml:lang="en">The disabling of transmission of information.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hold__defensive">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">HLDDEF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">hold, defensive</rdfs:label>
+    <rdfs:comment xml:lang="en">Maintaining or retaining possession by force a position or area in defensive operations.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#NUCLEAR-EVENT_Nuclear_attack">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#NUCLEAR-EVENT"/>
     <rdfs:subClassOf>
@@ -843,6 +788,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">nuclear attack</rdfs:label>
     <rdfs:comment xml:lang="en">The delivery of a nuclear weapon against a target.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fix__electro-optical">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">FIXELO</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">fix, electro optical</rdfs:label>
+    <rdfs:comment xml:lang="en">Determining a position using electro-optical data.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#CHEMICAL-BIOLOGICAL-EVENT_Biological_release_other_than_attack_(ROTA)">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
@@ -865,6 +821,28 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">holding</rdfs:label>
     <rdfs:comment xml:lang="en">To discover the holding of an ACTION-OBJECTIVE (OBJECT-ITEM) by any means.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack__deliberate">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">DLBATK</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">attack, deliberate</rdfs:label>
+    <rdfs:comment xml:lang="en">Conducting an offensive operation characterised by pre-planned coordinated employment of firepower and manoeuvre to close with and destroy or capture the enemy.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Bombing__deliberate">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">BMBDLB</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">bombing, deliberate</rdfs:label>
+    <rdfs:comment xml:lang="en">A deliberate and intentional bombing incident.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Missing_individual">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -987,6 +965,17 @@
     <rdfs:label xml:lang="en">providing security services</rdfs:label>
     <rdfs:comment xml:lang="en">Providing labour and materiel to assure safety of personnel and facilities.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident__workplace">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACCWRK</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">accident, workplace</rdfs:label>
+    <rdfs:comment xml:lang="en">An accident occurring at the workplace.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Criminal_incident">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1053,28 +1042,6 @@
     <rdfs:label xml:lang="en">conducting recreational activities</rdfs:label>
     <rdfs:comment xml:lang="en">Conducting a refreshing or entertaining activity.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Outbreak_of_racial/tribal/ethnic_warfare">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">RACIAL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">outbreak of racial/tribal/ethnic warfare</rdfs:label>
-    <rdfs:comment xml:lang="en">The use of force or violence by or against racial or tribal groups.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking,_inciting">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">TRBINC</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">troublemaking, inciting</rdfs:label>
-    <rdfs:comment xml:lang="en">Provoking to action, stirring up or urging on.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Disengaging">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1086,17 +1053,6 @@
     <rdfs:label xml:lang="en">disengaging</rdfs:label>
     <rdfs:comment xml:lang="en">Breaking off an action.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_War/crisis_alert">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">WARALE</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">war/crisis alert</rdfs:label>
-    <rdfs:comment xml:lang="en">The state of readiness caused by the possibility of a war.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Issuing_press_release">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1107,17 +1063,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">issuing press release</rdfs:label>
     <rdfs:comment xml:lang="en">Sending forth or putting into circulation an official statement issued to media for information.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Death,_natural_causes">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">DTHNAT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">death, natural causes</rdfs:label>
-    <rdfs:comment xml:lang="en">Normal termination of life.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_incursion">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1218,17 +1163,6 @@
     <rdfs:label xml:lang="en">providing education services</rdfs:label>
     <rdfs:comment xml:lang="en">Providing labour and materiel for the educational process.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing,_obstacle">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">CLROBS</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">clearing, obstacle</rdfs:label>
-    <rdfs:comment xml:lang="en">Eliminating or neutralizing an obstacle.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fire">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1295,6 +1229,17 @@
     <rdfs:label xml:lang="en">civil unrest</rdfs:label>
     <rdfs:comment xml:lang="en">A behaviour that results in the disturbance of the normal order of society that generally falls short of riots and/or property destruction in the civil population.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident__weapon">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACCWPN</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">accident, weapon</rdfs:label>
+    <rdfs:comment xml:lang="en">An accident involving a weapon.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Early_warning_alert">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1316,6 +1261,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">providing transhipment services</rdfs:label>
     <rdfs:comment xml:lang="en">Providing movement of cargo from one ship or train or container to another for further shipment.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Offensive_counteroffensive">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">OFFCOF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">offensive/counteroffensive</rdfs:label>
+    <rdfs:comment xml:lang="en">Conducting an operation by an attack force.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Psychological_operation">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1416,6 +1372,28 @@
     <rdfs:label xml:lang="en">delaying</rdfs:label>
     <rdfs:comment xml:lang="en">Slowing the momentum of the enemy by conducting an operation in which the force under pressure trades time for space; the aim is to inflict the maximum damage on the enemy without becoming decisively engaged.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack__diversion">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ATTDVR</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">attack, diversion</rdfs:label>
+    <rdfs:comment xml:lang="en">Conducting an attack wherein a force attacks, or threatens to attack, a target other than the main target for the purpose of drawing enemy defences away from the main effort.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking__agitating">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">TRBAGT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">troublemaking, agitating</rdfs:label>
+    <rdfs:comment xml:lang="en">Stirring up of public interest on a matter of controversy, such as a political or social issue.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Providing_camps">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1471,6 +1449,17 @@
     <rdfs:label xml:lang="en">blocking</rdfs:label>
     <rdfs:comment xml:lang="en">Denying of enemy access to an area or preventing his advance in a direction or along an avenue of approach.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Outbreak_of_racial_tribal_ethnic_warfare">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">RACIAL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">outbreak of racial/tribal/ethnic warfare</rdfs:label>
+    <rdfs:comment xml:lang="en">The use of force or violence by or against racial or tribal groups.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#CHEMICAL-BIOLOGICAL-EVENT_Chemical_attack">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
     <rdfs:subClassOf>
@@ -1514,17 +1503,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">petroleum product spills</rdfs:label>
     <rdfs:comment xml:lang="en">The accidental or delivered release of any petroleum product into the environment.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking,_plane">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">HJCKPL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">hijacking, plane</rdfs:label>
-    <rdfs:comment xml:lang="en">Seizure of an aircraft in order to go somewhere other than the scheduled destination.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Reconnaissance_in_force">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1603,16 +1581,16 @@
     <rdfs:label xml:lang="en">following and assuming</rdfs:label>
     <rdfs:comment xml:lang="en">Operating as a committed force that is following a force conducting an offensive operation and is prepared to continue the mission of the force it is following when that force is fixed, attrited, or otherwise unable to continue.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking,_intimidating">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing__planned">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">TRBINT</owl:hasValue>
+        <owl:hasValue xml:lang="en">BCPLND</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">troublemaking, intimidating</rdfs:label>
-    <rdfs:comment xml:lang="en">Discouraging or inhibiting by or as if by threats.</rdfs:comment>
+    <rdfs:label xml:lang="en">border crossing, planned</rdfs:label>
+    <rdfs:comment xml:lang="en">A border crossing that is known to have been planned ahead of time.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Electronic_warfare">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1646,6 +1624,28 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">religious demonstration</rdfs:label>
     <rdfs:comment xml:lang="en">A public display of group feelings towards a religious idea, person or cause.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drug_consumption__illegal">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">DRGCNS</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">drug consumption, illegal</rdfs:label>
+    <rdfs:comment xml:lang="en">An action of consuming illegal drugs.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Arresting_obstructing">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ARROBS</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">arresting/obstructing</rdfs:label>
+    <rdfs:comment xml:lang="en">Stopping or checking of the motion, progress, growth, or spread of something.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Air_assault">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1724,17 +1724,6 @@
     <rdfs:label xml:lang="en">conducting road service</rdfs:label>
     <rdfs:comment xml:lang="en">Enabling the movement of a number of specific units.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hold,_defensive">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">HLDDEF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">hold, defensive</rdfs:label>
-    <rdfs:comment xml:lang="en">Maintaining or retaining possession by force a position or area in defensive operations.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drive-by_shooting">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1779,6 +1768,28 @@
     <rdfs:label xml:lang="en">arms trade</rdfs:label>
     <rdfs:comment xml:lang="en">A happening of selling or buying of arms.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack__electronic">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ATTEL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">attack, electronic</rdfs:label>
+    <rdfs:comment xml:lang="en">Conducting electronic warfare involving the use of electromagnetic energy, directed energy or anti-radiation weapons to attack personnel, facilities, or equipment with the intent of degrading, neutralizing, or destroying enemy combat capability and is considered a form of fires.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing__obstacle">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CLROBS</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">clearing, obstacle</rdfs:label>
+    <rdfs:comment xml:lang="en">Eliminating or neutralizing an obstacle.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Naval_platform_flight_operations">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1789,6 +1800,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">naval platform flight operations</rdfs:label>
     <rdfs:comment xml:lang="en">Aircraft launch or recovery by a naval platform.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing__not-planned">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">BCNTPL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">border crossing, not planned</rdfs:label>
+    <rdfs:comment xml:lang="en">A border crossing that is unplanned.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Arson">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1834,6 +1856,17 @@
     <rdfs:label xml:lang="en">conducting rearward passage of lines</rdfs:label>
     <rdfs:comment xml:lang="en">Moving a force through the defensive positions of another force behind it in order to break contact with the enemy.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#CHEMICAL-BIOLOGICAL-EVENT_Chemical_biological_facility_event">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CBFAC</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#chemical-biological-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">chemical/biological facility event</rdfs:label>
+    <rdfs:comment xml:lang="en">An event that involves viable agent released to the atmosphere following a strike against a facility containing chemical warfare agent(s) and/or biological warfare agent(s).</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Assassination">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -1845,27 +1878,16 @@
     <rdfs:label xml:lang="en">assassination</rdfs:label>
     <rdfs:comment xml:lang="en">Murder of a prominent person.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Civil_demonstration,_illegal">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking__boat">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">CIVDMI</owl:hasValue>
+        <owl:hasValue xml:lang="en">HJCKBT</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">civil demonstration, illegal</rdfs:label>
-    <rdfs:comment xml:lang="en">A public meeting or march illegally expressing protest or other opinion on an issue.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Collision,_obstacle">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">COLOBS</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">collision, obstacle</rdfs:label>
-    <rdfs:comment xml:lang="en">In-flight collision of an aircraft with natural or man-made object (fixed or mobile) located on the ground.</rdfs:comment>
+    <rdfs:label xml:lang="en">hijacking, boat</rdfs:label>
+    <rdfs:comment xml:lang="en">Seizure of a boat or ship in order to go somewhere other than the scheduled destination.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Retire">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -1988,17 +2010,6 @@
     <rdfs:label xml:lang="en">attempted rape</rdfs:label>
     <rdfs:comment xml:lang="en">The attempted act of forcing another person to submit to sexual intercourse.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack,_main">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ATTMN</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">attack, main</rdfs:label>
-    <rdfs:comment xml:lang="en">Conducting the principal attack or effort into which the commander throws the full weight of the offensive power at his disposal. An attack directed against the chief objective of the campaign or battle.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Volcanic_eruption">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2009,17 +2020,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">volcanic eruption</rdfs:label>
     <rdfs:comment xml:lang="en">The release of lava or steam by a volcano.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking,_agitating">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">TRBAGT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">troublemaking, agitating</rdfs:label>
-    <rdfs:comment xml:lang="en">Stirring up of public interest on a matter of controversy, such as a political or social issue.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Publishing_media_documentary">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2043,28 +2043,6 @@
     <rdfs:label xml:lang="en">counter attack</rdfs:label>
     <rdfs:comment xml:lang="en">Mounting an offensive operation in which an attack by a part or all of a defending force is made against an enemy attacking force, for such specific purposes as regaining ground lost, cutting off or destroying lead enemy units, and with the general objective of regaining the initiative and denying the enemy the attainment of his goal or purpose in attacking.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_War/military_conference">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">WARCON</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">war/military conference</rdfs:label>
-    <rdfs:comment xml:lang="en">A meeting of a group of persons to discuss war/military process.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Deception,_electronic">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">DCPTEL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">deception, electronic</rdfs:label>
-    <rdfs:comment xml:lang="en">In electronic countermeasures, the deliberate radiation, re-radiation, alteration, absorption or reflection of electromagnetic energy in a manner intended to confuse, distract or seduce an enemy or his electronic systems.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-TASK_Template">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-TASK"/>
     <rdfs:subClassOf>
@@ -2075,17 +2053,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">template</rdfs:label>
     <rdfs:comment xml:lang="en">An ACTION-TASK that serves as a reference in planning.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack,_electronic">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ATTEL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">attack, electronic</rdfs:label>
-    <rdfs:comment xml:lang="en">Conducting electronic warfare involving the use of electromagnetic energy, directed energy or anti-radiation weapons to attack personnel, facilities, or equipment with the intent of degrading, neutralizing, or destroying enemy combat capability and is considered a form of fires.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Serving_as_a_reserve">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2108,6 +2075,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">indiscriminate shooting</rdfs:label>
     <rdfs:comment xml:lang="en">Firing without a specific objective and without making distinction.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack__supporting">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ATTSPT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">attack, supporting</rdfs:label>
+    <rdfs:comment xml:lang="en">Conducting an offensive operation carried out in conjunction with a main attack and designed to achieve one or more of the following: a. deceive the enemy; b. destroy or pin down enemy forces which could interfere with the main attack; c. control ground whose occupation by the enemy will hinder the main attack; or d. force the enemy to commit reserves prematurely or in an indecisive area.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Aerial_engagement">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2186,6 +2164,17 @@
     <rdfs:label xml:lang="en">abdication</rdfs:label>
     <rdfs:comment xml:lang="en">The renouncement by a person of his official functions.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Vandalism_Rape_Loot_Ransack_Plunder_Sack">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">VANDAL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">vandalism/rape/loot/ransack/plunder/sack</rdfs:label>
+    <rdfs:comment xml:lang="en">An act of vandalism, raping, looting, ransacking or plundering against an individual or property.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Suicide">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2197,16 +2186,16 @@
     <rdfs:label xml:lang="en">suicide</rdfs:label>
     <rdfs:comment xml:lang="en">The action of killing oneself intentionally.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing,_escorted">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack__hasty">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">BCESC</owl:hasValue>
+        <owl:hasValue xml:lang="en">HASTY</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">border crossing, escorted</rdfs:label>
-    <rdfs:comment xml:lang="en">A border crossing that is conducted under escort.</rdfs:comment>
+    <rdfs:label xml:lang="en">attack, hasty</rdfs:label>
+    <rdfs:comment xml:lang="en">In land operations, an attack in which preparation time is traded for speed in order to exploit an opportunity.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Aircraft_loss">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2230,6 +2219,17 @@
     <rdfs:label xml:lang="en">status</rdfs:label>
     <rdfs:comment xml:lang="en">To recognise the status of an ACTION-OBJECTIVE (OBJECT-ITEM) by any means.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing__forced">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">BCFRCD</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">border crossing, forced</rdfs:label>
+    <rdfs:comment xml:lang="en">A border crossing that is conducted under pressure.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Providing_repair_services">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2251,6 +2251,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">enveloping</rdfs:label>
     <rdfs:comment xml:lang="en">Manoeuvring by the main attacking force to pass around or over the enemy’s principal defensive positions with the aim of securing objectives to the enemy’s rear.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking__not_otherwise_specified">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">HIJACK</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">hijacking, not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">Seizure of a vehicle in order to go somewhere other than the scheduled destination.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Communications_restoration">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2318,6 +2329,17 @@
     <rdfs:label xml:lang="en">looting</rdfs:label>
     <rdfs:comment xml:lang="en">Act to take private property from an enemy in war or stolen by thieves.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Protection__electronic">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">PROTEL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">protection, electronic</rdfs:label>
+    <rdfs:comment xml:lang="en">That division of electronic warfare involving actions taken to ensure effective friendly use of the electromagnetic spectrum despite the enemy's use of electromagnetic energy.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Providing_laundry_services">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2339,17 +2361,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">disease</rdfs:label>
     <rdfs:comment xml:lang="en">A disorder of structure or function in a human, animal, or plant, especially one that produces specific symptoms or that affects a specific part.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Surveillance,_electronic">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">SURVEL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">surveillance, electronic</rdfs:label>
-    <rdfs:comment xml:lang="en">The systematic observation of aerospace, surface or subsurface areas, places, persons, or things, by electronic means.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Capture">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2406,16 +2417,27 @@
     <rdfs:label xml:lang="en">patrolling</rdfs:label>
     <rdfs:comment xml:lang="en">Gathering information or carrying out a destructive, harassing, mopping-up, or security mission.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#CHEMICAL-BIOLOGICAL-EVENT_Chemical/biological_facility_event">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Massive_deportation_banishment">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">CBFAC</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#chemical-biological-event-category-code"/>
+        <owl:hasValue xml:lang="en">DEPORT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">chemical/biological facility event</rdfs:label>
-    <rdfs:comment xml:lang="en">An event that involves viable agent released to the atmosphere following a strike against a facility containing chemical warfare agent(s) and/or biological warfare agent(s).</rdfs:comment>
+    <rdfs:label xml:lang="en">massive deportation/banishment</rdfs:label>
+    <rdfs:comment xml:lang="en">The driving out or removing from a home or place of usual resort or continuance of a large number of people.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Neutralize__chemical">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">NTRCHM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">neutralize, chemical</rdfs:label>
+    <rdfs:comment xml:lang="en">Making safe or non-toxic an object contaminated with a chemical agent.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#REQUEST_Capability">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#REQUEST"/>
@@ -2427,28 +2449,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">capability</rdfs:label>
     <rdfs:comment xml:lang="en">To discover the capability of an ACTION-OBJECTIVE (OBJECT-ITEM) by any means.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Offensive/counteroffensive">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">OFFCOF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">offensive/counteroffensive</rdfs:label>
-    <rdfs:comment xml:lang="en">Conducting an operation by an attack force.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fix,_electro-optical">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">FIXELO</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">fix, electro optical</rdfs:label>
-    <rdfs:comment xml:lang="en">Determining a position using electro-optical data.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_National_holiday">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2483,27 +2483,16 @@
     <rdfs:label xml:lang="en">electronic emission</rdfs:label>
     <rdfs:comment xml:lang="en">The radiation of electromagnetic energy.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack,_not_otherwise_specified">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Collision__mid-air">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ATTACK</owl:hasValue>
+        <owl:hasValue xml:lang="en">COLMID</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">attack, not otherwise specified</rdfs:label>
-    <rdfs:comment xml:lang="en">Conducting an offensive operation characterised by coordinated employment of firepower and manoeuvre to close with and destroy or capture the enemy.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drug_consumption,_illegal">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">DRGCNS</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">drug consumption, illegal</rdfs:label>
-    <rdfs:comment xml:lang="en">An action of consuming illegal drugs.</rdfs:comment>
+    <rdfs:label xml:lang="en">collision, mid air</rdfs:label>
+    <rdfs:comment xml:lang="en">In-flight collision of an aircraft with another aircraft.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Assisting_a_criminal">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2582,6 +2571,17 @@
     <rdfs:label xml:lang="en">reinforcing</rdfs:label>
     <rdfs:comment xml:lang="en">Making a force available for the purpose of supplementing an in-place force.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Neutralize__explosive">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">NTREXP</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">neutralize, explosive</rdfs:label>
+    <rdfs:comment xml:lang="en">Rendering bombs, mines, missiles, and booby traps into a safe state.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attempted_robbery">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2603,6 +2603,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">sabotage</rdfs:label>
     <rdfs:comment xml:lang="en">An act or acts with intent to injure, interfere with, or obstruct the national defence of a country by wilfully injuring or destroying, or attempting to injure or destroy, any national defence or war material, premises or utilities, to include human and natural resources.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_War_crisis_alert">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">WARALE</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">war/crisis alert</rdfs:label>
+    <rdfs:comment xml:lang="en">The state of readiness caused by the possibility of a war.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Organised_crime">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2636,6 +2647,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">jamming</rdfs:label>
     <rdfs:comment xml:lang="en">Deliberately radiating, re-radiating or reflecting electromagnetic energy with the object of impairing the use of electronic devices, equipment or systems being used by the enemy.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fix__acoustic">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">FIXACO</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">fix, acoustic</rdfs:label>
+    <rdfs:comment xml:lang="en">Determining a position using acoustic data.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Airborne_assault">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2714,16 +2736,16 @@
     <rdfs:label xml:lang="en">counter battery fire</rdfs:label>
     <rdfs:comment xml:lang="en">Fire delivered for the purpose of destroying or neutralizing indirect fire weapons systems.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident,_aircraft_ground">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack__not_otherwise_specified">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACCAIR</owl:hasValue>
+        <owl:hasValue xml:lang="en">ATTACK</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">accident, aircraft ground</rdfs:label>
-    <rdfs:comment xml:lang="en">An accident involving an aircraft during ground operations or maintenance.</rdfs:comment>
+    <rdfs:label xml:lang="en">attack, not otherwise specified</rdfs:label>
+    <rdfs:comment xml:lang="en">Conducting an offensive operation characterised by coordinated employment of firepower and manoeuvre to close with and destroy or capture the enemy.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Picketing">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2746,17 +2768,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">intimidation</rdfs:label>
     <rdfs:comment xml:lang="en">Act to frighten or overawe.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking,_bullying">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">TRBBLL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">troublemaking, bullying</rdfs:label>
-    <rdfs:comment xml:lang="en">Intimidating by the use of superior size or strength.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Explosion">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2813,16 +2824,16 @@
     <rdfs:label xml:lang="en">disrupting</rdfs:label>
     <rdfs:comment xml:lang="en">Breaking apart an enemy’s formation and tempo, interrupting the enemy’s time table, causing premature commitment of forces, and/or splintering their attack using integrated fire planning and obstacle effect.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident,_workplace">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing__surveilled">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACCWRK</owl:hasValue>
+        <owl:hasValue xml:lang="en">BCSRVL</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">accident, workplace</rdfs:label>
-    <rdfs:comment xml:lang="en">An accident occurring at the workplace.</rdfs:comment>
+    <rdfs:label xml:lang="en">border crossing, surveilled</rdfs:label>
+    <rdfs:comment xml:lang="en">A border crossing that is conducted under surveillance.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Equipment_failure">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2835,16 +2846,16 @@
     <rdfs:label xml:lang="en">equipment failure</rdfs:label>
     <rdfs:comment xml:lang="en">A cessation of proper functioning or performance of a piece of equipment.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Arresting,_legal">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hold__offensive">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ARRLGL</owl:hasValue>
+        <owl:hasValue xml:lang="en">HLDOFF</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">arresting, legal</rdfs:label>
-    <rdfs:comment xml:lang="en">Seizing and detaining of a person under authority of the law.</rdfs:comment>
+    <rdfs:label xml:lang="en">hold, offensive</rdfs:label>
+    <rdfs:comment xml:lang="en">Exerting sufficient pressure by means of combat power in an attack to prevent the movement or redeployment of enemy forces.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Turning">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2923,6 +2934,17 @@
     <rdfs:label xml:lang="en">reconnaissance</rdfs:label>
     <rdfs:comment xml:lang="en">Conducting a mission to obtain by visual operations or other detection methods information about the activities and resources of an enemy or potential enemy, or to secure data concerning the meteorological, hydrographic or geographic characteristics of a particular area.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing__air">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CLRAIR</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">clearing, air</rdfs:label>
+    <rdfs:comment xml:lang="en">Clearing of the air to gain either temporary or permanent air superiority or control in a given sector.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Repairing">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2934,16 +2956,16 @@
     <rdfs:label xml:lang="en">repairing</rdfs:label>
     <rdfs:comment xml:lang="en">Restoring an item to serviceable condition through correction of a specific failure or unserviceable condition.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack,_supporting">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drug_distribution__illegal">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ATTSPT</owl:hasValue>
+        <owl:hasValue xml:lang="en">DRGDST</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">attack, supporting</rdfs:label>
-    <rdfs:comment xml:lang="en">Conducting an offensive operation carried out in conjunction with a main attack and designed to achieve one or more of the following: a. deceive the enemy; b. destroy or pin down enemy forces which could interfere with the main attack; c. control ground whose occupation by the enemy will hinder the main attack; or d. force the enemy to commit reserves prematurely or in an indecisive area.</rdfs:comment>
+    <rdfs:label xml:lang="en">drug distribution, illegal</rdfs:label>
+    <rdfs:comment xml:lang="en">An action to distribute illegal drugs or to illegally distribute legal drugs.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_State_of_war">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -2978,6 +3000,17 @@
     <rdfs:label xml:lang="en">demolition</rdfs:label>
     <rdfs:comment xml:lang="en">The destruction of structures, facilities, or materiel by use of fire, water, explosives, mechanical, or other means.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking__intimidating">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">TRBINT</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">troublemaking, intimidating</rdfs:label>
+    <rdfs:comment xml:lang="en">Discouraging or inhibiting by or as if by threats.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Screening">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -2989,17 +3022,6 @@
     <rdfs:label xml:lang="en">screening</rdfs:label>
     <rdfs:comment xml:lang="en">Operating as a security element whose primary task is to observe, identify and report information, and which only fights in self-protection.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing,_surveilled">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">BCSRVL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">border crossing, surveilled</rdfs:label>
-    <rdfs:comment xml:lang="en">A border crossing that is conducted under surveillance.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#RADIOACTIVE-EVENT_Radiation_alarm">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#RADIOACTIVE-EVENT"/>
     <rdfs:subClassOf>
@@ -3010,6 +3032,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">radiation alarm</rdfs:label>
     <rdfs:comment xml:lang="en">An action by which a radiological detector is triggered or a group is warned.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fix__electromagnetic">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">FIXELM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">fix, electromagnetic</rdfs:label>
+    <rdfs:comment xml:lang="en">Determining a position using electromagnetic data.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Enemy_contact">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3066,28 +3099,6 @@
     <rdfs:label xml:lang="en">strike</rdfs:label>
     <rdfs:comment xml:lang="en">The organised refusal by employees to work until some grievance is remedied.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing,_planned">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">BCPLND</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">border crossing, planned</rdfs:label>
-    <rdfs:comment xml:lang="en">A border crossing that is known to have been planned ahead of time.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drug_manufacturing,_illegal">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">DRGMNF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">drug manufacturing, illegal</rdfs:label>
-    <rdfs:comment xml:lang="en">An action to manufacture illegal drugs or to illegally manufacture legal drugs.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Industrial_espionage_incident">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3098,17 +3109,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">industrial espionage incident</rdfs:label>
     <rdfs:comment xml:lang="en">The practice of spying or the use of spies to obtain information about the plans and activities of competitors.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident,_traffic">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACCTRF</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">accident, traffic</rdfs:label>
-    <rdfs:comment xml:lang="en">An accident involving at least one motor vehicle.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Occupying">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3154,17 +3154,6 @@
     <rdfs:label xml:lang="en">nuclear test</rdfs:label>
     <rdfs:comment xml:lang="en">The explosion of a nuclear device for test purpose.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking,_land_vehicle">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">HJCKLV</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">hijacking, land vehicle</rdfs:label>
-    <rdfs:comment xml:lang="en">Seizure of a land vehicle in order to go somewhere other than the scheduled destination.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Pursuing">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3187,17 +3176,6 @@
     <rdfs:label xml:lang="en">aircraft crash</rdfs:label>
     <rdfs:comment xml:lang="en">The unforeseen destruction or damage of an aircraft (and personnel).</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack,_deliberate">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">DLBATK</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">attack, deliberate</rdfs:label>
-    <rdfs:comment xml:lang="en">Conducting an offensive operation characterised by pre-planned coordinated employment of firepower and manoeuvre to close with and destroy or capture the enemy.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Covering">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3208,6 +3186,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">covering</rdfs:label>
     <rdfs:comment xml:lang="en">Operating as a force apart from the main body to protect the main body by fighting to gain time while also observing and reporting information and preventing enemy ground observation of an direct fire against the main body.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Arresting__legal">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ARRLGL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">arresting, legal</rdfs:label>
+    <rdfs:comment xml:lang="en">Seizing and detaining of a person under authority of the law.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_raid">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3241,6 +3230,39 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">supporting</rdfs:label>
     <rdfs:comment xml:lang="en">Aiding, protecting, complementing or sustaining an object.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Oceans__seas_or_water_pollution">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">WATPOL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">oceans, seas or water pollution</rdfs:label>
+    <rdfs:comment xml:lang="en">Contamination of a body of water caused by a poison or toxin.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drug_manufacturing__illegal">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">DRGMNF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">drug manufacturing, illegal</rdfs:label>
+    <rdfs:comment xml:lang="en">An action to manufacture illegal drugs or to illegally manufacture legal drugs.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident__traffic">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">ACCTRF</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">accident, traffic</rdfs:label>
+    <rdfs:comment xml:lang="en">An accident involving at least one motor vehicle.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Relief_in_place">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3297,17 +3319,6 @@
     <rdfs:label xml:lang="en">rape</rdfs:label>
     <rdfs:comment xml:lang="en">The act of forcing another person to submit to sexual intercourse.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Strafing,_aerial">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">STRFAR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">strafing, aerial</rdfs:label>
-    <rdfs:comment xml:lang="en">Attack by enemy aircraft against ground targets using forward firing ordnance (bullets, shells, or rockets).</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#CHEMICAL-BIOLOGICAL-EVENT_Biological_attack">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#CHEMICAL-BIOLOGICAL-EVENT"/>
     <rdfs:subClassOf>
@@ -3330,28 +3341,6 @@
     <rdfs:label xml:lang="en">illumination</rdfs:label>
     <rdfs:comment xml:lang="en">Providing battlespace lighting by employing searchlight or pyrotechnic illuminants using diffusion or reflection.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Civil_demonstration,_legal">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">CIVDML</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">civil demonstration, legal</rdfs:label>
-    <rdfs:comment xml:lang="en">A public meeting or march legally expressing protest or other opinion on an issue.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Attack,_hasty">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">HASTY</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">attack, hasty</rdfs:label>
-    <rdfs:comment xml:lang="en">In land operations, an attack in which preparation time is traded for speed in order to exploit an opportunity.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Friendly_fire">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3362,28 +3351,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">friendly fire</rdfs:label>
     <rdfs:comment xml:lang="en">Accidental damage by Allied troops to one's own installations, aircraft or personnel.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Arresting/obstructing">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">ARROBS</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">arresting/obstructing</rdfs:label>
-    <rdfs:comment xml:lang="en">Stopping or checking of the motion, progress, growth, or spread of something.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fix,_acoustic">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">FIXACO</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">fix, acoustic</rdfs:label>
-    <rdfs:comment xml:lang="en">Determining a position using acoustic data.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Martial_law_implementation">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3418,17 +3385,6 @@
     <rdfs:label xml:lang="en">constructing</rdfs:label>
     <rdfs:comment xml:lang="en">Building, digging or creating an object.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Neutralize,_combat">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">NTRCOM</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">neutralize, combat</rdfs:label>
-    <rdfs:comment xml:lang="en">Rendering ineffective or unusable in military operations.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Setting_up">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3440,38 +3396,38 @@
     <rdfs:label xml:lang="en">setting up</rdfs:label>
     <rdfs:comment xml:lang="en">Establishing a FACILITY, ORGANISATION or FEATURE.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Accident,_mine">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Collision__obstacle">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">ACCMNE</owl:hasValue>
+        <owl:hasValue xml:lang="en">COLOBS</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">accident, mine</rdfs:label>
-    <rdfs:comment xml:lang="en">An accident involving unexploded ordnance.</rdfs:comment>
+    <rdfs:label xml:lang="en">collision, obstacle</rdfs:label>
+    <rdfs:comment xml:lang="en">In-flight collision of an aircraft with natural or man-made object (fixed or mobile) located on the ground.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Vandalism/Rape/Loot/Ransack/Plunder/Sack">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing__escorted">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">VANDAL</owl:hasValue>
+        <owl:hasValue xml:lang="en">BCESC</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">vandalism/rape/loot/ransack/plunder/sack</rdfs:label>
-    <rdfs:comment xml:lang="en">An act of vandalism, raping, looting, ransacking or plundering against an individual or property.</rdfs:comment>
+    <rdfs:label xml:lang="en">border crossing, escorted</rdfs:label>
+    <rdfs:comment xml:lang="en">A border crossing that is conducted under escort.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing,_air">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking__harassing">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">CLRAIR</owl:hasValue>
+        <owl:hasValue xml:lang="en">TRBHAR</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">clearing, air</rdfs:label>
-    <rdfs:comment xml:lang="en">Clearing of the air to gain either temporary or permanent air superiority or control in a given sector.</rdfs:comment>
+    <rdfs:label xml:lang="en">troublemaking, harassing</rdfs:label>
+    <rdfs:comment xml:lang="en">Persecuting systematically by besetting with annoyances, threats or demands.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Rocket_fire">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3561,17 +3517,6 @@
     <rdfs:label xml:lang="en">conducting sporting events</rdfs:label>
     <rdfs:comment xml:lang="en">Conducting any game or competitive activity, especially an outdoor one involving physical exertion, e.g. cricket, football, racing, hunting.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Border_crossing,_illegal">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">BCILGL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">border crossing, illegal</rdfs:label>
-    <rdfs:comment xml:lang="en">A border crossing that is forbidden by law.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Kidnapping">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3616,6 +3561,17 @@
     <rdfs:label xml:lang="en">drought</rdfs:label>
     <rdfs:comment xml:lang="en">A prolonged or chronic shortage of water.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing__land_combat">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CLRLND</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">clearing, land combat</rdfs:label>
+    <rdfs:comment xml:lang="en">Removing all enemy forces from a specific location, area, or zone.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#NUCLEAR-EVENT_Nuclear_war_alert">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#NUCLEAR-EVENT"/>
     <rdfs:subClassOf>
@@ -3648,6 +3604,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">serving as a rear guard</rdfs:label>
     <rdfs:comment xml:lang="en">Operating as a security element whose primary task is to move (or remain) at the rear of the main body and protect the main force by fighting to gain time, whilst also observing and reporting information.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking__hooliganism">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">TRBHLG</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">troublemaking, hooliganism</rdfs:label>
+    <rdfs:comment xml:lang="en">Causing difficulties by the actions of hoodlums, especially young ruffians.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Escorting">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3682,16 +3649,27 @@
     <rdfs:label xml:lang="en">execution</rdfs:label>
     <rdfs:comment xml:lang="en">Putting a person to death, especially as a legal penalty.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Bombing,_deliberate">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking__land_vehicle">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">BMBDLB</owl:hasValue>
+        <owl:hasValue xml:lang="en">HJCKLV</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">bombing, deliberate</rdfs:label>
-    <rdfs:comment xml:lang="en">A deliberate and intentional bombing incident.</rdfs:comment>
+    <rdfs:label xml:lang="en">hijacking, land vehicle</rdfs:label>
+    <rdfs:comment xml:lang="en">Seizure of a land vehicle in order to go somewhere other than the scheduled destination.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Gunnery__air-to-air">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">GUNATA</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">gunnery, air to air</rdfs:label>
+    <rdfs:comment xml:lang="en">The act of firing an air-to-air weapon, usually at an aircraft.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Providing_bedding">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3704,17 +3682,6 @@
     <rdfs:label xml:lang="en">providing bedding</rdfs:label>
     <rdfs:comment xml:lang="en">Providing (1) sleeping accommodation or (2) mattress and bedclothes.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking,_boat">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">HJCKBT</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">hijacking, boat</rdfs:label>
-    <rdfs:comment xml:lang="en">Seizure of a boat or ship in order to go somewhere other than the scheduled destination.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Recuperating">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3725,6 +3692,17 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">recuperating</rdfs:label>
     <rdfs:comment xml:lang="en">Resting a unit after it has been in action. Some reconstitution may take place as well.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking__inciting">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">TRBINC</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">troublemaking, inciting</rdfs:label>
+    <rdfs:comment xml:lang="en">Provoking to action, stirring up or urging on.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Denying">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3770,16 +3748,16 @@
     <rdfs:label xml:lang="en">election associated violence</rdfs:label>
     <rdfs:comment xml:lang="en">The occurrence of violent acts due to an election process.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hold,_offensive">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking__bullying">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">HLDOFF</owl:hasValue>
+        <owl:hasValue xml:lang="en">TRBBLL</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">hold, offensive</rdfs:label>
-    <rdfs:comment xml:lang="en">Exerting sufficient pressure by means of combat power in an attack to prevent the movement or redeployment of enemy forces.</rdfs:comment>
+    <rdfs:label xml:lang="en">troublemaking, bullying</rdfs:label>
+    <rdfs:comment xml:lang="en">Intimidating by the use of superior size or strength.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Suspension_of_hostilities">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -3825,6 +3803,28 @@
     <rdfs:label xml:lang="en">communications activation</rdfs:label>
     <rdfs:comment xml:lang="en">The enabling of transmission of information.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Surveillance__electronic">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">SURVEL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">surveillance, electronic</rdfs:label>
+    <rdfs:comment xml:lang="en">The systematic observation of aerospace, surface or subsurface areas, places, persons, or things, by electronic means.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Civil_demonstration__illegal">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CIVDMI</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">civil demonstration, illegal</rdfs:label>
+    <rdfs:comment xml:lang="en">A public meeting or march illegally expressing protest or other opinion on an issue.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Breaching">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3858,6 +3858,28 @@
     <rdfs:label xml:lang="en">network seizure</rdfs:label>
     <rdfs:comment xml:lang="en">Taking electronic control of a communications network.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Neutralize__combat">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">NTRCOM</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">neutralize, combat</rdfs:label>
+    <rdfs:comment xml:lang="en">Rendering ineffective or unusable in military operations.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Hijacking__plane">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">HJCKPL</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">hijacking, plane</rdfs:label>
+    <rdfs:comment xml:lang="en">Seizure of an aircraft in order to go somewhere other than the scheduled destination.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_National_state_of_emergency">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -3868,17 +3890,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">national state of emergency</rdfs:label>
     <rdfs:comment xml:lang="en">A political term, to describe a condition approximating to that of war, wherein the normal constitution is suspended.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing,_radio_net">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">CLRRAD</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">clearing, radio net</rdfs:label>
-    <rdfs:comment xml:lang="en">Eliminating transmissions on a tactical radio net in order to allow a higher precedence transmission to occur.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Destroying">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -4023,6 +4034,17 @@
     <rdfs:label xml:lang="en">forced landing</rdfs:label>
     <rdfs:comment xml:lang="en">An aircraft that by hostile act, or lack of vital resources is compelled to land.</rdfs:comment>
   </owl:Class>
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Clearing__radio_net">
+    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue xml:lang="en">CLRRAD</owl:hasValue>
+        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">clearing, radio net</rdfs:label>
+    <rdfs:comment xml:lang="en">Eliminating transmissions on a tactical radio net in order to allow a higher precedence transmission to occur.</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Drug_operation">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -4045,17 +4067,6 @@
     <rdfs:label xml:lang="en">local election</rdfs:label>
     <rdfs:comment xml:lang="en">An ACTION-EVENT in which local officials are selected by vote.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Troublemaking,_harassing">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">TRBHAR</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">troublemaking, harassing</rdfs:label>
-    <rdfs:comment xml:lang="en">Persecuting systematically by besetting with annoyances, threats or demands.</rdfs:comment>
-  </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Resupplying">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
@@ -4066,17 +4077,6 @@
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">resupplying</rdfs:label>
     <rdfs:comment xml:lang="en">Replenishing stocks in order to maintain the required levels of supply.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Protection,_electronic">
-    <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue xml:lang="en">PROTEL</owl:hasValue>
-        <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">protection, electronic</rdfs:label>
-    <rdfs:comment xml:lang="en">That division of electronic warfare involving actions taken to ensure effective friendly use of the electromagnetic spectrum despite the enemy's use of electromagnetic energy.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Conducting_social_events">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -4100,16 +4100,16 @@
     <rdfs:label xml:lang="en">distributing</rdfs:label>
     <rdfs:comment xml:lang="en">Dividing or dispensing in portions.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Fix,_electromagnetic">
+  <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Deception__electronic">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:hasValue xml:lang="en">FIXELM</owl:hasValue>
+        <owl:hasValue xml:lang="en">DCPTEL</owl:hasValue>
         <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-event-category-code"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">fix, electromagnetic</rdfs:label>
-    <rdfs:comment xml:lang="en">Determining a position using electromagnetic data.</rdfs:comment>
+    <rdfs:label xml:lang="en">deception, electronic</rdfs:label>
+    <rdfs:comment xml:lang="en">In electronic countermeasures, the deliberate radiation, re-radiation, alteration, absorption or reflection of electromagnetic energy in a manner intended to confuse, distract or seduce an enemy or his electronic systems.</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="jc3iedm_ACTIONExtended.owl#ACTION-EVENT_Communications_outage">
     <rdfs:subClassOf rdf:resource="jc3iedm_ACTION.owl#ACTION-EVENT"/>
@@ -4123,18 +4123,6 @@
     <rdfs:comment xml:lang="en">The failure of communications equipment due to a mechanical malfunction.</rdfs:comment>
   </owl:Class>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">RADEVT</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#radioactive-event-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">NUCEVT</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#radioactive-event-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
-    <owl:hasValue xml:lang="en">NUCWEP</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#nuclear-event-category-code"/>
-  </owl:Restriction>
-  <owl:Restriction>
     <owl:hasValue xml:lang="en">CHMBIO</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
   </owl:Restriction>
@@ -4143,8 +4131,16 @@
     <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#cbrn-event-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ACTEV</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-category-code"/>
+    <owl:hasValue xml:lang="en">RADEVT</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#radioactive-event-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">RQT</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-task-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">NUCWEP</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#nuclear-event-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
     <owl:hasValue xml:lang="en">CBRN</owl:hasValue>
@@ -4155,7 +4151,11 @@
     <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">RQT</owl:hasValue>
-    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-task-category-code"/>
+    <owl:hasValue xml:lang="en">NUCEVT</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#radioactive-event-category-code"/>
+  </owl:Restriction>
+  <owl:Restriction>
+    <owl:hasValue xml:lang="en">ACTEV</owl:hasValue>
+    <owl:onProperty rdf:resource="jc3iedm_ACTION.owl#action-category-code"/>
   </owl:Restriction>
 </rdf:RDF>

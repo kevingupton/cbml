@@ -9,11 +9,11 @@
     <owl:imports rdf:resource="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#"/>
   </owl:Ontology>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">OBJREF</owl:hasValue>
+    <owl:hasValue xml:lang="en">PNTREF</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#relative-coordinate-system-reference-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">PNTREF</owl:hasValue>
+    <owl:hasValue xml:lang="en">OBJREF</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_RELATIVE-COORDINATE-SYSTEM.owl#relative-coordinate-system-reference-category-code"/>
   </owl:Restriction>
 </rdf:RDF>

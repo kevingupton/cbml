@@ -8,7 +8,7 @@
   <owl:Ontology rdf:about="jc3iedm_PLAN-ORDERExtended.owl#">
     <owl:imports rdf:resource="jc3iedm_PLAN-ORDER.owl#"/>
   </owl:Ontology>
-  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Administrative/Logistics_order">
+  <owl:Class rdf:about="jc3iedm_PLAN-ORDERExtended.owl#ORDER_Administrative_Logistics_order">
     <rdfs:subClassOf rdf:resource="jc3iedm_PLAN-ORDER.owl#ORDER"/>
     <rdfs:subClassOf>
       <owl:Restriction>

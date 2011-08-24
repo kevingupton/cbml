@@ -3122,7 +3122,9 @@
     <rdfs:range rdf:resource="#FOREIGN-KEY-ATTRIBUTE"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="POINT-REFERENCE_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="#POINT_is-endpoint-of-x-vector-for_(POINT-REFERENCE)"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#POINT_is-origin-for_(POINT-REFERENCE)"/>
+    </owl:inverseOf>
     <rdfs:domain rdf:resource="#POINT-REFERENCE"/>
     <rdfs:range rdf:resource="#POINT"/>
   </owl:ObjectProperty>
@@ -3450,9 +3452,7 @@
     <rdfs:range rdf:resource="#PLAN-STATUS"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="TRACK-AREA_is-defined-using_POINT">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#POINT_is-beginning-point-for_(TRACK-AREA)"/>
-    </owl:inverseOf>
+    <owl:inverseOf rdf:resource="#POINT_is-ending-point-for_(TRACK-AREA)"/>
     <rdfs:domain rdf:resource="#TRACK-AREA"/>
     <rdfs:range rdf:resource="#POINT"/>
   </owl:ObjectProperty>
@@ -3981,7 +3981,7 @@
     <rdfs:range rdf:resource="#ACTION-EFFECT"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="ORBIT-AREA_is-defined-using_POINT">
-    <owl:inverseOf rdf:resource="#POINT_is-first-point-for_(ORBIT-AREA)"/>
+    <owl:inverseOf rdf:resource="#POINT_is-second-point-for_(ORBIT-AREA)"/>
     <rdfs:domain rdf:resource="#ORBIT-AREA"/>
     <rdfs:range rdf:resource="#POINT"/>
   </owl:ObjectProperty>

@@ -53,11 +53,11 @@
     <rdfs:comment xml:lang="en">The mark affixed to a mailed item by the post office.</rdfs:comment>
   </owl:Class>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">ELCADR</owl:hasValue>
+    <owl:hasValue xml:lang="en">PHYADR</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_ADDRESS.owl#address-category-code"/>
   </owl:Restriction>
   <owl:Restriction>
-    <owl:hasValue xml:lang="en">PHYADR</owl:hasValue>
+    <owl:hasValue xml:lang="en">ELCADR</owl:hasValue>
     <owl:onProperty rdf:resource="jc3iedm_ADDRESS.owl#address-category-code"/>
   </owl:Restriction>
 </rdf:RDF>
