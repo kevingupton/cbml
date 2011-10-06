@@ -6,7 +6,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
     <!ENTITY jc3iedmAssociationOnt "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOnt.owl#" >
     <!ENTITY jc3iedm_ACTION "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTION.owl#" >
     <!ENTITY jc3iedm_ADDRESS "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ADDRESS.owl#" >
@@ -28,7 +28,7 @@
      xmlns:jc3iedm_AFFILIATION="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#"
      xmlns:jc3iedm_GROUP-CHARACTERISTIC="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_GROUP-CHARACTERISTIC.owl#"
      xmlns:jc3iedm_CAPABILITY="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_CAPABILITY.owl#"
-     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
      xmlns:jc3iedm_VERTICAL-DISTANCE="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_VERTICAL-DISTANCE.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:jc3iedmAssociationOnt="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOnt.owl#"
@@ -40,7 +40,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:jc3iedm_ACTION="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTION.owl#">
     <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2toJc3iedm-bridge/upperC2toJc3iedmAssociationOnt.owl">
-        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl"/>
         <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/jc3iedmAssociationOnt.owl#"/>
     </owl:Ontology>
     
@@ -1185,19 +1185,19 @@
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Action -->
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#Action -->
 
     <rdf:Description rdf:about="&upperC2Ont;Action"/>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Capability -->
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#Capability -->
 
     <rdf:Description rdf:about="&upperC2Ont;Capability"/>
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Property -->
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#Property -->
 
     <rdf:Description rdf:about="&upperC2Ont;Property"/>
 </rdf:RDF>

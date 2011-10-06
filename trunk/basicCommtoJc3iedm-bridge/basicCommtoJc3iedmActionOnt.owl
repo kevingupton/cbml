@@ -6,8 +6,8 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#" >
-    <!ENTITY basicCommOnt "http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
+    <!ENTITY basicCommOnt "http://cbml.googlecode.com/svn/trunk/cbml/basicCommOnt.owl#" >
     <!ENTITY jc3iedm_ACTION "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTION.owl#" >
     <!ENTITY jc3iedm_ACTIONExtended "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTIONExtended.owl#" >
 ]>
@@ -15,16 +15,16 @@
 
 <rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/basicCommtoJc3iedm-bridge/basicCommtoJc3iedmActionOnt.owl#"
      xml:base="http://cbml.googlecode.com/svn/trunk/basicCommtoJc3iedm-bridge/basicCommtoJc3iedmActionOnt.owl"
-     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
      xmlns:jc3iedm_ACTIONExtended="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTIONExtended.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:basicCommOnt="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#"
+     xmlns:basicCommOnt="http://cbml.googlecode.com/svn/trunk/cbml/basicCommOnt.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:jc3iedm_ACTION="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTION.owl#">
     <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/basicCommtoJc3iedm-bridge/basicCommtoJc3iedmActionOnt.owl">
-        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/basicCommOnt.owl"/>
         <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_ACTIONSuperExtended.owl#"/>
     </owl:Ontology>
     
@@ -41,7 +41,7 @@
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Order -->
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/basicCommOnt.owl#Order -->
 
     <rdf:Description rdf:about="&basicCommOnt;Order">
         <owl:equivalentClass rdf:resource="&jc3iedm_ACTIONExtended;ACTION-TASK_Order"/>
@@ -49,7 +49,7 @@
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/basicCommOnt.owl#Request -->
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/basicCommOnt.owl#Request -->
 
     <rdf:Description rdf:about="&basicCommOnt;Request">
         <owl:equivalentClass rdf:resource="&jc3iedm_ACTION;REQUEST"/>
