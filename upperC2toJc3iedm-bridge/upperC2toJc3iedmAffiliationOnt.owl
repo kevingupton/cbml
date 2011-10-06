@@ -6,21 +6,21 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
     <!ENTITY jc3iedm_AFFILIATION "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#" >
 ]>
 
 
 <rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/upperC2toJc3iedm-bridge/upperC2toJc3iedmAffiliationOnt.owl#"
      xml:base="http://cbml.googlecode.com/svn/trunk/upperC2toJc3iedm-bridge/upperC2toJc3iedmAffiliationOnt.owl"
-     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:jc3iedm_AFFILIATION="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#">
     <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2toJc3iedm-bridge/upperC2toJc3iedmAffiliationOnt.owl">
-        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl"/>
         <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_AFFILIATION.owl#"/>
     </owl:Ontology>
     

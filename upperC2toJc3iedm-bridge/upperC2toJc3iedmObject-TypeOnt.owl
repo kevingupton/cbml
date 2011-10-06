@@ -6,21 +6,21 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
     <!ENTITY jc3iedm_OBJECT-TYPE "http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPE.owl#" >
 ]>
 
 
 <rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/upperC2toJc3iedm-bridge/upperC2toJc3iedmObject-TypeOnt.owl#"
      xml:base="http://cbml.googlecode.com/svn/trunk/upperC2toJc3iedm-bridge/upperC2toJc3iedmObject-TypeOnt.owl"
-     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:jc3iedm_OBJECT-TYPE="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPE.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/upperC2toJc3iedm-bridge/upperC2toJc3iedmObject-TypeOnt.owl">
-        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl"/>
         <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/jc3iedmOnt/rootClassOnt/jc3iedm_OBJECT-TYPE.owl#"/>
     </owl:Ontology>
     
@@ -45,7 +45,7 @@
     
 
 
-    <!-- http://cbml.googlecode.com/svn/trunk/upperC2Ont.owl#Entity -->
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#Entity -->
 
     <rdf:Description rdf:about="&upperC2Ont;Entity"/>
 </rdf:RDF>
