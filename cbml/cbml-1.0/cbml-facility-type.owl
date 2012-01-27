@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
+    <!ENTITY cbml-entity-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#" >
+    <!ENTITY cbml-facility-type "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
+     xmlns:cbml-entity-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cbml-facility-type="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Airfield -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Airfield">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Anchorage -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Anchorage">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#ApproachDirection -->
+
+    <owl:Class rdf:about="&cbml-facility-type;ApproachDirection">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ControlFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Apron -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Apron">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Basin -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Basin">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Berth -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Berth">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Bridge -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Bridge">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#DryDock -->
+
+    <owl:Class rdf:about="&cbml-facility-type;DryDock">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#ElectronicAddress -->
+
+    <owl:Class rdf:about="&cbml-facility-type;ElectronicAddress">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Harbour -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Harbour">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Jetty -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Jetty">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacility -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacility">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacilityStatus -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacilityStatus">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacilityStatusCasualtyBedOccupancy -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacilityStatusCasualtyBedOccupancy">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacilityStatusIntervalCasualtyGroup -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacilityStatusIntervalCasualtyGroup">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacilityStatusIntervalCasualtyType -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacilityStatusIntervalCasualtyType">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacilityStatusIntervalEvacuation -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacilityStatusIntervalEvacuation">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacilityStatusPendingCasualtyEvacuation -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacilityStatusPendingCasualtyEvacuation">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MedicalFacilityStatusPendingSurgery -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MedicalFacilityStatusPendingSurgery">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MinefieldLand -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MinefieldLand">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Minefield"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MinefieldMaritime -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MinefieldMaritime">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Minefield"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MinefieldMaritimeCasualtyEstimate -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MinefieldMaritimeCasualtyEstimate">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#MinefieldMaritimeSustainedThreatMeasureOfEffectiveness -->
+
+    <owl:Class rdf:about="&cbml-facility-type;MinefieldMaritimeSustainedThreatMeasureOfEffectiveness">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Network -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Network">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#NetworkCapacity -->
+
+    <owl:Class rdf:about="&cbml-facility-type;NetworkCapacity">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#NetworkFrequency -->
+
+    <owl:Class rdf:about="&cbml-facility-type;NetworkFrequency">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#NetworkService -->
+
+    <owl:Class rdf:about="&cbml-facility-type;NetworkService">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#NetworkServiceStatus -->
+
+    <owl:Class rdf:about="&cbml-facility-type;NetworkServiceStatus">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#ObjectItemAddress -->
+
+    <owl:Class rdf:about="&cbml-facility-type;ObjectItemAddress">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Quay -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Quay">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Railway -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Railway">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Road -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Road">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Runway -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Runway">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#RunwayApproachDirectionAssociation -->
+
+    <owl:Class rdf:about="&cbml-facility-type;RunwayApproachDirectionAssociation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-facility-type.owl#Slipway -->
+
+    <owl:Class rdf:about="&cbml-facility-type;Slipway">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

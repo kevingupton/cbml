@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
+    <!ENTITY cbml-entity-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#" >
+    <!ENTITY cbml-materiel-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
+     xmlns:cbml-entity-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cbml-materiel-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#Aircraft -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;Aircraft">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#Ammunition -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;Ammunition">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ConsumableMateriel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#BiologicalMateriel -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;BiologicalMateriel">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ConsumableMateriel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#CbrnEquipment -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;CbrnEquipment">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#ChemicalMateriel -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;ChemicalMateriel">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ConsumableMateriel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#ElectronicEquipment -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;ElectronicEquipment">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#EngineeringEquipment -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;EngineeringEquipment">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#InstrumentLandingSystem -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;InstrumentLandingSystem">
+        <rdfs:subClassOf rdf:resource="&cbml-materiel-types;ElectronicEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#MaritimeEquipment -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;MaritimeEquipment">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#MineStatus -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;MineStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MaterielStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#RadioactiveMateriel -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;RadioactiveMateriel">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ConsumableMateriel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#Railcar -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;Railcar">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#SubsurfaceVessel -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;SubsurfaceVessel">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Vessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#SurfaceVessel -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;SurfaceVessel">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Vessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#UxoStatus -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;UxoStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MaterielStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#Vehicle -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;Vehicle">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-materiel-types.owl#WeaponType -->
+
+    <owl:Class rdf:about="&cbml-materiel-types;WeaponType">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
