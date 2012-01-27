@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cbml-entity-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#" >
+    <!ENTITY cbml-location-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl"
+     xmlns:cbml-entity-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cbml-location-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#CartesianPoint -->
+
+    <owl:Class rdf:about="&cbml-location-types;CartesianPoint">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;AbsolutePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#ConeVolume -->
+
+    <owl:Class rdf:about="&cbml-location-types;ConeVolume">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;GeometricVolume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#Ellipse -->
+
+    <owl:Class rdf:about="&cbml-location-types;Ellipse">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Surface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#FanArea -->
+
+    <owl:Class rdf:about="&cbml-location-types;FanArea">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Surface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#GeographicPoint -->
+
+    <owl:Class rdf:about="&cbml-location-types;GeographicPoint">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;AbsolutePoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#Line -->
+
+    <owl:Class rdf:about="&cbml-location-types;Line">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#ObjectReference -->
+
+    <owl:Class rdf:about="&cbml-location-types;ObjectReference">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;RelativeCoordinateSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#OrbitArea -->
+
+    <owl:Class rdf:about="&cbml-location-types;OrbitArea">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Surface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#PointReference -->
+
+    <owl:Class rdf:about="&cbml-location-types;PointReference">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;RelativeCoordinateSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#PolyarcArea -->
+
+    <owl:Class rdf:about="&cbml-location-types;PolyarcArea">
+        <rdfs:subClassOf rdf:resource="&cbml-location-types;OrbitArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#PolygonArea -->
+
+    <owl:Class rdf:about="&cbml-location-types;PolygonArea">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Surface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#RelativePoint -->
+
+    <owl:Class rdf:about="&cbml-location-types;RelativePoint">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Point"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#SphereVolume -->
+
+    <owl:Class rdf:about="&cbml-location-types;SphereVolume">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;GeometricVolume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#SurfaceVolume -->
+
+    <owl:Class rdf:about="&cbml-location-types;SurfaceVolume">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;GeometricVolume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-location-types.owl#TrackArea -->
+
+    <owl:Class rdf:about="&cbml-location-types;TrackArea">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Surface"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

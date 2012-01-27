@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
+    <!ENTITY cbml-entity-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#" >
+    <!ENTITY cbml-feature-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
+     xmlns:cbml-entity-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cbml-feature-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#AirRouteSegment -->
+
+    <owl:Class rdf:about="&cbml-feature-types;AirRouteSegment">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;RouteSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#AirspaceControlMeans -->
+
+    <owl:Class rdf:about="&cbml-feature-types;AirspaceControlMeans">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ControlFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#Atmosphere -->
+
+    <owl:Class rdf:about="&cbml-feature-types;Atmosphere">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MeteorologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#CloudCover -->
+
+    <owl:Class rdf:about="&cbml-feature-types;CloudCover">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MeteorologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#ControlFeatureStatus -->
+
+    <owl:Class rdf:about="&cbml-feature-types;ControlFeatureStatus">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#GeographicFeature -->
+
+    <owl:Class rdf:about="&cbml-feature-types;GeographicFeature">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;GeospatialFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#Icing -->
+
+    <owl:Class rdf:about="&cbml-feature-types;Icing">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MeteorologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#Light -->
+
+    <owl:Class rdf:about="&cbml-feature-types;Light">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MeteorologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#LiquidBodyStatus -->
+
+    <owl:Class rdf:about="&cbml-feature-types;LiquidBodyStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;GeographicFeatureStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#LiquidSurfaceStatus -->
+
+    <owl:Class rdf:about="&cbml-feature-types;LiquidSurfaceStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;GeographicFeatureStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#Precipitation -->
+
+    <owl:Class rdf:about="&cbml-feature-types;Precipitation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MeteorologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#Route -->
+
+    <owl:Class rdf:about="&cbml-feature-types;Route">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ControlFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#SolidSurfaceStatus -->
+
+    <owl:Class rdf:about="&cbml-feature-types;SolidSurfaceStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;GeographicFeatureStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#Visibility -->
+
+    <owl:Class rdf:about="&cbml-feature-types;Visibility">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MeteorologicFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-feature-types.owl#Wind -->
+
+    <owl:Class rdf:about="&cbml-feature-types;Wind">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MeteorologicFeature"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

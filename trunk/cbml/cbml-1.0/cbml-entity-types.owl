@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY upperC2Ont "http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" >
+    <!ENTITY cbml-entity-types "http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#"
+     xml:base="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl"
+     xmlns:upperC2Ont="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#"
+     xmlns:cbml-entity-types="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl">
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/basicCommOnt.owl"/>
+        <owl:imports rdf:resource="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#AbsolutePoint -->
+
+    <owl:Class rdf:about="&cbml-entity-types;AbsolutePoint">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Point"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionEffect -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionEffect">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionFunctionalAssociation -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionFunctionalAssociation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionLocation -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionLocation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionObjective -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionObjective">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionObjectiveItem -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionObjectiveItem">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ActionObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionObjectiveItemMarking -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionObjectiveItemMarking">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionObjectiveType -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionObjectiveType">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ActionObjective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionResource -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionResource">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionResourceEmployment -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionResourceEmployment">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ActionStatus -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ActionStatus">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Address -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Address">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;SpatialRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Affiliation -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Affiliation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Alias -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Alias">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#CandidateTargetDetail -->
+
+    <owl:Class rdf:about="&cbml-entity-types;CandidateTargetDetail">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#CandidateTargetDetailItem -->
+
+    <owl:Class rdf:about="&cbml-entity-types;CandidateTargetDetailItem">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;CandidateTargetDetail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#CandidateTargetDetailType -->
+
+    <owl:Class rdf:about="&cbml-entity-types;CandidateTargetDetailType">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;CandidateTargetDetail"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#CandidateTargetList -->
+
+    <owl:Class rdf:about="&cbml-entity-types;CandidateTargetList">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;GroupOfThings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ConsumableMateriel -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ConsumableMateriel">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Materiel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ControlFeature -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ControlFeature">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#FacilityStatus -->
+
+    <owl:Class rdf:about="&cbml-entity-types;FacilityStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ObjectItemStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#GeographicFeatureStatus -->
+
+    <owl:Class rdf:about="&cbml-entity-types;GeographicFeatureStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ObjectItemStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#GeometricVolume -->
+
+    <owl:Class rdf:about="&cbml-entity-types;GeometricVolume">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#GovernmentOrganization -->
+
+    <owl:Class rdf:about="&cbml-entity-types;GovernmentOrganization">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Holding -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Holding">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#HoldingTransfer -->
+
+    <owl:Class rdf:about="&cbml-entity-types;HoldingTransfer">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Location -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Location">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;GeospatialRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#MaterielStatus -->
+
+    <owl:Class rdf:about="&cbml-entity-types;MaterielStatus">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ObjectItemStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#MeteorologicFeature -->
+
+    <owl:Class rdf:about="&cbml-entity-types;MeteorologicFeature">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;GeospatialFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#MilitaryObstacle -->
+
+    <owl:Class rdf:about="&cbml-entity-types;MilitaryObstacle">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Facility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#MilitaryOrganization -->
+
+    <owl:Class rdf:about="&cbml-entity-types;MilitaryOrganization">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;GovernmentOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Minefield -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Minefield">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;MilitaryObstacle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ObjectItemAssociation -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ObjectItemAssociation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ObjectItemAssociationStatus -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ObjectItemAssociationStatus">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ObjectItemLocation -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ObjectItemLocation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ObjectItemObjectTypeEstablishment -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ObjectItemObjectTypeEstablishment">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ObjectItemStatus -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ObjectItemStatus">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#ObjectTypeEstablishment -->
+
+    <owl:Class rdf:about="&cbml-entity-types;ObjectTypeEstablishment">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#OrganizationMaterielTypeAssociation -->
+
+    <owl:Class rdf:about="&cbml-entity-types;OrganizationMaterielTypeAssociation">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Alias"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#OrganizationStructure -->
+
+    <owl:Class rdf:about="&cbml-entity-types;OrganizationStructure">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Point -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Point">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Relation -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Relation">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#RelativeCoordinateSystem -->
+
+    <owl:Class rdf:about="&cbml-entity-types;RelativeCoordinateSystem">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#RouteSegment -->
+
+    <owl:Class rdf:about="&cbml-entity-types;RouteSegment">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;ControlFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#SecurityClassification -->
+
+    <owl:Class rdf:about="&cbml-entity-types;SecurityClassification">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Surface -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Surface">
+        <rdfs:subClassOf rdf:resource="&cbml-entity-types;Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#VerticalDistance -->
+
+    <owl:Class rdf:about="&cbml-entity-types;VerticalDistance">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbml.googlecode.com/svn/trunk/cbml/cbml-1.0/cbml-entity-types.owl#Vessel -->
+
+    <owl:Class rdf:about="&cbml-entity-types;Vessel">
+        <rdfs:subClassOf rdf:resource="&upperC2Ont;Equipment"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
