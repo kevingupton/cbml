@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_C25F7D02_DDB1_4cbc_A317_E976BA4B687B">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="References" xmi.id="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+						<UML:TaggedValue tag="ea_package_id" value="330"/>
+						<UML:TaggedValue tag="created" value="2011-03-25 00:00:00"/>
+						<UML:TaggedValue tag="modified" value="2012-05-15 11:30:28"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="eaE\E976BA4B687B.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2012-05-15 11:30:05"/>
+						<UML:TaggedValue tag="lastsavedate" value="2012-05-15 11:30:05"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="6"/>
+						<UML:TaggedValue tag="packageFlags" value="isModel=1;CRC=0;VCCFG=cbml_phase2_svn;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="6"/>
+						<UML:TaggedValue tag="gentype" value="C#"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Class name="NCOIC Interoperability Framework Solution Description Reference Manual V1.2" xmi.id="EAID_0801A463_FFD3_4ae8_B896_2058D97F6A47" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:43:33"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5372"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={4E9D9714-D75A-4661-8CC1-41C55C5909B5}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0801A463-FFD3-4ae8-B896-2058D97F6A47}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={029AA8B1-99C5-4434-9233-48209A402C13}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={0801A463-FFD3-4ae8-B896-2058D97F6A47}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="US Army FM 3-0: Operations" xmi.id="EAID_08E71F3F_E5C9_418f_9F7F_8F6AC9911229" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:36:02"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5369"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={5BF37383-51EE-4e67-BE47-C18552FEC73F}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={08E71F3F-E5C9-418f-9F7F-8F6AC9911229}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={453452FA-CCC8-4aeb-BA7C-2C6C7404CC9E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={08E71F3F-E5C9-418f-9F7F-8F6AC9911229}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="NCOIC Net-Centric Information Framework" xmi.id="EAID_17D212B5_F150_4a58_9BC0_41C5972FBE88" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:44:16"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5373"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DECF4DFE-7FFD-4006-8C25-20FE06D50F45}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={17D212B5-F150-4a58-9BC0-41C5972FBE88}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={1EA372CF-2C90-4c01-8619-322B56A4F26D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={17D212B5-F150-4a58-9BC0-41C5972FBE88}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="US Army JP 1-02 DoD Dictionary of Military and Associated Terms" xmi.id="EAID_1CE9290B_1477_49c1_9A9D_774F22BD80C9" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:34:17"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5368"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={428BABE4-4789-4589-A284-2F24835BC32F}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={1CE9290B-1477-49c1-9A9D-774F22BD80C9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={08AA6866-277B-41f3-AFFF-9187AD43828F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={1CE9290B-1477-49c1-9A9D-774F22BD80C9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="NATO C4ISR System Design Principles" xmi.id="EAID_29324068_E823_48fd_BF0D_BD281DB4C896" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:43:11"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5371"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={CAD5A94E-EA1D-4fb2-8B2E-59944BA54492}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={29324068-E823-48fd-BF0D-BD281DB4C896}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={A1BA708C-8002-4286-A4FC-D8E73B5E33F7}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={29324068-E823-48fd-BF0D-BD281DB4C896}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="Common Messaging Strategy &amp; Procedure" xmi.id="EAID_3817DF8B_1675_40e6_B5CE_32970C27E4C3" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:28:00"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5366"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DA9E9A96-FC30-406f-BD48-CC1914061B09}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={3817DF8B-1675-40e6-B5CE-32970C27E4C3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={43DB9538-1196-4c7d-9785-85FF481FD92B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={3817DF8B-1675-40e6-B5CE-32970C27E4C3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="C-BML Standard Development Framework Presentation V1.3" xmi.id="EAID_41723E0E_0989_4188_AD3C_039AE0D8030B" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 15:18:03"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5381"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BB283DF1-E9A1-4d9f-93FC-EAF0752EEDE8}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={41723E0E-0989-4188-AD3C-039AE0D8030B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={0E545949-44BD-43c1-9DBD-3EB047A80E34}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={41723E0E-0989-4188-AD3C-039AE0D8030B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Comment name="$inet://http://jcs.dtic.mil/j6/cceb/acps/acp123/ACP123B.pdf" xmi.id="EAID_6ED4D749_513C_45e6_A9A7_9B3ABC7F1DFF" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Common Messagin Strategy and Procedures, ACP123(B), Combined Communications-Electronics Board (CCEB), May 2009"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="19"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 11:31:20"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 14:32:49"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="alias" value="Link"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5355"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="http://www.dtic.mil/doctrine/new_pubs/jp1_02.pdf" xmi.id="EAID_8EE198E3_DA55_4041_A571_11BC1F3E34E3" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="19"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 11:31:20"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 14:34:09"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="alias" value="Link"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="object_style" value="LinkOpen=open;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5356"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="http://www.fas.org/irp/doddir/army/fm3-0.pdf" xmi.id="EAID_9536DAC3_CEE2_4a69_B1AB_94DA4C3EE251" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="19"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 11:31:20"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 14:36:56"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="alias" value="Link"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="object_style" value="LinkOpen=open;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5357"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="http://cbml.googlecode.com/svn/uml_model/Documents/C-BML_Phase2_SDF_Rev1.3.pdf" xmi.id="EAID_9B5D3D7A_E461_4d2c_82AF_2D591A804748" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="19"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 16:14:08"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:15:14"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="alias" value="Link"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="object_style" value="LinkOpen=open;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5389"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Class name="NC3A Classification Taxonomy" xmi.id="EAID_9E477F62_6977_4f6e_A2D4_1A1D8ED14FBB" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:42:43"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5370"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B8258273-B867-4280-8E68-473840F8FF78}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={9E477F62-6977-4f6e-A2D4-1A1D8ED14FBB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={BF9BE409-6C5C-45c1-8284-74BFA81D61FA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={9E477F62-6977-4f6e-A2D4-1A1D8ED14FBB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="NCOIC Net-Centric Services Framework V2.1" xmi.id="EAID_B031D67C_85F6_4df5_8602_7141642E4504" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:44:41"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5374"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=16777164;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={7868AAB9-0ED2-4c67-99C5-8F24157AD9A4}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={B031D67C-85F6-4df5-8602-7141642E4504}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={BCA307B7-2FF0-43c5-88FB-2F8350DDA5EF}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={B031D67C-85F6-4df5-8602-7141642E4504}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Dependency client="EAID_D32B4B45_7CF4_4372_B7A3_4D12BA404FE0" supplier="EAID_B031D67C_85F6_4df5_8602_7141642E4504" name="described using" xmi.id="EAID_7D69B466_1D6C_474a_B3C8_CAB3425ED002" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Dependency"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="190"/>
+								<UML:TaggedValue tag="ea_sourceName" value="C-BML Services"/>
+								<UML:TaggedValue tag="ea_targetName" value="NCOIC Net-Centric Services Framework V2.1"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="15"/>
+								<UML:TaggedValue tag="ea_targetID" value="5374"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+								<UML:TaggedValue tag="mt" value="described using"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Dependency>
+						<UML:Class name="US Joint Intelligence Community/DoD Content Discovery and Retrieval (IC/DoD CDR) Model" xmi.id="EAID_ECE9F26F_6832_452d_A2B8_0C236466DDF6" visibility="public" namespace="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="SubTopic"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 14:59:59"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:51:42"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="References"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="SubTopic"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5376"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=11898215;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9263E107-6362-4413-B888-9A22D631BBDC}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=MindMapping::MindMapping@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={ECE9F26F-6832-452d-A2B8-0C236466DDF6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={2F15B443-F90F-48f0-B826-D7088E3F2A62}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=SubTopic;FQName=MindMapping::SubTopic;@ENDSTEREO;$DES;$CLT={ECE9F26F-6832-452d-A2B8-0C236466DDF6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:Diagram name="References" xmi.id="EAID_198B4ECF_D630_474b_B47A_18EBF6E73F42" diagramType="CollaborationDiagram" owner="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="K_Heffner"/>
+				<UML:TaggedValue tag="created_date" value="2011-03-25 09:31:30"/>
+				<UML:TaggedValue tag="modified_date" value="2012-05-15 16:58:55"/>
+				<UML:TaggedValue tag="package" value="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+				<UML:TaggedValue tag="type" value="Analysis"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="325"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=1B06BA53;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=MindMapping::MindMapping;DefaultLang=C#;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=8;Top=6;Right=58;Bottom=28;" subject="EAID_9B5D3D7A_E461_4d2c_82AF_2D591A804748" seqno="1" style="DUID=5389D049;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=5;Right=449;Bottom=35;" subject="EAID_41723E0E_0989_4188_AD3C_039AE0D8030B" seqno="2" style="DUID=540AFB26;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=317;Right=580;Bottom=347;" subject="EAID_ECE9F26F_6832_452d_A2B8_0C236466DDF6" seqno="3" style="DUID=89BC91DF;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=213;Right=382;Bottom=243;" subject="EAID_B031D67C_85F6_4df5_8602_7141642E4504" seqno="4" style="DUID=1B94089D;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=178;Right=290;Bottom=208;" subject="EAID_17D212B5_F150_4a58_9BC0_41C5972FBE88" seqno="5" style="DUID=263737C8;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=143;Right=427;Bottom=173;" subject="EAID_0801A463_FFD3_4ae8_B896_2058D97F6A47" seqno="6" style="DUID=F897641D;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=75;Right=280;Bottom=105;" subject="EAID_29324068_E823_48fd_BF0D_BD281DB4C896" seqno="7" style="DUID=7FD58EF0;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=110;Right=211;Bottom=138;" subject="EAID_9E477F62_6977_4f6e_A2D4_1A1D8ED14FBB" seqno="8" style="DUID=0F122984;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=8;Top=182;Right=57;Bottom=202;" subject="EAID_82637662_063A_4782_AF4A_46221404553D" seqno="9" style="NSL=0;DUID=DFE2093F;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=8;Top=216;Right=57;Bottom=236;" subject="EAID_E80D96D1_DC0F_431e_A354_DE6212FDD644" seqno="10" style="NSL=0;DUID=115C1F55;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=8;Top=148;Right=57;Bottom=168;" subject="EAID_E59E66E2_445E_4fc5_A1C8_F203B109AC2E" seqno="11" style="NSL=0;DUID=530F48A4;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=8;Top=80;Right=57;Bottom=100;" subject="EAID_83626560_E691_4ac1_AF29_199F10E7FA20" seqno="12" style="HideIcon=0;NSL=0;DUID=2663CB72;"/>
+				<UML:DiagramElement geometry="Left=8;Top=114;Right=57;Bottom=134;" subject="EAID_F5AD8464_4825_4a97_B614_8E9DCAD44FC8" seqno="13" style="HideIcon=0;NSL=0;DUID=480FF20D;"/>
+				<UML:DiagramElement geometry="Left=65;Top=283;Right=324;Bottom=312;" subject="EAID_08E71F3F_E5C9_418f_9F7F_8F6AC9911229" seqno="14" style="DUID=E069FC91;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=248;Right=411;Bottom=278;" subject="EAID_1CE9290B_1477_49c1_9A9D_774F22BD80C9" seqno="15" style="DUID=6F060307;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=65;Top=40;Right=325;Bottom=70;" subject="EAID_3817DF8B_1675_40e6_B5CE_32970C27E4C3" seqno="16" style="DUID=75CE2CB4;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=8;Top=286;Right=57;Bottom=303;" subject="EAID_9536DAC3_CEE2_4a69_B1AB_94DA4C3EE251" seqno="17" style="HideIcon=0;DUID=A1FDF01F;"/>
+				<UML:DiagramElement geometry="Left=8;Top=250;Right=57;Bottom=272;" subject="EAID_8EE198E3_DA55_4041_A571_11BC1F3E34E3" seqno="18" style="HideIcon=0;DUID=073FA239;"/>
+				<UML:DiagramElement geometry="Left=8;Top=42;Right=57;Bottom=66;" subject="EAID_6ED4D749_513C_45e6_A9A7_9B3ABC7F1DFF" seqno="19" style="HideIcon=0;DUID=783A813F;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:DiagramElement geometry="Left=295;Top=339;Right=579;Bottom=367;" subject="EAID_41723E0E_0989_4188_AD3C_039AE0D8030B" seqno="5" style="DUID=290A1B50;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_DC020AEE_6A98_4169_9441_73D85DA8A56D"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="Left=49;Top=425;Right=274;Bottom=453;" subject="EAID_B031D67C_85F6_4df5_8602_7141642E4504" seqno="1" style="DUID=517EB54A;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_40C2EF5D_3A1A_48f0_9786_0F7374CBDECE"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="EDGE=3;$LLB=;LLT=;LMT=CX=73:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;" subject="EAID_7D69B466_1D6C_474a_B3C8_CAB3425ED002" style="Mode=3;EOID=517EB54A;SOID=C877FF50;Color=-1;LWidth=0;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_40C2EF5D_3A1A_48f0_9786_0F7374CBDECE"/>
+				<UML:TaggedValue tag="hidden" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="EDGE=3;$LLB=;LLT=;LMT=CX=73:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;" subject="EAID_7D69B466_1D6C_474a_B3C8_CAB3425ED002" style="Mode=3;EOID=517EB54A;SOID=C877FF50;Color=-1;LWidth=0;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_40C2EF5D_3A1A_48f0_9786_0F7374CBDECE"/>
+				<UML:TaggedValue tag="hidden" value="0"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EAModel.file>
+			<EAFile name="https://www.ncoic.org/apps/group_public/download.php/17780/NIFv2.1_NSD-RM_v1.2.pdf" type="Web Address" subject="EAID_0801A463_FFD3_4ae8_B896_2058D97F6A47">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="http://www.fas.org/irp/doddir/army/fm3-0.pdf" type="Web Address" subject="EAID_08E71F3F_E5C9_418f_9F7F_8F6AC9911229">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="https://www.ncoic.org/apps/group_public/download.php/19574/10921_NetCentInfoFrameworkV1.0%5B1%5D.pdf" type="Web Address" subject="EAID_17D212B5_F150_4a58_9BC0_41C5972FBE88">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="http://www.dtic.mil/doctrine/new_pubs/jp1_02.pdf" type="Web Address" subject="EAID_1CE9290B_1477_49c1_9A9D_774F22BD80C9">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="http://www.nc3a.nato.int/Opportunities/Documents/ATD-00.01.02%20-%20NATO%20C4ISR%20System%20Design%20Principles%20-%20PUBLIC.pdf" type="Web Address" subject="EAID_29324068_E823_48fd_BF0D_BD281DB4C896">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="http://jcs.dtic.mil/j6/cceb/acps/acp123/ACP123B.pdf" type="Local File" subject="EAID_3817DF8B_1675_40e6_B5CE_32970C27E4C3">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="http://cbml.googlecode.com/svn/uml_model/Documents/C-BML_Phase2_SDF_Rev1.3.pdf" type="Web Address" subject="EAID_41723E0E_0989_4188_AD3C_039AE0D8030B">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="http://www.nc3a.nato.int/Opportunities/Documents/2011-06-01_NU_C3%20Classification%20Taxonomy.pdf" type="Web Address" subject="EAID_9E477F62_6977_4f6e_A2D4_1A1D8ED14FBB">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="https://www.ncoic.org/apps/group_public/download.php/14326/Net_Centric_Services_Framework_V2.1%28final%29.pdf" type="Web Address" subject="EAID_B031D67C_85F6_4df5_8602_7141642E4504">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+			<EAFile name="http://metadata.dod.mil/mdr/documents/DoDMWG/2010/04/2010-04-13_CDRIPT.ppt" type="Web Address" subject="EAID_ECE9F26F_6832_452d_A2B8_0C236466DDF6">
+				<UML:ModelElement.taggedValue/>
+			</EAFile>
+		</EAModel.file>
+		<EAStub xmi.id="EAID_D32B4B45_7CF4_4372_B7A3_4D12BA404FE0" name="C-BML Services" UMLType="Class"/>
+	</XMI.extensions>
+</XMI>
