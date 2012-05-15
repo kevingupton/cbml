@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_FDFDD554_2015_4421_88FD_7B608D792F3D">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="MSDL_CBML_COMMON" xmi.id="EAPK_FDFDD554_2015_4421_88FD_7B608D792F3D" isRoot="true" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="created" value="2012-05-14 00:00:00"/>
+						<UML:TaggedValue tag="modified" value="2012-05-14 00:00:00"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="ea7\7B608D792F3D.xml"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="3"/>
+						<UML:TaggedValue tag="packageFlags" value="isModel=1;VCCFG=cbml_phase2_svn;CRC=0;"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement/>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
