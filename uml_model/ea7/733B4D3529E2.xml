@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_35BE29E0_19D6_47f1_86D3_733B4D3529E2">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="Content Model" xmi.id="EAPK_35BE29E0_19D6_47f1_86D3_733B4D3529E2" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_C6C905AB_2D2A_4aec_9A0C_EEB560D2C9B9"/>
+						<UML:TaggedValue tag="created" value="2012-05-14 16:20:59"/>
+						<UML:TaggedValue tag="modified" value="2012-05-14 16:21:48"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="ea7\733B4D3529E2.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2012-05-14 16:20:59"/>
+						<UML:TaggedValue tag="lastsavedate" value="2012-05-14 16:20:59"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="2"/>
+						<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="eventflags" value="LNK=8dbf;"/>
+						<UML:TaggedValue tag="tpos" value="2"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_35BE29E0_19D6_47f1_86D3_733B4D3529E2_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="Core Content Model" xmi.id="EAID_8EF6442D_5221_47e9_B3A4_16EF08E7BFE5" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35BE29E0_19D6_47f1_86D3_733B4D3529E2"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-14 16:22:16"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-14 16:22:16"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_8EF6442D_5221_47e9_B3A4_16EF08E7BFE5"/>
+										<UML:TaggedValue tag="package_name" value="Content Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="315"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="upperC2Ont2.owl" xmi.id="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="owlOntology"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35BE29E0_19D6_47f1_86D3_733B4D3529E2"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-05 09:44:18"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-15 14:15:01"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+										<UML:TaggedValue tag="package_name" value="Content Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="owlOntology"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="250"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={28C46676-AF87-4e26-B902-244A69AF9669}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$DES=@STEREO;Name=owlOntology;FQName=OWL:owlOntology;@ENDSTEREO;$DES;$CLT={D37A9280-46A2-431c-91EC-E45050CFBBA3}$CLT;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Package name="Core Content Model" xmi.id="EAPK_8EF6442D_5221_47e9_B3A4_16EF08E7BFE5" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35BE29E0_19D6_47f1_86D3_733B4D3529E2"/>
+								<UML:TaggedValue tag="created" value="2012-05-14 16:22:16"/>
+								<UML:TaggedValue tag="modified" value="2012-05-14 16:22:16"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea1\16EF08E7BFE5.xml"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="upperC2Ont2.owl" xmi.id="EAPK_D37A9280_46A2_431c_91EC_E45050CFBBA3" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_29229916_09CD_4feb_9967_B2782B004CBE"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35BE29E0_19D6_47f1_86D3_733B4D3529E2"/>
+								<UML:TaggedValue tag="created" value="2012-05-05 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2012-05-05 00:00:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="eaE\E45050CFBBA3.xml"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="owlOntology"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:Stereotype xmi.id="EAID_29229916_09CD_4feb_9967_B2782B004CBE" name="owlOntology" isRoot="false" isLeaf="false" isAbstract="false">
+					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
+				</UML:Stereotype>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="defaultNamespace" xmi.id="EAID_A299C452_CFB1_65cf_9001_647C0BECED49" value="http://cbml.googlecode.com/svn/trunk/cbml/upperC2Ont.owl#" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_B642_F882CEFEF13B" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;xml&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.w3.org/XML/1998/namespace&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_9B69_12B80EF3584F" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;rdf&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_864B_0EEA9725C6FE" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;protege&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://protege.stanford.edu/plugins/owl/protege#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_B4D2_076E63826737" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;xsp&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.owl-ontologies.com/2005/08/07/xsp.owl#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_AEC1_6528954CCFC0" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;owl&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.w3.org/2002/07/owl#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_B7B2_680AE50B93AA" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;dc&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://purl.org/dc/elements/1.1/&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_B3EF_FB58D41A1128" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;xsd&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.w3.org/2001/XMLSchema#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_B72E_5C4DB2127B01" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;swrl&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.w3.org/2003/11/swrl#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_9584_8202B302C2ED" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;swrlb&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.w3.org/2003/11/swrlb#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="namespaceDefinition" xmi.id="EAID_B636B656_8155_d881_8F63_ADF439F254C0" value="#NOTES#&lt;tagStructure&gt;&lt;property name=&quot;namespacePrefix&quot;&gt;rdfs&lt;/property&gt;&lt;property name=&quot;namespaceURI&quot;&gt;http://www.w3.org/2000/01/rdf-schema#&lt;/property&gt;&lt;/tagStructure&gt;" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:TaggedValue tag="versionInfo" xmi.id="EAID_AF754732_D494_4ad4_9E58_A3BFDE69518F" modelElement="EAID_D37A9280_46A2_431c_91EC_E45050CFBBA3"/>
+		<UML:Diagram name="Content Model" xmi.id="EAID_C13982DD_C6C1_4f60_81DD_12B9D66149AC" diagramType="ClassDiagram" owner="EAPK_35BE29E0_19D6_47f1_86D3_733B4D3529E2" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="K_Heffner"/>
+				<UML:TaggedValue tag="created_date" value="2006-01-11 00:00:00"/>
+				<UML:TaggedValue tag="modified_date" value="2012-05-15 16:58:55"/>
+				<UML:TaggedValue tag="package" value="EAPK_35BE29E0_19D6_47f1_86D3_733B4D3529E2"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="314"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=0;HighlightForeign=0;PackageContents=0;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=20578DFF;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;"/>
+			</UML:ModelElement.taggedValue>
+		</UML:Diagram>
+		<UML:DiagramElement geometry="Left=41;Top=176;Right=181;Bottom=264;" subject="EAID_35BE29E0_19D6_47f1_86D3_733B4D3529E2" seqno="5" style="DUID=A55BB72B;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_1E2B04B9_E890_4170_90B1_1ACB923D5591"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
