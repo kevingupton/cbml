@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_92B985C3_A85C_4134_8FFF_EA3FA74F0C34">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="MSDL_Experimental" xmi.id="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_319BADE8_850A_4142_9692_F1BA9F41AB03"/>
+						<UML:TaggedValue tag="created" value="2012-04-18 14:30:40"/>
+						<UML:TaggedValue tag="modified" value="2012-04-18 14:30:40"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="eaE\EA3FA74F0C34.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2012-04-18 14:30:40"/>
+						<UML:TaggedValue tag="lastsavedate" value="2012-04-18 14:30:40"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="3"/>
+						<UML:TaggedValue tag="packageFlags" value="isModel=1;VICON=3;VCCFG=cbml_phase2_svn;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="3"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_92B985C3_A85C_4134_8FFF_EA3FA74F0C34_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="MsdlSimpleTypes_1.3.0" xmi.id="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="XSDschema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-18 16:44:08"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-19 13:58:27"/>
+										<UML:TaggedValue tag="genfile" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\MsdlSimpleTypes_1.3.0.xsd"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA"/>
+										<UML:TaggedValue tag="package_name" value="MSDL_Experimental"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+										<UML:TaggedValue tag="tpos" value="5"/>
+										<UML:TaggedValue tag="ea_localid" value="293"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={7D8D9C4B-3FA0-473b-A35A-C3CCCB468CBC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDschema;GUID={E169AF68-8626-4694-B34A-D2FF6329BC0D};@ENDSTEREO;$DES;$CLT={00E024A2-5D54-49f3-9183-749E58CC80DA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="ModelID_v2006_FINAL (BOM)" xmi.id="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="XSDschema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-18 16:44:09"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-19 13:58:22"/>
+										<UML:TaggedValue tag="genfile" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\ModelID_v2006_FINAL.xsd"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE"/>
+										<UML:TaggedValue tag="package_name" value="MSDL_Experimental"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+										<UML:TaggedValue tag="tpos" value="3"/>
+										<UML:TaggedValue tag="ea_localid" value="291"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={4E50154F-F40B-4a5a-9FD4-E7ED1FCBC969}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDschema;GUID={E169AF68-8626-4694-B34A-D2FF6329BC0D};@ENDSTEREO;$DES;$CLT={500F6E3C-28FB-49fe-AEEE-1E54AA23A3AE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="MsdlComplexTypes_1.3.0" xmi.id="EAID_7A990271_DF59_4728_8F21_548224DDBA55" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="XSDschema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-18 16:44:39"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-19 13:58:29"/>
+										<UML:TaggedValue tag="genfile" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\MsdlComplexTypes_1.3.0.xsd"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+										<UML:TaggedValue tag="package_name" value="MSDL_Experimental"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+										<UML:TaggedValue tag="tpos" value="6"/>
+										<UML:TaggedValue tag="ea_localid" value="294"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9D1E393D-24D5-455c-9941-3C51407BE7E6}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDschema;GUID={E169AF68-8626-4694-B34A-D2FF6329BC0D};@ENDSTEREO;$DES;$CLT={7A990271-DF59-4728-8F21-548224DDBA55}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="JC3IEDM-3.1-Codes-20061208" xmi.id="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="XSDschema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="XML schema defined by the Multilateral Interoperability Programme (MIP) - Editor: Dr. Michael Gerz, gerz@fgan.de, FGAN FKIE, Germany"/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-18 16:44:13"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-19 13:58:10"/>
+										<UML:TaggedValue tag="genfile" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\JC3IEDM-3.1-Codes-20061208.xsd"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7"/>
+										<UML:TaggedValue tag="package_name" value="MSDL_Experimental"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+										<UML:TaggedValue tag="tpos" value="1"/>
+										<UML:TaggedValue tag="ea_localid" value="289"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={8BA480E6-4CAD-44fc-A218-4B60EAE6343B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDschema;GUID={E169AF68-8626-4694-B34A-D2FF6329BC0D};@ENDSTEREO;$DES;$CLT={D1CC54EB-CF45-42c1-BFC8-524A47C589C7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="JC3IEDMMeteorological" xmi.id="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="XSDschema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="XML schema defined by the Multilateral Interoperability Programme (MIP) - Editor: Dr. Michael Gerz, gerz@fgan.de, FGAN FKIE, Germany"/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-18 16:44:37"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-19 13:58:20"/>
+										<UML:TaggedValue tag="genfile" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\JC3IEDMMeteorological.xsd"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354"/>
+										<UML:TaggedValue tag="package_name" value="MSDL_Experimental"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+										<UML:TaggedValue tag="tpos" value="2"/>
+										<UML:TaggedValue tag="ea_localid" value="290"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9E0DEA0D-C30B-4d05-B90F-DF741F4CF460}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDschema;GUID={E169AF68-8626-4694-B34A-D2FF6329BC0D};@ENDSTEREO;$DES;$CLT={DDB2ACB6-90BF-450c-B1B9-84F83123F354}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="MsdlCodes_1.3.0" xmi.id="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="XSDschema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-18 16:44:07"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-19 13:58:24"/>
+										<UML:TaggedValue tag="genfile" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\MsdlCodes_1.3.0.xsd"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9"/>
+										<UML:TaggedValue tag="package_name" value="MSDL_Experimental"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+										<UML:TaggedValue tag="tpos" value="4"/>
+										<UML:TaggedValue tag="ea_localid" value="292"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={880908C0-DD4D-4dd5-BB7D-6F933B9E7136}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XSDschema;GUID={E169AF68-8626-4694-B34A-D2FF6329BC0D};@ENDSTEREO;$DES;$CLT={E94F961A-4DBE-4d1f-9A49-12D6A70A65C9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Package name="JC3IEDM-3.1-Codes-20061208" xmi.id="EAPK_D1CC54EB_CF45_42c1_BFC8_524A47C589C7" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_671829DA_BE57_4caf_9EA3_498F8A53ECC5"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="XML schema defined by the Multilateral Interoperability Programme (MIP) - Editor: Dr. Michael Gerz, gerz@fgan.de, FGAN FKIE, Germany"/>
+								<UML:TaggedValue tag="parent" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+								<UML:TaggedValue tag="created" value="2012-04-18 16:44:13"/>
+								<UML:TaggedValue tag="modified" value="2012-04-18 16:44:13"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea5\524A47C589C7.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 15:16:59"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 15:16:59"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="1"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="JC3IEDMMeteorological" xmi.id="EAPK_DDB2ACB6_90BF_450c_B1B9_84F83123F354" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_671829DA_BE57_4caf_9EA3_498F8A53ECC5"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="XML schema defined by the Multilateral Interoperability Programme (MIP) - Editor: Dr. Michael Gerz, gerz@fgan.de, FGAN FKIE, Germany"/>
+								<UML:TaggedValue tag="parent" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+								<UML:TaggedValue tag="created" value="2012-04-18 16:44:37"/>
+								<UML:TaggedValue tag="modified" value="2012-04-18 16:44:37"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea8\84F83123F354.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 15:18:03"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 15:18:03"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="2"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="ModelID_v2006_FINAL (BOM)" xmi.id="EAPK_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_671829DA_BE57_4caf_9EA3_498F8A53ECC5"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+								<UML:TaggedValue tag="created" value="2012-04-18 16:44:09"/>
+								<UML:TaggedValue tag="modified" value="2012-04-18 17:28:42"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea1\1E54AA23A3AE.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 15:18:04"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 15:18:04"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="3"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="MsdlCodes_1.3.0" xmi.id="EAPK_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_671829DA_BE57_4caf_9EA3_498F8A53ECC5"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+								<UML:TaggedValue tag="created" value="2012-04-18 16:44:07"/>
+								<UML:TaggedValue tag="modified" value="2012-04-18 16:44:07"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea1\12D6A70A65C9.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 15:18:07"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 15:18:07"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="4"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="MsdlSimpleTypes_1.3.0" xmi.id="EAPK_00E024A2_5D54_49f3_9183_749E58CC80DA" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_671829DA_BE57_4caf_9EA3_498F8A53ECC5"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+								<UML:TaggedValue tag="created" value="2012-04-18 16:44:08"/>
+								<UML:TaggedValue tag="modified" value="2012-04-18 16:44:08"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea7\749E58CC80DA.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 15:18:09"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 15:18:09"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="5"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="MsdlComplexTypes_1.3.0" xmi.id="EAPK_7A990271_DF59_4728_8F21_548224DDBA55" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_671829DA_BE57_4caf_9EA3_498F8A53ECC5"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+								<UML:TaggedValue tag="created" value="2012-04-18 16:44:39"/>
+								<UML:TaggedValue tag="modified" value="2012-04-18 16:44:39"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea5\548224DDBA55.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 15:18:12"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 15:18:12"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="6"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="XSDschema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:Stereotype xmi.id="EAID_671829DA_BE57_4caf_9EA3_498F8A53ECC5" name="XSDschema" isRoot="false" isLeaf="false" isAbstract="false">
+					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
+				</UML:Stereotype>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="elementFormDefault" xmi.id="EAID_5D714127_1C1A_485a_A140_2842BEB94B92" value="qualified" modelElement="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA"/>
+		<UML:TaggedValue tag="schemaLocation" xmi.id="EAID_E61D6FA8_EA63_4b19_99AE_954CF8BEBD7B" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\MsdlSimpleTypes_1.3.0.xsd" modelElement="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_20DF3AF3_E480_49af_BD2D_41E3170EC2CF" value="urn:sisostds:scenario:military:data:draft:msdl:1" modelElement="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA"/>
+		<UML:TaggedValue tag="targetNamespacePrefix" xmi.id="EAID_CF8C6BBF_ABE0_4429_B1F4_7F4FC452FFCF" value="msdl" modelElement="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_DB4A9E91_1E14_4fa0_81B7_4278EA2BCB80" value="1.3.0" modelElement="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_2EC237B7_A492_427d_9212_45C77A5FD015" value="&lt;memo&gt;#NOTES#modelID=http://www.sisostds.org/schemas/modelID,jc3iedm=urn:int:nato:standard:mip:jc3iedm:3.1:oo:2.0,xs=http://www.w3.org/2001/XMLSchema" modelElement="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA"/>
+		<UML:TaggedValue tag="attributeFormDefault" xmi.id="EAID_4D6A726A_C47E_4f5b_AE8C_0FD14F9BC4ED" value="unqualified" modelElement="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE"/>
+		<UML:TaggedValue tag="elementFormDefault" xmi.id="EAID_562E6A6B_73E8_4658_A3AA_AD9EBF01F267" value="qualified" modelElement="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE"/>
+		<UML:TaggedValue tag="schemaLocation" xmi.id="EAID_D371D955_3AB9_48de_9DE5_EAD39B086FC1" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\ModelID_v2006_FINAL.xsd" modelElement="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_14763E2E_0892_4ac8_9EDA_197EEDA89E5D" value="http://www.sisostds.org/schemas/modelID" modelElement="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_A775FAB8_7171_4a28_9C98_538C3442ADE4" value="&lt;memo&gt;#NOTES#xmlns:xs=http://www.w3.org/2001/XMLSchema" modelElement="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE"/>
+		<UML:TaggedValue tag="attributeFormDefault" xmi.id="EAID_4182C0D4_6997_4758_BCA6_2F3EE73E8D3F" value="unqualified" modelElement="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+		<UML:TaggedValue tag="elementFormDefault" xmi.id="EAID_D98CC19D_3936_4ad6_AE16_00263BC96004" value="qualified" modelElement="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+		<UML:TaggedValue tag="schemaLocation" xmi.id="EAID_D413C364_5231_44d7_BCC2_0B420AAA7FE2" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\MsdlComplexTypes_1.3.0.xsd" modelElement="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_6EC5628D_59EF_46f3_A3FD_0B6568015AC5" value="urn:sisostds:scenario:military:data:draft:msdl:1" modelElement="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+		<UML:TaggedValue tag="targetNamespacePrefix" xmi.id="EAID_1A9965EB_7C1D_4f31_9647_BA0A409AE0CD" value="msdl" modelElement="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_4003D4C3_A696_4add_BB48_B57E9FAFC5D9" value="1.3.0" modelElement="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_DCF220AB_19AC_47de_904A_F2B32B342776" value="&lt;memo&gt;#NOTES#modelID=http://www.sisostds.org/schemas/modelID,jc3iedm=urn:int:nato:standard:mip:jc3iedm:3.1:oo:2.0,xs=http://www.w3.org/2001/XMLSchema" modelElement="EAID_7A990271_DF59_4728_8F21_548224DDBA55"/>
+		<UML:TaggedValue tag="attributeFormDefault" xmi.id="EAID_F978113E_1744_4f44_876C_C30A2DF0B02A" value="unqualified" modelElement="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7"/>
+		<UML:TaggedValue tag="elementFormDefault" xmi.id="EAID_16D532F1_8A4D_40e6_883D_5FEFFC910AF5" value="qualified" modelElement="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7"/>
+		<UML:TaggedValue tag="schemaLocation" xmi.id="EAID_A9C7AFBA_3D4C_49b3_961C_B84293D93340" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\JC3IEDM-3.1-Codes-20061208.xsd" modelElement="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_CC12CDB1_D2A2_43d6_B162_597BF79B4C37" value="urn:int:nato:standard:mip:jc3iedm:3.1:oo:2.0" modelElement="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7"/>
+		<UML:TaggedValue tag="targetNamespacePrefix" xmi.id="EAID_55B7714C_7641_4678_AF4C_74B4182A5CE8" value="jc3iedm" modelElement="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_917228DA_665E_49f8_8410_62BA9CD7DF07" value="&lt;memo&gt;#NOTES#http://www.w3.org/2001/XMLSchema" modelElement="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7"/>
+		<UML:TaggedValue tag="attributeFormDefault" xmi.id="EAID_EF020512_2B83_4678_8C97_508B5B085367" value="unqualified" modelElement="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354"/>
+		<UML:TaggedValue tag="elementFormDefault" xmi.id="EAID_8149383B_EC65_4ca5_AD95_8619054707C6" value="qualified" modelElement="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354"/>
+		<UML:TaggedValue tag="schemaLocation" xmi.id="EAID_939761FE_2A4A_4a4e_B870_A2C0FE97E246" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\JC3IEDMMeteorological.xsd" modelElement="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_8FAA7C1F_76C6_4a19_BE43_CBD603F772C5" value="urn:int:nato:standard:mip:jc3iedm:3.1:oo:2.0" modelElement="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354"/>
+		<UML:TaggedValue tag="targetNamespacePrefix" xmi.id="EAID_3A8B6773_4784_4084_A31F_E57163A315E2" value="jc3iedm" modelElement="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_6F04BDBD_8C6C_4755_887B_FA6A47695B73" value="&lt;memo&gt;#NOTES#http://www.w3.org/2001/XMLSchema" modelElement="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354"/>
+		<UML:TaggedValue tag="elementFormDefault" xmi.id="EAID_BA7DDAA2_15F3_45c2_B87C_2E6D7D79C8C8" value="qualified" modelElement="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9"/>
+		<UML:TaggedValue tag="schemaLocation" xmi.id="EAID_41C0A832_F70D_4e1e_92CF_64B66FFBEF4D" value="C:\CITT\External_Documents\ADIS\msdl\apr2012\xsd-msdl\MsdlCodes_1.3.0.xsd" modelElement="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_7F895AFF_74E3_4627_B5F0_EEF60DF2505B" value="urn:sisostds:scenario:military:data:draft:msdl:1" modelElement="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9"/>
+		<UML:TaggedValue tag="targetNamespacePrefix" xmi.id="EAID_5478D053_1CE9_42ce_9B05_DF9C17B05E60" value="msdl" modelElement="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_888CB8E5_1F68_4869_A08C_078524FA3487" value="1.3.0" modelElement="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_F5831048_DC8E_4979_9F51_0C1B0AED9089" value="&lt;memo&gt;#NOTES#xs=http://www.w3.org/2001/XMLSchema" modelElement="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9"/>
+		<UML:Diagram name="MSDL_Expiremental_Data_Model" xmi.id="EAID_31D8F99D_E632_4d56_B9C5_966B13AFEB9E" diagramType="PackageDiagram" owner="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="K_Heffner"/>
+				<UML:TaggedValue tag="created_date" value="2012-04-19 12:41:30"/>
+				<UML:TaggedValue tag="modified_date" value="2012-04-20 16:35:17"/>
+				<UML:TaggedValue tag="package" value="EAPK_92B985C3_A85C_4134_8FFF_EA3FA74F0C34"/>
+				<UML:TaggedValue tag="type" value="Package"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="292"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=0;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=2;PPgs.cy=8;DocSize.cx=799;DocSize.cy=1067;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=1;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=254EFF84;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=974;Top=13;Right=1180;Bottom=1370;" subject="EAID_7A990271_DF59_4728_8F21_548224DDBA55" seqno="1" style="DUID=B2B78CF2;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=712;Top=523;Right=929;Bottom=1208;" subject="EAID_00E024A2_5D54_49f3_9183_749E58CC80DA" seqno="2" style="DUID=78E2BAC3;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=715;Top=13;Right=915;Bottom=474;" subject="EAID_E94F961A_4DBE_4d1f_9A49_12D6A70A65C9" seqno="3" style="DUID=BF24D0C6;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=434;Top=401;Right=634;Bottom=926;" subject="EAID_500F6E3C_28FB_49fe_AEEE_1E54AA23A3AE" seqno="4" style="DUID=1CB889BE;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=420;Top=13;Right=654;Bottom=330;" subject="EAID_DDB2ACB6_90BF_450c_B1B9_84F83123F354" seqno="5" style="DUID=AB0CCACF;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=16;Top=13;Right=374;Bottom=7594;" subject="EAID_D1CC54EB_CF45_42c1_BFC8_524A47C589C7" seqno="6" style="DUID=B84F144D;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:DiagramElement geometry="Left=43;Top=122;Right=244;Bottom=247;" subject="EAID_92B985C3_A85C_4134_8FFF_EA3FA74F0C34" seqno="2" style="DUID=09E81E21;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_B7072240_5C0C_4845_B264_4EECF8D70B06"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
