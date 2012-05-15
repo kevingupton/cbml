@@ -1,0 +1,9 @@
+<BranchVCSpec>
+	<PkgGUID>{319BADE8-850A-4142-9692-F1BA9F41AB03}</PkgGUID>
+	<XMLPath>eaF\F1BA9F41AB03.xml</XMLPath>
+	<Config>
+		<GUID>cbml_phase2_svn</GUID>
+		<LocalPath>%cbml_phase2_svn%</LocalPath>
+		<Type>2</Type>
+	</Config>
+</BranchVCSpec>
