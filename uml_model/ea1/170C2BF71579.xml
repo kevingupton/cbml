@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_CD600E8A_ECC8_4192_874B_170C2BF71579">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="C-BML Standard Development Framework" xmi.id="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+						<UML:TaggedValue tag="ea_package_id" value="251"/>
+						<UML:TaggedValue tag="created" value="2011-03-25 00:00:00"/>
+						<UML:TaggedValue tag="modified" value="2012-05-14 12:41:51"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="ea1\170C2BF71579.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2012-05-14 11:49:44"/>
+						<UML:TaggedValue tag="lastsavedate" value="2012-05-14 11:49:44"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="1"/>
+						<UML:TaggedValue tag="packageFlags" value="isModel=1;CRC=0;VCCFG=cbml_phase2_svn;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="1"/>
+						<UML:TaggedValue tag="gentype" value="C#"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Comment name="$diagram://{1E2B04B9-E890-4170-90B1-1ACB923D5591}" xmi.id="EAID_0A511A7B_B135_47ca_9A28_A8A72DEB06DC" visibility="public" namespace="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 16:06:14"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:06:33"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5383"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="diagram" value="EAID_1E2B04B9_E890_4170_90B1_1ACB923D5591"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="$diagram:Reference Implementations" xmi.id="EAID_1B5D59C0_3A5F_43ec_8B56_AF11CAE11BEF" visibility="public" namespace="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value=" "/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 16:06:52"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:09:21"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5384"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="diagram" value="EAID_B8C12124_1069_4fc0_B8A3_82BF548BECAE"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="$diagram://{A47B6D01-E2BC-40b5-87C1-49A5C9FA0341}" xmi.id="EAID_1E89B051_EF8A_4b72_8696_139FB1F34B68" visibility="public" namespace="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value=" "/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 16:04:57"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:05:32"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5382"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="diagram" value="EAID_A47B6D01_E2BC_40b5_87C1_49A5C9FA0341"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="http://cbml.googlecode.com/svn/uml_model/Documents/C-BML_Phase2_SDF_Rev1.3.pdf" xmi.id="EAID_5D883355_AA6D_48ab_B666_8FD4D26B77FD" visibility="public" namespace="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="19"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 15:15:09"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 15:22:04"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="alias" value="Link"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="object_style" value="LinkOpen=open;"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5380"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Collaboration xmi.id="EAID_CD600E8A_ECC8_4192_874B_170C2BF71579_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="Coalition Battle Management Language (C-BML) Standard Development Framework (SDF)" xmi.id="EAID_72EFA566_7EA9_4a4e_BE00_0F7E63FAD030" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Boundary"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-14 14:25:34"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-14 14:28:33"/>
+										<UML:TaggedValue tag="gentype" value="C#"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="4392"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=12632256;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole xmi.id="EAID_AEA5F24C_3971_44d1_9FC5_ACDBECFDA063" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Boundary"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-14 12:17:51"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-14 12:17:51"/>
+										<UML:TaggedValue tag="gentype" value="C#"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="4387"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=3;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole xmi.id="EAID_D1CA0A3D_B5F7_4818_8BAA_B7118D8539F9" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Boundary"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-14 12:19:15"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-14 12:20:52"/>
+										<UML:TaggedValue tag="gentype" value="C#"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="styleex" value="font=Calibri;fontsz=140;bold=1;italic=0;ul=0;charset=1;pitch=0;"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="4388"/>
+										<UML:TaggedValue tag="ea_eleType" value="element"/>
+										<UML:TaggedValue tag="style" value="BackColor=16777215;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Comment xmi.id="EAID_AED2DA3A_117C_4361_B27E_821BB324D1C3" visibility="public" namespace="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="The C-BML Standard Development Framework: &#xA;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;defines a comprehensive model for requirements, domain-specific information products, information exchange interactions and service components definition;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;separates normative and guidance documentation concerns; and&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;provides a set of examples and usage guidance documents for technology-independent and technology-specific utilization.&lt;/li&gt;&#xA;&lt;/ul&gt;"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Note"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-14 14:30:07"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-14 14:42:39"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="4393"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="$diagram://{5F160DF4-D645-4f1f-A516-2197200871E9}" xmi.id="EAID_E6BA9BF1_F566_4ce5_9ECF_D70228E1CBDB" visibility="public" namespace="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value=" "/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Text"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isActive" value="false"/>
+								<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+								<UML:TaggedValue tag="date_created" value="2012-05-15 16:11:37"/>
+								<UML:TaggedValue tag="date_modified" value="2012-05-15 16:11:47"/>
+								<UML:TaggedValue tag="gentype" value="C#"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="C-BML Standard Development Framework"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="5388"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="diagram" value="EAID_5F160DF4_D645_4f1f_A516_2197200871E9"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:Diagram name="C-BML Standard Development Framework" xmi.id="EAID_DC020AEE_6A98_4169_9441_73D85DA8A56D" diagramType="CollaborationDiagram" owner="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="documentation" value="The Coalition Battle Management Language (C-BML) Standard Development Framework (SDF) has been created by the SISO C-BML Phase 2 Drafting Group to facilitate the development and communication of the C-BML Phase 2 standard."/>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="K_Heffner"/>
+				<UML:TaggedValue tag="created_date" value="2011-03-25 09:31:30"/>
+				<UML:TaggedValue tag="modified_date" value="2012-05-15 16:58:54"/>
+				<UML:TaggedValue tag="package" value="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+				<UML:TaggedValue tag="type" value="Analysis"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="242"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=1;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=B2DEA1B9;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=MindMapping::MindMapping;DefaultLang=C#;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=190;Top=245;Right=206;Bottom=255;" subject="EAID_E6BA9BF1_F566_4ce5_9ECF_D70228E1CBDB" seqno="1" style="DUID=E35C21BA;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=190;Top=303;Right=211;Bottom=313;" subject="EAID_1B5D59C0_3A5F_43ec_8B56_AF11CAE11BEF" seqno="2" style="DUID=79D960E8;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=190;Top=127;Right=209;Bottom=146;" subject="EAID_0A511A7B_B135_47ca_9A28_A8A72DEB06DC" seqno="3" style="DUID=339569CE;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=190;Top=71;Right=215;Bottom=81;" subject="EAID_1E89B051_EF8A_4b72_8696_139FB1F34B68" seqno="4" style="DUID=A040FE65;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=295;Top=339;Right=579;Bottom=367;" subject="EAID_41723E0E_0989_4188_AD3C_039AE0D8030B" seqno="5" style="DUID=290A1B50;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=257;Top=340;Right=307;Bottom=363;" subject="EAID_5D883355_AA6D_48ab_B666_8FD4D26B77FD" seqno="6" style="DUID=34BFF88F;HideIcon=0;"/>
+				<UML:DiagramElement geometry="Left=253;Top=70;Right=686;Bottom=322;" subject="EAID_AED2DA3A_117C_4361_B27E_821BB324D1C3" seqno="7" style="DUID=C0E3C2B4;font=Calibri;fontsz=120;bold=0;italic=0;ul=0;charset=0;pitch=34;"/>
+				<UML:DiagramElement geometry="Left=58;Top=290;Right=181;Bottom=330;" subject="EAID_4FC0D46E_354F_45ee_B63D_CE28D1B29F7B" seqno="8" style="DUID=F8F38FCA;HideIcon=0;font=Calibri;fontsz=120;bold=1;italic=0;ul=0;charset=0;pitch=34;BFol=16777215;"/>
+				<UML:DiagramElement geometry="Left=58;Top=232;Right=181;Bottom=272;" subject="EAID_5C4DEE7F_BA47_497b_834C_56A33166DCC7" seqno="9" style="DUID=80E6B24F;HideIcon=0;font=Calibri;fontsz=120;bold=1;italic=0;ul=0;charset=0;pitch=34;BFol=16777215;"/>
+				<UML:DiagramElement geometry="Left=58;Top=174;Right=181;Bottom=214;" subject="EAID_FBE62F23_51B3_44e3_B96D_23D41148B29D" seqno="10" style="DUID=E0B48B93;HideIcon=0;font=Calibri;fontsz=120;bold=1;italic=0;ul=0;charset=0;pitch=34;BFol=16777215;"/>
+				<UML:DiagramElement geometry="Left=58;Top=58;Right=181;Bottom=98;" subject="EAID_6E230A93_FF3A_40a9_837B_C3B5ADE9ADDD" seqno="11" style="DUID=F0EC8659;HideIcon=0;italic=0;ul=0;charset=0;pitch=0;BFol=16777215;font=Calibri;fontsz=120;bold=1;LWth=2;BCol=16711680;LCol=0;"/>
+				<UML:DiagramElement geometry="Left=58;Top=116;Right=181;Bottom=156;" subject="EAID_4351E380_5D05_40a8_A715_3C237C3B616D" seqno="12" style="HideIcon=0;DUID=28522046;BFol=16777215;font=Calibri;fontsz=120;bold=1;italic=0;ul=0;charset=0;pitch=34;"/>
+				<UML:DiagramElement geometry="Left=92;Top=63;Right=147;Bottom=373;" subject="EAID_AEA5F24C_3971_44d1_9FC5_ACDBECFDA063" seqno="13" style="DUID=F5CAF2CB;ImageID=543392007;"/>
+				<UML:DiagramElement geometry="Left=46;Top=42;Right=213;Bottom=377;" subject="EAID_D1CA0A3D_B5F7_4818_8BAA_B7118D8539F9" seqno="14" style="DUID=385E060E;"/>
+				<UML:DiagramElement geometry="Left=25;Top=7;Right=757;Bottom=388;" subject="EAID_72EFA566_7EA9_4a4e_BE00_0F7E63FAD030" seqno="15" style="DUID=1466A5BC;font=Calibri;fontsz=140;bold=1;italic=0;ul=0;charset=0;pitch=34;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EAModel.image>
+			<EAImage name="Image4387" type="Bitmap" imageID="543392007" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">iVBORw0KGgoAAAANSUhEUgAAAGIAAAHRCAIAAAAe7vs2AAAfh0lEQVR4nO1dWYwc13W9r6rX
+mWFP95AcUqJm46LFUYBstig5gewYWWxqZWA7RvwTJD+JLArIX4zkRxalr8SWgAD5CWzEViTa
+H0ZiGI6tSDYSawlixJZEyhJJUZZMSVw1KznTS72bj9dvqe6enuphnZqpSR0Mmj3Dmb7Vp++7
+795z33slmJkyrAVvoy8gHchoioRNR9PbP//ZJowDm4gmZj77xsviwomffvdrUspNRdZmoYmZ
+z558uTB7cvKmvbdM7/rpd78WBMHmYWrjaWJmKeW7p14pzp4a3zdFtVp5984Pzex+5Xv/HATB
+JnGrTUHTu6deKXxwcnzfFI2NkedRsVjevfMWzVRGE4X8aGyMBFHQIikNU69+/+utVktKubHX
+uZE0KT8qzp4a3z/d5qjVomaLZGCZmt59/Aff2HCf2jCapJRnT2qOajXNUZNaLQpkB1PGpzaK
+rI2hqc3R3MkeHLVaJINupo5//+utVuv/EU1SyvdOvVqaPz2+r4sj15u6mDrxzJNq7kv+mpOm
+SUr57slXinPtub8XRwFJ2c1UaffOW6Z3qTiVPFMiMTdmZmZ+79SrxblTO1fjqBXo6xLkeeR7
+5PntR8+jen3l/MXXf3H+V37/877vCyGEEMlcfHLepMZaJI6IiLm3T+3aefP0rhM/+EbCcSoh
+mqSU751enaNmmCOFvky99syTzWYzsdGXBE3M/P6bx0tzp1flKOjiSP9lH6Zef/apxFIEbGxq
+xyPlR3sH5Mhe46px6o23L3zo9/4kgTiF9aYYOKJ+PnXT1PhrzzyZQI4OpEnFo9Lc6WviSCEC
+U9A4haJJSvn+6eOludM79k5eK0cKqzI1ftPU+GvP/AuUqfhjk8mPSvNdHDVb1FoXRwa941Rj
+5fzFN965cMsnPpfL5RBxKn5vYub3Tx+HcESr+VShtGvnTZPjrz/7FChOxexNaqwV50/tmAFw
+ZLC6T51858LNn/hcLpfzvDg9IM7X6sVRM36OqJ9P3Tg5/vpzT8WuDsfjTSoenTtzojB7MsxR
+K36ODARZb3J8qn7h4sl3Lt78ic/FmE/F400qzy4myRERMVlvcnyqOL7zxsmdrz/7VIx1Xww0
+SSnff/N4ae7U9pmp5DhS6MvUG889HZeOfq00SSnPWY6qiXKk0Jepk889HUs+tf7Y1I5Hbx4v
+zp3evneSqhvBkcHqcerULy/e9LvXGqfW7009OGpuEEfUz6cOTOx847lrzafW6U1qrBXnT2+f
+cThqbRBHBj19qtGon794+pcXD3z8j9edTw1Mkx1riqNalWhzcKTQj6lLBz7+2fVVM4NRqzk6
+sUk5olVGX6FQ3LVz/8SOUz88prKEQZ1jYJrOnTlRmj/VxVFzU3Ck0J+pHx1bRz41AE1SynNn
+TpTmTo314Ki1WThS6MPUDTtO/ejYoFlCVJqY+XxaOFLox9TOUz98eqC5b+0QbmJ2af7NsZmJ
+dHBksFpEv3DpzV9e2v+xz0SM6GvTJKU8f+ZEcf702PREj5hdb1AU78Xp+VE8wvcp5/dk6sDH
+P+v7/ppZwho0rcpRvUHLy7TSWPsSBVHOp1jVHwtmarYoytDxBBXyVCx2MnX20v47P7NmPrUq
+TWqsdXMk5xd5eYWWVyK9DUF+3qdcDklTk5uBjBhkPE+UCt62YZepM2cv7f/YZ/tXM71pMhyV
+5k/XpieoVpWNZuuDuWB+gZtRw5AQVCrmRC4H9qYmN5r1ZiA58rjOeUSiuL3qD5UjMtWbJjXW
+FEfB0HB9dm7l/YsDXb8naFs57+d88hOhqdFstIIWD2bFy/uFbSNDleH6hUtnzl7ed+enfd/3
+fb/7N3vQpDiS7x+vC29h8Uqr3hz04gt5f/+eneViQSRJU7N5ef7K5YWrg76Gn8+Vy6XRUn7u
+SnPfnZ/uGadyXXb5wluvnT/x/FvvXljfldcbzVv3T3heQktqXLAMzrx9Np/Pr+/PC/ncxdl/
+uv3+P+8eeiGa1BLt6p79+ep1wx98MDs7Oz8/f/Xq1eh1EDPnrlwo5Hv4bTK4NDu3/ZbfjpQK
+CUFEnuflcrmhoaFKpVKtVqvVarPZFEKoOGV+udObpJRBEDQaDbUsxvf9crls8vo1mQqCoLmy
+YRwplEql1UKMC8OC53me5wVBUK/X6/V6sVg0mZT5nU6aDMfFYnFkZKRQKATRMmzlbs1mc37p
+/EDvKk4wEdHQ0FC5XM7n89EFE9/3c7lcsVj0PK/nuOlBUy6XK5fLnucNDQ1F73ZJKaWUKysr
+9UtvE0XLqjCoVCqjo6OlUkm5ScS/8jzP9/1CoVAoFJQnrjrohBBqrAohCoXCQDW0lLLVai0v
+L1/I5zeWpnK5PDo6OjQ0FKUKcaHevvqrjj/s4U2e5ykiBxJlmLnVagVBsGZQQEMNn2KxqD7v
+gf52tXHaSVOfX+0PKaX6EBJbXdsLTETqGjyNWF435qxvQzmySMHCnaSRyKrn9NOUCDKaImFL
+0cSEGoNbgaYEotNWoCkBZDRFQkZTJGQ0RUJGUyRkNEUCjKaNP4kiTgBo2loEKWSDLhKSoSn1
+DpYITalnKRt00ZDRFAkZTZEA2J255g9SiMybIiGjKRK2BE34Yb0laMIDSNNWCN0amTdFwhag
+KQmv3QI0JYGMpkjIaIoE0HJtyKtuIDJvioSMpkjIaIqEjKZI2Bo0waeMrUETHBlNkZDRFAkZ
+TZEAoklv40DHVmZi4vb+K6DJHpsxrhnMZC6cifUXCubFBz8hJjIQNCmimIjUBw2kiZUvuU8g
+dmALd9ghCwt2TaZo0JmIkYw3cfsBeRg2IoSrkEScjDe5WwuYQQYxsYnIGQLImNHDCsQQZg0B
+m7kH7E/c9iWG+ZECJjaRkxAQOCHQL85trlLiTfrDJWp7EzaEM5kQToRiCZVecsibjE8BbLVZ
+srkTBND0UhILYoH0JknExNLx2fTkTUTdaTEuNqFe2EX8NJlcr53xJZFeWlugHBMlpLD7FDjN
+6eySnYkDAMCgc+Ye9emqEzLiN0Tam/SMimMqAVkOqqIQacHJKYDjB2yms1/6JyhDFBJtMEDN
+dPqTZSYWwCw8JF/iaiOIQmAnHXhN54gR5nsAQN4UjuFQb3JzAVgajrgHVMeHik0IVrMaL1De
+FGoW4IJryAQwimPUS+1A+vMFxietnbjTavwA6U2sA7kkFswscKWvDkwmHiLsoLJwNlJTu1sH
+ug+hSggkETSCA7Nw0+sAh3A39KWppiNXJtMaECwhCJtAGQJ6U8+nKCNg1QmhN4VyASUsCsz7
+cA0xcrKD6U2menCKU4ghR3NKV2xq93v13IP8mI0BNkUwBIgGlJNR2moOmoVTaN4AANlZMVfM
+4IEHV/5wK1LsSACuFnFUCAKagZ1DAJZ/uk2m1psUJLMAe5M0glOqajrSLV/bE8d5FXeaS416
+yWQnHRPLk9CbgFIKbMGzLnuRTUYyYww43ogIuL6JSEcLwr4Fm8UaqTd+4BQCJ/HD5TXdJlI1
+6AzwPSjXRJramW7vyUH8hpwBZ/qCqVEIuOsbcJHizqoooBSCcJcR5022SGFgBEctn3d1AmRk
+soPMUXsBgKWXZHQC9Ihw2pmE+lBgK1KcUQf0KTeEI3tQqNLXfaa7dQBDtgOFHdzwloEZdbEb
+olDXCVnRIRUC+4VMMZl72IofCSwqlMQesliRnb4LAK4BxY4X4epeY8AwlBZvsiKKSTBRaoqZ
+4HRETJk36QLLJsogOxRqBMK8FhSb2g+WLYw/OTWd5St+M8AlqqGwmojehEycIIMOqy91W7Ms
+ocYdJL10O1DQvlAvUSslepMNGGx/EL+VkEFjMz1ZuBDkCbWeiQWRuoEtaqpjFiQ80f7C3QYW
+lRA4TxNxpi6z8QLdWZFEAtxZcSdTlCFMy8ApRDUgC55dsYko6l3k1wFoTWfkIKh0aXJL8338
+wOhNoTka3YAKWUpRTRe+VmRfqG2OgFFJAdMy6BAUJZOAhnDTL0CVLJhixZmgoemAHmRGRklZ
+Z8VGC9LBCWTIVtmEy2JBe33NM6eER8BRR1nbTc9M58QMwxQqvzQBCaomw2Q5nV1ip6GO/Dt1
+6WWozkpAf7LjPCWDzsTsbikoflPJmEErBK7mBDFj7ICdFnNomkkCQqUExlRXwQIwAz2HwH4p
+eQAhmsnwLJGymc7qrk4xAelAOcmZ/VHswJ0tR6GRgOv6si5SkDEc0zLoUHaRcpP6B60kg0Re
+J72EtzPdbB9lCHUmL+mREPvrd9pS/4JVLfT5TSZCYQ7/cCMSMO9AZeEdCSYzJBsgq+vC8m8F
+0KJCRxHX2SbAENk5jtr2UiXL2eU6bpTFwGZnQGkLuQMKmRZrE6F/0pSFhxtQ5nnsdoicmcI1
+hzAEW/DMppoTTBJ5eyBjyBSP8QOmN4VqFVwI5/BMgZLlEjm/KTn5Mj2xiYici3a/QIYYzREB
+G1BmnQUsfhtjJr3EpR44vcm9aJiQoslhQkUlBdgOqFBCAMzC295qDUKAvpk2Ompob+1hOk6A
+NrF2iU3odqbb1wQAuFqOKOkQjvNaUANKV+xGWMS1M12FAKbPgffTIRf6OZasN4FM4U54JpP4
+gb2JTKbGMJ5wx1xpX8KGcEdvIlg3MIkt0aYri0KHIQhQO6CSEZz064cPVwcAfA8oJly8aFuw
+vXdgSgA7k5c7ATLEThOK05ReOpNPErAhPFWlL5HDVALFipstpawBRXYcEDZvst4ELVewuwyc
+tiwIoQoFN9PB1oUnFcJ1HGdc/CbgoWlJwabfSNvJrL1MoGWANYSKTTbrIwL7F1pwJwLup9P3
+PobHJhuZTGUXP8A7xxVZxMSSEKcE2LYTMjsDtzON3KSeI96DWayDDeLoQ/oTqumsDpGWLDw8
+QYd/jADjfQm39rLTl0ArVLsMpUtv4tA/aOnSKO8w4JbPuxMQTFdxmhK4bIBgp4FZkUyLrxC0
+PwR2vSotM535hK3uiltrQXaqw1nB9ems7GrlV4QhMmMcKjiB9qy0n8BDuPUm9S0qcUKu5E1C
+5KVwbYRKL5Hrm5LQB8K8pEsh0CW7ZCZmYYTq+E0x6zuK6VIlXQqBvmJT0KEmOps0EbB3CluR
+0s6ayFQUCEN6ggMXvsgzUhLJwq05bTRFIm8XcAmBu+IFl4RDN7F2ehTATPsRa4VA6WWCHShs
+s9QAdUh/e6YWLJk9bELQKTghDEFjE5spO+2A3kAkXEwADcGjE6pY4RBBOL1J/8OdP4sXuAXP
+bPxJy3MIS0YAt8EJAZRCYJJjQl6+1U8YGwQBDSiTDbefMeHegZ3dsIZQp1rYmKoO5AWGcOce
+UDCFALQihbX8ik0Hwi8NU8KRp4FpMUVHJ5gVN3inqmXQVlGI1XIUXP8snBCky5tY956s7ITN
+B3RCQLjYhMvCibQ34a7eJmZtcxAjhFyi6lw6NoiHzaUlIeBQYE1iUWFY6kXYQSsEyIJO23AC
+OQzQE55t5yABvQlaFaG9iRKSM8EW0Ct5Tb0F1pvCawliB24HFNlrZ4HLwp2Gpq4lAUDNdLag
+a5d1mFtlETFJq2ulzZu46wsHN8VE2UKml+EcGQl4VpD2Wz502kJYIegGe5tZ4hUnq2ulJYST
+U0OERHGIIW3LCvAQANPL0BoIlOCkX9fmTKnxJie3dL9wTDHcCqazEu5m4kO408TBANTOJLeb
+SSzAKYFWeWFmYFq4grSKE8ROp0iAUpOxq+XgygBeelBA3yXaVQsQ6LaSlplOF+3JNMdDIy9F
+Mx2Rk/bhl1ro13bViPiBEFLsBE1WcsLRZHMC3NiG7VnRlQpymiZnOBulFGIGpjdZEQUawo0J
+tziKH5A7ihHbTxacV1pXghpD7llJQm9iE5gIaAe3RJVs0EhAvXQISslMZyc3PQURrLMS9lRg
+7QtbBmaB7hok0JXA3mcFfvXh1wcqyrAVKd2FBADalgnk6QrhpNNLXPlgrSShEyB3QCWXEEjz
+mKbOipnsnHIUJqT0+Iof0LsdOo/YFSlkHzEAN6DIKeERJsjW2EZPQQB1AxG2vUyh6QK8BTOl
+mu/SEptMLLItWaA3OZkAsgEFOubKUQjQchPZkYbTa6CbWPEtg6QMIY/g4/C3QMCFLUh6qdVv
+k1rCFQIdBFMn8pK5YnDF4ipbKUsvSU94zMRCf4uwQnZORY461DIwG1JD0mLchqwaYbMCBNAr
+eSWxBx9x+PYyIr00VbsAN33JnSZ0EpumhICI3HiUXEKQqkHHoeAKrN1dbQDZNMWll7YgJaDa
+FIpHOCkT1ICyPTp1WANOCnILbYwFIuAJzzai6iwZZMgoA8gkFhqbqJ1eMhNh6hXrtE6LAgD0
+LUbV9wIbwh19K4UJgQJSonZMYC1gVstxZ9IHUwg6213p0ptIF1sEFoM4/PKpUi9NdWLFJow7
+6dIaW2ATclGhUVFMCMfcA4q18m7sAgC6oxg5eR85Ux4CTMwC2jSF9um0TuAxSWZYC8dKTRI3
+52Fu+dBxrUkJBLjcA5WFdyQEEtYc70wI0uJNRKRdyiYEKJgUHAzQ+iaVAAhb0+Hmau4uj+JH
+/N4kBHkdX8gc1tRxQpAgyJ0nCbsDSuWW1H6E2AkXvzig9vrqQdYedLi3YBUUZHMCdA8oMwUB
+V4mQ2yZInULgdKrB/YK2OUdsSlfLALjmodsUddTVaanpQvOzZPLUI8BQR4cL2DWACSnGodRT
+ARJ5TWdc2goPAOgJzzohAPULtG6iXRcoOCHvT6eeMXIqCmVNwE5dYrIcQZhirUe4LS8AcHtW
+2gpsO2LEb8axZkI4zBBIbyIzCqBNay25u8M6Ld6kWwYhyQlU0/VoQCHsYHdn6scEsnAwQAue
+TbjQPRVcc9x2JYD1CnQzBuG9SUUncGSCrkgxvUxgemlbK8AISOC8SY819FILm16matBpmF4U
+VAiHrnRuA7fg2XafgCIvu14ETC9xd+2RRB6pR5YoKZ+o81ZZaUoviUMhHCYrhjXwlMUmd2EF
+Ovdz0w6gGehpYNw+PxU3U9sQnjohxdS87aSJkLKccSQ96tIz6LR+4rwFhBXz4joipcqbdLQw
+jSFgfHJUS+yoQzeg4LW7zV+RuT7oTN5wcMW6k5MHpCohIDO3wSfqsA6B+zhA6mVbISBVqcCK
+CKceYui4wxwPGqod2PgVAGwdFskULjaxjUosWUDO6dd6k+njpExvkkSCWBJ72BnPSJeqAIZN
+FrgTns0zdBB3sqV0pZfsjoTEFAInlMcO0D3HXX0A6lCmn+l8BwCmAUXtUouYSBfAkBCuDRnp
+EkQUKDaZSgua9BlWnLk1Reolka20gMtR2oaSKB6Bq+XUGSnQ/hnbZJZM8oQA7kxeAktNxpCV
+UHBaCroBJeDexG4MT1FN5wC8vIlM+moJwliDHujYTgigSy1CJTZspsPdYtTkTUiHYhvCoUDt
+9TWyqwqtrIrh2C0ZWYtsOIzdCsH2rLB1Ixuf4n8DTMQkNUUSN7EC1Uv9r8CqBM5ngDOEPB60
+x3OQLQ4/iR+oDfbOJcMTTNLtUxxQh6YZ0RUoApn00obyVOlNXWMOGJiIjDaQKvWSiIyKQkwk
+SO9cAZli50l6YpNJKa2Ejxt0zoIz0mkIwhDuLtFkPl8m5OZxK/Cmy5u2IpD3WcG9dOJGM2+K
+hIymSMhoioSMpkjAyXJbCpk3RUJGUyRkNEVCRlMkZDRFQkZTJGQ0RUJGUyQkckh/+pF5UyRk
+NEVCRlMkZDRFQkZTJGQ0RUJGUyRkNEVCRlMkJEJT+hPxzJsiYUvRhPPaLUUTDhlNkZDRFAkZ
+TZGQBE3pzwcyb4oGME3wPTcJIfOmSMhoioSMpkjIaIqEjKZIyFbLRULmTZGQ0RQJ+I1iWwKZ
+N0VCzDThNjoNhNgvo3OjmN6YNvBuUGaWUkIPKukPc8qBugwppXoy2IsIIYRQT0I/d19Ivcl3
+Xv6vZ7/ywPjwwFvt1J/PXzj79uUrtZLI+8IXwvOE73k5WAxsBdyU3Aq4FciFBgci/6sHpn3f
+F4PfFmChHpzP7fmDP/vrW37rdwxfCiGapJRBEDSbzZ/9+5Pf/ru/+rWp2h23Tq/j6uvN1rMv
+/G8ucZr2XL/712+cXMfrzC1e/e+T7790qfynf/PEhz/6sXw+7/u+59y22dKkfKHRaNTr9aWl
+pVefefo7//C3UzuGb50ev3nmht07agMZXrxy5V+/9x+eJ3xPeCIJmqYn9tx58DcH+vOlq8s/
+f+vs//z87ZPnFpeHrv+Lx746tffA8PBwqVQqFAquQ3XS1Gw2V1ZWFhYW5ufnT/7nt5/96mO1
+sqiVvOpIaWbPrhun90S/iCvLyz9+6SdeIjTt2rnjN269OfofXl2p/+K9iz99/a0rDT53RS4V
+d33+i09MTO+rVquVSqVUKuXz+d40EREzB0HQaDSuXLkyOzs7Nzf35vP/9uN/+XvFVN6n4VJh
+rDI8PjY6MlSOcjUr9fprJ0+jaapUtu2bmoj4J2cvXH7vwgeLy41mwIaj+x96bGrvgWq1WqvV
+hoeHC4VCR3TrvMsAM7darXq9vri4ODc3Nzs7e+aF77x47HHDlC8o51GpkNs+um2oVFjzspqt
+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
+6k2OjKZI+D/zXhTejJ8fngAAAABJRU5ErkJggg==</EAImage>
+		</EAModel.image>
+	</XMI.extensions>
+</XMI>
