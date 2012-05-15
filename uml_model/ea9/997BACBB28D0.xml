@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_35DE3E42_E758_4b54_803A_997BACBB28D0">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="C-BML Phase 2 Model" xmi.id="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0" isRoot="true" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="modified" value="2012-04-05 18:50:29"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="ea9\997BACBB28D0.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2012-05-15 11:30:08"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="1"/>
+						<UML:TaggedValue tag="packageFlags" value="VCCFG=cbml_phase2_svn;CRC=0;isModel=1;"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_35DE3E42_E758_4b54_803A_997BACBB28D0_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="Requirements Model" xmi.id="EAID_0261ABCF_EA5B_4ce3_8551_EC2CB726BC66" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-14 16:19:24"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-14 16:19:24"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_0261ABCF_EA5B_4ce3_8551_EC2CB726BC66"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Phase 2 Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="3"/>
+										<UML:TaggedValue tag="ea_localid" value="300"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="C-BML Phase 2 Overview" xmi.id="EAID_3549A6F0_5275_43e7_BD68_F0F31E8A3350" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-04 16:06:57"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-05 18:50:39"/>
+										<UML:TaggedValue tag="gentype" value="C#"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_3549A6F0_5275_43e7_BD68_F0F31E8A3350"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Phase 2 Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="2"/>
+										<UML:TaggedValue tag="ea_localid" value="5"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="References" xmi.id="EAID_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-15 11:30:05"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-15 11:30:28"/>
+										<UML:TaggedValue tag="gentype" value="C#"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_C25F7D02_DDB1_4cbc_A317_E976BA4B687B"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Phase 2 Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="6"/>
+										<UML:TaggedValue tag="ea_localid" value="330"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Reference Architecture" xmi.id="EAID_C6C905AB_2D2A_4aec_9A0C_EEB560D2C9B9" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-14 16:20:59"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-14 16:21:13"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_C6C905AB_2D2A_4aec_9A0C_EEB560D2C9B9"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Phase 2 Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="4"/>
+										<UML:TaggedValue tag="ea_localid" value="312"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="C-BML Standard Development Framework" xmi.id="EAID_CD600E8A_ECC8_4192_874B_170C2BF71579" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-14 11:49:44"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-14 12:41:51"/>
+										<UML:TaggedValue tag="gentype" value="C#"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_CD600E8A_ECC8_4192_874B_170C2BF71579"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Phase 2 Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="1"/>
+										<UML:TaggedValue tag="ea_localid" value="251"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Specification_Guidance" xmi.id="EAID_EFB00E8B_0A1E_4205_99DE_B33B5FDC12AE" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+										<UML:TaggedValue tag="date_created" value="2012-05-15 16:10:04"/>
+										<UML:TaggedValue tag="date_modified" value="2012-05-15 16:10:04"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_EFB00E8B_0A1E_4205_99DE_B33B5FDC12AE"/>
+										<UML:TaggedValue tag="package_name" value="C-BML Phase 2 Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="K_Heffner"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="5"/>
+										<UML:TaggedValue tag="ea_localid" value="335"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Package name="C-BML Standard Development Framework" xmi.id="EAPK_CD600E8A_ECC8_4192_874B_170C2BF71579" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+								<UML:TaggedValue tag="created" value="2011-03-25 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2012-05-14 12:41:51"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="ea1\170C2BF71579.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 11:49:44"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 11:49:44"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="1"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="isModel=1;VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="C-BML Phase 2 Overview" xmi.id="EAPK_3549A6F0_5275_43e7_BD68_F0F31E8A3350" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+								<UML:TaggedValue tag="created" value="2011-03-25 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2012-04-05 18:50:39"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="eaF\F0F31E8A3350.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-04-04 16:06:57"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-04-04 16:06:57"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="2"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="isModel=1;VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Requirements Model" xmi.id="EAPK_0261ABCF_EA5B_4ce3_8551_EC2CB726BC66" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+								<UML:TaggedValue tag="created" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="modified" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="eaE\EC2CB726BC66.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="lastsavedate" value="2005-11-19 09:26:01"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="3"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="isModel=1;VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Reference Architecture" xmi.id="EAPK_C6C905AB_2D2A_4aec_9A0C_EEB560D2C9B9" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+								<UML:TaggedValue tag="created" value="2012-05-14 16:20:59"/>
+								<UML:TaggedValue tag="modified" value="2012-05-14 16:21:13"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="eaE\EEB560D2C9B9.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-14 16:20:59"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-14 16:20:59"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="4"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="isModel=1;VICON=3;VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Specification_Guidance" xmi.id="EAPK_EFB00E8B_0A1E_4205_99DE_B33B5FDC12AE" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+								<UML:TaggedValue tag="created" value="2012-05-15 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2012-05-15 00:00:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="eaB\B33B5FDC12AE.xml"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="5"/>
+								<UML:TaggedValue tag="packageFlags" value="isModel=1;VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="K_Heffner"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="References" xmi.id="EAPK_C25F7D02_DDB1_4cbc_A317_E976BA4B687B" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_35DE3E42_E758_4b54_803A_997BACBB28D0"/>
+								<UML:TaggedValue tag="created" value="2011-03-25 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2012-05-15 11:30:28"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="eaE\E976BA4B687B.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-05-15 11:30:05"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-05-15 11:30:05"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="6"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="isModel=1;VCCFG=cbml_phase2_svn;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
